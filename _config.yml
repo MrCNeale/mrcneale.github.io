@@ -1,12 +1,26 @@
-# Site settings
-title: Nealo's Blog
-email: chris.neale@gmail.com
-description: > # this means to ignore newlines until "baseurl:"
-  virtualisation, cloud, automation, software-defined and all things of that ilk, with a leaning toward VMware
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://yourdomain.com" # the base hostname & protocol for your site
-twitter_username: mrcneale
-github_username:  mrcneale
+# Dependencies
+markdown:         redcarpet
+highlighter:      pygments
 
-# Build settings
-markdown: kramdown
+# Permalinks
+permalink:        pretty
+relative_permalinks: true
+
+# Setup
+title:            Nealo's Blog
+tagline:          'virtualise all the cloud things in a software defined automation script thing'
+description:      'virtualisation, cloud, automation, software-defined and all things of that ilk, with a leaning toward VMware'
+url:              http://www.chrisneale.org
+baseurl:          /
+
+author:
+  name:           'Chris Neale'
+  url:            https://twitter.com/mrcneale
+
+paginate:         5
+
+# Custom vars
+version:          2.1.0
+
+github:
+  repo:           https://github.com/mrcneale
