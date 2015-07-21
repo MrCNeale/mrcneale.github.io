@@ -1,7 +1,7 @@
 ---
-layout: default
-title: "archive"
-permalink: archive.html
+layout: page
+title: Archive
+permalink: /archive.html
 ---
 <section id="archive">
   <h3>This year's posts</h3>
