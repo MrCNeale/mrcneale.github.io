@@ -2,9 +2,7 @@
 title: Nealo's Blog
 email: chris.neale@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  virtualisation, cloud, automation, software-defined and all things of that ilk, with a leaning toward VMware
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://yourdomain.com" # the base hostname & protocol for your site
 twitter_username: mrcneale
