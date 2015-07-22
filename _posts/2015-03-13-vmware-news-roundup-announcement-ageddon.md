@@ -1,11 +1,12 @@
 ---
 layout: post
-title: VMware News Roundup: Announcement-ageddon!!!
+title: VMware News Roundup - Announcement-ageddon!!!
 date: 2015-03-13 00:25
 author: chrisneale
 comments: true
 categories: [Certification, nsx, openstack, Study, Study, VCenter, VCP, vios, VMWare, vsphere]
 ---
+
 There was armageddon, then snowmageddon and now announcementageddon.
 
 Twitter is on fire with frantic retweeting and updates on what people are excited about on the VMware front.  And there's plenty to be excited about right now.
