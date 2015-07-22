@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Devops/Agile/Webscale....too many terms too little time: DevOPs Tools and Terms Cheat Sheet
+title: Devops/Agile/Webscale....too many terms too little time- DevOPs Tools and Terms Cheat Sheet
 date: 2015-06-30 22:24
 author: chrisneale
 comments: true
-categories: [Uncategorized]
+categories: [Devops]
 ---
 I'm going to ignore any comments about DevOPs being a vague term like Cloud which means different things to different people.
 
