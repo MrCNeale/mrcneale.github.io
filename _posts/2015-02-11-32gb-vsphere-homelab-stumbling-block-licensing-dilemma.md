@@ -1,9 +1,7 @@
 ---
 layout: post
-title: "32Gb vSphere Homelab stumbling block: Licensing dilemma"
+title: "32Gb vSphere Homelab stumbling block - Licensing dilemma"
 date: 2015-02-11 00:57
-author: chrisneale
-comments: true
 categories: [#vmware #homelab #win7 #win8 #win10 #licensing, Uncategorized]
 ---
 I upgraded my pc to a beefy spec just before Christmas.  i7 4770s giving me 8 threads to throw at VMWorkstation and 16Gb of memory, along with my existing SSD.
@@ -37,7 +35,3 @@ I may test W10 TP on my HP Micrososerver and test if vmworkstation 10 runs on th
 &nbsp;
 
 I'll update you on which route I decide
-
-&nbsp;
-
-&nbsp;
