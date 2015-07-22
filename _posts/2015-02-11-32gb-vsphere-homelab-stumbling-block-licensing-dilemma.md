@@ -1,9 +1,10 @@
 ---
 layout: post
-title: "32Gb vSphere Homelab stumbling block - Licensing dilemma"
+title: 32Gb vSphere Homelab stumbling block - Licensing dilemma
 date: 2015-02-11 00:57
-categories: [#vmware #homelab #win7 #win8 #win10 #licensing, Uncategorized]
+categories: [vmware,homelab,win7,win8,win10,licensing, Uncategorized]
 ---
+
 I upgraded my pc to a beefy spec just before Christmas.  i7 4770s giving me 8 threads to throw at VMWorkstation and 16Gb of memory, along with my existing SSD.
 
 A quick reinstall of windows and install of VMWorkstation and I had a great lab to revise for VCAP-DCA510 in a hurry.  However I had promised myself that I'd set aside £120 this month to max out my motherboard with another 16Gb.  There's another good reason to go that limit.  I didn't pass 510 and the 550 exam has a different setup including more hosts and VMs/SSO boxes etc.
