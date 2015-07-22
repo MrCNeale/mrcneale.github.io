@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 32Gb vSphere Homelab stumbling block: Licensing dilemma
+title: "32Gb vSphere Homelab stumbling block: Licensing dilemma"
 date: 2015-02-11 00:57
 author: chrisneale
 comments: true
