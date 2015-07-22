@@ -1,0 +1,9 @@
+---
+layout: post
+title: ESXi/vCenter hardening (inventory service issue)
+date: 2014-07-25 13:16
+author: chrisneale
+comments: true
+categories: [Uncategorized]
+---
+<p>We had a Pen Test done recently on a couple of vBlocks that we need some security accreditation against. (See how I'm being vague there for security reasons ;-)</p><p>One of the items that came up was a weak cipher on port 10109 of the vCenter server.</p><p>Zut Alors!  That sounds serious, well it might be.</p><p>Not seeing a way to update the service which was opening this port (vCenter Inventory Service) I did what we would all do, which was search for the KB article.  Impressively there was an article referring to my exact issue, nice!</p><p><a href="http://kb.vmware.com/selfservice/microsites/search.do?language=en_US&amp;cmd=displayKC&amp;externalId=2063001&amp;SRC=vmw_so_vex_cneal_850">http://kb.vmware.com/selfservice/microsites/search.do?language=en_US&amp;cmd=displayKC&amp;externalId=2063001&amp;SRC=vmw_so_vex_cneal_850</a></p><p>Well it was until I read it.  The advice was to "disable the firewall rule preventing access to this port".</p><p>This is actually back to front.  As I found in Windows Firewall there is actually an allow rule for</p><p>"vCenter Inventory Service - Service Management Port"</p><p>So what is required is actually that port to be disabled.  Simply change the Windows Firewall Rule.</p><ol><li>Right click the rule called "vCenter Inventory Service - Service Management Port"</li><li>On the general tab under action change "Allow the connection" to "Block the connection"</li><li>Test you can no longer telnet to port 10109 remotely</li></ol><p>This was confirmed after logging a call with VMWare (the KB article does state that the port is used for debugging and is used by any external agent.</p><p>Hopefully the KB will be updated soon</p><p> </p>
