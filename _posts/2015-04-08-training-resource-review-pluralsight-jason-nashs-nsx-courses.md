@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Training Resource Review: Pluralsight + Jason Nash's NSX Courses
+title: Training Resource Review - Pluralsight + Jason Nash's NSX Courses
 date: 2015-04-08 22:39
 author: chrisneale
 comments: true
