@@ -9,7 +9,7 @@ relative_permalinks: true
 # Setup
 title:            Nealo's Blog
 tagline:          'virtualise all the cloud stuff in a software defined automation script thing'
-description:      'virtualise all the cloud things in a software defined automation script thing, maybe using VMware'
+description:      'virtualise all the cloud stuffs in a software defined automation script thing, maybe using VMware'
 url:              http://www.chrisneale.org
 baseurl:          /
 
