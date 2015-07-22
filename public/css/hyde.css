@@ -79,7 +79,7 @@ html {
 .sidebar-about h1 {
   color: #aacc00;
   margin-top: 0;
-  font-family: "Orbitron", serif;
+  font-family: "Orbitron", san-serif; 
   font-size: 3.25rem;
 }
 
