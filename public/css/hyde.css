@@ -179,11 +179,11 @@ a.sidebar-nav-item:focus {
 
 /* Red */
 .theme-base-08 .sidebar {
-  background-color: #555555;
+  background-color: #777777;
 }
 .theme-base-08 .content a,
 .theme-base-08 .related-posts li a:hover {
-  color: #555555;
+  color: #777777;
 }
 
 /* Orange */
