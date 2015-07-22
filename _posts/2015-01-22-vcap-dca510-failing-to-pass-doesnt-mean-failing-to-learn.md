@@ -1,11 +1,12 @@
 ---
 layout: post
-title: VCAP-DCA510: Failing to pass doesn't mean failing to learn
+title: VCAP-DCA510 Failing to pass doesn't mean failing to learn
 date: 2015-01-22 23:10
 author: chrisneale
 comments: true
-categories: [Uncategorized]
+categories: [VCAP,Study]
 ---
+
 Last Thursday I got the early train to Leeds stationed myself in a coffee shop and proceeded to stuff coffee and pastries into my mouth and last minute vSphere knowledge into my brain.
 
 I had obtained a voucher to book the exam last year.  However I'd been seconded to a "Business Transformation" project.  Whilst this was quite interesting it did cause my technical skills to atrophy.  To cut a long story short I rescheduled the exam a couple of times.  However when a friend retweeted just before Christmas that 510 was going to be retired that was the end of that.  I had 3-4 weeks to revise/read/cram and lab.  Unfortunately Christmas isn't the season conducive to revision.
