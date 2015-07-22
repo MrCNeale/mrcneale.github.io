@@ -72,12 +72,12 @@ html {
 
 /* Sidebar links */
 .sidebar a {
-  color: #aacc00;
+  color: #dd9900;
 }
 
 /* About section */
 .sidebar-about h1 {
-  color: #ccaa00;
+  color: #dd9900;
   margin-top: 0;
   font-family: "Orbitron", san-serif; 
   font-size: 3.25rem;
