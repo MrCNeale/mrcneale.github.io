@@ -13,8 +13,8 @@ description:      'virtualise all the cloud stuffs in a software defined automat
 url:              http://www.chrisneale.org
 baseurl:          /
 
-author:
-  name:           'Chris Neale'
+author:           'Chris Neale'
+  name:           Nealo's Blog
   url:            https://twitter.com/mrcneale
 
 paginate:         5
