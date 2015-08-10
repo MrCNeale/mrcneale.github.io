@@ -7,14 +7,14 @@ permalink:        pretty
 relative_permalinks: true
 
 # Setup
-title:            "Nealo's Blog"
+title:            "Nealos Blog"
 tagline:          'virtualise all the cloud stuff in a software defined automation script thing'
 description:      'virtualise all the cloud stuffs in a software defined automation script thing, maybe using VMware'
 url:              http://www.chrisneale.org
 baseurl:          /
 
 author:           Chris Neale
-  name:           Nealos Blog
+  name:           "Nealos Blog"
   url:            https://twitter.com/mrcneale
 
 paginate:         5
