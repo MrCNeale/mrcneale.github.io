@@ -14,7 +14,7 @@ url:              http://www.chrisneale.org
 baseurl:          /
 
 author:           Chris Neale
-  name:           "Nealo's Blog"
+  name:           Nealos Blog
   url:            https://twitter.com/mrcneale
 
 paginate:         5
