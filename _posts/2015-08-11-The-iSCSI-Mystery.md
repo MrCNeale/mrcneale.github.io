@@ -35,7 +35,7 @@ Microsoft's guide does state
 
 In Summary
 <LI> Death to e1000s always go VMXNet3 FTW!<BR>
-<Sub>(Ideally include this in a template/blueprint or at a minimum highlight it in your build documentation<Sub></LI>
+<Sub>(Ideally include this in a template/blueprint or at a minimum highlight it in your build documentation)</Sub></LI>
 <LI> iSCSI is ignorant to traditional routing tables in Windows and should be pinned to a specific NIC as required</LI>
 
 I hope that saves you the morning I had!
