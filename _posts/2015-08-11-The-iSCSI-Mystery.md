@@ -34,7 +34,8 @@ Microsoft's guide does state
 <LI>Here is the link to Microsoft's guide <A HREF=http://blogs.technet.com/b/filecab/archive/2012/05/21/introduction-of-iscsi-target-in-windows-server-2012.aspx> http://blogs.technet.com/b/filecab/archive/2012/05/21/introduction-of-iscsi-target-in-windows-server-2012.aspx</A></LI>
 
 In Summary
-<LI> Death to e1000s always go VMXNet3 FTW!</LI>
+<LI> Death to e1000s always go VMXNet3 FTW!<BR>
+(Ideally include this in a template/blueprint or at a minimum highlight it in your build documentation</LI>
 <LI> iSCSI is ignorant to traditional routing tables in Windows and should be pinned to a specific NIC as required</LI>
 
 I hope that saves you the morning I had!
