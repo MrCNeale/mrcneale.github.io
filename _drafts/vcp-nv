@@ -1,0 +1,22 @@
+---
+layout: post
+title: VCP-NV=EZ
+date: 2015-08-16 14:39
+author: Chris Neale
+comments: true
+categories: [VCP, VCP-NV, Certification, Study, VMware, SDN, Microsegmentation]
+---
+It's been 2 weeks now since I sat and passed the VCP-NV.  Straight after the exam I went on holiday and on coming back I got straight back into work.
+
+My background is working with VMware since Esx 2.x in 2005.  In a more structured and career focussed way since 2011 when I did a great project to deploy 4 vBlocks with Linked vCenters.  Since then I've worked on various virtualisation deployments, upgrades, support incidents (the joys of being on-call) and even a brief foray into setting up a Hyper-V environment for one customer!!!
+
+I did the original ICM for VI3, but didn't get round the sitting the exam.  Very slack of me and something I won't repeat.  So to catch up and qualify to sit VCP4 I did the VMWN4 course to gen up but mainly to meet the requirements.  I passed VCP4 a few years back and updated to VCP5 last summer.  This year I got involved in a great project to deploy NSX as part of a new offering, so breaking some fresh ground and it really re-engergised my enthusiasm.
+
+I was fortunate to do the ICM NSX 6.1 course in June.  However I would say that if you've used NSX and are familiar with the major concepts then you will be a long way to knowing the VCP-NV Blueprint material
+
+So what's the point of the history lesson? Also some of you may be shouting "arrogance" or "clickbait" over the post's title. (The EZ/Easy bit).
+
+Well my point is I've been in IT since desktop support in 1996 through to now and I've tracerouted and configured some basic Cisco routers for remote access but never delved into other switch/router makes or done much more than route/ipconfig/arp before handing config or diagnosis on to dedicated network folks.
+
+So armed with
+<LI>
