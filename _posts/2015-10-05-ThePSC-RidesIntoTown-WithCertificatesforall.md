@@ -1,4 +1,11 @@
-<H1>All hail the PSC - Long Live the appliance!</H1>
+---
+layout: post
+title: All hail the PSC - Long Live the appliance!
+date: 2015-10-05 22:11
+author: Chris Neale
+comments: true
+categories: [VMware,PSC,vSphere,Certificates,Security]
+---
 VMware started as a Type 2 Hypervisor for doing a bit of lab/development testing on.
 
 They've come a long way since and even started chopping Windows out of the picture whenever possible.
