@@ -36,7 +36,7 @@ My favourite bit, having become an Identity&Access Management SME by stealth is 
 <OL>Certificate Authorities - They issue certs!</OL>
 <OL>Certificate Revocation lists (CRLs) - Lists of revoked certificates</OL>
 <OL>Crl Distribution Points (CDPs) - a Point where CRLs are hosted that clients can connect to and download the latest CRL</OL>
-That simplifies things down to their minimum.  There are other bits but we don't need them yet.<
+That simplifies things down to their minimum.  There are other bits but we don't need them yet.
 
 To secure a connection a service needs an SSL cert. 
 e.g. the Web Client Service. has a cert but it issued it to itself.  Nothing trusts it, there's nowhere to check if it's been revoked and it's very likely that you're accessing it using an ip/name different to the one in the cert.
