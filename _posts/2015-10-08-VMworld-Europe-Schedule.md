@@ -6,6 +6,8 @@ author: Chris Neale
 comments: true
 categories: [VMware,VMworld,NSX,Docker,vIDM]
 ---
+
+
 <table class="tableizer-table">
 <tr class="tableizer-firstrow"><th>Session</th><th>Day</th><th>Time</th><th>Place</th></tr>
  <tr><td>PAR6385  --  3 Reasons Why Your Customers Will Need VMware Identity Manager (vIDM)</td><td>Monday</td><td>14:15</td><td>Hall 8.0, Room 27</td></tr>
