@@ -19,7 +19,7 @@ categories: [VMware,VMworld,NSX,Docker,vIDM]
 }
 .tableizer-table th {
 	background-color: #104E8B; 
-	color: #FFF;
+	color: #000;
 	font-weight: bold;
 }
 </style><table class="tableizer-table">
