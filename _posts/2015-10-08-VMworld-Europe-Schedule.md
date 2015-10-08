@@ -7,8 +7,22 @@ comments: true
 categories: [VMware,VMworld,NSX,Docker,vIDM]
 ---
 
-
-<table class="tableizer-table">
+<style type="text/css">
+	table.tableizer-table {
+	border: 1px solid #CCC; font-family: Helvetica, Arial, serif;
+	font-size: 10px;
+} 
+.tableizer-table td {
+	padding: 4px;
+	margin: 3px;
+	border: 1px solid #ccc;
+}
+.tableizer-table th {
+	background-color: #104E8B; 
+	color: #FFF;
+	font-weight: bold;
+}
+</style><table class="tableizer-table">
 <tr class="tableizer-firstrow"><th>Session</th><th>Day</th><th>Time</th><th>Place</th></tr>
  <tr><td>PAR6385  --  3 Reasons Why Your Customers Will Need VMware Identity Manager (vIDM)</td><td>Monday</td><td>14:15</td><td>Hall 8.0, Room 27</td></tr>
  <tr><td>GS-TUE  --  General Session - Tuesday</td><td>Tuesday</td><td>09:00</td><td>Hall 6.0</td></tr>
