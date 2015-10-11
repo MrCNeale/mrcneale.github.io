@@ -22,7 +22,17 @@ categories: [VMware,VMworld,NSX,Docker,vIDM]
 	color: #000;
 	font-weight: bold;
 }
-</style><table class="tableizer-table">
+</style>
+
+I've filled up my schedule, I've Favourited sessions that were full so I can check the standby queues out and here's a few other things I want to tick off this time round at VMworld
+<LI> Surf the hall more.  Last year I waited until the Thursday but had some great talks with folks at Simplivity, Pernixdata and others...don't know why I was so shy but this time I'm going to be asking lots of questions....even "Tell me what your thing does!" :-)</LI>
+<LI>  Hands on Labs - In particular the Docker one <A href=http://docs.hol.vmware.com/HOL-2014/hol-sdc-1430_html_en/#src=vmwsovexcneal_850>HOL-SDC-1430 - Docker Essentials for the vSphere Admin</A></LI>
+<LI> Hook up with our TAM.  If your company has a tam you should really be in touch with them regularly to make sure they know what you're working on, and in big global companies where not everyone communicates quite as well as they should...they may even tell YOU what you're company is working on</LI>
+<LI> Check out the Training and certification booth/space.  I'm keen to do more qualifications and build on my VCP5, VCP6-NV and move on to VCAP/VCIX and VCPC, read more here <A HREF=https://www.vmworld.com/en/europe/learning/training-certification.html#src=vmwsovexcneal_850>VMware Training and Cerification</A></LI>
+
+I might have some tapas and a cerveza too.  But just the one!
+
+<table class="tableizer-table">
 <tr class="tableizer-firstrow"><th>Session</th><th>Day</th><th>Time</th><th>Place</th></tr>
  <tr><td>PAR6385  --  3 Reasons Why Your Customers Will Need VMware Identity Manager (vIDM)</td><td>Monday</td><td>14:15</td><td>Hall 8.0, Room 27</td></tr>
  <tr><td>GS-TUE  --  General Session - Tuesday</td><td>Tuesday</td><td>09:00</td><td>Hall 6.0</td></tr>
