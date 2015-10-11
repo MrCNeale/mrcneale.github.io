@@ -1,7 +1,7 @@
 ---
 layout: post
-title: VMworld Europe Schedule
-date: 2015-10-08
+title: VMworld Europe Schedule and New things to do this time
+date: 2015-10-11
 author: Chris Neale
 comments: true
 categories: [VMware,VMworld,NSX,Docker,vIDM]
