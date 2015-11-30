@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ESXi and AD Part 1: Integration Checklist
+title: ESXi and AD Part 1 - Integration Checklist
 date: 2015-11-30
 author: Chris Neale
 comments: true
