@@ -17,5 +17,9 @@ This email can be considered to be an official document, however if you have any
 
 This is beyond disappointing.  It means that they don't know or care how AD works an aren't serious about supporting it as an Identity Provider.
 
-Anyway I took the time and effort to figure out a reasonable set of privileges you will need to delegate to a user to allow them to join an ESXi host to an AD domain that you aren't in charge of.
+In the environment I'm working in I am not getting Domain Admins any time soon, and rightly so it's a sledgehammer to crack a nut!
+
+I started off using this slightly outdated article from Microsoft on how to delegate rights to a user to allow them to join computers to a domain
+
+[https://support.microsoft.com/en-us/kb/932455](https://support.microsoft.com/en-us/kb/932455)
 
