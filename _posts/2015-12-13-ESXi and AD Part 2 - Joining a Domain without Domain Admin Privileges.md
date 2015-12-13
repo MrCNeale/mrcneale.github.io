@@ -18,7 +18,7 @@ Solution
 * Delegate the rights as per the following Microsoft KB Article 
 [https://support.microsoft.com/en-us/kb/932455](https://support.microsoft.com/en-us/kb/932455)
 * Also Delegate **Read All Properties** and **Write All Properties**
-* Your OU permissions should look like this now (Tenant1Admin is the Account Mr Domain Admin has given you) (sshot.PNG)
+* Your OU permissions should look like this now (Tenant1Admin is the Account Mr Domain Admin has given you) (https://github.com/MrCNeale/mrcneale.github.io/blob/master/_posts/sshot1.PNG?raw=true)
 
 The latter was the key to getting ESXi to be able to update random fields in the Computer Object such as *OperatingSystemServicePack* which VMware decided to populate with Likewise!
 
