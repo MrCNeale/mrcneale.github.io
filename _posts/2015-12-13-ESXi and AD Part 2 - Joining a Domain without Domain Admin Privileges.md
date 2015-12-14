@@ -24,7 +24,7 @@ Solution
 The latter was the key to getting ESXi to be able to update random fields in the Computer Object such as *OperatingSystemServicePack* which VMware/Likewise decided to populate with *Likewise Identity 5.3.0*!
 For background info and other reasons you might be stuck, read on........
 
-The Story/Diagnosis & how to Troubleshooting ESXi/AD/Likewise logs
+The story/diagnosis & how to troubleshoot ESXi/AD/Likewise logs
 ---------------------------------------------------------------------
 
 I have an e-mail from VMware support stating the following
