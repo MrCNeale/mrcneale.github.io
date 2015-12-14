@@ -74,6 +74,6 @@ Restarting The Likewise/Netlogon Daemons from Powercli
 ------------------------------------------------------
 Connect to your vCenter or ESXi host and run
 
-{% highlight ruby linenos %}
+{% highlight ruby %}
 Get-VMHost | Get-VMHostService | ?{"lsassd","lwiod","netlogond" -contains $_.Key} | Restart-VMHostService
 {% endhighlight %}
