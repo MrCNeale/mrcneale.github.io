@@ -54,21 +54,21 @@ then you can:
 
 Enable advanced audit logging
 -----------------------------
-1 First select Properties of the OU you are trying to add Computers to
-2 Go to the security tab and click Advanced Button/Auditing Tab/Add
-3 In *Security Principal* at the top click and select the user who is going to be adding (or trying to add) a host to the domain
-4 Change Type=All, Applies to=This Object and All Descendant Objects and tick Full Control in the Permissions section
-5 Now go to the Default Domain Controller Policy in GPMC and edit the policy
-6 Navigate to Computer Configuration/Windows Settings/Security Settings/Advanced Audit Policy Configuration/Audit Policies/DS Access
-7 Change Audit Directory Service Access to Configured for Success/Fail
-8 Change Audit Directory Service Change to Configured for Success/Fail
+1. First select Properties of the OU you are trying to add Computers to
+2. Go to the security tab and click Advanced Button/Auditing Tab/Add
+3. In *Security Principal* at the top click and select the user who is going to be adding (or trying to add) a host to the domain
+4. Change Type=All, Applies to=This Object and All Descendant Objects and tick Full Control in the Permissions section
+5. Now go to the Default Domain Controller Policy in GPMC and edit the policy
+6. Navigate to Computer Configuration/Windows Settings/Security Settings/Advanced Audit Policy Configuration/Audit Policies/DS Access
+7. Change Audit Directory Service Access to Configured for Success/Fail
+8. Change Audit Directory Service Change to Configured for Success/Fail
 
 Now if you clear your test.lab DC's security logs and try and join your ESXi host then you can see exactly which attributes and actions the ESXi host is trying to do when joining the domain.
 
 Enable Likewise Logging
 -----------------------
-1 Follow this VMware KB [http://kb.vmware.com/selfservice/microsites/search.do?language=en_US&cmd=displayKC&externalId=1026554](http://kb.vmware.com/selfservice/microsites/search.do?language=en_US&cmd=displayKC&externalId=1026554)
-2 Now go and browse /var/log or /scratch/log for *netlogond.log*,*lwiod.log* and *lsassd.log* and happy trawling
+1. Follow this VMware KB [http://kb.vmware.com/selfservice/microsites/search.do?language=en_US&cmd=displayKC&externalId=1026554](http://kb.vmware.com/selfservice/microsites/search.do?language=en_US&cmd=displayKC&externalId=1026554)
+2. Now go and browse /var/log or /scratch/log for *netlogond.log*,*lwiod.log* and *lsassd.log* and happy trawling
 
 Restarting The Likewise/Netlogon Daemons from Powercli
 ------------------------------------------------------
