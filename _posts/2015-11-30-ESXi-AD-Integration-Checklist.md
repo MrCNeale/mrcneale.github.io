@@ -40,12 +40,9 @@ This KB lists the ports for ESXi 4.1  If you have these open it should be fine f
 * Time Sync.  Your hosts should be synced to the same source as your Domain Controllers
 {% highlight ruby %}
 Get-VMHost -VMHost $esx | Add-VmHostNtpServer  -NtpServer servername
-
-      Get-VMHostFirewallException -VMHost $esx | where {$_.Name -eq "NTP client"} | Set-VMHostFirewallException -Enabled:$true
-
-      Get-VmHostService -VMHost $esx | Where-Object {$_.key -eq "ntpd"} | Start-VMHostService
-
-      Get-VmHostService -VMHost $esx | Where-Object {$_.key -eq "ntpd"} | Set-VMHostService -policy "automatic"
+Get-VMHostFirewallException -VMHost $esx | where {$_.Name -eq "NTP client"} | Set-VMHostFirewallException -Enabled:$true
+Get-VmHostService -VMHost $esx | Where-Object {$_.key -eq "ntpd"} | Start-VMHostService
+Get-VmHostService -VMHost $esx | Where-Object {$_.key -eq "ntpd"} | Set-VMHostService -policy "automatic"
 {% endhighlight %}
 * Permissions of the AD user you are using to join the domain.  If you're unlucky enough to not have a domain admin account to do the join then you'll need to ensure that the AD user account user account you are using has the following rights delegated to it on the OU where you are creating or updating, if it's been prestaged, the computer account.
     1. Reset Password
