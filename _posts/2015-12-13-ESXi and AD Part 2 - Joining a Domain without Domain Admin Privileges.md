@@ -67,7 +67,7 @@ Now if you clear your test.lab DC's security logs and try and join your ESXi hos
 
 Enable Likewise Logging
 -----------------------
-1. Follow this VMware KB [http://kb.vmware.com/selfservice/microsites/search.do?language=en_US&cmd=displayKC&externalId=1026554](http://kb.vmware.com/selfservice/microsites/search.do?language=en_US&cmd=displayKC&externalId=1026554)
+1. Follow this VMware KB [http://kb.vmware.com/selfservice/microsites/search.do?language=en_US&cmd=displayKC&externalId=1026554](http://kb.vmware.com/selfservice/microsites/search.do?language=en_US&cmd=displayKC&externalId=1026554#src=vmwsovexcneal_850)
 2. Now go and browse /var/log or /scratch/log for *netlogond.log*,*lwiod.log* and *lsassd.log* and happy trawling
 
 Restarting The Likewise/Netlogon Daemons from Powercli

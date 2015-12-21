@@ -31,9 +31,9 @@ Port 3268 - Global Catalog search
 
 This KB lists the ports for ESXi 4.1  If you have these open it should be fine for higher ESXi versions too
 
-[AD Ports required in ESXi](http://kb.vmware.com/selfservice/microsites/search.do?language=en_US&cmd=displayKC&externalId=1026538)
+[AD Ports required in ESXi](http://kb.vmware.com/selfservice/microsites/search.do?language=en_US&cmd=displayKC&externalId=1026538#src=vmwsovexcneal_850)
 
-[All ESXi 5.x ports](http://kb.vmware.com/selfservice/microsites/search.do?language=en_US&cmd=displayKC&externalId=1012382#ESXi5x)
+[All ESXi 5.x ports](http://kb.vmware.com/selfservice/microsites/search.do?language=en_US&cmd=displayKC&externalId=1012382#ESXi5x#src=vmwsovexcneal_850)
 
 [All Port requirements from Microsoft](https://technet.microsoft.com/en-us/library/dd772723(WS.10).aspx)
 
