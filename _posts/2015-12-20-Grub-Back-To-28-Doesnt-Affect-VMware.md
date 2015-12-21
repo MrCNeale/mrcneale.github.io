@@ -6,7 +6,7 @@ author: Chris Neale
 comments: true
 categories: [VMware,VROPS,VCOPS,VCSA,Log Insight,Security,SLES,Vulnerability,CVE-2015-8370]
 ---
-<IMG=http://hmarco.org/bugs/grub_hacked-b.png width=100x>
+<IMG src="http://hmarco.org/bugs/grub_hacked-b.png" width="100">
 
 Recently Hector Marco and Ismael Ripoll discovered a vulnerability in common Linux bootloader GRUB.
 
