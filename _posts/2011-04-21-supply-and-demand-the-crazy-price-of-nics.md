@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Supply and Demand : The Crazy Price of NICs
+title: "Supply and Demand : The Crazy Price of NICs"
 date: 2011-04-21 21:12
 author: chrisneale
 comments: true

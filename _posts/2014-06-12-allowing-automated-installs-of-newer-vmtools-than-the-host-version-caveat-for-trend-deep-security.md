@@ -4,7 +4,7 @@ title: Allowing automated installs of newer VMtools than the host version (Cavea
 date: 2014-06-12 09:14
 author: chrisneale
 comments: true
-categories: [Deep Security, dsm, dsva, ESXi, Trend, Uncategorized, VCenter, Virtualisation, Virtualization, vmtools, VMWare, vsphere, Windows]
+categories: [Deep Security, dsm, dsva, ESXi, Trend, VCenter, Virtualisation,vmtools, VMWare, vsphere, ]
 ---
 During a recent patching cycle VMtools across a set of VMs were updated to the latest version.  This was to patch security vulnerabilities in the versions which were running to ensure the environment was as secure as possible for a PenTest which would go towards IL3 Accreditation.
 

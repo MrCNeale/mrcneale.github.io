@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Sync/Backups: There is such a thing as a free lunch! (SyncToy)
+title: "Sync/Backups: There is such a thing as a free lunch! (SyncToy)"
 date: 2011-06-01 09:44
 author: chrisneale
 comments: true

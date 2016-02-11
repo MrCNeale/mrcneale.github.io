@@ -1,6 +1,6 @@
 ---
 layout: post
-title: FIX: No DEFAULT or UI configuration directive found!
+title: "FIX: No DEFAULT or UI configuration directive found!"
 date: 2011-04-21 23:42
 author: chrisneale
 comments: true
