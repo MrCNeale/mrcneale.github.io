@@ -1,25 +1,49 @@
-# Dependencies
-markdown:         redcarpet
-highlighter:      pygments
+# Site wide configuration
 
-# Permalinks
-permalink:        pretty
-relative_permalinks: true
+title:            Nealo's Blog
+locale:           en_GB
+url:			http://www.chrisneale.org
 
-# Setup
-title:            "Nealo's Blog"
-tagline:          'virtualise all the cloud stuff in a software defined automation script thing'
-description:      'virtualise all the cloud stuffs in a software defined automation script thing, maybe using VMware'
-url:              http://www.chrisneale.org
-baseurl:          /
 
-author:           
-  name:           Chris Neale
-  url:            https://twitter.com/mrcneale
+# Jekyll configuration
 
-paginate:         5
+permalink:   /:categories/:title/
+markdown:    kramdown
+highlighter: rouge
+sass:
+  sass_dir: _sass
+  style: compressed
+gems:
+  - jekyll-sitemap
+  - jekyll-gist
 
-# Custom vars
+kramdown:
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  enable_coderay: false
 
-github:
-  repo:           https://github.com/mrcneale
+
+# Default extensions
+post_ext: md
+page_ext: md
+
+# Found in _templates/
+post_layout: post
+page_layout: page
+
+# Format titles with titlecase?
+titlecase: true
+
+
+# Site owner
+owner:
+  name: Chris Neale
+  twitter: #MrCNeale
+  google:
+    plus: #username
+    analytics:
+    verify:
+
+exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md"]
