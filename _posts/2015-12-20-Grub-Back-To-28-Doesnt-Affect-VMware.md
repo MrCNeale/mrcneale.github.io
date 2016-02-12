@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'vSphere vApps unaffected by "Back to 28" Vulnerability (CVE-2015-8370)'
+title: "vSphere vApps unaffected by Back to 28 Vulnerability (CVE-2015-8370)"
 excerpt: Back to 28 Vulnerability
 tags: 
   - VMware
