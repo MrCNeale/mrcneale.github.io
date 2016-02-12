@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Comparison of Free Online Sync Providers
+excerpt : Is there such thing as a free lunch?
 date: 2011-04-11 15:23
 author: chrisneale
 comments: true
