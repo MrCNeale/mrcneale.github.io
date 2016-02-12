@@ -29,6 +29,7 @@ kramdown:
 # Site owner
 owner:
   name: Chris Neale
+  avatar: images/pages/profile.jpg
   twitter: MrCNeale
   google:
     plus: ChrisNeale
