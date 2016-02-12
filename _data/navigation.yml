@@ -5,10 +5,10 @@
   url: /
 
 - title: "Categories"
-  url: /pages/categories/
+  url: /categories/
 
 - title: "All Posts"
-  url: /pages/all-posts/
+  url: /posts/
 
 - title: About
-  url: /pages/about/
+  url: /about/
