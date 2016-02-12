@@ -1,10 +1,20 @@
 ---
 layout: post
 title: vSphere vApps unaffected by "Back to 28" Vulnerability (CVE-2015-8370)
-date: 2015-12-20
-author: Chris Neale
+excerpt: Back to 28 Vulnerability
+tags: 
+  - VMware
+  - VROPS
+  - VCOPS
+  - VCSA
+  - Log Insight
+  - Security
+  - SLES
+  - Vulnerability
+  - CVE-2015-8370
+date: 2015-12-20T00:00:00+00:00
 comments: true
-categories: [VMware,VROPS,VCOPS,VCSA,Log Insight,Security,SLES,Vulnerability,CVE-2015-8370]
+
 ---
 <IMG src="http://hmarco.org/bugs/grub_hacked-b.png" width="100">
 
