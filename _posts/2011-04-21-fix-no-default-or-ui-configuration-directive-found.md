@@ -1,10 +1,13 @@
 ---
 layout: post
-title: "FIX: No DEFAULT or UI configuration directive found!"
-date: 2011-04-21 23:42
-author: chrisneale
+title: FIX: No DEFAULT or UI configuration directive found!
+excerpt: fix that bootable USB quickly
+tags:
+- Bootable USB
+- Centos
+- Linux
+date: 2011-04-21T18:00:00+00:00
 comments: true
-categories: [Bootable USB, CentOS, Linux, Uncategorized]
 ---
 If you make a Bootable Linux USB and receive the following error
 
