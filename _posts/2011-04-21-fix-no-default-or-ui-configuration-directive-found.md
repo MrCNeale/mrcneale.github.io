@@ -1,6 +1,6 @@
 ---
 layout: post
-title: FIX: No DEFAULT or UI configuration directive found!
+title: FIX-No DEFAULT or UI configuration directive found!
 excerpt: fix that bootable USB quickly
 tags:
 - Bootable USB
