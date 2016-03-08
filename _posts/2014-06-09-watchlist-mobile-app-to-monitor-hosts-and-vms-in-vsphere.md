@@ -1,10 +1,13 @@
 ---
 layout: post
-title: Watchlist : Mobile app to monitor hosts and VMS in vSphere
-date: 2014-06-09 22:28
-author: chrisneale
+title: Watchlist - Mobile app to monitor hosts and VMS in vSphere
+excerpt: Mobile apps for vSphere
+tags:
+- vSphere
+- Mobile
+- App
+date: 2014-06-09T18:00:00+00:00
 comments: true
-categories: [Uncategorized]
 ---
 Whilst searching around I spotted an app is never used from VMware in the Play store.
 
