@@ -2,10 +2,12 @@
 layout: post
 title: Comparison of Free Online Sync Providers
 excerpt : Is there such thing as a free lunch?
-date: 2011-04-11 15:23
-author: chrisneale
+tags:
+- Backup
+- Cloud
+- Sync
 comments: true
-categories: [Backup, Cloud, Sync, Uncategorized]
+date: 2011-04-11T18:00:00+00:00
 ---
 <span style="font-size:small;"> </span>
 <table border="0" cellspacing="0" cellpadding="0">
