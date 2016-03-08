@@ -2,9 +2,8 @@
 layout: post
 title: My Real-World VCAP Scenario to test scripting
 date: 2015-01-09 00:45
-author: chrisneale
+date: 2015-01-09T00:45:00+00:00
 comments: true
-categories: [Uncategorized]
 ---
 I've been racking my brains thinking of a real-life VCAP-esque scenario that would force me to write a PowerCLI script.
 
