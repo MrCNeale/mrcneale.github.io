@@ -1,10 +1,15 @@
 ---
 layout: post
 title: "Supply and Demand : The Crazy Price of NICs"
-date: 2011-04-21 21:12
-author: chrisneale
+tags:
+- 3com
+- esxi
+- Intel
+- e1000
+- VMware
+- Whitebox
+date: 2011-04-21T18:00:00+00:00
 comments: true
-categories: [3c905, 3com, ESXi, hwcl, Intel, oem.tgz, Pro 1000 GT, Uncategorized, Virtualisation, Virtualization, VMWare, whitebox]
 ---
 Ok, so I want to have my own ESXi host at home.  Initially it may sound like a tall order but there are lots of good community sites out there describing how to do it and what works and what doesn't.
 
