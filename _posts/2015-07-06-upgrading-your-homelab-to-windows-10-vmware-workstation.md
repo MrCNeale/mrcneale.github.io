@@ -1,10 +1,15 @@
 ---
 layout: post
 title: Upgrading your HomeLab to Windows 10 + VMware Workstation ??
+tags:
+- homelab
+- study
+- vcp
+- vmworkstation
+- windows10
 date: 2015-07-06 00:12
-author: chrisneale
+date: 2015-07-06T00:00:00+00:00
 comments: true
-categories: [Homelab, Study, VCP, VMWorkstation, Windows10]
 ---
 I run my home lab on a PC running Windows 8.1 and VMware Workstation 10.  The PC has an i7 with HT, 32GB RAM and an SSD.
 
