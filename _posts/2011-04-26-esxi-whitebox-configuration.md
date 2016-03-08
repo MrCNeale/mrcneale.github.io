@@ -1,10 +1,12 @@
 ---
 layout: post
 title: ESXi Whitebox Configuration
-date: 2011-04-26 10:45
-author: chrisneale
+excerpt: Current Whitebox Config
+tags:
+- Virtual lab
+- Whitebox
+date: 2011-04-26T18:00:00+00:00
 comments: true
-categories: [Intel, Pro 1000 GT, Uncategorized, Virtualisation, Virtualization, VMWare, whitebox]
 ---
 After a few evenings of fumbling, finally success!
 
