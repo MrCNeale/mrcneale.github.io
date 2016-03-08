@@ -1,8 +1,15 @@
 ---
 layout: post
-title: vExpert: Why go for it?
-date: 2014-10-07 11:37
-author: chrisneale
+title: vExpert - Why go for it?
+excerpt: vExpert - Why go for it?
+tags:
+- communities
+- forums
+- vExpert
+- VMware
+- VMworld
+- vSphere
+date: 2014-10-07T18:00:00+00:00
 comments: true
 categories: [communities, forums, Uncategorized, vExpert, VMWare, vmworld, vmworld2014, vmworldeurope, vsphere]
 ---
