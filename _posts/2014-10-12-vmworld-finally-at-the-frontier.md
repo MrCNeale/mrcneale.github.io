@@ -1,10 +1,14 @@
 ---
 layout: post
-title: VMworld: Finally at the Frontier!
-date: 2014-10-12 23:33
-author: chrisneale
+title: VMworld - Finally at the Frontier!
+excerpt: VMworld report
+tags:
+- VMware
+- VMworld
+- VMworld2014
+- VMworldeurope
+date: 2014-10-12T18:00:00+00:00
 comments: true
-categories: [Uncategorized, VMWare, vmworld, vmworld2014, vmworldeurope]
 ---
 I am here.  I'm in Barcelona.  Tomorrow I will be attending the partner day activities and following that such amazing things as the vExpert party!
 
