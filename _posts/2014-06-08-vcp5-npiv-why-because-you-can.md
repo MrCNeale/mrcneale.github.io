@@ -1,10 +1,15 @@
 ---
 layout: post
-title: VCP5: NPIV, why? Because you can!
-date: 2014-06-08 20:49
-author: chrisneale
+title: VCP5 - NPIV, why? Because you can!
+tags:
+- ESXI
+- FC
+- HBA
+- NPIV
+- storage
+- VCP5
+date: 2014-06-08T18:00:00+00:00
 comments: true
-categories: [ESXi, FC, HBA, NPIV, storage, Uncategorized, VCP5, Virtualisation, VMWare, vsphere]
 ---
 I've been revising for a good few weeks now.
 
