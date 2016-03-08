@@ -1,10 +1,13 @@
 ---
 layout: post
-title: Network: North-South, East-West. Don't be embarrassed to ask
-date: 2014-10-15 13:55
-author: chrisneale
+title: Networking - North-South, East-West. Don't be embarrassed to ask
+excerpt: Terminology shouldn't be a barrier to learning
+tags:
+- Cloud
+- Networking
+- Datacenter
+date: 2014-10-15T18:00:00+00:00
 comments: true
-categories: [Uncategorized]
 ---
 <strong>Networking traffic described as points of the compass.</strong>
 
