@@ -1,10 +1,12 @@
 ---
 layout: post
-title: "Sync/Backups: There is such a thing as a free lunch! (SyncToy)"
-date: 2011-06-01 09:44
-author: chrisneale
+title: Sync/Backups - There is such a thing as a free lunch! (SyncToy)
+tags:
+- Backup
+- Powertoy
+- Synctoy
+date: 2011-06-01T18:00:00+00:00
 comments: true
-categories: [Backup, PowerToy, Sync, SyncToy, Uncategorized]
 ---
 I wrote a brief post previously about online sync providers and storage.  Following on from that I wanted to get my own house in order, quite literally.  I have a beefy desktop, a HTPC (but with only 90gb ssd) and a laptop from my employer.
 
