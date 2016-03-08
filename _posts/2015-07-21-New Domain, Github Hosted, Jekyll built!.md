@@ -1,8 +1,9 @@
 ---
 layout: post
-title:  "New Domain, Github Hosted, Jekyll built!"
-date:   2015-07-21 23:15:52
-categories: blog
+title:  New Domain, Github Hosted, Jekyll built!
+tags:
+- blog
+date: 2015-07-21T23:00:00+00:00
 ---
 
 
