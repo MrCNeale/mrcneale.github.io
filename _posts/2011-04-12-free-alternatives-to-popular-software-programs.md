@@ -1,10 +1,9 @@
 ---
 layout: post
 title: Free Alternatives to Popular Software Programs
-date: 2011-04-12 12:27
-author: chrisneale
+excerpt: freebie software options
+date: 2011-04-12T18:00:00+00:00
 comments: true
-categories: [Uncategorized]
 ---
 Like most people I'm always looking for a good way to freeload, legally!
 
