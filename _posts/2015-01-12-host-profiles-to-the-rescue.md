@@ -1,10 +1,8 @@
 ---
 layout: post
 title: Host Profiles to the Rescue!
-date: 2015-01-12 13:02
-author: chrisneale
+date: 2015-01-12T13:00:00+00:00
 comments: true
-categories: [Uncategorized]
 ---
 I haven't used host profiles much in anger.  I've seen them used as first snapshots of host config, but rarely updated (naughty I know!).
 
