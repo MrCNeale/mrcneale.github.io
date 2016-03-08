@@ -1,10 +1,13 @@
 ---
 layout: post
-title: VCP5 Revision: WWTWCD - What Would The Web Client Do?!
-date: 2014-06-03 22:21
+title: VCP5 Revision WWTWCD - What Would The Web Client Do?!
+tags:
+- ESXi
+- VDS
+- Web Client
+date: 2014-06-03T18:00:00+00:00
 author: chrisneale
 comments: true
-categories: [binding, ESXi, Port group, Uncategorized, VCenter, VCP5, VCP5-DCV, VDS, vsphere, Web Client]
 ---
 Very very brief one this, but it had me foxed for 5 minutes and time is precious!
 
