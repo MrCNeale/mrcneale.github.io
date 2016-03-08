@@ -1,10 +1,13 @@
 ---
 layout: post
-title: VCP5 Study: Pay it forward - An unexpected source of revision/practice
-date: 2014-06-03 20:26
-author: chrisneale
+title: VCP5 Study. Pay it forward - An unexpected source of revision/practice
+tags:
+- ESXi
+- VCP5
+- vExpert
+- VMTN
+date: 2014-06-03T20:00:00+00:00
 comments: true
-categories: [ESXi, Pay It Forward, Uncategorized, VCP5, VCP5-DCV, vExpert, Virtualisation, Virtualization, VMTN, VMWare]
 ---
 I first commented on the VMware communities forums back in 2006 on an ESX 2.x related issue someone was having. I had a 7 years hiatus from 2007 to now :-)
 
