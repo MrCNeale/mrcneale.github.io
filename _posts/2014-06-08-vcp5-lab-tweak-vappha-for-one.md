@@ -1,10 +1,14 @@
 ---
 layout: post
-title: VCP5: Lab Tweak - vApp/HA for one?
-date: 2014-06-08 20:19
-author: chrisneale
+title: VCP5 Lab Tweak - vApp/HA for one?
+tags:
+- VCP5
+- VCP
+- vapp
+- HA
+- High Availability
+date: 2014-06-08T20:00:00+00:00
 comments: true
-categories: [Uncategorized]
 ---
 I've been using my little HP Microserver and it's a beauty.  However I do have to keep powering it on and then connecting with vi client to the host then powering on the VC Appliance, then the virtual ESXi hosts, you know the drill..........
 
