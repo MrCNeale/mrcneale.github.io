@@ -1,10 +1,14 @@
 ---
 layout: post
-title: VCP 5: Objective 1.2: Host/Configuration Tab (in essence!)
-date: 2014-05-30 20:21
-author: chrisneale
+title: VCP 5 - Objective 1.2 - Host/Configuration Tab (in essence!)
+tags:
+- ESXi
+- hyperthreading
+- memory compression
+- ntp
+- VCP
+date: 2014-05-20T20:00:00+00:00
 comments: true
-categories: [ESXi, hyperthreading, memory compression, ntp, Study, Uncategorized, VCP, VCP5, VCP5-DCV]
 ---
 So here I'm going to describe what many possibly have done before, but it's needed for the exam.....so here goes.
 
