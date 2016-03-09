@@ -1,10 +1,8 @@
 ---
 layout: post
 title: Google doesn't answer Forums/Communities posts.....YOU do!
-date: 2015-01-05 21:29
-author: chrisneale
+date: 2015-01-05T21:00:00+00:00
 comments: true
-categories: [Uncategorized]
 ---
 [caption id="" align="aligncenter" width="485"]<img src="http://imgs.xkcd.com/comics/wisdom_of_the_ancients.png" alt="http://xkcd.com/979/" width="485" height="270" /> http://xkcd.com/979/[/caption]
 
