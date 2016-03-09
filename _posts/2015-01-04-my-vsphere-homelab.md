@@ -1,10 +1,8 @@
 ---
 layout: post
 title: My vSphere HomeLab
-date: 2015-01-04 01:32
-author: chrisneale
+date: 2015-01-04T01:00:00+00:00
 comments: true
-categories: [Uncategorized]
 ---
 Everyone's got one, and like petrolheads showing off their v8 or GTI here's my vSphere homelab.
 
