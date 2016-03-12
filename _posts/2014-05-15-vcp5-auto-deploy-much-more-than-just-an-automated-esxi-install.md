@@ -1,10 +1,13 @@
 ---
 layout: post
-title: VCP5: Auto Deploy - Much more than just an automated ESXi install
-date: 2014-05-15 12:46
-author: chrisneale
+title: VCP5 Auto Deploy - Much more than just an automated ESXi install
+date: 2014-05-15T18:00:00+00:00
 comments: true
-categories: [Auto Deploy, ESXi, Study, VCP, VCP5, VCP5-DCV, VMWare, vsphere]
+tags:
+- Auto Deploy
+- ESXi
+- Study
+- VCP
 ---
 Revision.  It means to review (previously studied materials) according to dictionary.com
 
