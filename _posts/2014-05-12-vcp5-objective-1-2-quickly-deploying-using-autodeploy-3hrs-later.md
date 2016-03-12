@@ -1,10 +1,10 @@
 ---
 layout: post
-title: VCP5 : Objective 1.2 "Quickly" Deploying Using AutoDeploy (3hrs later!!! :-)
-date: 2014-05-12 22:52
-author: chrisneale
+title: VCP5 - Objective 1.2 "Quickly" Deploying Using AutoDeploy (3hrs later!!! ;-)
+date: 2014-05-12T18:00:00+00:00
 comments: true
-categories: [Study, Uncategorized]
+tags:
+- Study
 ---
 So tonight's revision was meant to be pretty quick.  It is Game Of Thrones night after all!
 
