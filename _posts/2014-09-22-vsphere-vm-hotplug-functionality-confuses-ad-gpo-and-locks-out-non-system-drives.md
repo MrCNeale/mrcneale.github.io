@@ -1,10 +1,14 @@
 ---
 layout: post
 title: vSphere VM Hotplug functionality confuses AD GPO and locks out non system drives
-date: 2014-09-22 10:49
-author: chrisneale
+date: 2014-09-22T18:00:00+00:00
 comments: true
-categories: [AD, GPO, Uncategorized, VCenter, Virtualisation, Virtualization, vsphere, Windows]
+tags:
+- AD
+- GPO
+- Windows
+- XenApp
+- Citrix
 ---
 I was asked to look at an issue on a customer account where when a server VM, used as a XenApp Dynamic Desktop server is moved from Computers OU to the desired destination OU and gpupdate run then suddenly the D and E drives were inaccessible.  They could be seen in "My Computer" and also in "Disk Management" but only listed as NTFS and no used/free space in My Computer, despite me having admin rights.
 
