@@ -1,10 +1,12 @@
 ---
 layout: post
 title: The evils of snapshots!
-date: 2011-07-21 22:12
-author: chrisneale
+tags:
+- ESXi
+- Snapshots
+- VMware
+date: 2011-07-21T18:00:00+00:00
 comments: true
-categories: [ESX, Snapshot, Uncategorized, VCenter, VI3, VMWare]
 ---
 Been away from tech-blogging for a while now for a number of reasons, not least studying for vcp4.
 
