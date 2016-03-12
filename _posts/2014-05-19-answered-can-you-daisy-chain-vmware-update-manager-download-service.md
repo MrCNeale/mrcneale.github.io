@@ -1,10 +1,14 @@
 ---
 layout: post
-title: Answered: Can you Daisy Chain VMware Update Manager Download Service?
-date: 2014-05-19 13:06
-author: chrisneale
+title: Answered-Can you Daisy Chain VMware Update Manager Download Service?
+date: 2014-05-19T18:00:00+00:00
 comments: true
-categories: [ESX, ESXi, UMDS, Uncategorized, Update Manager, VCenter, Virtualisation, vmware-umds, vsphere, VUM]
+tags:
+- UMDS
+- Update Manager
+- VCenter
+- vmware-umds
+- VUM
 ---
 I had a design/suggested infrastructure set up on a recent project which basically had UMDS on a server in a DMZ getting ESXi patches from the internet via a proxy.  Then a server in a secondary DMZ outside one of the target environments running another UMDS instance.
 
