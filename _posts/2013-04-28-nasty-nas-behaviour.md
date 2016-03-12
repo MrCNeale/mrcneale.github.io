@@ -1,11 +1,14 @@
 ---
 layout: post
 title: NASty NAS behaviour!
-date: 2013-04-28 22:21
-author: chrisneale
+date: 2013-04-28T18:00:00+00:00
 comments: true
-categories: [cloudstation, dsm, fix, nas, root, storage, synology, Uncategorized]
----
+tags:
+- cloudstation
+- dsm
+- nas
+- synology
+- ---
 Now let me start by saying that 95% of the functionality and workings of my Synology DS212J.
 
 It sits there, it hosts my mp3'd up collection of CDs, tens of thousands of pictures and hundreds of GB of family videos that I don't watch.  But it's easy to access and I love the mobile phone app/apps.
