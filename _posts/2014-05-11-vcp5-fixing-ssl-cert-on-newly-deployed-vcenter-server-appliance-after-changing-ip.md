@@ -1,10 +1,14 @@
 ---
 layout: post
-title: VCP5 : Fixing SSL Cert on newly deployed vCenter Server Appliance after changing IP
+title: VCP5 - Fixing SSL Cert on newly deployed vCenter Server Appliance after changing IP
 date: 2014-05-11 20:19
-author: chrisneale
+date: 2014-05-11T18:00:00+00:00
 comments: true
-categories: [SSL, Study, Uncategorized, VCA, Vcenter Server Appliance, VCP, VCP5, VCP510PSE]
+tags:
+- SSL
+- Study,
+- Vcenter Server Appliance
+- VCSA
 ---
 So you deploy the VCA from the OVA.  Easy peasy.  Any monkey could do that!
 
