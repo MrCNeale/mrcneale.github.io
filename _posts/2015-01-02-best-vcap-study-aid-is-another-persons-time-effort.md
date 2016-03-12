@@ -1,10 +1,15 @@
 ---
 layout: post
 title: Best VCAP Study Aid is another person's time & help
-date: 2015-01-02 00:39
-author: chrisneale
+date: 2015-01-02T18:00:00+00:00
 comments: true
-categories: [Exam, Homelab, Study, Study, VCAP, vcap-dca, vExpert, VMWare]
+tags:
+- Exam
+- Homelab
+- Study
+- VCAP
+- vcap-dca
+- vExpert
 ---
 Like many I'm currently cramming for my VCAP-DCA.
 
