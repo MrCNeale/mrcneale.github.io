@@ -1,10 +1,11 @@
 ---
 layout: post
-title: VCP5: Ditching Auto-Deploy!
-date: 2014-05-26 23:42
-author: chrisneale
+title: VCP5 - Ditching Auto-Deploy!
+date: 2014-05-26T18:00:00+00:00
 comments: true
-categories: [Auto Deploy, ESX, ESXi, Study, Uncategorized, VCA, VCenter, VCP, Virtualisation, Virtualization, VMWare, vsphere]
+tags:
+- Auto Deploy
+- VCP
 ---
 After being an evangelist last week I'm now converting my Auto-Deploy ESXi hosts into Stateful installs and therefore ditching their wonderful ephemeralness!
 
