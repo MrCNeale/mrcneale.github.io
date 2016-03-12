@@ -1,10 +1,13 @@
 ---
 layout: post
 title: How to get XP for free
-date: 2012-08-07 09:09
-author: chrisneale
+date: 2012-08-07T18:00:00+00:00
 comments: true
-categories: [Trial, Uncategorized, VHD, Virtualisation, Virtualization, VMWare, VPC, Windows, XP, XP mode]
+tags:
+- Trial
+- VHD
+- VPC
+- XP mode
 ---
 I recently had a request to provide some instructions for newly transitioned users on Windows 7 on "Where is it in Windows 7 compared to XP".  Now I've seen lots of posts from people asking for install media etc. for XP.  Now whilst this isn't a solution for that explicitly it does give you an XP environment to test in.
 
