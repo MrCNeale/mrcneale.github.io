@@ -1,10 +1,10 @@
 ---
 layout: post
-title: VCP5 : Objective 1.2 “Quickly” Deploying Using AutoDeploy - Take 2
-date: 2014-05-14 12:47
-author: chrisneale
+title: VCP5 Objective 1.2 “Quickly” Deploying Using AutoDeploy - Take 2
+date: 2014-05-14T18:00:00+00:00
 comments: true
-categories: [Study, Uncategorized]
+tags:
+- study
 ---
 So when last we spoke I had left Linux updating.
 
