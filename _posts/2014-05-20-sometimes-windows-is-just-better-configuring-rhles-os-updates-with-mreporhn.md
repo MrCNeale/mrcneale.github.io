@@ -1,10 +1,18 @@
 ---
 layout: post
 title: Sometimes Windows is just better: Configuring RHLES OS updates with mrepo/RHN
-date: 2014-05-20 13:45
-author: chrisneale
+date: 2014-05-20T18:00:00+00:00
 comments: true
-categories: [bluecoat, mrep.conf, mrepo, patching, proxy, redhat, rhles, rhn, rhn_register, Uncategorized, up2date]
+tags: 
+- bluecoat
+- mrep.conf
+- mrepo
+- patching
+- redhat
+- rhles
+- rhn
+- rhn_register
+- up2date
 ---
 I was setting up a small environment in a DMZ to be used to pull in patches for VMware UMDS, Shavlik (windows OS) and Redhat.
 
