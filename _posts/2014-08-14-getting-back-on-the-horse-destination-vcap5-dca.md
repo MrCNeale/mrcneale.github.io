@@ -1,10 +1,14 @@
 ---
 layout: post
 title: Getting Back on the Horse! (Destination VCAP5-DCA)
-date: 2014-08-14 22:08
-author: chrisneale
+date: 2014-08-14T18:00:00+00:00
 comments: true
-categories: [Blueprint, Certification, Exam, Study, Study, VCAP, VCDX, VMWare, vsphere]
+tags:
+- Blueprint
+- Certification
+- Study
+- VCAP
+- VCDX
 ---
 After passing my VCP, and subsequently falling back into the bad habit of not studying! I've managed to get the
 <ul>
