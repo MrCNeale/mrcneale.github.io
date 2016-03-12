@@ -1,10 +1,17 @@
 ---
 layout: post
-title: VCP5 : Me and my virtual history
-date: 2014-05-10 14:12
-author: chrisneale
-comments: true
-categories: [Amazon Web Service, AWS, bash, Citrix, ESX, ESXi, scripting, Study, UCS, vBlock, vCD, vCD1.5, vCD5.1, VCE, vCloud Director, VCP4, VCP5, VCP5-DCV, VI3, Virtual Infrastrcture, vsphere]
+title: VCP5 - Me and my virtual history
+date: 2014-05-10T18:00:00+00:00
+tags:
+- Amazon Web Services
+- AWS
+- Study
+- UCS
+- vBlock
+- vCD
+- vCD5.1
+- VCE
+- VCP5
 ---
 I'm 37, work at a global IT services company with big customers.  When I started in 2005 my first project was helping deploy 10s of ESX hosts.  Yes "ESX" v2.5 "Virtual Infrastructure" hosts and Virtual Center 1.something or other.  It's 9 years ago now but we had multiple farms of 7 hosts (I think) which had shared LUNs, and all ran training courses.  Each training course was 6 VMs.  Only 1 was unique as a citrix presentation server v4 front-end. The other 5 were identical copies on an internal private network, to stand up a training environment to train lots of people at lots of sites on a particular product.  At it's peak there were around 1500 VMs running and regularly "rebuilt" as training enviroments needed to be restarted.
 
