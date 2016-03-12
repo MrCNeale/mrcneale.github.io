@@ -1,10 +1,17 @@
 ---
 layout: post
-title: VCP5: My Lab Components
+title: VCP5-  My Lab Components
 date: 2014-05-10 15:21
-author: chrisneale
+date: 2014-05-10T18:00:00+00:00
 comments: true
-categories: [DS213j, ESXi, Home Lab, Homelab, HP Microserver, iSCSI, LUN, N40L, nas, NFS, Study, synology, Uncategorized, VCP, VCP5, VCP5-DCV, whitebox]
+tags:
+- DS213j
+- ESXi
+- Home Lab
+- HP Microserver
+- N40L
+- synology
+- whitebox
 ---
 This one should hopefully be short :-)
 
