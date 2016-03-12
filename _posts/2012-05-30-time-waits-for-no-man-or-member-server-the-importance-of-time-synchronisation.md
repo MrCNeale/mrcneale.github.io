@@ -1,10 +1,16 @@
 ---
 layout: post
-title: Time waits for no man, or member server: The Importance of Time Synchronisation in Windows 2008 Domains
-date: 2012-05-30 23:45
-author: chrisneale
+title: Time waits for no man, or member server - The Importance of Time Synchronisation in Windows 2008 Domains
+date: 2011-05-30T18:00:00+00:00
 comments: true
-categories: [2008, activation, dns, kms, ntp, slmgr, Sync, Uncategorized, Windows]
+tags: 
+- 2008
+- activation
+- dns
+- kms
+- ntp
+- slmgr
+- Windows
 ---
 <div>Perhaps I should put it down to it being a Friday, like the inverse of a Monday instead of lots of things breaking, things just didn't seem to be working.</div>
 <div>
