@@ -1,10 +1,11 @@
 ---
 layout: post
 title: UCS Manager Security Hardening (or not) in a vBlock
-date: 2014-07-28 22:48
-author: chrisneale
-comments: true
-categories: [CIMC, IPMI, UCS, Uncategorized]
+date: 2014-07-28T18:00:00+00:00
+tags:
+- CIMC
+- IPMI
+- UCS
 ---
 Another of the outputs of our recent penetration test was an issue with Weak Ciphers in both the IPMI service on C200 Rack servers and B220 M3 blades and the CIMC https server of the C200's
 
