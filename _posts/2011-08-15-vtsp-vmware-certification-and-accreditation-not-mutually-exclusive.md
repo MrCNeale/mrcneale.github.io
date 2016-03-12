@@ -1,10 +1,14 @@
 ---
 layout: post
-title: VTSP: VMWare Certification and Accreditation...not mutually exclusive!
-date: 2011-08-15 10:26
-author: chrisneale
+title: VTSP - VMWare Certification and Accreditation...not mutually exclusive!
+date: 2011-08-15T18:00:00+00:00
 comments: true
-categories: [Accreditation, Cerification, Partner, Uncategorized, VCP, VCP4, VCP5, VMWare, VTSP]
+tags: 
+- Accreditation
+- Certification
+- Partner
+- VCP
+- VTSP
 ---
 Morning all,
 
