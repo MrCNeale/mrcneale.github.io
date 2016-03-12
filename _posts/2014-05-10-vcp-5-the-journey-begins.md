@@ -1,10 +1,12 @@
 ---
 layout: post
-title: VCP 5 : The Journey Begins
-date: 2014-05-10 13:23
-author: chrisneale
+title: VCP 5 - The Journey Begins
+date: 2014-05-10T18:00:00+00:00
 comments: true
-categories: [Study, VCA, VCenter, VCP, VCP5, VCP5-DCV, VCP510PSE, VMWare, vsphere]
+tags:
+- Study
+- VCA
+- VCP
 ---
 I passed my VCP4 way back in 2011.  Shortly after (very shortly!) those pesky developers released vSphere5.  VMware generously allowed VCP4's to upgrade by the end of Feb 2012.  Whilst that was generous, at the time my brain was frazzled from VCP4 study, I'd only just really got stuck in to vSphere4 deployments and wanted to get hands-on v5 experience before I sat the VCP5 exam.
 
