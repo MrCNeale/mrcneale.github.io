@@ -17,7 +17,7 @@ comments: true
 ---
 Note: I'd like to thank my colleague Robbie Hancock [https://twitter.com/blobbieh](https://twitter.com/blobbieh) for teasing out the troubleshooting/identification of problem steps.  
   
-*Symptom*:  
+**Symptom**:  
 If you have VMs that
 <OL>
 <LI>Stop responding to network requests</LI>
@@ -27,7 +27,7 @@ If you have VMs that
 <LI>After an amount if inactivity, the problem returns.... (suspect ARP table ages out entry)</LI>
 </OL>
 
-*To troubleshoot the issue*:  
+**To troubleshoot the issue**:  
 Log on to an NSX controller and identify which one is the master for the affected VNI (5001 used here as an example)
 {% highlight ruby %}
 show control-cluster logical-switches vni 5001
