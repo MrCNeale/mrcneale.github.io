@@ -16,24 +16,24 @@ comments: true
 
 ---
 ***Note: I'd like to thank my colleague Robbie Hancock [https://twitter.com/blobbieh](https://twitter.com/blobbieh) for teasing out the troubleshooting/identification of problem steps.
-
-Symptom:
-If you have VMs that 
-1 Stop responding to network requests
-2 Cannot ping a VM from another VM or ESG
-3 Do not have entries in their ARP table
-4 Initiating a ping from the affected VM to ESG or another VM and traffic resumes (ARP table entry appears).
-5 After an amount if inactivity, the problem returns.... (suspect ARP table ages out entry)
-
-To troubleshoot the issue
+<P>
+Symptom:  
+If you have VMs that   
+1 Stop responding to network requests  
+2 Cannot ping a VM from another VM or ESG  
+3 Do not have entries in their ARP table  
+4 Initiating a ping from the affected VM to ESG or another VM and traffic resumes (ARP table entry appears)  
+5 After an amount if inactivity, the problem returns.... (suspect ARP table ages out entry)  
+<P>
+To troubleshoot the issue  
 Log on to an NSX controller and identify which one is the master for the affected VNI (5001 used here as an example)
 {% highlight ruby %}
 show control-cluster logical-switches vni 5001
 {% endhighlight %}
 
-This will show which controller is the master... cross reference this IP with the relevant NSX Controller in vCenter and hop onto that one
+This will show which controller is the master.  Cross reference this IP with the relevant NSX Controller in vCenter and ssh into that one.  
  
-Check that all ESXi Hosts have a connection to controllers:
+Check that all ESXi Hosts have a connection to controllers:  
 
 This will show that only some of the ESXi Hosts are connected to controllers, most likely the missing controller is running on the host where your VM is missing.
 
