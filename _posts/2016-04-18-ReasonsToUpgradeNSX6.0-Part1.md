@@ -19,11 +19,11 @@ comments: true
 <P>
 Symptom:  
 If you have VMs that   
-1. Stop responding to network requests  
-2. Cannot ping a VM from another VM or ESG  
-3. Do not have entries in their ARP table  
-4. Initiating a ping from the affected VM to ESG or another VM and traffic resumes (ARP table entry appears)  
-5. After an amount if inactivity, the problem returns.... (suspect ARP table ages out entry)  
+1.  Stop responding to network requests
+2.  Cannot ping a VM from another VM or ESG
+3.  Do not have entries in their ARP table
+4.  Initiating a ping from the affected VM to ESG or another VM and traffic resumes (ARP table entry appears)
+5.  After an amount if inactivity, the problem returns.... (suspect ARP table ages out entry)
 <P>
 To troubleshoot the issue  
 Log on to an NSX controller and identify which one is the master for the affected VNI (5001 used here as an example)
