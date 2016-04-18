@@ -62,5 +62,5 @@ show control-cluster logical-switches joined-vnis 192.168.0.10
  
 
 This is a known issue with NSX 6.1.x  
-[http://kb.vmware.com/selfservice/microsites/search.do?language=en_US&cmd=displayKC&externalId=2137005&src=vmw_so_vex_cneal_850]
-(http://kb.vmware.com/selfservice/microsites/search.do?language=en_US&cmd=displayKC&externalId=2137005&src=vmw_so_vex_cneal_850)
+[http://kb.vmware.com/selfservice/microsites/search.do?language=en_US&ampcmd=displayKC&ampexternalId=2137005&ampsrc=vmw_so_vex_cneal_850]
+(http://kb.vmware.com/selfservice/microsites/search.do?language=en_US&ampcmd=displayKC&ampexternalId=2137005&ampsrc=vmw_so_vex_cneal_850)
