@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Reasons to upgrade NSX 6.0 - Part 1
+title: Reasons to upgrade NSX 6.0/6.1 to 6.2 #325
 excerpt: Bugs that are fixed in 6.2 cause controller issues
 tags: 
   - NSX
@@ -36,25 +36,31 @@ show control-cluster logical-switches vni 5001
 This will show which controller is the master.  Cross reference this IP with the relevant NSX Controller in vCenter and ssh into that one.  
  
 Check that all ESXi Hosts have a connection to controllers:  
+{% highlight ruby %}
+show control-cluster logical-switches connection-table 5001
+{% endhighlight %}
 
-This will show that only some of the ESXi Hosts are connected to controllers, most likely the missing controller is running on the host where your VM is missing.
+This will show that only some of the ESXi Hosts are connected to controllers, most likely the missing host is where your missing VM is running.
 
-Check which VNIs are present on the affected host:
+Check which VNIs are present on the affected host (192.168.0.10 used here for example)
+{% highlight ruby %}
+show control-cluster logical-switches joined-vnis 192.168.0.10
+{% endhighlight %}
+If you get "error: not found" on a host with a lot of VMs on it, that's not right!  You should get a get a long list of VNIs
 
-This is not normal, as the host has a bunch of VMs in it, connected to a number of VNIs, here's a normal response (from another host):
+So now we have a pointer to the cause.  Test migration of the affected VM onto another host and see if the problem persists if this instantly resolves the problem then you have the issue.
+<P></P>
+**The Fix**
 
- 
-So.... we have a suspect  ...
- 
-Test migration of the affected VM onto another host and see if the problem persists.... it didn't.. the VM responded straight away 
- 
 Putty onto the ESXi Host and restarts the user world agent (netcpa):
 
- 
 Re check to see if the ESXi host has joined the VNIs:
+{% highlight ruby %}
+show control-cluster logical-switches joined-vnis 192.168.0.10
+{% endhighlight %}
 
  
-We have lift off !!!!
- 
-This is a known issue with NSX 6.1.x (http://kb.vmware.com/selfservice/microsites/search.do?language=en_US&cmd=displayKC&externalId=2137005)
 
+This is a known issue with NSX 6.1.x  
+[http://kb.vmware.com/selfservice/microsites/search.do?language=en_US&cmd=displayKC&externalId=2137005&src=vmw_so_vex_cneal_850]
+(http://kb.vmware.com/selfservice/microsites/search.do?language=en_US&cmd=displayKC&externalId=2137005&src=vmw_so_vex_cneal_850)
