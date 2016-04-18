@@ -15,10 +15,10 @@ date: 2016-04-18T22:00:00+00:00
 comments: true
 
 ---
-***Note: I'd like to thank my colleague Robbie Hancock [https://twitter.com/blobbieh](https://twitter.com/blobbieh) for teasing out the troubleshooting/identification of problem steps.  
-
+Note: I'd like to thank my colleague Robbie Hancock [https://twitter.com/blobbieh](https://twitter.com/blobbieh) for teasing out the troubleshooting/identification of problem steps.  
+  
 *Symptom*:  
-If you have VMs that  
+If you have VMs that
 <OL>
 <LI>Stop responding to network requests</LI>
 <LI>Cannot ping a VM from another VM or ESG</LI>
