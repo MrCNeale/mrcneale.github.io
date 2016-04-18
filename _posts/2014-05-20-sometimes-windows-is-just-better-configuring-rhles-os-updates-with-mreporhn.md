@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Sometimes Windows is just better: Configuring RHLES OS updates with mrepo/RHN
-date: 2014-05-20T18:00:00+00:00
+excerpt: RHLES RHUI 
 comments: true
 tags: 
 - bluecoat
@@ -13,7 +13,12 @@ tags:
 - rhn
 - rhn_register
 - up2date
+comments: true
+date: 2014-05-20T18:00:00+00:00
 ---
+
+
+
 I was setting up a small environment in a DMZ to be used to pull in patches for VMware UMDS, Shavlik (windows OS) and Redhat.
 
 Now just the act of "connecting the utility to the internet via the proxy" is what I'm focussing on.
