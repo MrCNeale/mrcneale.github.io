@@ -21,7 +21,7 @@ for teasing out the troubleshooting/identification of problem steps.
 
 
 Symptom:  
-If you have VMs that<BR>
+If you have VMs that<BR></BR>
 1.  Stop responding to network requests
 2.  Cannot ping a VM from another VM or ESG
 3.  Do not have entries in their ARP table
