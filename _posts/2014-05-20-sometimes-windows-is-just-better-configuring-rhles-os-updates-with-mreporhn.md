@@ -2,19 +2,20 @@
 layout: post
 title: Sometimes Windows is just better: Configuring RHLES OS updates with mrepo/RHN
 excerpt: RHLES RHUI 
-comments: true
 tags: 
-- bluecoat
-- mrep.conf
-- mrepo
-- patching
-- redhat
-- rhles
-- rhn
-- rhn_register
-- up2date
-comments: true
+  - bluecoat
+  - mrep.conf
+  - mrepo
+  - patching
+  - redhat
+  - rhles
+  - rhn
+  - rhn_register
+  - up2date
+image:
+  thumb:
 date: 2014-05-20T18:00:00+00:00
+comments: true
 ---
 
 
