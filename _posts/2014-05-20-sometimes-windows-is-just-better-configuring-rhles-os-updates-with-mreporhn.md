@@ -4,7 +4,6 @@ title: Sometimes Windows is just better: Configuring RHLES OS updates with mrepo
 excerpt: RHLES RHUI configuration tricks and tips
 tags: 
   - bluecoat
-  - mrep.conf
   - mrepo
   - patching
   - redhat
