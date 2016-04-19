@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Sometimes Windows is just better: Configuring RHLES OS updates with mrepo, RHN
+title: Sometimes Windows is just better - Configuring RHLES OS updates with mrepo/RHN
 excerpt: RHLES RHUI configuration tricks and tips
 tags: 
   - bluecoat
@@ -11,7 +11,7 @@ tags:
   - rhn
   - rhn_register
   - up2date
-date: 2014-05-20T18:00:00+00:00
+date: 2014-05-20T00:00:00+00:00
 comments: true
 ---
 
