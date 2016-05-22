@@ -25,8 +25,8 @@ I saw this and was confused
 
 {% highlight ruby %}Failed to authenticate principal [username@SSO_Domain]. User password expired.{% endhighlight %}
 
-How can a newly created user have an expired password.  I checked the password expiry length setting and it was to this.
-![password expiry setting](/public/pawd1.png "Password Expiry Setting")
+How can a newly created user have an expired password.  I checked the password expiry length setting and it was to this.<BR>
+![password expiry setting](/public/pawd1.png "Password Expiry Setting")<BR>
 Plenty I thought.  Then I found this KB.
 
 [https://kb.vmware.com/selfservice/microsites/search.do?language=en_US&cmd=displayKC&externalId=2125495&src=vmw_so_vex_cneal_850](https://kb.vmware.com/selfservice/microsites/search.do?language=en_US&cmd=displayKC&externalId=2125495&src=vmw_so_vex_cneal_850)
