@@ -10,7 +10,6 @@ tags:
   - PSC
 date: 2016-05-22T22:00:00+00:00
 comments: true
-
 ---
 
 I was recently creating new users in vsphere.local in a lab environment.  When I came to test logging in I got "invalid username/password" from the web-client.
