@@ -23,7 +23,7 @@ C:\PogramData/VMware/vCenterServer/logs/sso/vmware-sts-idmd.log
 
 I saw this and was confused 
 
-{% highlight ruby %}Failed to authenticate principal [username@SSO_Domain]. User password expired.{% highlight ruby %}
+{% highlight ruby %}Failed to authenticate principal [username@SSO_Domain]. User password expired.{% endhighlight %}
 
 How can a newly created user have an expired password.  I checked the password expiry length setting and it was to this.
 [password expiry setting](/public/pawd1.PNG "Password Expiry Setting")
