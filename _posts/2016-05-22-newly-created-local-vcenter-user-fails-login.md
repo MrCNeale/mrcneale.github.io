@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Newly Created vSphere Local user fails login with username password error
+title: Newly created local user gets username password error
 excerpt: Why VMwares own defaults are wrong
 tags: 
   - vSphere
