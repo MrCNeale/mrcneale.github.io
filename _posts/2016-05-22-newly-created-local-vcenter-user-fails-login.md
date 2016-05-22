@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Newly Created vSphere-Local user fails login with username/password error
-excerpt: Why VMware's own defaults are wrong!
+excerpt: Why VMwares own defaults are wrong
 tags: 
   - vSphere
   - VMware
