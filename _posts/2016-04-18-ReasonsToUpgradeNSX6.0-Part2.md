@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Reasons to upgrade NSX 6.0/6.1 to 6.2 #325
+title: Reasons to upgrade NSX 6.0/6.1 to 6.22222
 excerpt: Bugs that are fixed in 6.2 cause controller issues
 tags: 
   - NSX
