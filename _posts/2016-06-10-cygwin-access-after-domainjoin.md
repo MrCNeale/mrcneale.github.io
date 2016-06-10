@@ -32,6 +32,8 @@ The reason I needed to do that is that the passwd file generated AFTER joining t
 I tested on a non-domain joined computer and that just added the users as localusername.
 
 So my tip is
+
 **Before joining a domain run the mkpasswd step above then you will be able to continue running scripts (presuming no other GPOs lock down your computer and prevent it!)**
+
 
 Why weren't they using WinRM? Don't ask :-(
