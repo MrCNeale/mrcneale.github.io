@@ -19,12 +19,14 @@ Oh and a VCSA/ESXi to connect to (v5.5 or higher)...but then you wouldn't be her
 Erm...I also decided to demonstrate it with a video, because, erm, why not?    
 <iframe width="560" height="315" src="https://www.youtube.com/embed/hhsu00m05zU" frameborder="0" allowfullscreen></iframe>
 <HR>
-Glossary of commands/useful information    
+Glossary of commands/useful information  
+  
 PowerShell Command to download OVA
 {% highlight ruby %}
 Invoke-WebRequest -Uri https://bintray.com/vmware/photon/download_file?file_path=photon-custom-hw10-1.0-13c08b6.ova -OutFile c:\users\chris\downloads\photon.ova
 {% endhighlight %}
-Photon OVA default root password=changeme  
+Photon OVA default root password=changeme 
+  
 Photon/Linux systemctl setup Commands
 {% highlight ruby %}
 systemctl enable docker
