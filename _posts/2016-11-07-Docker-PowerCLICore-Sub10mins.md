@@ -30,9 +30,7 @@ PowerShell Command to download OVA
 {% highlight ruby %}
 Invoke-WebRequest -Uri https://bintray.com/vmware/photon/download_file?file_path=photon-custom-hw10-1.0-13c08b6.ova -OutFile c:\users\chris\downloads\photon.ova
 {% endhighlight %}
-
 Photon OVA default root password=changeme
-
 
 Photon/Linux systemctl setup Commands
 {% highlight ruby %}
@@ -47,7 +45,6 @@ docker ps
 docker images
 docker rmi -f vmware/powerclicore
 {% endhighlight %}
-
 
 PowerCLI Commands
 {% highlight ruby %}
