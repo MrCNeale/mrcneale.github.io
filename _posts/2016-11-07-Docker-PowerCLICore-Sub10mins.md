@@ -14,11 +14,11 @@ comments: true
 
 I needed a utility VM to run a PowerCLI script as a scheduled task.  
 I set out to do this using Windows but stopped as VMware's Geniuses had just released the PowerCLIcore Fling. This instantly made me think, smaller footprint, quicker to deploy, zero OS license cost......**No Brainer really**
-
+<BR>
 To recreate this all you need is something to host your Photon VM. Standalone ESXi host or VMWorkstation.
-
+<BR>
 Oh and a VCSA/ESXi to connect to (v5.5 or higher)...but then you wouldn't be here if you didn't have that already!
-
+<BR>
 Erm...I also decided to demonstrate it with a video, because, erm, why not?
   
 <iframe width="560" height="315" src="https://www.youtube.com/embed/hhsu00m05zU" frameborder="0" allowfullscreen></iframe>
