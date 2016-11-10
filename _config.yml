@@ -23,7 +23,8 @@ kramdown:
   toc_levels: 1..6
   enable_coderay: false
 
-
+# Google services
+google_analytics: UA-65763422-1
 
 
 # Site owner
