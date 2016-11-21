@@ -8,7 +8,7 @@ tags:
   - Certification
   - Study
   - VCIX
-date: 2016-11-20T22:00:00+00:00
+date: 2016-11-21T22:00:00+00:00
 comments: true
 ---
 ![VCIX Logo](/public/VCIX-NV.png)
