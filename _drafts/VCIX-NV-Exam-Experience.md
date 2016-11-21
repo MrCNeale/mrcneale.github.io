@@ -11,7 +11,7 @@ tags:
 date: 2016-11-20T22:00:00+00:00
 comments: true
 ---
-
+!(http://blogs.vmware.com/education/files/2014/10/VCIX-NV.png)
 Last month I sat and passed the VCIX-NV exam.  Driven, like a lot of others, by the impending retirement of the exam that keeps getting extended...more on that later.
 
 This is a post in two parts, first the exam experience, second a few pondering on VMware Education's current trajectory.
