@@ -62,13 +62,13 @@ It has to be hailed as a great win for automation that a complex multi-task exam
 The Future of VMware Certification
 ==================================
 There are some positives here.  Myles Gray recently sat the VCAP6-NV Deploy and reviewed his experience at 
-<https://blah.cloud/personal/vcix6-nv-exam-experience/>
-Also VMware now give you a preview of the Lab Experience in a PDF at <https://mylearn.vmware.com/lcms/web/portals/certification/VMware%20Certification%20Platform%20Interface.pdf#src=vmw_so_vex_cneal_850>
+<https://blah.cloud/personal/vcix6-nv-exam-experience/>  
+Also VMware now give you a preview of the Lab Experience in a PDF at <https://mylearn.vmware.com/lcms/web/portals/certification/VMware%20Certification%20Platform%20Interface.pdf#src=vmw_so_vex_cneal_850>  
 Notice anything familiar?
-![vcap-hol-view](/public/chrome_2016-11-21_23-01-55.png)
-That's right it's HOL style.  Something you should be very familiar with as you should be hammering the HOLs to learn NSX and anything else ;-)
+![vcap-hol-view](/public/chrome_2016-11-21_23-01-55.png)  
+That's right it's HOL style.  Something you should be very familiar with as you should be hammering the HOLs to learn NSX and anything else ;-)  
 That's positive.  
-The negatives are the ongoing debacle that VCIX-NV will/won't/will/won't/will/won't/will/won't get upgraded to VCIX6-NV.  It was version 6 of NSX so it should, and there was no Design exam available either to do a full VCAP6-NV...  They really need to sort their roadmap out, it changes too often and then lacks support.
-Also a very random point to add is that the entry level actual exam, the VCA are the most bizarre exams I have ever encountered.  A muddled mix of sales/marketing/buzzwords/incorrect-technical terms and more....I got some vouchers recently to do some.  Whilst I am grateful for that I cannot see why someone would pay to do those exams.  They don't pre-qualify for VCP, they aren't very beneficial and the content falls well below the par of VCP/VCAP/VCIX questions.  I think these should be scrapped or revamped.  I've also heard the Certifcition team has had a shake up/re-org. Let's hope that sets things back on the good track it used to be on.
-
+The negatives are the ongoing debacle that VCIX-NV will/won't/will/won't/will/won't/will/won't get upgraded to VCIX6-NV.  It was version 6 of NSX so it should, and there was no Design exam available either to do a full VCAP6-NV...  They really need to sort their roadmap out, it changes too often and then lacks support.  
+Also a very random point to add is that the entry level actual exam, the VCA are the most bizarre exams I have ever encountered.  A muddled mix of sales/marketing/buzzwords/incorrect-technical terms and more....I got some vouchers recently to do some.  Whilst I am grateful for that I cannot see why someone would pay to do those exams.  They don't pre-qualify for VCP, they aren't very beneficial and the content falls well below the par of VCP/VCAP/VCIX questions.  I think these should be scrapped or revamped.  I've also heard the Certification team has had a shake up/re-org. Let's hope that sets things back on the good track it used to be on.  
+  
 Now for a rest..........
