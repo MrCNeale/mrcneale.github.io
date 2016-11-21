@@ -24,7 +24,7 @@ The Exam Environment
 ====================
 The room was ok, very standard fayre for VCP/VCAPs.  The connection to the remote lab was ok and the infamous LAG wasn't overly noticeable compared to a Lab in the US I do a lot of my day job in.....so no excuse to blame it on there! DOH!  
 There are quite a few posts detailing the lab layout and Josh Andrews gives a good precis of it at
-<[http://sostechblog.com/2016/06/16/current-vcix6-nvvcix-nv-exam-environment/> now this will be of very little use to anyone now as the exam is set to retire at the end of the month and the new VCAP6-NV Deploy has been released.
+<http://sostechblog.com/2016/06/16/current-vcix6-nvvcix-nv-exam-environment/> now this will be of very little use to anyone now as the exam is set to retire at the end of the month and the new VCAP6-NV Deploy has been released.
 The exam was ESXi5.5 and NSX6.0.2.  So very old stuff and needed some unlearning.
 
 The Prep
