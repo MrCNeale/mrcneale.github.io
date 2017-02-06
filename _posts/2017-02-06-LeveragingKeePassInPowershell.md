@@ -45,13 +45,16 @@ $KPNStatusLogger = New-Object KeePassLib.Interfaces.NullStatusLogger
 #open up the Database, using the Open function of the MyKPDatabase object we created earlier
 $MyKPDatabase.Open($IOCOnnectionInfo,$MyKPKey,$KPNStatusLogger)
 {% endhighlight %}
-All done but nothing!!!  Patience.  Now we read in all the objects in the DB to a variable,   
+All done but nothing!!!  Patience.  Now we read in all the objects in the DB to a variable, and loop round the elements in the array variable calling the ReadSafe method to read the 
 {% highlight ruby %}
 $KPObjects = $MyKPDatabase.RootGroup.GetObjects($true, $true)
 #Now loop round and list them all to the command window
 foreach($KPObject in $KPObjects)
 {
-  write-host $KPObject.Strings.ReadSafe("Title")  $KPObject.Strings.ReadSafe("Password")
+  write-host $KPObject.Strings.ReadSafe("Title") $KPObject.Strings.ReadSafe("UserName")  $KPObject.Strings.ReadSafe("Password")
 }
 {% endhighlight %}
-
+And you should get the list  
+<IMG src="/public/kpass2.png" align="right">  
+which should match your db  
+<IMG src="/public/kpass3.png" align="right">  
