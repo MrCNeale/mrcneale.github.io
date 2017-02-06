@@ -34,24 +34,24 @@ $MyKPDatabase
 Ok, so as you can see you've got a DB there ready to be populated, but not with passwords, we're going to use it to read in an existing database.  But first we need to create a few variables before we try and open it.  We have an empty KP variable to store it in, next we need the location on disk and the existing Master KP Database password.  
 Our file is in the same folder c:\temp it's called test.kdbx so c:\temp\test.kdbx and FOR THE PURPOSES OF THIS BLOG ONLY I've set the password to Password123 and I will be showing it in the script, for clarity #ironic  
 {% highlight ruby %}
-		#Create Password Object
-		$MyMasterPassword = "Password123"
-		$MyKPKey = new-object KeePassLib.Keys.CompositeKey
-		$MyKPKey.AddUserKey((New-Object KeePassLib.Keys.KcpPassword($MyMasterPassword)));
-		#Create pointer to file on disk object
-		$IOConnectionInfo = New-Object KeePassLib.Serialization.IOConnectionInfo
-		$IOCOnnectionInfo.Path = "c:\temp\test.kdbx"
-		$KPNStatusLogger = New-Object KeePassLib.Interfaces.NullStatusLogger
-		#open up the Database, using the Open function of the MyKPDatabase object we created earlier
-		$MyKPDatabase.Open($IOCOnnectionInfo,$MyKPKey,$KPNStatusLogger)
+#Create Password Object
+$MyMasterPassword = "Password123"
+$MyKPKey = new-object KeePassLib.Keys.CompositeKey
+$MyKPKey.AddUserKey((New-Object KeePassLib.Keys.KcpPassword($MyMasterPassword)));
+#Create pointer to file on disk object
+$IOConnectionInfo = New-Object KeePassLib.Serialization.IOConnectionInfo
+$IOCOnnectionInfo.Path = "c:\temp\test.kdbx"
+$KPNStatusLogger = New-Object KeePassLib.Interfaces.NullStatusLogger
+#open up the Database, using the Open function of the MyKPDatabase object we created earlier
+$MyKPDatabase.Open($IOCOnnectionInfo,$MyKPKey,$KPNStatusLogger)
 {% endhighlight %}
 All done but nothing!!!  Patience.  Now we read in all the objects in the DB to a variable,   
 {% highlight ruby %}
-		$KPObjects = $MyKPDatabase.RootGroup.GetObjects($true, $true)
-    #Now loop round and list them all to the command window
-    foreach($KPObject in $KPObjects)
-    {
-        write-host $KPObject.Strings.ReadSafe("Title")  $KPObject.Strings.ReadSafe("Password")
-    }
+$KPObjects = $MyKPDatabase.RootGroup.GetObjects($true, $true)
+#Now loop round and list them all to the command window
+foreach($KPObject in $KPObjects)
+{
+  write-host $KPObject.Strings.ReadSafe("Title")  $KPObject.Strings.ReadSafe("Password")
+}
 {% endhighlight %}
 
