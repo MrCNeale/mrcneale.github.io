@@ -55,11 +55,8 @@ foreach($KPObject in $KPObjects)
 }
 {% endhighlight %}
 And you should get the list
-<P>
-<IMG src="/public/kpass2.png">
-<P>
-which should match your db
-<P>
-<IMG src="/public/kpass3.png">
-<P>
+<IMG src="/public/kpass2.png"></BR>
+which should match your db</BR>
+<IMG src="/public/kpass3.png"></BR>
+</BR>
 Here endeth the lesson for today.  In Part 2 - we'll look at reading in a specific username/password based on title, and maybe writing back to the kdbx file!  
