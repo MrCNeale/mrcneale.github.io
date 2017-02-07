@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Leveraging Keepass via Powershell to Keep Passwords Out of Scripts
-excerpt: 
+excerpt: Using powershell to read in keepass entries - part 1 
 tags: 
   - Powershell
   - Security
@@ -18,8 +18,8 @@ I use KeePass and I constantly find cool new features.  Like the paste to type, 
 So I was even more impressed when I found you could make powershell calls to KeePass with a relative minimum of fuss and could use this feature to create KeePass password DBs from scratch or to read in existing ones to utilise for an script/activity.
   
 Let's get stuck in.
-First you need the Keepass installable version installed where you are running your script (or at least a copy of the installed files exe's and dll's).
-Given those let's Load the .net binaries in  
+First you need the Keepass installable version installed where you are running your script (or at least a copy of the installed files exe's and dll's).  
+Now let's Load the .net binaries in  
 {% highlight ruby %}
 PS C:\temp\KeePass-2.31> (Get-ChildItem -recurse $script:myinvocation.mycommand.path | Where-Object {($_.Extension -EQ ".dll") -or ($_.Extension -eq ".exe")} | ForEach-Object { $AssemblyName=$_.FullName; Try {[Reflection.Assembly]::LoadFile($AssemblyName) } Catch{ }} ) | out-null
 PS C:\temp\KeePass-2.31>
@@ -55,6 +55,7 @@ foreach($KPObject in $KPObjects)
 }
 {% endhighlight %}
 And you should get the list  
-<IMG src="/public/kpass2.png" align="right">  
+<IMG src="/public/kpass2.png">  
 which should match your db  
-<IMG src="/public/kpass3.png" align="right">  
+<IMG src="/public/kpass3.png">  
+Here endeth the lesson for today.  In Part 2 - we'll look at reading in a specific username/password based on title, and maybe writing back to the kdbx file!  
