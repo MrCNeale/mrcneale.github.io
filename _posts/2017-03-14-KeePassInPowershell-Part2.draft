@@ -1,0 +1,58 @@
+---
+layout: post
+title: Leveraging Keepass via Powershell-Part 2
+excerpt: Using powershell to read in keepass entries - part 2 
+tags: 
+  - Powershell
+  - Security
+  - Scripting
+date: 2017-03-14T22:00:00+00:00
+comments: true
+---
+
+Last time round we did 3 things
+1 Loaded the Keepass DLL/EXEs in so we could call their routines
+2 Created an Empty KeePass DB construnct to read an existing DB in to
+3 Read in an existing KeePass DB into the pointer created in Step #2
+
+These are common tasks we will need to do multiple times....so??? Yep functions.  If you want to see the detail flip back to Part-1
+
+{% highlight ruby %}
+Function Load-KPBinaries {
+  
+}
+{% highlight ruby %}
+$MyKPDatabase = new-object KeePassLib.PwDatabase  
+$MyKPDatabase  
+{% endhighlight %}
+
+<IMG src="/public/kpass1.png" align="right">  
+Ok, so as you can see you've got a DB there ready to be populated, but not with passwords, we're going to use it to read in an existing database.  But first we need to create a few variables before we try and open it.  We have an empty KP variable to store it in, next we need the location on disk and the existing Master KP Database password.  
+Our file is in the same folder c:\temp it's called test.kdbx so c:\temp\test.kdbx and FOR THE PURPOSES OF THIS BLOG ONLY I've set the password to Password123 and I will be showing it in the script, for clarity #ironic  
+{% highlight ruby %}
+#Create Password Object
+$MyMasterPassword = "Password123"
+$MyKPKey = new-object KeePassLib.Keys.CompositeKey
+$MyKPKey.AddUserKey((New-Object KeePassLib.Keys.KcpPassword($MyMasterPassword)));
+#Create pointer to file on disk object
+$IOConnectionInfo = New-Object KeePassLib.Serialization.IOConnectionInfo
+$IOCOnnectionInfo.Path = "c:\temp\test.kdbx"
+$KPNStatusLogger = New-Object KeePassLib.Interfaces.NullStatusLogger
+#open up the Database, using the Open function of the MyKPDatabase object we created earlier
+$MyKPDatabase.Open($IOCOnnectionInfo,$MyKPKey,$KPNStatusLogger)
+{% endhighlight %}
+All done but nothing!!!  Patience.  Now we read in all the objects in the DB to a variable, and loop round the elements in the array variable calling the ReadSafe method to read the 
+{% highlight ruby %}
+$KPObjects = $MyKPDatabase.RootGroup.GetObjects($true, $true)
+#Now loop round and list them all to the command window
+foreach($KPObject in $KPObjects)
+{
+  write-host $KPObject.Strings.ReadSafe("Title") $KPObject.Strings.ReadSafe("UserName")  $KPObject.Strings.ReadSafe("Password")
+}
+{% endhighlight %}
+And you should get the list
+<IMG src="/public/kpass2.png"><BR>
+which should match your db<BR>
+<IMG src="/public/kpass3.png"><BR>
+<BR>
+Here endeth the lesson for today.  In Part 2 - we'll look at reading in a specific username/password based on title, and maybe writing back to the kdbx file!  
