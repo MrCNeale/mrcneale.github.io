@@ -10,10 +10,23 @@ date: 2017-03-14T22:00:00+00:00
 comments: true
 ---
 
-Last time round we did 3 things
-1. Loaded the Keepass DLL/EXEs in so we could call their routines
-2. Created an Empty KeePass DB construnct to read an existing DB in to
-3. Read in an existing KeePass DB into the pointer created in Step #2
+Last time round we did 
+<div class="edit-comment-hide">
+    <table class="d-block">
+      <tbody class="d-block">
+        <tr class="d-block">
+          <td class="d-block comment-body markdown-body markdown-format js-comment-body">
+          	<details>
+	      	<summary>3 things</summary>
+		1. Loaded the Keepass DLL/EXEs in so we could call their routines
+		2. Created an Empty KeePass DB construnct to read an existing DB in to
+		3. Read in an existing KeePass DB into the pointer created in Step #2
+		</details>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
 
 These are common tasks we will need to do multiple times....so??? Yep functions.  If you want to see the detail flip back to Part-1
 
