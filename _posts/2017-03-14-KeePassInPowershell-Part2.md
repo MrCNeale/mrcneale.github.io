@@ -18,9 +18,11 @@ Last time round we did
           <td class="d-block comment-body markdown-body markdown-format js-comment-body">
           	<details>
 	      	<summary>3 things</summary>
-		1. Loaded the Keepass DLL/EXEs in so we could call their routines
-		2. Created an Empty KeePass DB construnct to read an existing DB in to
-		3. Read in an existing KeePass DB into the pointer created in Step #2
+		<ol>
+		<li>Loaded the Keepass DLL/EXEs in so we could call their routines</li>
+		<li>Created an Empty KeePass DB construnct to read an existing DB in to</li>
+		<li>Read in an existing KeePass DB into the pointer created in Step #2</li>
+		</ol>
 		</details>
           </td>
         </tr>
