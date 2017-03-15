@@ -38,7 +38,7 @@ Function Open-KPDB {
     $KPNStatusLogger = New-Object KeePassLib.Interfaces.NullStatusLogger
     #open up the Database, using the Open function of the MyKPDatabase object we created earlier
     $MyKPDatabase.Open($IOCOnnectionInfo,$MyKPKey,$KPNStatusLogger)
-    $KPEntries = $KPDatabase.RootGroup.GetObjects($true, $true)
+    $KPEntries = $MyKPDatabase.RootGroup.GetObjects($true, $true)
 		foreach($KPEntry in $KPEntries)
 		{
 			$KPFoundEntry = "" | Select-Object Title,UserName,Password
