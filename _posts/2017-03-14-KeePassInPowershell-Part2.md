@@ -27,29 +27,29 @@ Function Load-KPBinaries {
 }
 
 Function Open-KPDB {
-    Param ($PathToKPDB, $KPMasterPassword)
-    $MyKPDatabase = new-object KeePassLib.PwDatabase 
-    #Create Password Object
-    $MyKPKey = new-object KeePassLib.Keys.CompositeKey
-    $MyKPKey.AddUserKey((New-Object KeePassLib.Keys.KcpPassword($KPMasterPassword)));
-    #Create pointer to file on disk object
-    $IOConnectionInfo = New-Object KeePassLib.Serialization.IOConnectionInfo
-    $IOCOnnectionInfo.Path = $PathToKPDB
-    $KPNStatusLogger = New-Object KeePassLib.Interfaces.NullStatusLogger
-    #open up the Database, using the Open function of the MyKPDatabase object we created earlier
-    $MyKPDatabase.Open($IOCOnnectionInfo,$MyKPKey,$KPNStatusLogger)
-    $KPEntries = $MyKPDatabase.RootGroup.GetObjects($true, $true)
-		foreach($KPEntry in $KPEntries)
-		{
-			$KPFoundEntry = "" | Select-Object Title,UserName,Password
-			$KPFoundEntry.Title = $KPEntry.Strings.ReadSafe("Title")
-			$KPFoundEntry.UserName = $KPEntry.Strings.ReadSafe("UserName")
-			$KPFoundEntry.Password = $KPEntry.Strings.ReadSafe("Password")
-			$KPFound += $KPFoundEntry
-		}
-		$KPDatabase.Close()
-
-		Return $KPFound
+	Param ($PathToKPDB, $KPMasterPassword)
+	$MyKPDatabase = new-object KeePassLib.PwDatabase 
+	#Create Password Object
+	$MyKPKey = new-object KeePassLib.Keys.CompositeKey
+	$MyKPKey.AddUserKey((New-Object KeePassLib.Keys.KcpPassword($KPMasterPassword)));
+	#Create pointer to file on disk object
+	$IOConnectionInfo = New-Object KeePassLib.Serialization.IOConnectionInfo
+	$IOCOnnectionInfo.Path = $PathToKPDB
+	$KPNStatusLogger = New-Object KeePassLib.Interfaces.NullStatusLogger
+	#open up the Database, using the Open function of the MyKPDatabase object we created earlier
+	$MyKPDatabase.Open($IOCOnnectionInfo,$MyKPKey,$KPNStatusLogger)
+	$KPEntries = $MyKPDatabase.RootGroup.GetObjects($true, $true)
+	$KpFound=@()
+	foreach($KPEntry in $KPEntries)
+	{
+		$KPFoundEntry = "" | Select-Object Title,UserName,Password
+		$KPFoundEntry.Title = $KPEntry.Strings.ReadSafe("Title")
+		$KPFoundEntry.UserName = $KPEntry.Strings.ReadSafe("UserName")
+		$KPFoundEntry.Password = $KPEntry.Strings.ReadSafe("Password")
+		$KPFound += $KPFoundEntry
+	}
+	$MyKPDatabase.Close()
+	Return $KPFound
 }
 {% endhighlight %}
 
