@@ -11,9 +11,9 @@ comments: true
 ---
 
 Last time round we did 3 things
-1 Loaded the Keepass DLL/EXEs in so we could call their routines
-2 Created an Empty KeePass DB construnct to read an existing DB in to
-3 Read in an existing KeePass DB into the pointer created in Step #2
+1. Loaded the Keepass DLL/EXEs in so we could call their routines
+2. Created an Empty KeePass DB construnct to read an existing DB in to
+3. Read in an existing KeePass DB into the pointer created in Step #2
 
 These are common tasks we will need to do multiple times....so??? Yep functions.  If you want to see the detail flip back to Part-1
 
