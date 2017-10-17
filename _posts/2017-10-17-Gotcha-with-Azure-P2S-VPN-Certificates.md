@@ -8,7 +8,7 @@ tags:
   - Scripting
   - Azure
   - P2SVPN
-date: 2017-10-17T22:00:00+00:00
+date: 2017-10-16T22:00:00+00:00
 comments: true
 ---
 After waiting 30 minutes for my P2S VPN gateway to deploy in Azure I was obviously eager to get VPN-ing, who wouldn't be!  
