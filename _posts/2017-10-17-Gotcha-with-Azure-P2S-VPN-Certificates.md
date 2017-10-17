@@ -25,3 +25,4 @@ When importing a VPN Client Cert and you are presented with the option to *"Enab
 [https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-troubleshoot-vpn-point-to-site-connection-problems](https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-troubleshoot-vpn-point-to-site-connection-problems)
 
 So RTFM, and also any related KBs....and the TroubleShooting guide....and you'll be fine
+
