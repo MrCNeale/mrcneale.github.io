@@ -4,6 +4,7 @@ title: Gotcha when importing client certificates for Azure P2S VPN
 excerpt: RTFM, and then read the addendums, and the notes and all the links as well
 comments: true
 date: 2017-10-16T22:00:00+00:00
+image: public/azurevpn.png
 tags: 
   - Powershell
   - Security
