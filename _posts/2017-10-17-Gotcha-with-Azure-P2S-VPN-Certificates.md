@@ -15,7 +15,7 @@ tags:
 After waiting 30 minutes for my P2S VPN gateway to deploy in Azure I was obviously eager to get VPN-ing, who wouldn't be!  
 I ran through the instructions to generate a self-signed Root Cert and a client cert from Microsoft on this page [https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-certificates-point-to-site](https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-certificates-point-to-site)  
 \*(Put a pin here, we'll come back to this)  
-I'd imported the certs to my test client VM and the Client VPN setup exe ran ok and created a connection in "Network Connections".  I tried to connect and received an error  
+I'd imported the certs to my test client VM and the Client VPN setup exe ran ok and created a connection in "Network Connections".  I tried to connect and received an error    
 **A certificate could not be found that can be used with this Extensible Authentication Protocol. (Error 798)**  
 <img style="float: left;" src="http://www.chrisneale.org/public/certerrror.png">
 I foolishly didn't Google first and I checked the comments section at the bottom of the instructions.  The Microsoft engineer referred to how they moved from MakeCert.exe to the new Powershell <p style="color:blue">New-SelfSignedCertificate</p> cmdlet.  However, it became clear during testing and reading that the nice bod from Microsoft was using all the new things and not testing backward compatibility.  
