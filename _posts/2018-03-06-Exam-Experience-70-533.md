@@ -1,11 +1,11 @@
 ---
 layout: post
-title: Exam Experience 70-533 Implementing Microsoft Azure Infrastructure Solutions - Post Jan 2018 Updates
+title: Exam Experience \: 70-533 Implementing Microsoft Azure Infrastructure Solutions - (Post Jan 2018 Updates)
 excerpt: A different, but real-life, exam experience
 comments: true
 date: 2018-03-05T22:00:00+00:00
 image:
-  feature: Microsoft_Exam533.png
+  feature: https://acclaim-production-app.s3.amazonaws.com/images/53022c34-15ad-4f64-a50f-2b76798f2df0/Microsoft_Exam533.png
 tags: 
   - Powershell
   - Security
