@@ -5,7 +5,7 @@ excerpt: A different, but real-life, exam experience
 comments: true
 date: 2018-03-05T22:00:00+00:00
 image:
-  feature: 
+  feature: Microsoft_Exam533.png
 tags: 
   - Powershell
   - Security
