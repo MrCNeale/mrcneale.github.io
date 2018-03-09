@@ -20,7 +20,7 @@ tags:
 
 <H1> An Updated Exam and Exam Format</H1>
 I sat the 70-533 exam last Wednesday. It was the version after the Jan 2018 updates.  
-That last bit is critical. Cloud moves fast and Microsoft published the exam 4 years ago. It was originally based around ASM, the white and blue GUI and a different set of PowerShell commands.<P>
+That last bit is critical. Cloud moves fast and Microsoft published the exam 4 years ago. It was originally based around ASM, the white and blue GUI and a different set of PowerShell commands. <P>
 It also had a number of other concepts which have been migrated over that time into Azure Resource Manager as a deployment method.  
 Initially that had me concerned as I came to Azure 12 months ago fresh onto ARM. It was new at first but I didn't have any ASM baggage. 
 I saw the exam still had lots of ASM content when I looked into it last summer.  But there have been TWO updates to the exam since then.
