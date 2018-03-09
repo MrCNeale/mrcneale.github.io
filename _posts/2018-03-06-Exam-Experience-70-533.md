@@ -41,14 +41,14 @@ A full change tracked version of the Exam Objectives is available here:
 <http://download.microsoft.com/download/8/4/8/848DD46A-05F2-4021-A118-036FC06647C5/533_OD_Changes.pdf>  
 Make sure you read this and check whilst you're studying for any updates that might get made.
 
-<H1> Study Resources </H1>
+<H2> Study Resources </H2>
 The main focus for my study was Scott Duffy's Udemy Course.  This costs between £10 and £15 depending on what wild discount Udemy is applying at the time.  
 It's a great course.  Good Length.  I watched/listened on 1.5x speed and got through it in 4-5 days watching when I had time to revise.
 It also contains updates, including details about the January updates and examples of KeyVault and Containers.
 Very good value. 5/5!
 I used my company's Enterprise Subscription.  But to be honest for less than $20 I think you could do the same in a private/free-tier subscription if you were careful and deleted/powered-off things sensibly.
 
-<H1>The Result</
+<H2>The Result</H2>
 I went into the exam a little unsure.  I had seen a lot of posts about people doing the exam before January and talking about ASM and SQL still being quite prevalent.  There was also the very new features such as Containers that I've never used before, I also knew my AZ CLI was weak sauce.  Despite all that I was out in under an hour with a score of 850.
   
 <H2>Summary</H2>
