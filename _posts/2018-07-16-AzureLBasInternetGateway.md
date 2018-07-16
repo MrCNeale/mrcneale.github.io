@@ -24,7 +24,7 @@ As you may know even if your default Azure VM does not have a Public IP assigned
 Obvious options are NVAs but they are quite big, cumbersome things to deploy and configure quickly and easily. They would also required ongoing changes, such as updating rules/IPs if a new VM is added.  
 
 That's when we found that the Azure Load Balancer can be used to "Balance" outgoing connections also.
-[The Microsoft Docs deail this behaviour here](https://docs.microsoft.com/en-us/azure/load-balancer/load-balancer-outbound-connections#lb)  
+[The Microsoft Docs detail this behaviour here](https://docs.microsoft.com/en-us/azure/load-balancer/load-balancer-outbound-connections#lb)  
 By creating an LB with a public IP, then creating a dummy health probe to a non existent service, then connecting that, via a rule to a BackEnd Pool containing your VMs, any traffic that goes to the internet from those VMs will exit via the Public IP of the LB.
 
 <H2>Implementation Steps</H2>
@@ -35,5 +35,5 @@ By creating an LB with a public IP, then creating a dummy health probe to a non 
 5. Create a BackEndPool with the availability set as the member 
 6. Create a LB Rule selecting your Public IP, Health Prob and BackEnd Pool you just created
 
-Now any VMs deployed to the Availability Set will automatically have their outbound traffic via the Public IP
-If you already have VMs, or require more granular control over the IPs/Networks/VMs that are included, then at step #2 deploy a STANDARD SKU Load Balancer, as this allows more control over BackEnd Pool selection of members.
+Now any VMs deployed to the Availability Set will automatically have their outbound traffic via the Public IP  
+If you already have VMs, or require more granular control over the IPs/Networks/VMs that are included, then at step #2 deploy a STANDARD SKU Load Balancer and do not deploy the availability set in step #4, as this allows more control over BackEnd Pool selection of members, but needs manual updating of the members.
