@@ -29,16 +29,11 @@ By creating an LB with a public IP, then creating a dummy health probe to a non 
 
 <H2>Implementation Steps</H2>
 1. Create a Public IP (Or create one during load balancer creation)
-2. Create a Load Balancer and associate with the Public IP from step 1
-<IMG src="/public/LB1and2.png" align="bottom">
-3. Create a Health Probe, select a non used port on the VMs, say 65535
-<IMG src="/public/LB3.png" align="bottom">
-4. Create an Availability Set
-<IMG src="/public/LB4.png" align="bottom">
-5. Create a BackEndPool with the availability set as the member 
-<IMG src="/public/LB5.png" align="bottom">
-6. Create a LB Rule selecting your Public IP, Health Prob and BackEnd Pool you just created
-<IMG src="/public/LB6.png" align="bottom">
+2. Create a Load Balancer and associate with the Public IP from step 1 <IMG src="/public/LB1and2.png" align="bottom">
+3. Create a Health Probe, select a non used port on the VMs, say 65535 <IMG src="/public/LB3.png" align="bottom">
+4. Create an Availability Set <IMG src="/public/LB4.png" align="bottom">
+5. Create a BackEndPool with the availability set as the member <IMG src="/public/LB5.png" align="bottom">
+6. Create a LB Rule selecting your Public IP, Health Prob and BackEnd Pool you just created <IMG src="/public/LB6.png" align="bottom">
 
 Here's the LB IP  
 <IMG src="/public/LB-IP.png" align="bottom">  
