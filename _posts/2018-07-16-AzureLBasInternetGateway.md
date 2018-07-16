@@ -14,7 +14,7 @@ tags:
   - Networking
   - LoadBalancer
 ---
-<img style="float: right;" src="https://azure.microsoft.com/svghandler/load-balancer/?width=600&height=315">
+<img style="float: top;" src="https://azure.microsoft.com/svghandler/load-balancer/?width=600&height=315">
 
 <H2> An Odd Request</H2>
 This implementation started from a SAP team who said they wanted to replicate, in Azure, the AWS Internet Gateway functionality. In particular the option for all outbound traffic from VMs to route via a single outbound IP.  
@@ -24,7 +24,7 @@ As you may know even if your default Azure VM does not have a Public IP assigned
 Obvious options are NVAs but they are quite big, cumbersome things to deploy and configure quickly and easily. They would also required ongoing changes, such as updating rules/IPs if a new VM is added.  
 
 That's when we found that the Azure Load Balancer can be used to "Balance" outgoing connections also.
-[The Microsoft Docs deail this behaviour here](https://docs.microsoft.com/en-us/azure/load-balancer/load-balancer-outbound-connections#lb  
+[The Microsoft Docs deail this behaviour here](https://docs.microsoft.com/en-us/azure/load-balancer/load-balancer-outbound-connections#lb)  
 By creating an LB with a public IP, then creating a dummy health probe to a non existent service, then connecting that, via a rule to a BackEnd Pool containing your VMs, any traffic that goes to the internet from those VMs will exit via the Public IP of the LB.
 
 <H2>Implementation Steps</H2>
