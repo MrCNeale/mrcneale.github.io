@@ -30,24 +30,24 @@ By creating an LB with a public IP, then creating a dummy health probe to a non 
 <H2>Implementation Steps</H2>
 1. Create a Public IP (Or create one during load balancer creation)
 2. Create a Load Balancer and associate with the Public IP from step 1
-<IMG src="/public/LB1and2.png" align="right">
+<IMG src="/public/LB1and2.png" align="bottom">
 3. Create a Health Probe, select a non used port on the VMs, say 65535
-<IMG src="/public/LB3.png" align="right">
+<IMG src="/public/LB3.png" align="bottom">
 4. Create an Availability Set
-<IMG src="/public/LB4.png" align="right">
+<IMG src="/public/LB4.png" align="bottom">
 5. Create a BackEndPool with the availability set as the member 
-<IMG src="/public/LB5.png" align="right">
+<IMG src="/public/LB5.png" align="bottom">
 6. Create a LB Rule selecting your Public IP, Health Prob and BackEnd Pool you just created
-<IMG src="/public/LB6.png" align="right">
+<IMG src="/public/LB6.png" align="bottom">
 
 Here's the LB IP  
-<IMG src="/public/LB-IP.png" align="right">
+<IMG src="/public/LB-IP.png" align="bottom">
 Here's the VM nic config, showing only a private IP  
-<IMG src="/public/vmnicconf.png" align="right">
+<IMG src="/public/vmnicconf.png" align="bottom">
 Then we find out what the internet thinks our IP is with this command:  
-<IMG src="/public/ps-command.png" align="right">
+<IMG src="/public/ps-command.png" align="bottom">
 And we see it matches the LB  
-<IMG src="/public/wmip.png" align="right">
+<IMG src="/public/wmip.png" align="bottom">
   
 Now any VMs deployed to the Availability Set will automatically have their outbound traffic via the Public IP  
 If you already have VMs, or require more granular control over the IPs/Networks/VMs that are included, then at step #2 deploy a STANDARD SKU Load Balancer and do not deploy the availability set in step #4, as this allows more control over BackEnd Pool selection of members, but needs manual updating of the members.
