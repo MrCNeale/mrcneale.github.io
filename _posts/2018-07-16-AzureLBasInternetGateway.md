@@ -41,13 +41,13 @@ By creating an LB with a public IP, then creating a dummy health probe to a non 
 <IMG src="/public/LB6.png" align="bottom">
 
 Here's the LB IP  
-<IMG src="/public/LB-IP.png" align="bottom">
+<IMG src="/public/LB-IP.png" align="bottom">  
 Here's the VM nic config, showing only a private IP  
-<IMG src="/public/vmnicconf.png" align="bottom">
+<IMG src="/public/vmnicconf.png" align="bottom">  
 Then we find out what the internet thinks our IP is with this command:  
-<IMG src="/public/ps-command.png" align="bottom">
+<IMG src="/public/ps-command.png" align="bottom">  
 And we see it matches the LB  
-<IMG src="/public/wmip.png" align="bottom">
+<IMG src="/public/wmip.png" align="bottom">  
   
 Now any VMs deployed to the Availability Set will automatically have their outbound traffic via the Public IP  
 If you already have VMs, or require more granular control over the IPs/Networks/VMs that are included, then at step #2 deploy a STANDARD SKU Load Balancer and do not deploy the availability set in step #4, as this allows more control over BackEnd Pool selection of members, but needs manual updating of the members.
