@@ -25,10 +25,13 @@ Once there simply scroll down to the Github Pages section and tick the box label
 <img style="float: bottom;" src="/public/forcehttps.png">  
 Within 2-3 minutes Github will get a certificate for you (in my case for my custom domain name chrisneale.org!) and apply it.  
 <img style="float: bottom;" src="/public/ghp-cert.png">  
+  
 This was great, my website worked at https://www.chrisneale.org but wait, all the formatting and layout looked like HTML v1.0 and hideous!  
 <img style="float: bottom;" src="/public/badlayout.png">  
+  
 I noticed in Chrome that it was complaining that it was only displaying the secure content....not the insecure...."What insecure content??"  
 <img style="float: bottom;" src="/public/insecure.png">  
+  
 A quick trip into the developer console in Chrome by hitting F12 showed the culprit.  The CSS was building from information somewhere with an explicit http in.  
 <img style="float: bottom;" src="/public/chromeconsole.png">  
 I found that it was the _config.yml file which needed the "Site Wide Configuration" section URL value updating to be https://www.chrisneale.org  
