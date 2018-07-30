@@ -24,13 +24,13 @@ https://github.com/MrCNeale/mrcneale.github.io/settings
 Once there simply scroll down to the Github Pages section and tick the box labelled "Enforce HTTPS".
 <IMG src="/public/forcehttps.png" align="bottom">
 Within 2-3 minutes Github will get a certificate for you (in my case for my custom domain name chrisneale.org!) and apply it.  
-<IMG src="/public/ghp-cert.png" align="bottom">
+<IMG src="/public/ghp-cert.png" align="right">
 This was great, my website worked at https://www.chrisneale.org but wait, all the formatting and layout looked like HTML v1.0 and hideous!
 <IMG src="/public/badlayout.png" align="bottom">
 I noticed in Chrome that it was complaining that it was only displaying the secure content....not the insecure...."What insecure content??"  
-<IMG src="/public/insecure.png" align="bottom">
+<IMG src="/public/insecure.png" align="right">
 A quick trip into the developer console in Chrome by hitting F12 showed the culprit.  The CSS was building from information somewhere with an explicit http in.
-<IMG src="/public/chromeconsole.png" align="bottom">
+<IMG src="/public/chromeconsole.png" align="right">
 I found that it was the _config.yml file which needed the "Site Wide Configuration" section URL value updating to be https://www.chrisneale.org
 <IMG src="/public/configyml.png" align="bottom">
 After editing that, 2 more minutes for Github Pages to recompile, and back to looking lovely!
