@@ -14,8 +14,8 @@ tags:
   - Automation
   - Technology
 ---
-<img style="float: left;margin: 0px 15px 15px 0px;" src="https://images-na.ssl-images-amazon.com/images/I/61Tz-XvhOGL._SX331_BO1,204,203,200_.jpg" width=50% height=50%>
-This book was recommended by a friend and the premis of an investigation into how work, progress and prosperity have changed and are changing still was something that interested me....as I’m not independently wealthy or a lottery winner...so I’ll be working for the next 30 years or so!  
+<img style="float: left;margin: 0px 15px 15px 0px;height:50%;width:50%;" src="https://images-na.ssl-images-amazon.com/images/I/61Tz-XvhOGL._SX331_BO1,204,203,200_.jpg">
+This book was recommended by a friend and the premise of an investigation into how work, progress and prosperity have changed and are changing still was something that interested me....as I’m not independently wealthy or a lottery winner...so I’ll be working for the next 30 years or so!  
   The book is written by 2 MIT research scientists...hence nearly 100 pages of references, but those are kept for the end for anyone who wants to check their homework and you can skip the graphs if that’s not your thing.  
   They start by first showing how until we developed tools and principally the industrial revolution there was very little progress in humans development or population growth for 8000 years!  
   Jump forward to pretty recently where they witnessed, in 2004, of 15 entrants to an autonomous vehicle competition run by DARPA ended in the prize left unclaimed.  The “winning” vehicle only managed 7.4miles of the 150 mile course before getting stuck on an embankment (it did better than those that failed to start and the one that flipped over in the starting area).  
