@@ -3,7 +3,7 @@ layout: post
 title: Book Review - The Second Machine Age
 excerpt: Best Guesses about the future of Work and Progress, whilst everything accelerates around us
 comments: true
-date: 2018-07-30T22:00:00+00:00
+date: 2018-08-17T22:00:00+00:00
 image:
   feature: https://images-na.ssl-images-amazon.com/images/I/61Tz-XvhOGL._SX331_BO1,204,203,200_.jpg
 tags: 
