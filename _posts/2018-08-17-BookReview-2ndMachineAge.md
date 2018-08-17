@@ -42,9 +42,10 @@ Nowadays Uber/AirBNB/Waze etc. Leverage free or existing resources that can be c
 
 So when a facebook/google/Uber gets millions or even billions of users that no longer means tens of thousands of people share in the profit, it is concentrated in a small group with the largest share going to the CEO.
 
-<img style="float:right;margin: 0px 15px 15px 0px;height:25%;width:25%;" src="https://theredlist.com/media/database/settings/cinema/1920-1930/metropolis-/005-metropolis-theredlist.jpg">
+<img style="float:right;margin: 0px 15px 15px 0px;height:50%;width:50%;" src="https://theredlist.com/media/database/settings/cinema/1920-1930/metropolis-/005-metropolis-theredlist.jpg">
 There is a lot of economics in the book and that has never been something I’ve studied closely before but the majority of it is interesting and relevant. It helps show how some trends are ok for now, others more pressing and worrying and how workers who feel “forgotten” or abandoned, be it by progress or globalisation are inclined more to nationalism and protectionism.<P>
 There is plenty of politics in the book too, which is impossible to avoid when talking about economics, jobs and inevitably taxes too. I agreed with most of their suggestions on how to skill up the humans of the future, how human+robot/computer is actually stronger than simply human vs computer and the possible necessity for something like a national wage to prevent traditional welfare and promote working.
   
 
 It took me a while, but I’d thoroughly recommend it if you have even a little interest in how we got here, where we’re going or even what your kids should be learning for tomorrow!
+(https://www.amazon.co.uk/Second-Machine-Age-Prosperity-Technologies/dp/0393239357)[https://www.amazon.co.uk/Second-Machine-Age-Prosperity-Technologies/dp/0393239357]
