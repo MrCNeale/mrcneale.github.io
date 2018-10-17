@@ -59,7 +59,7 @@ Steps to create your first template via the portal
 5. Select "Add Resource" and choose "Virtual Network" from the drop down and enter a name for your vNet and click OK <BR><img style="float: bottom;" src="/public/labpost5.png">  
 
 Now woosh, there you have it, your first template to deploy a vNet. You can see on the left 1 resource and 5 variables.....but wait, you didn't define any variables? No Azure did as it's best practice and makes it easy to edit later and change or even parameterise.
-You're template should look identical to this.
+Your template should look identical to this.
 ```JSON
 {
     "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
@@ -161,7 +161,7 @@ Now for Powershell
 1. Open a powershell session
 2. Change directory to where you downloaded the template in the last section
 3. Connect to your azure account by typing **Connect-AzureRMAccount** and login as prompted
-4. Check you're in the right place by going a **Get-AzureRMResourceGroup -ResourceGroupName BOB** replacing BOB with the resource group you used in the previous section
+4. Check in the right place by going a **Get-AzureRMResourceGroup -ResourceGroupName BOB** replacing BOB with the resource group you used in the previous section
 5. Now we're going to deploy our vNet template again so type the following (replacing the RGname with yours and the location of the template file you downloaded to match where you saved yours.
 ```Powershell
 New-AzureRmResourceGroupDeployment -Name LabVnet -ResourceGroupName LabFromTempalte101 -TemplateFile .\Downloads\template.json
