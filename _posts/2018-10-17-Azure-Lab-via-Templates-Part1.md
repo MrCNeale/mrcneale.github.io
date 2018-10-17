@@ -50,11 +50,11 @@ Revolutionary right!  Well it's good to look at an empty template as it helps us
 
 Steps to create your first template via the portal
 ------------
-1. Log in to Azure and click "Create a Resource"
-2. Type "template" in the search box and select "Template Deployment" and click "Create"
-3. Select "Build your own template in the editor"
-4. Now you'll see you have a blank templates (and no variables,functions or outputs section...which is fine)
-5. Select "Add Resource" and choose "Virtual Network" from the drop down and enter a name for your vNet and click OK
+1. Log in to Azure and click "Create a Resource" <BR><img style="float: bottom;" src="/public/labpost1.png">  
+2. Type "template" in the search box and select "Template Deployment" and click "Create" <BR><img style="float: bottom;" src="/public/labpost2.png">  
+3. Select "Build your own template in the editor" <BR><img style="float: bottom;" src="/public/labpost3.png">  
+4. Now you'll see you have a blank templates (and no variables,functions or outputs section...which is fine) <BR><img style="float: bottom;" src="/public/labpost4.png">  
+5. Select "Add Resource" and choose "Virtual Network" from the drop down and enter a name for your vNet and click OK <BR><img style="float: bottom;" src="/public/labpost5.png">  
 
 Now woosh, there you have it, your first template to deploy a vNet. You can see on the left 1 resource and 5 variables.....but wait, you didn't define any variables? No Azure did as it's best practice and makes it easy to edit later and change or even parameterise.
 You're template should look identical to this.
@@ -148,9 +148,10 @@ Your Template code should now look neater and easy enough to read.
 Ok, now click the "Download" above your template code (we're saving it for later to deploy again).  
 Click "Save" and you'll be taken to the "Purchase" page.  Don't panic....vnets are free!  
 Select a subscription and a resource group (or create a new one) and a location to deploy the vnet, tick the "I agree" box and click purchase.
-You can see that it's been submitted if you click the alarm bell near the top left.
+You can see that it's been submitted if you click the alarm bell near the top left.<BR><img style="float: bottom;" src="/public/labpost6.png">  
 Click on the deployment in progress to see more details.
 Once it's complete, click on your vnet name to go and see your resource.
+<BR><img style="float: bottom;" src="/public/labpost7.jpg">  
 Amazing!  Not really but it's the first Lego brick in your 3000 piece Death Star.
 
 Now for Powershell
@@ -164,7 +165,8 @@ Now for Powershell
 New-AzureRmResourceGroupDeployment -Name LabVnet -ResourceGroupName LabFromTempalte101 -TemplateFile .\Downloads\template.json
 ```
 It completes and you now have 2 vNets.......oh wait, NO you just have the one, the same one you set up before.  
-ARM IS DECLARATIVE.  You just told it to "make sure I have a vnet called this with these properties".  It went and checked, and you have. So it just completed.  
+ARM IS DECLARATIVE.  You just told it to "make sure I have a vnet called this with these properties".  It went and checked, and you have. So it just ended, changing nothing, it didn't recreate our first vnet, it just left it alone.
+<BR><img style="float: bottom;" src="/public/labpost-powershell.jpg">  
 Go edit the template.json file and edit the resources section and change the name, e.g. something like this 
 ```JSON
 "parameters": {},
@@ -175,17 +177,18 @@ Go edit the template.json file and edit the resources section and change the nam
 ```
 Save it and re-run the above powershell command.
 Once that completes, you can now see you have 2 vNets in the same Resource group.
+<BR><img style="float: bottom;" src="/public/labpost9.png">  
 Fiddly, but in the next lesson we'll deal with parameters.
 
 Summary
 -------
-You logged in
-Took the framework empty ARM template, added a resource through the portal, which created some variables.
-You deployed it from the portal and got a new vnet
-You deployed the identical template from powershell and go no new vnet, as a vnet with that name and settings already existed.
-You edited the template (changed the vnet resource name) deployed it again and voila. 2 vNets now.
-REMEMBER ARM IS DECLARATIVE!!!!
-REMEMBER ARM IS DECLARATIVE!!!!
-REMEMBER ARM IS DECLARATIVE!!!!
+* You logged in
+* Took the framework empty ARM template, added a resource through the portal, which created some variables.
+* You deployed it from the portal and got a new vnet
+* You deployed the identical template from powershell and go no new vnet, as a vnet with that name and settings already existed.
+* You edited the template (changed the vnet resource name) deployed it again and voila. 2 vNets now.
+* REMEMBER ARM IS DECLARATIVE!!!!
+* REMEMBER ARM IS DECLARATIVE!!!!
+* REMEMBER ARM IS DECLARATIVE!!!!
 
 
