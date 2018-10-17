@@ -14,7 +14,7 @@ tags:
   - Automated Deployment
 ---
 
-<img style="float: right;" src="https://msdnshared.blob.core.windows.net/media/2017/05/2017-05-06-Azure-IaC-How-to-get-started-with-ARM-Template.jpg">
+<img style="float: top;" src="https://msdnshared.blob.core.windows.net/media/2017/05/2017-05-06-Azure-IaC-How-to-get-started-with-ARM-Template.jpg">
 
 Aim
 ------------
