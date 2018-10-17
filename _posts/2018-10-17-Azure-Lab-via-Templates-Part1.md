@@ -3,9 +3,9 @@ layout: post
 title: Building an Azure lab environment via ARM tempaltes - Part1 ARM Templates 101
 excerpt: Starting small and getting to enteprise redeployable lab blueprint
 comments: true
-date: 2018-10-17T22:00:00+00:00
+date: 2018-10-17T10:00:00+00:00
 image:
-  feature: https://images-na.ssl-images-amazon.com/images/I/61Tz-XvhOGL._SX331_BO1,204,203,200_.jpg
+  feature: https://msdnshared.blob.core.windows.net/media/2017/05/2017-05-06-Azure-IaC-How-to-get-started-with-ARM-Template.jpg
 tags: 
   - Azure
   - ARM Template
@@ -13,6 +13,8 @@ tags:
   - Automation
   - Automated Deployment
 ---
+
+<img style="float: right;" src="https://msdnshared.blob.core.windows.net/media/2017/05/2017-05-06-Azure-IaC-How-to-get-started-with-ARM-Template.jpg">
 
 Aim
 ------------
