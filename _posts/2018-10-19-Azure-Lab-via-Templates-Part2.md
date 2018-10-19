@@ -278,7 +278,7 @@ Repeat for QA and Dev
 New-AzureRmResourceGroupDeployment -Name ProdLabDeployment -ResourceGroupName Prod-Lab-RG -TemplateFile .\labtemplate.json -adminUsername MyAdmin
 ```
 You will be prompted to enter the password, there are ways to pass that in, but it doesn't let you type it in clear text on the command line.  
-<BR><img style="float: bottom;" src="/public/6PowershellDeploy.png"> 
+<BR><img style="float: bottom;" src="/public/6powershelldeploy.png"> 
 4. Repeat for Dev and QA
 5. Now check the Portal, go to All resource and filter on just those three RGs.  Here's a screenshot from mine mid-way through the QA deployment, grouped by ResourceGroup.
 <BR><img style="float: bottom;" src="/public/7allresources.png"> 
