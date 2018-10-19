@@ -273,5 +273,5 @@ New-AzureRmResourceGroupDeployment -Name ProdLabDeployment -ResourceGroupName Pr
 ```
 You will be prompted to enter the password, there are ways to pass that in, but it doesn't let you type it in clear text on the command line.  
 4. Repeat for Dev and QA
-5. Now check the Portal
+5. Now check the Portal, go to All resource and filter on just those three RGs.  Here's a screenshot from mine mid-way through the QA deployment, grouped by ResourceGroup.
 
