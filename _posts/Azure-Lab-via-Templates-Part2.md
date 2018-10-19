@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Building an Azure lab environment via ARM templates - Part2 Adding a VM to your network
-excerpt: Starting small and getting to enteprise redeployable lab blueprint
+excerpt: Starting small and getting to enterprise redeployable lab blueprint
 comments: true
-date: 2018-10-17T10:00:00+00:00
+date: 2018-10-18T10:00:00+00:00
 image:
   feature: https://msdnshared.blob.core.windows.net/media/2017/05/2017-05-06-Azure-IaC-How-to-get-started-with-ARM-Template.jpg
 tags: 
