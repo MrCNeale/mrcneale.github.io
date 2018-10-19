@@ -110,11 +110,14 @@ Here is the updated template with a NIC added.  There are two variables to creat
 Not the line inside each resource *"dependsOn"*  
 These allow you to specify dependencies. Here we want to attach our NIC to a vNet, so we specify that the NIC "depends on' the vNet being there.  So Azure waits for that resource to complete successfully before deploying the NIC.
 
+
 Rather than keep doing a new Template Deployment and click save we're going to add it to our "Template Library"
 1. So save the text in Notepad++ or similar and go to All Services/Templates <pic of template list>
 2. Click Add, Give it a name like "myLab" and a description
-3. Click OK, then on the template page, paste in your new template which is a vnet+storageaccount
-4. Click OK. Click Add. Your template library should now look like this <pic of template list 2>
+3. Click OK, then on the template page, paste in your new template which is a vnet+nic
+<BR><img style="float: bottom;" src="/public/1createtemplate.png"> 
+4. Click OK. Click Add. Your template library should now look like this
+<BR><img style="float: bottom;" src="/public/2templatelist.png">  
 5. Click your template and you'll see you have the "Deploy" option now, SO CLICK IT!
 6. It asks you for Subsription and Resource group (and location but that is determined by the RG you select)
 ***IMPORTANT: Please select the Resource Group you already used for Part1 to deploy the vNet into****
@@ -125,6 +128,7 @@ When it completes you can look at the deployment report and you'll see it says i
 Adding the VM to the template
 -----------------------------
 Now we have a vnet and a NIC, we can add the resource for the VM.
+<BR><img style="float: bottom;" src="/public/8ResourceDiagram.png">  
 We're going to add two parameters to the parameters section, as I don't want to decide your admin username and password.
 Here's the updated template with 2 parameters, 3 resources and 7 variables
 ```JSON
@@ -254,10 +258,12 @@ Everything else is hard coded.  Depending on your template that might be good or
 1. Go to your dashboard or All Services, if you don't have it pinned, and choose Templates
 2. Click on your template and click edit
 3. Click on "ARM Template" and paste in our new template
+<BR><img style="float: bottom;" src="/public/1createtemplate.png"> 
 4. Click Save then click Deploy
 5. Pick your existing resource group and specify a username and password, tick the agree box and tick Purchase
-About 5-10 minutes later you'll have a VM with a NIC on a vnet.  
-Now you can delete your Resource Group whenever you want and redeploy in 5-10 minutes just picking a RG and entering username and password
+About 5-10 minutes later you'll have a VM with a NIC on a vnet. 
+<BR><img style="float: bottom;" src="/public/5all3deploy.jpg">  
+Now you can delete your Resource Group whenever you want and redeploy in 5-10 minutes just picking a RG and entering username and password.  
 If you deploy it to the same resource group again.  It only takes about 34 seconds, because all those resources already exist!
 Pick a new RG and you're back to 10 minutes. 
 Ahh but you could have 3 Resource Groups, PROD-RG, QA-RG, TEST-RG and deploy the same Lab into each RG and you know it's identical.
@@ -272,6 +278,8 @@ Repeat for QA and Dev
 New-AzureRmResourceGroupDeployment -Name ProdLabDeployment -ResourceGroupName Prod-Lab-RG -TemplateFile .\labtemplate.json -adminUsername MyAdmin
 ```
 You will be prompted to enter the password, there are ways to pass that in, but it doesn't let you type it in clear text on the command line.  
+<BR><img style="float: bottom;" src="/public/6PowershellDeploy.png"> 
 4. Repeat for Dev and QA
 5. Now check the Portal, go to All resource and filter on just those three RGs.  Here's a screenshot from mine mid-way through the QA deployment, grouped by ResourceGroup.
+<BR><img style="float: bottom;" src="/public/7allresources.png"> 
 
