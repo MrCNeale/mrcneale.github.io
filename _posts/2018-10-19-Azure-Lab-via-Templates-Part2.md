@@ -5,7 +5,7 @@ excerpt: Starting small and getting to enterprise redeployable lab blueprint
 comments: true
 date: 2018-10-18T10:00:00+00:00
 image:
-  feature: https://msdnshared.blob.core.windows.net/media/2017/05/2017-05-06-Azure-IaC-How-to-get-started-with-ARM-Template.jpg
+  feature: arm.jpg
 tags: 
   - Azure
   - ARM Template
