@@ -70,8 +70,9 @@ This is a resource so we just need to add this to the resource section of our te
 
 1. Go to your dashboard or All Services, if you don't have it pinned, and choose Templates
 2. Click on your template and click edit
-3. Click on "ARM Template" and paste in our new code above into the Resource section.
- Don't forget to put a comma before or after, depending on where you insert it.
+3. Click on "ARM Template" and paste in our new code above into the Resource section.  
+  
+Don't forget to put a comma before or after, depending on where you insert it.
 So we should have a template that looks like this 
 ```JSON
 {
