@@ -128,7 +128,7 @@ When it completes you can look at the deployment report and you'll see it says i
 Adding the VM to the template
 -----------------------------
 Now we have a vnet and a NIC, we can add the resource for the VM.
-<BR><img style="float: bottom;" src="/public/8ResourceDiagram.png">  
+<BR><img style="float: bottom;" src="/public/8resourcediagram1.png">  
 We're going to add two parameters to the parameters section, as I don't want to decide your admin username and password.
 Here's the updated template with 2 parameters, 3 resources and 7 variables
 ```JSON
