@@ -5,7 +5,7 @@ excerpt: Changes in the Linux OMS agent highlight missed Syslog Configuration (R
 comments: true
 date: 2018-10-22T10:00:00+00:00
 image:
-  feature: /public/rtfm.png
+  feature: rtfm.png
 tags: 
   - Azure
   - ARM Template
