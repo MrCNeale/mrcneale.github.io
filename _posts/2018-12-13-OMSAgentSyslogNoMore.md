@@ -25,9 +25,25 @@ Ok, we'd missed the agent updates on this particular template for Linux, it's al
 Microsoft documentation can be hit and miss.  Sometimes it's brilliant, other times it seems to miss the obvious.  This is one such case.  
 Here is the Windows Docs page for the OMS/LogAnalytics agent ARM template syntax:  
 [https://docs.microsoft.com/en-us/azure/virtual-machines/extensions/oms-windows](https://docs.microsoft.com/en-us/azure/virtual-machines/extensions/oms-windows)  
+```JSON
+"properties": {
+        "publisher": "Microsoft.EnterpriseCloud.Monitoring",
+        "type": "MicrosoftMonitoringAgent",
+        "typeHandlerVersion": "1.0",
+        "autoUpgradeMinorVersion": true,
+```
+
 It shows a property named *AutoUpgradeMinorVersion* this little gem always selects the latest 1.x version to install whenever you deploy a template...It doesn't upgrade after install...that's a different issue.  
 Here is the Linux Docs page:  
 [https://docs.microsoft.com/en-us/azure/virtual-machines/extensions/oms-linux](https://docs.microsoft.com/en-us/azure/virtual-machines/extensions/oms-linux)  
+```JSON
+   "properties": {
+    "publisher": "Microsoft.EnterpriseCloud.Monitoring",
+    "type": "OmsAgentForLinux",
+    "typeHandlerVersion": "1.7",
+    "settings": {
+```
+
 But this doesn't show the property!  
   
 Ok so we got over that.  New installs chugged along and we were getting OMS/LA agent 1.8 instead of 1.3.  GREAT!  
