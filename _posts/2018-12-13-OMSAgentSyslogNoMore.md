@@ -5,7 +5,7 @@ excerpt: Changes in the Linux OMS agent highlight missed Syslog Configuration (R
 comments: true
 date: 2018-10-22T10:00:00+00:00
 image:
-  feature: 
+  feature: /public/rtfm.png
 tags: 
   - Azure
   - ARM Template
@@ -39,7 +39,7 @@ Have you guessed yet?
 Here's a screenshot of our Workspace/Advanced Settings/Data/Syslog configuration to help. <img src="/public/emptylawsyslog.png">
 Spot the deliberate mistake? Yep, syslog wasn't set to be collected.  
 Hang on a minute though, we hadn't changed our workspace config. I double checked the code to deploy our workspaces.  It never enabled syslog collection.  So how did this *EVER* work?  
-<img style="float:center";src="/public/confused.gif">  
+<img style="float:center;"src="/public/confused.gif">  
 Simple...it was a "bug".
 Checkout the release notes for a prior release of OMS agent:  
 [https://github.com/Microsoft/OMS-Agent-for-Linux/releases/tag/OMSAgent_GA_v1.4.3-174](https://github.com/Microsoft/OMS-Agent-for-Linux/releases/tag/OMSAgent_GA_v1.4.3-174)
