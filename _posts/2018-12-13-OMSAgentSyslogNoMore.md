@@ -36,7 +36,7 @@ When our automated testing ran, an alert that previously worked no longer fired 
 This was odd. After looking at the alert, it was based on the contents of Syslog.  Looking at  the Log Anlaytics Workspace Logs area, we could see that no Syslog logs were being collected. Even more strange. But wait 1 VM was populating Syslog in OMS/LA.  How was it doing that?  
   
 Have you guessed yet?  
-Here's a screenshot of our Workspace/Advanced Settings/Data/Syslog configuration to help. <img src="/public/emptylawsyslog.png">
+Here's a screenshot of our Workspace/Advanced Settings/Data/Syslog configuration to help. <img src="/public/emptylawsyslog.jpg">
 Spot the deliberate mistake? Yep, syslog wasn't set to be collected.  
 Hang on a minute though, we hadn't changed our workspace config. I double checked the code to deploy our workspaces.  It never enabled syslog collection.  So how did this *EVER* work?  
 <img style="float:top;" src="/public/confused.gif">  
