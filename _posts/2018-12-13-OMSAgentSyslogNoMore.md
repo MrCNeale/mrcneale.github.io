@@ -36,10 +36,10 @@ When our automated testing ran, an alert that previously worked no longer fired 
 This was odd. After looking at the alert, it was based on the contents of Syslog.  Looking at  the Log Anlaytics Workspace Logs area, we could see that no Syslog logs were being collected. Even more strange. But wait 1 VM was populating Syslog in OMS/LA.  How was it doing that?
 
 Have you guessed yet?
-Here's a screenshot of our Workspace/Advanced Settings/Data/Syslog configuration to help. <img src=emptylawsyslog.png>
+Here's a screenshot of our Workspace/Advanced Settings/Data/Syslog configuration to help. <img src=public/emptylawsyslog.png>
 Spot the deliberate mistake? Yep, syslog wasn't set to be collected.  
 Hang on a minute though, we hadn't changed our workspace config. I double checked the code to deploy our workspaces.  It never enabled syslog collection.  So how did this *EVER* work?  
-<img src=confused.gif>  
+<img src=public/confused.gif>  
 Simple...it was a "bug".
 Checkout the release notes for a prior release of OMS agent:  
 [https://github.com/Microsoft/OMS-Agent-for-Linux/releases/tag/OMSAgent_GA_v1.4.3-174](https://github.com/Microsoft/OMS-Agent-for-Linux/releases/tag/OMSAgent_GA_v1.4.3-174)
@@ -49,4 +49,4 @@ So until v1.4.3 all Linux agents pushed syslog, whether you asked for it or not!
 A simple update to the workspace code to make sure Syslog collection was enabled with correct facilities and all working.
 
 Lesson for today.  Always Read The Flippin Release Notes (RTFRN)
-<IMG SRC=rtfm.png>
+<IMG SRC=public/rtfm.png>
