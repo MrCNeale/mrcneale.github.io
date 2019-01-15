@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Building an Azure lab environment via ARM tempaltes - Part1 ARM Templates 101
+title: Building an Azure lab environment via ARM templates - Part1 ARM Templates 101
 excerpt: Starting small and getting to enteprise redeployable lab blueprint
 comments: true
 date: 2018-10-17T10:00:00+00:00
