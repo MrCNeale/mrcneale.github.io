@@ -41,12 +41,10 @@ Another non-techie area to the exam is the familiar format (for anyone who did 7
 
 
 <OBjectives/change>
-A full change tracked version of the Exam Objectives is available here:  
-<http://download.microsoft.com/download/8/4/8/848DD46A-05F2-4021-A118-036FC06647C5/533_OD_Changes.pdf>  
-Make sure you read this and check whilst you're studying for any updates that might get made.
+TBC
 
 <H2>The Result</H2>
-
+TBC
 
 <H2>Summary</H2>
-If you have 6-12 months experience.  Have used ARM templates, know about or can try some AD federation/sync and can afford £15 for Scott's course, I think you're good to go with this exam.
+TBC
