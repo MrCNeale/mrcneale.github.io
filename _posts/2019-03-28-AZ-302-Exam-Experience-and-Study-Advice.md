@@ -33,20 +33,20 @@ The labs are auto-graded, there was no wait to get my score, it was just as quic
 
 
 <H2> Preparation/Study Resources</H2>
-As usual I used Scott Duffy's Udemy Course as my main prep. <https://www.udemy.com/az302-azure/>(https://www.udemy.com/az302-azure/)  I thought it was very content light compared to his usual courses, which was dissapointing.  There were some good examples in the "assignment" sections, but I think there could have been more live-video examples.  I'm not affiliated with Scott or Udemy and bought the course myself for £10.99 so it's hard to complain as Udemy is a great platform you can watch on PC/iPad/Mobile really easily and offline.  
+As usual I used Scott Duffy's Udemy Course as my main prep. [https://www.udemy.com/az302-azure/](https://www.udemy.com/az302-azure/)  I thought it was very content light compared to his usual courses, which was dissapointing.  There were some good examples in the "assignment" sections, but I think there could have been more live-video examples.  I'm not affiliated with Scott or Udemy and bought the course myself for £10.99 so it's hard to complain as Udemy is a great platform you can watch on PC/iPad/Mobile really easily and offline.  
   
 As usual the IaaS sections and IAM/AD/Security areas, which I have most background in were quite simple to absorb.  Where I had to pay much more attention is around the PaaS/Serverless application space.  So Web Apps, Functions, Batch, Event Grids etc.  
 This may be different for you, but where I am currently we're still helping a lot of customers move from on-prem into cloud, so they haven't expanded or transformed to start using PaaS services heavily.  
 
 I advise finding yourself a demo application, like the Java Spring PetClinic and using that, or even writing something trivial that let's you upload a file via a webpage to storage blob, and let that be your "customer project", to test things out with.  
 
-Another non-techie area to the exam is the familiar format (for anyone who did 70-535 and other exams) of Case Study reviews.  These test if you can assess a potential solution to a customer's requirements and validate if it will meet them or not.
-
-
+Another non-techie area to the exam is the familiar format (for anyone who did 70-535 and other exams) of Case Study reviews.  These test if you can assess a potential solution to a customer's requirements and validate if it will meet them or not.  
+  
+  
 <H2>Objectives and Changes</H2>
-The list of objectives and split can be found here
-<https://www.microsoft.com/en-us/learning/exam-az-302.aspx>(https://www.microsoft.com/en-us/learning/exam-az-302.aspx)
-Unlike previous 70-x exams there doesn't appear to be a changes pdf, then again
+The list of objectives and split can be found here  
+[https://www.microsoft.com/en-us/learning/exam-az-302.aspx](https://www.microsoft.com/en-us/learning/exam-az-302.aspx)
+Unlike previous 70-x exams there doesn't appear to be a changes pdf, then again  
 
 <H2>The Result</H2>
 I got 807/1000, where 700 is the pass mark.  I was pleased with the pass but the exam made me realise I really need to up my PaaS and coding game. So I'll be writing a series of posts soon to leverage things like Function Apps, Logic Apps and possibly Event grid.  Also some very basic coding to make calls to Azure services.  
@@ -54,7 +54,11 @@ I got 807/1000, where 700 is the pass mark.  I was pleased with the pass but the
 <H2>Summary</H2>
 The new exam format with lab sections were a real improvement good and I think important to differentiate hands on experience from simple book memorisation, especially SLAs or SKUs or other things that really shouldn't have to be in your head when they often change or there is one per Azure service, of which there are hundreds.
 What I'll never get is why Pearson for Microsoft/VMware keeps the screens at 800x600 or whatever awful res they are.  That has been bad enough for non text-only multi-choice questions in the past, such as drag and drops or diagrams.  Limiting the same resolution for the Azure portal meant lots and lots of annoying scrolling.
-MS/Pearson/Whoever, fix it!
+MS/Pearson/Whoever, fix it!  
 
 Where next? Ultimately I will go for AZ-400 Microsoft Azure DevOPs Solutions, but to get there I need to transition my 70-533 to AZ-102.
-So next stop? AZ-102...watch for blog posts on studying for that.
+So next stop? AZ-102...watch for blog posts on studying for that.  
+
+**For a great resource to show the new AZ certification paths, checkout Ian Fieldings Tube Map of Azure Certs**  
+[https://iainfielding.com/azure-certifications/](https://iainfielding.com/azure-certifications/)
+<img src="https://iainfielding.com/wp-content/uploads/2019/01/AzureCert_TubeMap_JAN2019-1.png">
