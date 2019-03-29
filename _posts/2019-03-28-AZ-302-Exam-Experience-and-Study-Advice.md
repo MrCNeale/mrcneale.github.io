@@ -27,8 +27,9 @@ It's also due to retire at the end of June, so if you're reading this now...GET 
 <H2> Format and Exam Day</H2>
 As had already been reported, the coding sections of the exam have either been removed or dialled back considerably.  I am not a application coder.  I write Powershell scripts and relatively complex ARM templates on a day to day basis for the last 2 years or so.  Based on that experience there wasn't any code in the exam that I didn't think was unfair or not-relevant to a day job as an Architect.
 
+<img style="float:right;" src="clock.jpg" width="50%" height="50%">
 There were also 2 quite large labs involved so time management is *critical* in this exam.  It may not be the same for everyone but you should ensure you make note of the time and questions at the start of the exam, as they could be split across the labs.
-The labs are auto-graded, there was no 
+The labs are auto-graded, there was no wait to get my score, it was just as quick as previous question-only exams.
 
 
 <H2> Preparation/Study Resources</H2>
@@ -40,11 +41,18 @@ This may be different for you, but where I am currently we're still helping a lo
 Another non-techie area to the exam is the familiar format (for anyone who did 70-535 and other exams) of Case Study reviews.  These test if you can assess a potential solution to a customer's requirements and validate if it will meet them or not.
 
 
-<OBjectives/change>
-TBC
+<H2>Objectives and Changes</H2>
+The list of objectives and split can be found here
+<https://www.microsoft.com/en-us/learning/exam-az-302.aspx>(https://www.microsoft.com/en-us/learning/exam-az-302.aspx)
+Unlike previous 70-x exams there doesn't appear to be a changes pdf, then again
 
 <H2>The Result</H2>
-TBC
+I got 807/1000, where 700 is the pass mark.  I was pleased with the pass but the exam made me realise I really need to up my PaaS and coding game. So I'll be writing a series of posts soon to leverage things like Function Apps, Logic Apps and possibly Event grid.  Also some very basic coding to make calls to Azure services.  
 
 <H2>Summary</H2>
-TBC
+The new exam format with lab sections were a real improvement good and I think important to differentiate hands on experience from simple book memorisation, especially SLAs or SKUs or other things that really shouldn't have to be in your head when they often change or there is one per Azure service, of which there are hundreds.
+What I'll never get is why Pearson for Microsoft/VMware keeps the screens at 800x600 or whatever awful res they are.  That has been bad enough for non text-only multi-choice questions in the past, such as drag and drops or diagrams.  Limiting the same resolution for the Azure portal meant lots and lots of annoying scrolling.
+MS/Pearson/Whoever, fix it!
+
+Where next? Ultimately I will go for AZ-400 Microsoft Azure DevOPs Solutions, but to get there I need to transition my 70-533 to AZ-102.
+So next stop? AZ-102...watch for blog posts on studying for that.
