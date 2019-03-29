@@ -17,7 +17,7 @@ tags:
   - ARM
   - PaaS
 ---
-<img style="float:right;" src="public/azure-solutions-architect-expert-small.png">
+<img style="float:right;" src="/public/azure-solutions-architect-expert-small.png">
 
 <H2> NOW WITH LABS! - An Updated Exam and Exam Format</H2>
 I sat the AZ-302 exam on Tuesday.  It has been updated since the Beta considerably.  Many who took the beta felt that it wasn't Architect focussed but more developer focussed.  Now whilst in this new brave cloud world you have to be part Admin/Pre-Sales/Architect and Developer, writing C# or node.js code in an Architect Exam didn't seem fair to me either.
