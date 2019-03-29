@@ -5,7 +5,7 @@ excerpt: A new improved exam - Now with Labs!
 comments: true
 date: 2019-03-28T22:00:00+00:00
 image:
-  feature: azure-solutions-architect-expert-600x600.png
+  feature: azure-solutions-architect-expert-small.png
 tags: 
   - Powershell
   - Security
@@ -17,7 +17,7 @@ tags:
   - ARM
   - PaaS
 ---
-<img style="float:right;" src="https://images.youracclaim.com/images/649069f9-27f1-4d2b-92bc-c674bc67bd02/azure-solutions-architect-expert-600x600.png" width="50%" height="50%">
+<img style="float:right;" src="public/azure-solutions-architect-expert-small.png">
 
 <H2> NOW WITH LABS! - An Updated Exam and Exam Format</H2>
 I sat the AZ-302 exam on Tuesday.  It has been updated since the Beta considerably.  Many who took the beta felt that it wasn't Architect focussed but more developer focussed.  Now whilst in this new brave cloud world you have to be part Admin/Pre-Sales/Architect and Developer, writing C# or node.js code in an Architect Exam didn't seem fair to me either.
