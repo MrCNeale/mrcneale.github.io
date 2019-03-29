@@ -22,7 +22,9 @@ tags:
 <H2> NOW WITH LABS! - An Updated Exam and Exam Format</H2>
 I sat the AZ-302 exam on Tuesday.  It has been updated since the Beta considerably.  Many who took the beta felt that it wasn't Architect focussed but more developer focussed.  Now whilst in this new brave cloud world you have to be part Admin/Pre-Sales/Architect and Developer, writing C# or node.js code in an Architect Exam didn't seem fair to me either.
 
-It's also due to retire at the end of June, so if you're reading this now...GET STUDYING! :-)  
+It's also due to retire at the end of June, so if you're reading this now...GET STUDYING! :-)
+
+
 <BR>
 <TABLE><TR><TD>
 <img style="float:left;margin: 0px 20px" src="/public/clock.jpg" width="25%" height="25%" >    
@@ -30,7 +32,7 @@ It's also due to retire at the end of June, so if you're reading this now...GET 
 As had already been reported, the coding sections of the exam have either been removed or dialled back considerably.  I am not a application coder.  I write Powershell scripts and relatively complex ARM templates on a day to day basis for the last 2 years or so.  Based on that experience there wasn't any code in the exam that I didn't think was unfair or not-relevant to a day job as an Architect.
 
 
-There were also 2 quite large labs involved so time management is *critical* in this exam.  It may not be the same for everyone but you should ensure you make note of the time and questions at the start of the exam, as they could be split across the labs.
+There were also 2 quite large labs involved so time management is **critical** in this exam.  It may not be the same for everyone but you should ensure you make note of the time and questions at the start of the exam, as they could be split across the labs.
 The labs are auto-graded, there was no wait to get my score, it was just as quick as previous question-only exams.
 
 </TD></TR></TABLE>
