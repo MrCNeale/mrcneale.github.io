@@ -23,8 +23,8 @@ tags:
 I sat the AZ-302 exam on Tuesday.  It has been updated since the Beta considerably.  Many who took the beta felt that it wasn't Architect focussed but more developer focussed.  Now whilst in this new brave cloud world you have to be part Admin/Pre-Sales/Architect and Developer, writing C# or node.js code in an Architect Exam didn't seem fair to me either.
 
 It's also due to retire at the end of June, so if you're reading this now...GET STUDYING! :-)  
-  
-<img style="float:left;" src="/public/clock.jpg" width="25%" height="25%">    
+<P></P>
+<img style="float:left;" src="/public/clock.jpg" width="25%" height="25%" hspace=20>    
 <H2> Format and Exam Day</H2>
 As had already been reported, the coding sections of the exam have either been removed or dialled back considerably.  I am not a application coder.  I write Powershell scripts and relatively complex ARM templates on a day to day basis for the last 2 years or so.  Based on that experience there wasn't any code in the exam that I didn't think was unfair or not-relevant to a day job as an Architect.
 
