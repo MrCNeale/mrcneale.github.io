@@ -23,7 +23,8 @@ tags:
 I sat the AZ-302 exam on Tuesday.  It has been updated since the Beta considerably.  Many who took the beta felt that it wasn't Architect focussed but more developer focussed.  Now whilst in this new brave cloud world you have to be part Admin/Pre-Sales/Architect and Developer, writing C# or node.js code in an Architect Exam didn't seem fair to me either.
 
 It's also due to retire at the end of June, so if you're reading this now...GET STUDYING! :-)  
-<P></P>
+<BR>
+<TABLE><TR><TD>
 <img style="float:left;margin: 0px 20px" src="/public/clock.jpg" width="25%" height="25%" >    
 <H2> Format and Exam Day</H2>
 As had already been reported, the coding sections of the exam have either been removed or dialled back considerably.  I am not a application coder.  I write Powershell scripts and relatively complex ARM templates on a day to day basis for the last 2 years or so.  Based on that experience there wasn't any code in the exam that I didn't think was unfair or not-relevant to a day job as an Architect.
@@ -32,7 +33,7 @@ As had already been reported, the coding sections of the exam have either been r
 There were also 2 quite large labs involved so time management is *critical* in this exam.  It may not be the same for everyone but you should ensure you make note of the time and questions at the start of the exam, as they could be split across the labs.
 The labs are auto-graded, there was no wait to get my score, it was just as quick as previous question-only exams.
 
-
+</TD></TR></TABLE>
 <H2> Preparation/Study Resources</H2>
 As usual I used Scott Duffy's Udemy Course as my main prep. [https://www.udemy.com/az302-azure/](https://www.udemy.com/az302-azure/)  I thought it was very content light compared to his usual courses, which was dissapointing.  There were some good examples in the "assignment" sections, but I think there could have been more live-video examples.  I'm not affiliated with Scott or Udemy and bought the course myself for £10.99 so it's hard to complain as Udemy is a great platform you can watch on PC/iPad/Mobile really easily and offline.  
   
