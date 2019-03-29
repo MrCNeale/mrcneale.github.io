@@ -34,9 +34,11 @@ The labs are auto-graded, there was no wait to get my score, it was just as quic
 
 <H2> Preparation/Study Resources</H2>
 As usual I used Scott Duffy's Udemy Course as my main prep. <https://www.udemy.com/az302-azure/>(https://www.udemy.com/az302-azure/)  I thought it was very content light compared to his usual courses, which was dissapointing.  There were some good examples in the "assignment" sections, but I think there could have been more live-video examples.  I'm not affiliated with Scott or Udemy and bought the course myself for £10.99 so it's hard to complain as Udemy is a great platform you can watch on PC/iPad/Mobile really easily and offline.  
-
+  
 As usual the IaaS sections and IAM/AD/Security areas, which I have most background in were quite simple to absorb.  Where I had to pay much more attention is around the PaaS/Serverless application space.  So Web Apps, Functions, Batch, Event Grids etc.  
-This may be different for you, but where I am currently we're still helping a lot of customers move from on-prem into cloud, so they haven't expanded or transformed to start using PaaS services heavily.
+This may be different for you, but where I am currently we're still helping a lot of customers move from on-prem into cloud, so they haven't expanded or transformed to start using PaaS services heavily.  
+
+I advise finding yourself a demo application, like the Java Spring PetClinic and using that, or even writing something trivial that let's you upload a file via a webpage to storage blob, and let that be your "customer project", to test things out with.  
 
 Another non-techie area to the exam is the familiar format (for anyone who did 70-535 and other exams) of Case Study reviews.  These test if you can assess a potential solution to a customer's requirements and validate if it will meet them or not.
 
