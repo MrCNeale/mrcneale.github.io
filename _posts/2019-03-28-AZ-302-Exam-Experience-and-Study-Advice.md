@@ -29,9 +29,8 @@ It's also due to retire at the end of June, so if you're reading this now...GET 
 <TABLE><TR><TD>
 <img style="float:left;margin: 0px 20px" src="/public/clock.jpg" width="25%" height="25%" >    
 <H2> Format and Exam Day</H2>
-As had already been reported, the coding sections of the exam have either been removed or dialled back considerably.  I am not a application coder.  I write Powershell scripts and relatively complex ARM templates on a day to day basis for the last 2 years or so.  Based on that experience there wasn't any code in the exam that I didn't think was unfair or not-relevant to a day job as an Architect.  
-  
-
+As had already been reported, the coding sections of the exam have either been removed or dialled back considerably.  I am not a application coder.  I write Powershell scripts and relatively complex ARM templates on a day to day basis for the last 2 years or so.  Based on that experience there wasn't any code in the exam that I didn't think was unfair or not-relevant to a day job as an Architect. 
+<BR><BR>
 There were also 2 quite large labs involved so time management is **critical** in this exam.  It may not be the same for everyone but you should ensure you make note of the time and questions at the start of the exam, as they could be split across the labs.
 The labs are auto-graded, there was no wait to get my score, it was just as quick as previous question-only exams.
 
@@ -44,8 +43,7 @@ This may be different for you, but where I am currently we're still helping a lo
 
 I advise finding yourself a demo application, like the Java Spring PetClinic and using that, or even writing something trivial that let's you upload a file via a webpage to storage blob, and let that be your "customer project", to test things out with.  
 
-Another non-techie area to the exam is the familiar format (for anyone who did 70-535 and other exams) of Case Study reviews.  These test if you can assess a potential solution to a customer's requirements and validate if it will meet them or not.  
-  
+Another non-techie area to the exam is the familiar format (for anyone who did 70-535 and other exams) of Case Study reviews.  These test if you can assess a potential solution to a customer's requirements and validate if it will meet them or not.
   
 <H2>Objectives and Changes</H2>
 The list of objectives and split can be found here  
