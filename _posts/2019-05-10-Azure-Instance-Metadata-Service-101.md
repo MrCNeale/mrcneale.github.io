@@ -13,7 +13,7 @@ tags:
   - Azure
   - Metadata
 ---
-<img src=/public/metadata.png>   
+<img src="/public/metadata.png">   
 
 # What does Azure have that VMware never had? AKA What is the Azure Instance Metadata Service? 
 There's probably a ton of answers here.  But the one I was angling for is "Which vCenter is my VM running on?"  
@@ -85,4 +85,4 @@ Or something more useful like the tags so you can tell if it's a prod/qa/test or
 PS C:\Users\blogadmin> (Invoke-RestMethod -Headers @{"Metadata"="true"} -URI http://169.254.169.254/metadata/instance?api-version=2018-10-01 -Method get).compute.tags
 Owner:Chris N
 ```
-<img src=/public/vmtags.png>
+<img src="/public/vmtags.png">
