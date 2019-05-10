@@ -74,3 +74,15 @@ PS C:\Users\blogadmin> Invoke-RestMethod -Headers @{"Metadata"="true"} -URI http
                                   ]
                 }
 ```
+
+## Good Copy/Paste, but what about detail?
+Ok so to get the public IP run this command:
+`(Invoke-RestMethod -Headers @{"Metadata"="true"} -URI http://169.254.169.254/metadata/instance?api-version=2018-10-01 -Method get).network.interface.ipv4.ipaddress.publicipaddress
+137.117.84.156`
+
+Or something more useful like the tags so you can tell if it's a prod/qa/test or web/db/DC etc.
+```
+PS C:\Users\blogadmin> (Invoke-RestMethod -Headers @{"Metadata"="true"} -URI http://169.254.169.254/metadata/instance?api-version=2018-10-01 -Method get).compute.tags
+Owner:Chris N
+```
+(img src=/public/vmtags.png)
