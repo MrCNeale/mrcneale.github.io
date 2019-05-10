@@ -13,7 +13,8 @@ tags:
   - Azure
   - Metadata
 ---
-<img src=/public/metadata.png>
+<img src=/public/metadata.png>   
+
 # What does Azure have that VMware never had?
 There's probably a ton of answers here.  But the one I was angling for is "Which vCenter is my VM running on?"  
 Who'd be crazy enough to lose a VM?  Well you'd be surprised in enterprise estates that have been running for 10 years and Sue who managed the VM farm just retired and moved to Cypus so you can't get hold of her to ask...
