@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Azure Instance Metadata Service Usage Examples
-excerpt: A new improved exam - Now with Labs!
+excerpt: How to get Azure data from inside the VM itself
 comments: true
 date: 2019-05-10T22:00:00+00:00
 image:
