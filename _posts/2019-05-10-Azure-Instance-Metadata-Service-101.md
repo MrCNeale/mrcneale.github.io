@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Exam Experience - AZ-302 Microsoft Azure Solutions Architect Certification Transition
+title: Azure Instance Metadata Service Usage Examples
 excerpt: A new improved exam - Now with Labs!
 comments: true
 date: 2019-05-10T22:00:00+00:00
@@ -15,7 +15,7 @@ tags:
 ---
 <img src=/public/metadata.png>   
 
-# What does Azure have that VMware never had?
+# What does Azure have that VMware never had? AKA What is the Azure Instance Metadata Service? 
 There's probably a ton of answers here.  But the one I was angling for is "Which vCenter is my VM running on?"  
 Who'd be crazy enough to lose a VM?  Well you'd be surprised in enterprise estates that have been running for 10 years and Sue who managed the VM farm just retired and moved to Cypus so you can't get hold of her to ask...
 Anyway, what I'm going to talk about it more useful than just finding out where your VM is if you (or your script/code) only has access inside the VM.
