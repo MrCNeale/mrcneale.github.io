@@ -85,4 +85,4 @@ Or something more useful like the tags so you can tell if it's a prod/qa/test or
 PS C:\Users\blogadmin> (Invoke-RestMethod -Headers @{"Metadata"="true"} -URI http://169.254.169.254/metadata/instance?api-version=2018-10-01 -Method get).compute.tags
 Owner:Chris N
 ```
-(img src=/public/vmtags.png)
+<img src=/public/vmtags.png>
