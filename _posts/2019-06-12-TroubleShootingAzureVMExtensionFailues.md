@@ -22,12 +22,14 @@ Oh...and the AD Domain Join extension for Windows VMs.
 
 So I'm going to work on the presumption you've copied a quickstart template
 (https://github.com/Azure/azure-quickstart-templates/tree/master/201-vm-domain-join-existing) or written your own template or manually added an Extension via Portal>VM>Extensions>Add say for the Symantec Cloud AV extension.
-You run the install or deploy the template, but you get a failure.  I'm willing to bet the deployment message is cryptic and not very useful, especially for Domain Join.
+
+You run the install or deploy the template, but you get a failure.  I'm willing to bet the deployment message is cryptic and not very useful, especially for Domain Join.  
 So you can log in to the VM and start looking in the event log for clues, but that's more effort than I can be bothered with trawling for.  
-What's the alternative?
+
+What's the alternative?  
 Well every extension installed downloads to a particular folder.  
 Every installation of an extension creates a log in another folder.  
-So the first 2 easy steps are
+So the first 2 easy steps are  
 1. Confirm the contents of the install folder look good (if this is a custom script, you'll know best, if it's 3rd party, it may not be clear)  
 
 2. Next look at the logs sub-folder named after your extension and review the logs for more detail.
