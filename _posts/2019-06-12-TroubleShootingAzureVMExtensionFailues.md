@@ -41,7 +41,7 @@ So the first 2 easy steps are
 What we can see is that it fails and throws error 1355  
 Which good old eventid.net tells us is a connection failure (coz bob.com doesn't exist or is resolvable on my vnet)  
 [http://www.eventid.net/errorsdisplay.asp?error_code=1355](http://www.eventid.net/errorsdisplay.asp?error_code=1355)  
-<img style="-webkit-user-select: none;cursor: zoom-in;" src="/public/installlog.png" width="1365" height="498">  
+<img src="/public/installlog.png" width="1365" height="498">  
 There you have it. How to drill down inside a VM to find issues with installs of Microsoft, 3rd Party or your own CustomScript Extensions.
 
 NOTE: For linux the folders are  
