@@ -35,12 +35,18 @@ Every installation of an extension creates a log in another folder.
 e.g. C:\WindowsAzure\Logs\Plugins\Microsoft.Compute.JsonADDomainExtension\1.3.2  
 So the first 2 easy steps are  
 1. Confirm the contents of the install folder look good (if this is a custom script, you'll know best, if it's 3rd party, it may not be clear)  
-<img src=/public/installfolder.png>  
-2. Next look at the logs sub-folder named after your extension and review the logs for more detail.
+<img src="/public/installfolder.png">  
+2. Next look at the logs sub-folder named after your extension and review the logs for more detail.  
 What we can see is that it fails and throws error 1355  
 Which good old eventid.net tells us is a connection failure (coz bob.com doesn't exist or is resolvable on my vnet)  
-(http://www.eventid.net/errorsdisplay.asp?error_code=1355)
-<img src=/public/installlog.png>
+(http://www.eventid.net/errorsdisplay.asp?error_code=1355)  
+<img src="/public/installlog.png">  
+
+There you have it. How to drill down inside a VM to find issues with installs of Microsoft, 3rd Party or your own CustomScript Extensions.
+
+NOTE: For linux the folders are
+Logs = /var/log/azure/
+Install = (this runs in the cwd of where it's downloaded) so search the filesystem for PackagesDirectory  
 
 
 Links  
