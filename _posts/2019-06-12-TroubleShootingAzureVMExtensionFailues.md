@@ -24,16 +24,23 @@ So I'm going to work on the presumption you've copied a quickstart template
 (https://github.com/Azure/azure-quickstart-templates/tree/master/201-vm-domain-join-existing) or written your own template or manually added an Extension via Portal>VM>Extensions>Add say for the Symantec Cloud AV extension.
 
 You run the install or deploy the template, but you get a failure.  I'm willing to bet the deployment message is cryptic and not very useful, especially for Domain Join.  
+<img src="/public/faileddep.png">   <img src="/public/failedop.png">   
 So you can log in to the VM and start looking in the event log for clues, but that's more effort than I can be bothered with trawling for.  
 
 What's the alternative?  
 Well every extension installed downloads to a particular folder.  
+C:\Packages\Plugins\<extension name>  
+e.g. for Domain Join it's C:\Packages\Plugins\Microsoft.Compute.JsonADDomainExtension\1.3.2
 Every installation of an extension creates a log in another folder.  
+e.g. C:\WindowsAzure\Logs\Plugins\Microsoft.Compute.JsonADDomainExtension\1.3.2  
 So the first 2 easy steps are  
 1. Confirm the contents of the install folder look good (if this is a custom script, you'll know best, if it's 3rd party, it may not be clear)  
-
+<img src=/public/installfolder.png>  
 2. Next look at the logs sub-folder named after your extension and review the logs for more detail.
-
+What we can see is that it fails and throws error 1355  
+Which good old eventid.net tells us is a connection failure (coz bob.com doesn't exist or is resolvable on my vnet)  
+(http://www.eventid.net/errorsdisplay.asp?error_code=1355)
+<img src=/public/installlog.png>
 
 
 Links  
