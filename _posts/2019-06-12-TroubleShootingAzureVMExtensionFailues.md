@@ -21,7 +21,8 @@ Most common for the average user will be things like the Log Analytics Agent Ext
 Oh...and the AD Domain Join extension for Windows VMs.
 
 So I'm going to work on the presumption you've copied a quickstart template
-(https://github.com/Azure/azure-quickstart-templates/tree/master/201-vm-domain-join-existing) or written your own template or manually added an Extension via Portal>VM>Extensions>Add say for the Symantec Cloud AV extension.
+
+[https://github.com/Azure/azure-quickstart-templates/tree/master/201-vm-domain-join-existing](https://github.com/Azure/azure-quickstart-templates/tree/master/201-vm-domain-join-existing) or written your own template or manually added an Extension via Portal>VM>Extensions>Add say for the Symantec Cloud AV extension.
 
 You run the install or deploy the template, but you get a failure.  I'm willing to bet the deployment message is cryptic and not very useful, especially for Domain Join.  
 <img src="/public/faileddep.png">   <img src="/public/failedop.png">   
@@ -39,13 +40,13 @@ So the first 2 easy steps are
 2. Next look at the logs sub-folder named after your extension and review the logs for more detail.  
 What we can see is that it fails and throws error 1355  
 Which good old eventid.net tells us is a connection failure (coz bob.com doesn't exist or is resolvable on my vnet)  
-(http://www.eventid.net/errorsdisplay.asp?error_code=1355)  
+[http://www.eventid.net/errorsdisplay.asp?error_code=1355](http://www.eventid.net/errorsdisplay.asp?error_code=1355)  
 <img src="/public/installlog.png">  
 
 There you have it. How to drill down inside a VM to find issues with installs of Microsoft, 3rd Party or your own CustomScript Extensions.
 
-NOTE: For linux the folders are
-Logs = /var/log/azure/
+NOTE: For linux the folders are  
+Logs = /var/log/azure/  
 Install = (this runs in the cwd of where it's downloaded) so search the filesystem for PackagesDirectory  
 
 
