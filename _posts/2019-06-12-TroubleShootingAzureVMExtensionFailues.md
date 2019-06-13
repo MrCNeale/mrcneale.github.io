@@ -7,11 +7,11 @@ date: 2019-06-12T22:00:00+00:00
 image:
   feature: vm.png
 tags: 
-  - Powershell
-  - Security
-  - Scripting
+  - ARM
+  - Template
+  - Troubleshooting
   - Azure
-  - Metadata
+  - Extensions
 ---
 <img src="/public/vm.png">   
 
@@ -53,15 +53,10 @@ Install = (this runs in the cwd of where it's downloaded) so search the filesyst
 Links  
 -----  
 AD Domain Join Extension
-[https://blogs.msdn.microsoft.com/igorpag/2016/01/25/azure-arm-vm-domain-join-to-active-directory-domain-with-joindomain-extension/]
-(https://blogs.msdn.microsoft.com/igorpag/2016/01/25/azure-arm-vm-domain-join-to-active-directory-domain-with-joindomain-extension/)
+[https://blogs.msdn.microsoft.com/igorpag/2016/01/25/azure-arm-vm-domain-join-to-active-directory-domain-with-joindomain-extension/](https://blogs.msdn.microsoft.com/igorpag/2016/01/25/azure-arm-vm-domain-join-to-active-directory-domain-with-joindomain-extension/)
 Log Analytics Agent VM Extension  
-[https://docs.microsoft.com/en-gb/azure/virtual-machines/extensions/oms-windows
-(https://docs.microsoft.com/en-gb/azure/virtual-machines/extensions/oms-windows)
-[https://docs.microsoft.com/en-gb/azure/virtual-machines/extensions/oms-linux]
-(https://docs.microsoft.com/en-gb/azure/virtual-machines/extensions/oms-linux)
+[https://docs.microsoft.com/en-gb/azure/virtual-machines/extensions/oms-windows(https://docs.microsoft.com/en-gb/azure/virtual-machines/extensions/oms-windows)
+[https://docs.microsoft.com/en-gb/azure/virtual-machines/extensions/oms-linux](https://docs.microsoft.com/en-gb/azure/virtual-machines/extensions/oms-linux)
 Custom Script Extension  
-[https://docs.microsoft.com/en-gb/azure/virtual-machines/extensions/custom-script-windows]
-(https://docs.microsoft.com/en-gb/azure/virtual-machines/extensions/custom-script-windows)
-[https://docs.microsoft.com/en-gb/azure/virtual-machines/extensions/custom-script-linux]
-(https://docs.microsoft.com/en-gb/azure/virtual-machines/extensions/custom-script-linux)
+[https://docs.microsoft.com/en-gb/azure/virtual-machines/extensions/custom-script-windows](https://docs.microsoft.com/en-gb/azure/virtual-machines/extensions/custom-script-windows)
+[https://docs.microsoft.com/en-gb/azure/virtual-machines/extensions/custom-script-linux](https://docs.microsoft.com/en-gb/azure/virtual-machines/extensions/custom-script-linux)
