@@ -77,5 +77,5 @@ And you can see it in docker hub, which means anyone can pull it down.
 docker pull myRepo/centos_az_ps_git:v1
 docker run -it myRepo/centos_az_ps_git:v1 pwsh
 ```  
-Et voila
-<img src="/public/finishedimage.png">
+Et voila  
+<img src="/public/connected.png">
