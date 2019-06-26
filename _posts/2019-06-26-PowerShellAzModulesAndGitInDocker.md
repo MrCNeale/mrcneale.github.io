@@ -30,31 +30,30 @@ Below is how I did it and how you can too (instructions for windows, but the the
 1. Install docker for windows/mac/linux  
 https://docs.docker.com/docker-for-windows/install/  
 It's a next next finish and reboot if required.
-
 2.  Launch Docker Desktop <img src="/public/docker.png"> and then get the centos base image by opening powershell and run  
 ```
 docker pull centos
 ```
-<img src="/public/pullcentos.png">
-
 3. Start a container from the CentOS image so we can modify it and create a new image. We need to do this in *interactive* mode so we can run commands after each other and see the results.
 ```
 docker run -it centos /bin/bash
 ```
 Then install the things
 ```
-yum install -y git
-curl https://packages.microsoft.com/config/rhel/7/prod.repo | tee /etc/yum.repos.d/microsoft.repo
-yum install -y powershell
-pwsh
-install-module az -force
-exit
-exit
+yum install -y git  
+curl https://packages.microsoft.com/config/rhel/7/prod.repo | tee /etc/yum.repos.d/microsoft.repo  
+yum install -y powershell  
+pwsh  
+install-module az -force  
+exit  
+exit  
 ````
-<img src="/public/installs1.png"><img src="/public/installs2.png"><img src="/public/installs3.png">
-find the running container name (look at the NAMES column on the right for word1_word2)
--------------------------------
+<img src="/public/installs1.png"><img src="/public/installs2.png"><img src="/public/installs3.png">  
+What you have now is a CentOS containers, with Powershell and AZ Modules and Git Installed fresh.  So we need to grab a new image of that.
+4. Now find the container (it's still running even though you exited bash) by running
+```
 docker ps -a
+```
 
 now create new image from that container
 ----------------------------------------
