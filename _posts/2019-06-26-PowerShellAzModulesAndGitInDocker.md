@@ -28,14 +28,14 @@ So to standardise being able to deploy ARM templates, from a github repo I decid
 Below is how I did it and how you can too (instructions for windows, but the theory's the same for mac/linux).  
 NOTE: Before you start go to [https://hub.docker.com/](https://hub.docker.com/) and sign up for an account to be able to store your image publicly in later. My repo is called "pobx"...don't ask....
 
-1. Install docker for windows/mac/linux  
+1 Install docker for windows/mac/linux  
 [https://docs.docker.com/docker-for-windows/install/](https://docs.docker.com/docker-for-windows/install/)  
-It's a next next finish and reboot if required.
-2.  Launch Docker Desktop <img src="/public/docker.png"> and then get the centos base image by opening powershell and run  
+It's a next next finish and reboot if required.  
+2 Launch Docker Desktop <img src="/public/docker.png"> and then get the centos base image by opening powershell and run  
 ```
 docker pull centos
 ```
-3. Start a container from the CentOS image so we can modify it and create a new image. We need to do this in *interactive* mode so we can run commands after each other and see the results.
+3 Start a container from the CentOS image so we can modify it and create a new image. We need to do this in *interactive* mode so we can run commands after each other and see the results.
 ```
 docker run -it centos /bin/bash
 ```
@@ -50,19 +50,19 @@ exit
 exit  
 ````
 <img src="/public/installs1.png"><img src="/public/installs2.png"><img src="/public/installs3.png">  
-What you have now is a CentOS containers, with Powershell and AZ Modules and Git Installed fresh.
-4. Now find the container (it's still running even though you exited bash) and it's amusing two word underscore separated name by running:  
+What you have now is a CentOS containers, with Powershell and AZ Modules and Git Installed fresh.  
+4 Now find the container (it's still running even though you exited bash) and it's amusing two word underscore separated name by running:  
 ```
 docker ps -a
 CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS                     PORTS               NAMES
 90194f94db40        centos              "/bin/bash"         26 minutes ago      Exited (0) 6 minutes ago                       nifty_pike
-```
-5. Now we want to create the image of that container locally, but the local repo name we use should be the same as our Docker Hub repo we created before we started. In my case "pobx"
+```  
+5 Now we want to create the image of that container locally, but the local repo name we use should be the same as our Docker Hub repo we created before we started. In my case "pobx"
 ```
 docker commit nifty_pike pobx/centos_az_ps_git_blog:v1
 sha256:912b4df6971e8b4b872e26d27bfb92df60b7c4756b63e02964c131102418ecdb
-```
-6. Now push it to docker hub, like this
+```  
+6 Now push it to docker hub, like this
 ```
 docker push pobx/centos_az_ps_git_blog:v1
 The push refers to repository [docker.io/pobx/centos_az_ps_git_blog]
@@ -71,8 +71,8 @@ d69483a6face: Mounted from pobx/centos_ps_az_git
 v1: digest: sha256:2801d29dd86a7eb2c8fceb72442b42f4473d2ea80965e256c9aabfb9ed31a1d9 size: 742
 ```
 And you can see it in docker hub, which means anyone can pull it down.
-<img src="/public/dockerhub.png">
-7. Done. Now it's in docker hub.  Go to another pc and run
+<img src="/public/dockerhub.png">  
+7 Done. Now it's in docker hub.  Go to another pc and run
 ```
 docker pull myRepo/centos_az_ps_git:v1
 docker run -it myRepo/centos_az_ps_git:v1 pwsh
