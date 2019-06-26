@@ -5,7 +5,7 @@ excerpt: If Docker + Powershell + AZ Cmdlets + Git is the answer, what is the qu
 comments: true
 date: 2019-06-26T22:00:00+00:00
 image:
-  feature: azdocker.pnb
+  feature: azdocker.png
 tags: 
   - ARM
   - Template
