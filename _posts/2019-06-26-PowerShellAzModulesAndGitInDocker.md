@@ -78,4 +78,6 @@ docker pull myRepo/centos_az_ps_git:v1
 docker run -it myRepo/centos_az_ps_git:v1 pwsh
 ```  
 Et voila  
-<img src="/public/connected.png">
+<img src="/public/connected.png">  
+Yes I get this is powershell inside powershell, but you could run it from a linux vm with no powershell core, or mac or windows without git commands or a windows machine with old AzureRM modules or no Azure modules.  
+If you tested your templates and/or scripts run from this container, it will work when run on the other person's machine from this container too.
