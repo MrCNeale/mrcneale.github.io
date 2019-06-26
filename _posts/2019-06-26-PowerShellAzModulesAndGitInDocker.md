@@ -31,39 +31,27 @@ Below is how I did it and how you can too (instructions for windows, but the the
 https://docs.docker.com/docker-for-windows/install/  
 It's a next next finish and reboot if required.
 
-2.  Launch Docker Desktop <img src=/public/docker.png> and then get the centos base image by opening powershell and run  
+2.  Launch Docker Desktop <img src="/public/docker.png"> and then get the centos base image by opening powershell and run  
 ```
 docker pull centos
 ```
-<img src=/public/pullcentos.png>
+<img src="/public/pullcentos.png">
 
 3. Start a container from the CentOS image so we can modify it and create a new image. We need to do this in *interactive* mode so we can run commands after each other and see the results.
 ```
 docker run -it centos /bin/bash
 ```
-
-install git bash
-----------------
+Then install the things
+```
 yum install -y git
-
-install powershell
-------------------
 curl https://packages.microsoft.com/config/rhel/7/prod.repo | tee /etc/yum.repos.d/microsoft.repo
 yum install -y powershell
-
-run powershell
---------------
 pwsh
-
-install azure modules
----------------------
 install-module az -force
-
-exit twice from pwsh and bash
------------------------------
 exit
 exit
-
+````
+<img src="/public/installs1.png"><img src="/public/installs2.png"><img src="/public/installs3.png">
 find the running container name (look at the NAMES column on the right for word1_word2)
 -------------------------------
 docker ps -a
