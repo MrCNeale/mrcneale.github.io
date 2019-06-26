@@ -26,12 +26,12 @@ When I heard that I remembered all the Docker/Container talks I'd been to that u
 So to standardise being able to deploy ARM templates, from a github repo I decided to create a Docker Image, based on CentOS, that has Powershell Core, AZ cmdlets and Git installed. Simples!  
 
 Below is how I did it and how you can too (instructions for windows, but the theory's the same for mac/linux).  
-NOTE: Before you start go to [https://hub.docker.com/](https://hub.docker.com/) and sign up for an account to be able to store your image publicly in later. My repo is called "pobx"...don't ask....
-
+NOTE: Before you start go to [https://hub.docker.com/](https://hub.docker.com/) and sign up for an account to be able to store your image publicly in later. My repo is called "pobx"...don't ask....  
+  
 1 Install docker for windows/mac/linux  
 [https://docs.docker.com/docker-for-windows/install/](https://docs.docker.com/docker-for-windows/install/)  
 It's a next next finish and reboot if required.  
-2 Launch Docker Desktop <img src="/public/docker.png"> and then get the centos base image by opening powershell and run  
+2 Launch Docker Desktop and then get the centos base image by opening powershell and run  
 ```
 docker pull centos
 ```
