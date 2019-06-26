@@ -3,7 +3,7 @@ layout: post
 title: Build a Docker container with a standard deployment environment
 excerpt: If Docker + Powershell + AZ Cmdlets + Git is the answer, what is the question !?
 comments: true
-date: 2019-06-29T22:00:00+00:00
+date: 2019-06-26T22:00:00+00:00
 image:
   feature: azdocker.pnb
 tags: 
