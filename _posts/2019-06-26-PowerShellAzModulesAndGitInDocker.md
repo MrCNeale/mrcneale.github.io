@@ -15,19 +15,32 @@ tags:
 ---
 <img src="/public/azdocker.png">   
 
-# What can you do to find out more about why a VM extension is failing or not working quite right?
+# Practical user for Docker/Containers in infra as code (IaC) - a standard deployment environment
 
+"Infrastructure as Code, Automate all the things, Containers are the future, DevOPs to the max!" has been a chorus of lots of people in tech for a while and as a non-app dev I never really saw applications for containers to help what I do.  
+What do you do? Good question. Well it involves a lot of ARM template deployments and deploying blueprints and standard environments to run tests against.  
 
-install docker for windows
-url, download, next next finish reboot/relogins
+Other folks need to do that and quite often we come up against the "it doesn't work on my PC/MacbookPro!".  
+When I heard that I remembered all the Docker/Container talks I'd been to that used that as an example or use case for Docker. A standard env no matter where you run it.  
 
-get centos image
-----------------
+So to standardise being able to deploy ARM templates, from a github repo I decided to create a Docker Image, based on CentOS, that has Powershell Core, AZ cmdlets and Git installed. Simples!  
+
+Below is how I did it and how you can too (instructions for windows, but the theory's the same for mac/linux).
+
+1. Install docker for windows/mac/linux  
+https://docs.docker.com/docker-for-windows/install/  
+It's a next next finish and reboot if required.
+
+2.  Launch Docker Desktop <img src=/public/docker.png> and then get the centos base image by opening powershell and run  
+```
 docker pull centos
+```
+<img src=/public/pullcentos.png>
 
-start container from centos image in interactive mode at a bash prompt (to make the changes) 
-----------------
+3. Start a container from the CentOS image so we can modify it and create a new image. We need to do this in *interactive* mode so we can run commands after each other and see the results.
+```
 docker run -it centos /bin/bash
+```
 
 install git bash
 ----------------
