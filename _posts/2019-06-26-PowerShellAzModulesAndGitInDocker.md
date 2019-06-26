@@ -41,11 +41,11 @@ docker run -it centos /bin/bash
 ```
 Then install the things
 ```
-yum install -y git  
-curl https://packages.microsoft.com/config/rhel/7/prod.repo | tee /etc/yum.repos.d/microsoft.repo  
-yum install -y powershell  
-pwsh  
-install-module az -force  
+yum install -y git
+curl https://packages.microsoft.com/config/rhel/7/prod.repo | tee /etc/yum.repos.d/microsoft.repo
+yum install -y powershell
+pwsh
+install-module az -force
 exit  
 exit  
 ````
@@ -53,9 +53,9 @@ exit
 What you have now is a CentOS containers, with Powershell and AZ Modules and Git Installed fresh.
 4. Now find the container (it's still running even though you exited bash) and it's amusing two word underscore separated name by running:  
 ```
-docker ps -a  
-CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS                     PORTS               NAMES  
-90194f94db40        centos              "/bin/bash"         26 minutes ago      Exited (0) 6 minutes ago                       nifty_pike  
+docker ps -a
+CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS                     PORTS               NAMES
+90194f94db40        centos              "/bin/bash"         26 minutes ago      Exited (0) 6 minutes ago                       nifty_pike
 ```
 5. Now we want to create the image of that container locally, but the local repo name we use should be the same as our Docker Hub repo we created before we started. In my case "pobx"
 ```
@@ -64,7 +64,11 @@ sha256:912b4df6971e8b4b872e26d27bfb92df60b7c4756b63e02964c131102418ecdb
 ```
 6. Now push it to docker hub, like this
 ```
-
+docker push pobx/centos_az_ps_git_blog:v1
+The push refers to repository [docker.io/pobx/centos_az_ps_git_blog]
+260dddc15255: Pushed
+d69483a6face: Mounted from pobx/centos_ps_az_git
+v1: digest: sha256:2801d29dd86a7eb2c8fceb72442b42f4473d2ea80965e256c9aabfb9ed31a1d9 size: 742
 ```
 And you can see it in docker hub, which means anyone can pull it down.
 <img src="/public/dockerhub.png">
