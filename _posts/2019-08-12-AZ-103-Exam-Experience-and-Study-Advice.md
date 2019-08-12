@@ -20,7 +20,7 @@ tags:
 <img style="float:right;" src="/public/azure-administrator-associate.png">
 
 <H2> NOW WITH LABS! - An Updated Exam and Exam Format</H2>
-I sat the AZ-103 exam at the end of July.  I missed the deadline to do the transition exam, but that wasn't a big problem as they had replaced the previous requirement of two exams to get Azure Administrator (AZ-100 + AZ-101) down to just one in AZ-103
+I sat the AZ-103 exam at the end of July, blog post is a little late due to some family stuff, but back on it now.  I missed the deadline to do the transition exam, but that wasn't a big problem as they had replaced the previous requirement of two exams to get Azure Administrator (AZ-100 + AZ-101) down to just one in AZ-103
 
 This exam felt very familiar.  The questions were not vastly changed from 70-533 which I sat last year, and the format was the same as AZ-302 in that the exam is divided into sections:
 * Traditional Multiple choice
