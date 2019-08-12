@@ -42,7 +42,10 @@ This meant it felt very hard to track your time as each section lists the time f
 As usual I used Scott Duffy's Udemy Course as my main prep. [https://www.udemy.com/70533-azure/](https://www.udemy.com/70533-azure/)  
 "Wait a minute Chris, you've pasted the wrong link".  No I thought something similar.  I logged in to Udemy to buy Scott's AZ-103 course only to find it said "you have already bought this course".  Then I realised that Scott had updated the content for the AZ-103 exam.
 So It saved me another £13.  If you didn't buy 70-533 I'd still recommend Scott's courses, they are great to fill in the gaps
-  
+
+As the questions were soooo similar to 70-533 it felt like some I had seen before.  However when 70-533 was out it may have not been possible to simply say "I'll have the default size of resource X" and be able to meet the requirements.  But as Cloud is always moving on, now it was definitley possible to answer some of the "same" questions without having to do additional work.
+I do wonder how Microsoft manage the portal constantly updating with new VM sizes, disk iops, network speeds and still keep questions static. So hopefully they have that in hand.
+
 <H2>Objectives and Changes</H2>
 The list of objectives and split can be found here  
 [https://www.microsoft.com/en-us/learning/exam-az-103.aspx](https://www.microsoft.com/en-us/learning/exam-az-103.aspx)
