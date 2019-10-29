@@ -1,0 +1,26 @@
+---
+layout: post
+title: Get-Module AZ fails because Azure=Azerbaijan
+excerpt: Culture Wars on the command line
+comments: true
+date: 2019-10-28T22:00:00+00:00
+image:
+  feature: https://avatars2.githubusercontent.com/u/11524380?s=200&v=4
+tags: 
+  - Powershell
+  - Security
+  - Scripting
+  - Azure
+---
+<img style="float:right;" src="https://avatars2.githubusercontent.com/u/11524380?s=200&v=4">
+
+
+
+
+<H2>Fixed in 6.2</H2>
+
+@ronhowe The fix is only for PowerShell Core. You'll get it in PowerShell Core 6.2 RC in hours and in release PowerShell Core 6.2 in weeks.
+
+Windows PowerShell 5.2 is not expected. Although MSFT may port this fix to 5.1.
+
+https://github.com/PowerShell/PowerShell/pull/8777
