@@ -29,10 +29,6 @@ With the popularity of DevOPs and now DevSecOPs, we should all know that "Securi
 However, the reality is that we all came from somewhere and have some speciality or focus.  Mine two areas would, in my opinion, be Identity and Access Management and Networking. This means that there was a large section of the exam that was not my day job.  
 Good examples are securing web apps and functions, SQL PaaS services
 
-This exam felt very familiar.  The questions were not vastly changed from 70-533 which I sat last year, and the format was the same as AZ-302 in that the exam is divided into sections:
-* Traditional Multiple choice
-* Scenario based multiple choice, where the same scenario will be offered for many questions and different solutions proposed.  You have to answer if the proposed solution will meet the requirements
-* Labs. Where you actually log in to an Azure Portal and do things. (These are by far the best part and can't be faked/cheated or braindumped)
 
 <BR>
 <TABLE><TR><TD>
