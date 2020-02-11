@@ -5,7 +5,7 @@ excerpt: Deja zure
 comments: true
 date: 2020-02-10T22:00:00+00:00
 image:
-  feature: az-sec-admin.png
+  feature: 62A702DF-FDA6-4E9A-B92B-CCA038060F9C.png
 tags: 
   - Powershell
   - Security
@@ -17,7 +17,7 @@ tags:
   - ARM
   - PaaS
 ---
-<img style="float:right;" src="/public/az-sec-admin.png">
+<img style="float:right;" src="/public/62A702DF-FDA6-4E9A-B92B-CCA038060F9C.png">
 
 <H2> The Broadest Blueprint yet - In Depth</H2>
 I sat the AZ-500 exam last week.
