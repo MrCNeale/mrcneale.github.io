@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Exam Experience - AZ-500 Microsoft Azure Security Technologies (
+title: Exam Experience - AZ-500 Microsoft Azure Security Technologies (Microsoft Certified: Azure Security Engineer Associate)
 excerpt: Deja zure
 comments: true
 date: 2020-02-10T22:00:00+00:00
@@ -20,8 +20,9 @@ tags:
 <img style="float:right;" src="/public/62A702DF-FDA6-4E9A-B92B-CCA038060F9C.png">
 
 <H2> The Broadest Blueprint yet - In Depth</H2>
-I sat the AZ-500 exam last week.
-I had set aside some time for study, arranged an exam voucher through work, booked it.  All set.
+I sat the AZ-500 exam last week.  
+I had set aside some time for study, arranged an exam voucher through work, booked it.  
+All set.
 I spent a few nights watching some pre-recorded study sessions delivered by a colleague [Dan Oliver](https://www.linkedin.com/in/dan-oliver-723215178/) which were great and covered all the material in the exam areas, in varying degrees of depth as they were 1-2hrs sessions.
 It was watching these that reenforced my understanding that this was possibly the broadest area of Azure. It's obvious that security affects all things.  
 With the popularity of DevOPs and now DevSecOPs, we should all know that "Security should be baked in from the start".  
