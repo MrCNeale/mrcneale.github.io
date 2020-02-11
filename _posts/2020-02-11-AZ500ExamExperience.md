@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Exam Experience - AZ-500 Microsoft Azure Security Technologies (Microsoft Certified: Azure Security Engineer Associate)
-excerpt: Deja zure
+title: Exam Experience - AZ-500 Microsoft Azure Security Technologies (Microsoft Certified Azure Security Engineer Associate)
+excerpt: AWOL. Absent With Out Labs
 comments: true
 date: 2020-02-10T22:00:00+00:00
 image:
