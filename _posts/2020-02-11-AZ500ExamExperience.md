@@ -54,7 +54,7 @@ Four days prior to my exam I had a really bad flu that knocked me sideways and p
 The other thing it meant was that I slept through 2 of the days I was meant to be revising. These things happen, but it did mean I didn't have time to reschedule without a charge. Yes I should have prepped long before the exam, but I have a system and I haven't failed an exam for a while now. It mainly just left me a little less confident than normal, and a little dulled out by paracetemol and ibuprofen.  
 I'd just say always have a Plan-B and make sure you've covered 75% of the material by the week before exam day to give yourself a fighting chance if you get ill.  
   
-<H2> The Twist - less is more? </H2>
+<H2> The Twist - A.W.O.L - An exam With Out Labs! </H2>
 I ploughed through the exam as quickly as was sensible, not delaying on topics or questions I was 95% sure on. It's too easy to talk yourelf out of a correct answer.  
 I did the questions, then scenarios.  
 The test examiner warned me "the labs expect american keyboard, you may have to swap " and @  
