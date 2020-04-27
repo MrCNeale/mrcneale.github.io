@@ -56,4 +56,5 @@ foreach ($vm in $vms){
  $arraywithheader.add($row)
  $row=$null
 }
+$arraywithheader
 ```
