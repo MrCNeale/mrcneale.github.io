@@ -20,11 +20,11 @@ It seems like an obvious thing to ask.
 It seems reasonable to me....However without additional tooling, such as inventory or configuration management software, you can't easily get a list of Azure VMs and their memory sizes that you can manipulate.  
 If you just run "get-azvm" then it returns a property of the vm which is a "HardwareProfile".  This just has a sub property of the VM t-shirt size.  
 e.g. Standard_E8_v3  
-But unless you have an idetic memory, this doesn't mean much.  Even if you do, it doesn't help powershell to process the data.  
+Unless you have an idetic memory, this doesn't mean much.  Even if you do, it doesn't help powershell to process the data.  
 But you can get a list of the details of each t-shirt size, via the prosaicly named get-azvmsize command.  
 Instead of telling you the size of a VM, it tells you the size of VMs you can deploy, or resize to, for a particular region/availability-set/vm.
-
-But now you have the two parts of the puzzle, you just need to knit them together.
+  
+Now you have the two parts of the puzzle, you just need to knit them together.
 First get a list of all your VMs (you could filter if you wanted)  
 ```
 $vms=get-azvm
