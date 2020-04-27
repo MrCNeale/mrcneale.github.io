@@ -13,7 +13,7 @@ tags:
   - IaaS
   - Memory
 ---
-<img src=https://docs.microsoft.com/en-gb/azure/virtual-machines/linux/media/index/logo_powershell.svg height=20% width=20%>
+<img src="https://docs.microsoft.com/en-gb/azure/virtual-machines/linux/media/index/logo_powershell.svg" height="20%" width="20%">
 
 <H1>"How much memory do my VMs have?"</H1>
 It seems like an obvious thing to ask.  
