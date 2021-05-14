@@ -16,7 +16,7 @@ tags:
 ---
 <img src="https://docs.microsoft.com/en-gb/azure/virtual-machines/linux/media/index/logo_powershell.svg" height="20%" width="20%">
 
-<H1>"How much memory do my VMs have?"</H1>
+<H1>"Is this Action Group used by any alerts?"</H1>
 If you want to find out if an Action Group is used by any alerts (metric or Log) how do you do it?
 
 Two simple queries help here:
