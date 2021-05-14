@@ -29,7 +29,7 @@ Get-AzMetricAlertRuleV2 | ?{$_.actions.ActionGroupId -like 'YourActionGroupName'
 To check if any Log Alerts (Known as Scheduled Query alerts since classic was retired)
 run
 ```
-Get-AzScheduledQueryRule | ?{$_.action.aznsaction.actiongroup -like ''YourActionGroupName'}'}
+Get-AzScheduledQueryRule | ?{$_.action.aznsaction.actiongroup -like ''YourActionGroupName'}
 ```
 
 Now you know if the Action Group is being used, and can be safely removed.
