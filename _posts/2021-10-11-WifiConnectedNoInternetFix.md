@@ -5,7 +5,7 @@ excerpt: Powering on old phones without sims, lesson #323
 comments: true
 date: 2021-10-11T09:00:00+00:00
 image:
-  feature: ![image](https://user-images.githubusercontent.com/7669921/136777669-29ce3f07-a994-48e9-a637-c8185211bf94.png)
+  feature: https://user-images.githubusercontent.com/7669921/136777669-29ce3f07-a994-48e9-a637-c8185211bf94.png
 tags: 
   - Android
   - WiFi
@@ -15,9 +15,9 @@ tags:
 ---
 ![image](https://user-images.githubusercontent.com/7669921/136777669-29ce3f07-a994-48e9-a637-c8185211bf94.png)
 
-<H1>"Wi-Fi has no internet access</H1>
-![image](https://user-images.githubusercontent.com/7669921/136776940-3c068854-9be0-4934-9c9d-b80fbe07b314.png)
+<H1>"Wi-Fi has no internet access"</H1>
 If you're connecting your Android phone to a network and find that everything else connects to that network fine except your phone and you get the above error, this could be the fix.
+<IMG SRC=https://user-images.githubusercontent.com/7669921/136776940-3c068854-9be0-4934-9c9d-b80fbe07b314.png>
 <P>
 You've already tried
 * Rebooting
