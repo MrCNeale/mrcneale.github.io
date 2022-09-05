@@ -29,10 +29,10 @@ You can do this by going to your Project Settings>Pipelines>Agent Pools and sele
 It is likely that one or more (depending on your setup) is showing as offline.
 <P>
 <H1>Why is my agent showing offline?</H1>
+
   
-![image](/public/agentpool2.jpg)
+![image](/public/agentpool2.png)
  
-<BR>
 It can be a number of reasons.  To query the status of the agent you need to log on to the VM itself and query the service.  
 We run our agent on Ubuntu, so after SSH-ing in you need to change directory to the home folder for the agent user, e.g.
 /home/myDevopsUser/ADOAgent  
@@ -45,7 +45,16 @@ sudo ./svs.ch status -l
 This will show you the status and the tail end of the log so you can look for obvious issues.  
 In our case it was complaining about not being able to reach the devops url ** "Attempt 1 of GET request to https://dev.azure.com failed" **  
 This made us look at name resolution and found that DNS was failing to resolve names on the VM.  
+Everything in the resolv.conf and other areas pointed to DNS working fine.  There were no NSGs or firewalls configured.
+A simple reboot of the VM resolved the Name Resolution problem, and also auto-upgraded the agent to the latest release.
   
+If you are having other issues, specific to the agent, you can try stopping and starting the agent with the same script
+
+```Bash
+sudo ./svs.ch stop
+sudo ./svs.ch start
+```
+You'll
   
 <H1>Fixed and/or upgrading agents in the portal</H1>
   
