@@ -39,7 +39,7 @@ We run our agent on Ubuntu, so after SSH-ing in you need to change directory to 
 From here you need to query the service
 
 ```
-sudo ./svs.ch status -l
+sudo ./svs.sh status -l
 ```
 
 This will show you the status and the tail end of the log so you can look for obvious issues.  
@@ -50,8 +50,8 @@ A simple reboot of the VM resolved the Name Resolution problem, and also auto-up
 If you are having other issues, specific to the agent, you can try stopping and starting the agent with the same script
 
 ```
-sudo ./svs.ch stop
-sudo ./svs.ch start
+sudo ./svs.sh stop
+sudo ./svs.sh start
 ```
 
 You can then query the status again and you should get a service running with no errors in the log.
