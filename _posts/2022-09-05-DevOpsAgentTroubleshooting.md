@@ -55,9 +55,13 @@ sudo ./svs.ch start
 ```
 
 You can then query the status again and you should get a service running with no errors in the log.
-![](public/agentstatus.png)
+
+![](/public/agentstatus.png)
 
 # Fixed and/or upgrading agents in the portal
+
 ![image](/public/agentpool1.jpg) 
+
 Once your agent is fixed you will see it showing as "Online" and the version will be the latest.  
-You should now be able to run tasks/jobs utilising your Self-Hosted Agent again.
+You should now be able to run tasks/jobs utilising your Self-Hosted Agent again.  
+Normally agents update automatically (for minor versions). If your agents have not updated, you can click on "Update all agents" in the top right.
