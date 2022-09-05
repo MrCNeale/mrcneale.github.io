@@ -21,7 +21,7 @@ We recently had issues with some Devops tasks queuing. This was happening only w
 Why run our own agents?  It's a reasonable question. Microsoft provide agents (VMs) pre-configured and ready to run your tasks for you, so why mess about setting up your own?  
 There is usually a problem or configuration that cannot be solved using the Microsoft Pool of agents as they are selected at random and the only known quantity about them is that they will be selected from a pool that is in the same region as your DevOps Organisation. That's fine if everything you're doing is "public" and just requires access to publicly available APIs and URLs such as the Azure Resource Manager or other 3rd party https links.  
 However part of our pipeline deploys a container to a private AKS cluster. As soon as you make the cluster private, you can no longer send API calls to the Kubernetes control plane unless you are on a known network which has been given access to the cluster via firewall/NSGs etc.
-So it is much easier to create a VM inside the subscription alongside the AKS cluster to run DevOps jobs against.
+So it is much easier to create a VM inside the subscription alongside the AKS cluster to run DevOps jobs against.  
 <P>
 <H1>Why are my self-hosted jobs failing?</H1>
 If you find tasks inside a job/pipeline are failing and they are only on your self-hosted agents. You should check your self hosted agent pool.
