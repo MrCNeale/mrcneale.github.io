@@ -29,7 +29,8 @@ You can do this by going to your Project Settings>Pipelines>Agent Pools and sele
 It is likely that one or more (depending on your setup) is showing as offline.
 
 <H1>Why is my agent showing offline?</H1>
-![image](public/agentpool1.jpg)
+![image](/public/agentpool1.jpg)
+ 
 It can be a number of reasons.  To query the status of the agent you need to log on to the VM itself and query the service.  
 We run our agent on Ubuntu, so after SSH-ing in you need to change directory to the home folder for the agent user, e.g.
 /home/myDevopsUser/ADOAgent
