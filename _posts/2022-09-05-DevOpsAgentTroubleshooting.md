@@ -14,7 +14,7 @@ tags:
   - Agent
   - Fix
 ---
-![image](public/ado.jpg)
+![image](/public/ado.jpg)
 
 <H1>Why Use Self-Hosted Agents for Devops jobs?</H1>
 We recently had issues with some Devops tasks queuing. This was happening only with the tasks in the job that we run on our self-hosted agents.  
