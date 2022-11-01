@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>config on Chris Neales Blog</title><link>https://www.chrisneale.org/categories/config/</link><description>Recent content in config on Chris Neales Blog</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 06 Oct 2015 00:00:00 +0000</lastBuildDate><atom:link href="https://www.chrisneale.org/categories/config/index.xml" rel="self" type="application/rss+xml"/><item><title>I am not a N00b! - Telling vCenter to stop showing you getting started pages!</title><link>https://www.chrisneale.org/posts/2015-10-06-iamnotan00b/</link><pubDate>Tue, 06 Oct 2015 00:00:00 +0000</pubDate><guid>https://www.chrisneale.org/posts/2015-10-06-iamnotan00b/</guid><description>I should have found this years ago.
+Like most of you reading this I get bugged by vCenter presuming this is my first Rodeo, as they say.
+Everytime you go to a new Datacentre/Cluster/Folder/VM* (Delete as appropriate) it gives me the Getting Started pages.
+So today I found the off switches:
+For C# Client
+For the Web Client
+Job done. You are now L33t @ vCenter</description></item></channel></rss>
