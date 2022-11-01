@@ -21,7 +21,7 @@ Solution
 [https://support.microsoft.com/en-us/kb/932455](https://support.microsoft.com/en-us/kb/932455)
 ...yes I know it's for 2003 but AD hasn't changed that much since then...shhh don't tell!
 * Also Delegate **Read All Properties** and **Write All Properties**
-* Your OU permissions should look like this now (Tenant1Admin is the Account Mr Domain Admin has given you) ![OU Permissions](/public/sshot1.PNG "OU Permissions")
+* Your OU permissions should look like this now (Tenant1Admin is the Account Mr Domain Admin has given you) ![OU Permissions](/images/sshot1.PNG "OU Permissions")
 
 The latter was the key to getting ESXi to be able to update random fields in the Computer Object such as *OperatingSystemServicePack* which VMware/Likewise decided to populate with *Likewise Identity 5.3.0*!
 For background info and other reasons you might be stuck, read on........

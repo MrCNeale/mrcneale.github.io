@@ -10,7 +10,7 @@ tags:
 - VCIX
 title: VCIX-NV Exam Experience
 ---
-<IMG src="/public/VCIX-NV.png" align="right">
+<img src="/images/VCIX-NV.png" align="right">
 Last month I sat and passed the VCIX-NV exam.  Driven, like a lot of others, by the impending retirement of the exam that keeps getting extended...more on that later.
 
 This is a post in two parts, first the exam experience, second a few pondering on VMware Education's current trajectory.
@@ -34,7 +34,7 @@ Ok I was lucky.  I was getting paid to revise and the customer was getting the s
 However there were still the corner cases or bits I never touched.  OSPF/IS-IS/BGP were all alien to me.  I'm from a vSphere background and whilst I understand my fair share of networking, these very traditional networking areas such as routing advertisement protocols were new to me and very similar to each other, but with slight differences.  
 This is where *Iwan Hoogendoorn* steps in to help everyone!  He sat the VCIX-NV some time ago but was generous enough to work through every Blueprint item and make a video blog of it, then upload them all to YouTube.  
 [https://www.youtube.com/channel/UCcE9U_Gf0MhGpsDIhneMyDg](https://www.youtube.com/channel/UCcE9U_Gf0MhGpsDIhneMyDg)
-![Examples](/public/chrome_2016-11-21_23-10-09.png)
+![Examples](/images/chrome_2016-11-21_23-10-09.png)
 It's essential watching for anyone pondering the exam...even the new 6.2 version I would argue.  Ok you will need to update a few of the boxes but if you copied along with the video using 6.2 I'm sure you would be able to figure out the differences in drop-downs etc.
 
 The Questions
@@ -64,7 +64,7 @@ There are some positives here.  Myles Gray recently sat the VCAP6-NV Deploy and 
 <https://blah.cloud/personal/vcix6-nv-exam-experience/>  
 Also VMware now give you a preview of the Lab Experience in a PDF at <https://mylearn.vmware.com/lcms/web/portals/certification/VMware%20Certification%20Platform%20Interface.pdf#src=vmw_so_vex_cneal_850>  
 Notice anything familiar?
-![vcap-hol-view](/public/chrome_2016-11-21_23-01-55.png)  
+![vcap-hol-view](/images/chrome_2016-11-21_23-01-55.png)  
 That's right it's HOL style.  Something you should be very familiar with as you should be hammering the HOLs to learn NSX and anything else ;-)  
 That's positive.  
 The negatives are the ongoing debacle that VCIX-NV will/won't/will/won't/will/won't/will/won't get upgraded to VCIX6-NV.  It was version 6 of NSX so it should, and there was no Design exam available either to do a full VCAP6-NV...  They really need to sort their roadmap out, it changes too often and then lacks support.  

@@ -29,7 +29,7 @@ $MyKPDatabase = new-object KeePassLib.PwDatabase
 $MyKPDatabase  
 {{< / highlight >}}
 
-<IMG src="/public/kpass1.png" align="right">  
+<img src="/images/kpass1.png" align="right">  
 Ok, so as you can see you've got a DB there ready to be populated, but not with passwords, we're going to use it to read in an existing database.  But first we need to create a few variables before we try and open it.  We have an empty KP variable to store it in, next we need the location on disk and the existing Master KP Database password.  
 Our file is in the same folder c:\temp it's called test.kdbx so c:\temp\test.kdbx and FOR THE PURPOSES OF THIS BLOG ONLY I've set the password to Password123 and I will be showing it in the script, for clarity #ironic  
 {{< highlight ruby >}}
@@ -54,8 +54,8 @@ foreach($KPObject in $KPObjects)
 }
 {{< / highlight >}}
 And you should get the list
-<IMG src="/public/kpass2.png"><BR>
+<img src="/images/kpass2.png"><BR>
 which should match your db<BR>
-<IMG src="/public/kpass3.png"><BR>
+<img src="/images/kpass3.png"><BR>
 <BR>
 Here endeth the lesson for today.  In Part 2 - we'll look at reading in a specific username/password based on title, and maybe writing back to the kdbx file!  

@@ -13,7 +13,7 @@ tags:
 - Extensions
 title: Build a Docker container with a standard deployment environment
 ---
-<img src="/public/azdocker.png">   
+<img src="/images/azdocker.png">   
 
 # Practical user for Docker/Containers in infra as code (IaC) - a standard deployment environment
 
@@ -49,7 +49,7 @@ install-module az -force
 exit  
 exit  
 ````
-<img src="/public/installs1.png"><img src="/public/installs2.png"><img src="/public/installs3.png">  
+<img src="/images/installs1.png"><img src="/images/installs2.png"><img src="/images/installs3.png">  
 What you have now is a CentOS containers, with Powershell and AZ Modules and Git Installed fresh.  
 4 Now find the container (it's still running even though you exited bash) and it's amusing two word underscore separated name by running:  
 ```
@@ -71,13 +71,13 @@ d69483a6face: Mounted from pobx/centos_ps_az_git
 v1: digest: sha256:2801d29dd86a7eb2c8fceb72442b42f4473d2ea80965e256c9aabfb9ed31a1d9 size: 742
 ```
 And you can see it in docker hub, which means anyone can pull it down.
-<img src="/public/dockerhub.png">  
+<img src="/images/dockerhub.png">  
 7 Done. Now it's in docker hub.  Go to another pc and run
 ```
 docker pull myRepo/centos_az_ps_git:v1
 docker run -it myRepo/centos_az_ps_git:v1 pwsh
 ```  
 Et voila  
-<img src="/public/connected.png">  
+<img src="/images/connected.png">  
 Yes I get this is powershell inside powershell, but you could run it from a linux vm with no powershell core, or mac or windows without git commands or a windows machine with old AzureRM modules or no Azure modules.  
 If you tested your templates and/or scripts run from this container, it will work when run on the other person's machine from this container too.

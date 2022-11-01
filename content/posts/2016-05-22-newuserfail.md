@@ -25,7 +25,7 @@ I saw this and was confused
 {{< highlight ruby >}}Failed to authenticate principal [username@SSO_Domain]. User password expired.{{< / highlight >}}
 
 How can a newly created user have an expired password.  I checked the password expiry length setting and it was to this.<BR>
-![password expiry setting](/public/pawd1.png "Password Expiry Setting")<BR>
+![password expiry setting](/images/pawd1.png "Password Expiry Setting")<BR>
 Plenty I thought.  Then I found this KB.
 
 [https://kb.vmware.com/selfservice/microsites/search.do?language=en_US&cmd=displayKC&externalId=2125495&src=vmw_so_vex_cneal_850](https://kb.vmware.com/selfservice/microsites/search.do?language=en_US&cmd=displayKC&externalId=2125495&src=vmw_so_vex_cneal_850)
@@ -38,7 +38,7 @@ Well I didn't.  This environment was used to document an upgrade and so the root
 
 This was the first account I had created after the upgrade.  How do you fix your new accounts?
 
-1. Change the setting in SSO to below the maximum ![Password Expiry Setting](/public/pawd2.png "Password Expiry Setting")
+1. Change the setting in SSO to below the maximum ![Password Expiry Setting](/images/pawd2.png "Password Expiry Setting")
 2. Then DELETE and recreate your user! (very poor show vmware!)
 
 So there we have it.  VMware's own default changing between versions. Smooth move.....
