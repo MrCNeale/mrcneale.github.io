@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>IaaS on Chris Neales Blog</title>
+    <link>https://www.chrisneale.org/tags/iaas/</link>
+    <description>Recent content in IaaS on Chris Neales Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 27 Apr 2020 22:00:00 +0000</lastBuildDate><atom:link href="https://www.chrisneale.org/tags/iaas/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Powershell to retreive Azure VM Memory Size</title>
+      <link>https://www.chrisneale.org/posts/2020-04-27-powershell-to-retreive-azure-vm-memory-size/</link>
+      <pubDate>Mon, 27 Apr 2020 22:00:00 +0000</pubDate>
+      
+      <guid>https://www.chrisneale.org/posts/2020-04-27-powershell-to-retreive-azure-vm-memory-size/</guid>
+      <description>Now you have the two parts of the puzzle, you just need to knit them together. First get a list of all your VMs (you could filter if you wanted)
+$vms=get-azvm Now get a list of VM t-shirt sizes (I use eastus as it&amp;rsquo;s usually the most complete list of sizes)
+$vmsizelist = Get-AzVMSize -Location eastus Now we loop through each vm, get it&amp;rsquo;s hardware profile. Read the VMSize property, then go find that row in the t-shirt size table, and find how much memory that t-shirt size has.</description>
+    </item>
+    
+  </channel>
+</rss>

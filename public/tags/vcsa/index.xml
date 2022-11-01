@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>VCSA on Chris Neales Blog</title>
+    <link>https://www.chrisneale.org/tags/vcsa/</link>
+    <description>Recent content in VCSA on Chris Neales Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 22 May 2016 22:00:00 +0000</lastBuildDate><atom:link href="https://www.chrisneale.org/tags/vcsa/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Newly created vsphere.local SSO user gets username/password error</title>
+      <link>https://www.chrisneale.org/posts/2016-05-22-newuserfail/</link>
+      <pubDate>Sun, 22 May 2016 22:00:00 +0000</pubDate>
+      
+      <guid>https://www.chrisneale.org/posts/2016-05-22-newuserfail/</guid>
+      <description>I was recently creating new users in vsphere.local in a lab environment. When I came to test logging in I got &amp;ldquo;invalid username/password&amp;rdquo; from the web-client.
+Hmm odd. So I went back in and checked the username was spelt correctly and reset the password typing slowly.
+Back out. Tried login again&amp;hellip;.same error. Ok maybe I&amp;rsquo;m being really fat fingered. Nope I typed the password into a notepad and it was correct.</description>
+    </item>
+    
+    <item>
+      <title>vSphere vApps unaffected by Back to 28 Vulnerability (CVE-2015-8370)</title>
+      <link>https://www.chrisneale.org/posts/2015-12-20-grub-back-to-28-doesnt-affect-vmware/</link>
+      <pubDate>Sun, 20 Dec 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.chrisneale.org/posts/2015-12-20-grub-back-to-28-doesnt-affect-vmware/</guid>
+      <description>Recently Hector Marco and Ismael Ripoll discovered a vulnerability in common Linux bootloader GRUB.
+It affects GRUB2 specifically and was introduced into that version in 2009
+http://hmarco.org/bugs/CVE-2015-8370-Grub2-authentication-bypass.html
+https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-8370
+However it doesn&amp;rsquo;t affect the original GRUB.
+I was concerned about the Virtual Appliances we were running in one of our environments.
+VCSA - vCenter Server Appliance 5.5 Update 2e | 16 APR 2015| Build 2646489 vRealize Log Insight 3.0 GA Build 3021606 VROPS 6.</description>
+    </item>
+    
+    <item>
+      <title>VCP5 - Fixing SSL Cert on newly deployed vCenter Server Appliance after changing IP</title>
+      <link>https://www.chrisneale.org/posts/2014-05-11-vcp5-fixing-ssl-cert-on-newly-deployed-vcenter-server-appliance-after-changing-ip/</link>
+      <pubDate>Sun, 11 May 2014 18:00:00 +0000</pubDate>
+      
+      <guid>https://www.chrisneale.org/posts/2014-05-11-vcp5-fixing-ssl-cert-on-newly-deployed-vcenter-server-appliance-after-changing-ip/</guid>
+      <description>So you deploy the VCA from the OVA. Easy peasy. Any monkey could do that!
+You config it from the webpage. Things like changing the default password, general good practice etc.
+&amp;hellip;.and obviously you change the IP to a static one.
+Wait! Stop! You just broke the VCA. Well you sort of did. You changed the name but didn&amp;rsquo;t update the SSL cert that was generated when it was first built/configured.</description>
+    </item>
+    
+  </channel>
+</rss>

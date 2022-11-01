@@ -5,6 +5,484 @@
     <link>https://www.chrisneale.org/categories/</link>
     <description>Recent content in Categories on Chris Neales Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://www.chrisneale.org/categories/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <lastBuildDate>Mon, 30 Nov 2015 00:00:00 +0000</lastBuildDate><atom:link href="https://www.chrisneale.org/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Active Directory</title>
+      <link>https://www.chrisneale.org/categories/active-directory/</link>
+      <pubDate>Mon, 30 Nov 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.chrisneale.org/categories/active-directory/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>AD</title>
+      <link>https://www.chrisneale.org/categories/ad/</link>
+      <pubDate>Mon, 30 Nov 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.chrisneale.org/categories/ad/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ESXi</title>
+      <link>https://www.chrisneale.org/categories/esxi/</link>
+      <pubDate>Mon, 30 Nov 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.chrisneale.org/categories/esxi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Security</title>
+      <link>https://www.chrisneale.org/categories/security/</link>
+      <pubDate>Mon, 30 Nov 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.chrisneale.org/categories/security/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>VMWare</title>
+      <link>https://www.chrisneale.org/categories/vmware/</link>
+      <pubDate>Mon, 30 Nov 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.chrisneale.org/categories/vmware/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Docker</title>
+      <link>https://www.chrisneale.org/categories/docker/</link>
+      <pubDate>Thu, 08 Oct 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.chrisneale.org/categories/docker/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>nsx</title>
+      <link>https://www.chrisneale.org/categories/nsx/</link>
+      <pubDate>Thu, 08 Oct 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.chrisneale.org/categories/nsx/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>vIDM</title>
+      <link>https://www.chrisneale.org/categories/vidm/</link>
+      <pubDate>Thu, 08 Oct 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.chrisneale.org/categories/vidm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>vmworld</title>
+      <link>https://www.chrisneale.org/categories/vmworld/</link>
+      <pubDate>Thu, 08 Oct 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.chrisneale.org/categories/vmworld/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>config</title>
+      <link>https://www.chrisneale.org/categories/config/</link>
+      <pubDate>Tue, 06 Oct 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.chrisneale.org/categories/config/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>VCenter</title>
+      <link>https://www.chrisneale.org/categories/vcenter/</link>
+      <pubDate>Tue, 06 Oct 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.chrisneale.org/categories/vcenter/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>vsphere</title>
+      <link>https://www.chrisneale.org/categories/vsphere/</link>
+      <pubDate>Tue, 06 Oct 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.chrisneale.org/categories/vsphere/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Certificates</title>
+      <link>https://www.chrisneale.org/categories/certificates/</link>
+      <pubDate>Mon, 05 Oct 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.chrisneale.org/categories/certificates/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>PSC</title>
+      <link>https://www.chrisneale.org/categories/psc/</link>
+      <pubDate>Mon, 05 Oct 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.chrisneale.org/categories/psc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Certification</title>
+      <link>https://www.chrisneale.org/categories/certification/</link>
+      <pubDate>Sun, 16 Aug 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.chrisneale.org/categories/certification/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Microsegmentation</title>
+      <link>https://www.chrisneale.org/categories/microsegmentation/</link>
+      <pubDate>Sun, 16 Aug 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.chrisneale.org/categories/microsegmentation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SDN</title>
+      <link>https://www.chrisneale.org/categories/sdn/</link>
+      <pubDate>Sun, 16 Aug 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.chrisneale.org/categories/sdn/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Study</title>
+      <link>https://www.chrisneale.org/categories/study/</link>
+      <pubDate>Sun, 16 Aug 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.chrisneale.org/categories/study/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>VCP</title>
+      <link>https://www.chrisneale.org/categories/vcp/</link>
+      <pubDate>Sun, 16 Aug 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.chrisneale.org/categories/vcp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>vcp-nv</title>
+      <link>https://www.chrisneale.org/categories/vcp-nv/</link>
+      <pubDate>Sun, 16 Aug 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.chrisneale.org/categories/vcp-nv/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>iSCSI</title>
+      <link>https://www.chrisneale.org/categories/iscsi/</link>
+      <pubDate>Tue, 11 Aug 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.chrisneale.org/categories/iscsi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Metrics</title>
+      <link>https://www.chrisneale.org/categories/metrics/</link>
+      <pubDate>Tue, 11 Aug 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.chrisneale.org/categories/metrics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Routing</title>
+      <link>https://www.chrisneale.org/categories/routing/</link>
+      <pubDate>Tue, 11 Aug 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.chrisneale.org/categories/routing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>VMXNet3</title>
+      <link>https://www.chrisneale.org/categories/vmxnet3/</link>
+      <pubDate>Tue, 11 Aug 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.chrisneale.org/categories/vmxnet3/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Devops</title>
+      <link>https://www.chrisneale.org/categories/devops/</link>
+      <pubDate>Tue, 30 Jun 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.chrisneale.org/categories/devops/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>dfw</title>
+      <link>https://www.chrisneale.org/categories/dfw/</link>
+      <pubDate>Wed, 08 Apr 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.chrisneale.org/categories/dfw/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>dlr</title>
+      <link>https://www.chrisneale.org/categories/dlr/</link>
+      <pubDate>Wed, 08 Apr 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.chrisneale.org/categories/dlr/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>dvs</title>
+      <link>https://www.chrisneale.org/categories/dvs/</link>
+      <pubDate>Wed, 08 Apr 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.chrisneale.org/categories/dvs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>dvswitch</title>
+      <link>https://www.chrisneale.org/categories/dvswitch/</link>
+      <pubDate>Wed, 08 Apr 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.chrisneale.org/categories/dvswitch/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>nexus100v</title>
+      <link>https://www.chrisneale.org/categories/nexus100v/</link>
+      <pubDate>Wed, 08 Apr 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.chrisneale.org/categories/nexus100v/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>nsx for vsphere</title>
+      <link>https://www.chrisneale.org/categories/nsx-for-vsphere/</link>
+      <pubDate>Wed, 08 Apr 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.chrisneale.org/categories/nsx-for-vsphere/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>nsx-mh</title>
+      <link>https://www.chrisneale.org/categories/nsx-mh/</link>
+      <pubDate>Wed, 08 Apr 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.chrisneale.org/categories/nsx-mh/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>vswitch</title>
+      <link>https://www.chrisneale.org/categories/vswitch/</link>
+      <pubDate>Wed, 08 Apr 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.chrisneale.org/categories/vswitch/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>openstack</title>
+      <link>https://www.chrisneale.org/categories/openstack/</link>
+      <pubDate>Fri, 13 Mar 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.chrisneale.org/categories/openstack/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>vios</title>
+      <link>https://www.chrisneale.org/categories/vios/</link>
+      <pubDate>Fri, 13 Mar 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.chrisneale.org/categories/vios/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>homelab</title>
+      <link>https://www.chrisneale.org/categories/homelab/</link>
+      <pubDate>Wed, 11 Feb 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.chrisneale.org/categories/homelab/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>licensing</title>
+      <link>https://www.chrisneale.org/categories/licensing/</link>
+      <pubDate>Wed, 11 Feb 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.chrisneale.org/categories/licensing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Uncategorized</title>
+      <link>https://www.chrisneale.org/categories/uncategorized/</link>
+      <pubDate>Wed, 11 Feb 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.chrisneale.org/categories/uncategorized/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>win10</title>
+      <link>https://www.chrisneale.org/categories/win10/</link>
+      <pubDate>Wed, 11 Feb 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.chrisneale.org/categories/win10/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>win7</title>
+      <link>https://www.chrisneale.org/categories/win7/</link>
+      <pubDate>Wed, 11 Feb 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.chrisneale.org/categories/win7/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>win8</title>
+      <link>https://www.chrisneale.org/categories/win8/</link>
+      <pubDate>Wed, 11 Feb 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.chrisneale.org/categories/win8/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>VCAP</title>
+      <link>https://www.chrisneale.org/categories/vcap/</link>
+      <pubDate>Thu, 22 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.chrisneale.org/categories/vcap/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>communities</title>
+      <link>https://www.chrisneale.org/categories/communities/</link>
+      <pubDate>Tue, 07 Oct 2014 18:00:00 +0000</pubDate>
+      
+      <guid>https://www.chrisneale.org/categories/communities/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>forums</title>
+      <link>https://www.chrisneale.org/categories/forums/</link>
+      <pubDate>Tue, 07 Oct 2014 18:00:00 +0000</pubDate>
+      
+      <guid>https://www.chrisneale.org/categories/forums/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>vExpert</title>
+      <link>https://www.chrisneale.org/categories/vexpert/</link>
+      <pubDate>Tue, 07 Oct 2014 18:00:00 +0000</pubDate>
+      
+      <guid>https://www.chrisneale.org/categories/vexpert/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>vmworld2014</title>
+      <link>https://www.chrisneale.org/categories/vmworld2014/</link>
+      <pubDate>Tue, 07 Oct 2014 18:00:00 +0000</pubDate>
+      
+      <guid>https://www.chrisneale.org/categories/vmworld2014/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>vmworldeurope</title>
+      <link>https://www.chrisneale.org/categories/vmworldeurope/</link>
+      <pubDate>Tue, 07 Oct 2014 18:00:00 +0000</pubDate>
+      
+      <guid>https://www.chrisneale.org/categories/vmworldeurope/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Deep Security</title>
+      <link>https://www.chrisneale.org/categories/deep-security/</link>
+      <pubDate>Thu, 12 Jun 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.chrisneale.org/categories/deep-security/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>dsm</title>
+      <link>https://www.chrisneale.org/categories/dsm/</link>
+      <pubDate>Thu, 12 Jun 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.chrisneale.org/categories/dsm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>dsva</title>
+      <link>https://www.chrisneale.org/categories/dsva/</link>
+      <pubDate>Thu, 12 Jun 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.chrisneale.org/categories/dsva/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Trend</title>
+      <link>https://www.chrisneale.org/categories/trend/</link>
+      <pubDate>Thu, 12 Jun 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.chrisneale.org/categories/trend/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Virtualisation</title>
+      <link>https://www.chrisneale.org/categories/virtualisation/</link>
+      <pubDate>Thu, 12 Jun 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.chrisneale.org/categories/virtualisation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>vmtools</title>
+      <link>https://www.chrisneale.org/categories/vmtools/</link>
+      <pubDate>Thu, 12 Jun 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.chrisneale.org/categories/vmtools/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>

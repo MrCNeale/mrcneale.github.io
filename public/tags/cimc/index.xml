@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CIMC on Chris Neales Blog</title>
+    <link>https://www.chrisneale.org/tags/cimc/</link>
+    <description>Recent content in CIMC on Chris Neales Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 28 Jul 2014 18:00:00 +0000</lastBuildDate><atom:link href="https://www.chrisneale.org/tags/cimc/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>UCS Manager Security Hardening (or not) in a vBlock</title>
+      <link>https://www.chrisneale.org/posts/2014-07-28-ucs-manager-security-hardening-or-not-in-a-vblock/</link>
+      <pubDate>Mon, 28 Jul 2014 18:00:00 +0000</pubDate>
+      
+      <guid>https://www.chrisneale.org/posts/2014-07-28-ucs-manager-security-hardening-or-not-in-a-vblock/</guid>
+      <description>Another of the outputs of our recent penetration test was an issue with Weak Ciphers in both the IPMI service on C200 Rack servers and B220 M3 blades and the CIMC https server of the C200&amp;rsquo;s
+Ok so can we fix it?
+Well the answer isn&amp;rsquo;t a black/white yes or no.
+We are running the above UCS servers in 2 vBlocks. The first is a vBlock 100 the second is a vBlock 300.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ntp on Chris Neales Blog</title>
+    <link>https://www.chrisneale.org/tags/ntp/</link>
+    <description>Recent content in ntp on Chris Neales Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 30 May 2014 20:00:00 +0000</lastBuildDate><atom:link href="https://www.chrisneale.org/tags/ntp/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>VCP 5 - Objective 1.2 - Host/Configuration Tab (in essence!)</title>
+      <link>https://www.chrisneale.org/posts/2014-05-30-vcp-5-objective-1-2-hostconfiguration-tab-in-essence/</link>
+      <pubDate>Fri, 30 May 2014 20:00:00 +0000</pubDate>
+      
+      <guid>https://www.chrisneale.org/posts/2014-05-30-vcp-5-objective-1-2-hostconfiguration-tab-in-essence/</guid>
+      <description>So here I&amp;rsquo;m going to describe what many possibly have done before, but it&amp;rsquo;s needed for the exam&amp;hellip;..so here goes.
+Configure NTP on an ESXi host. Connect to the ESX/ESXi host using the vSphere Client. Click the Configuration tab. Click Time Configuration/Properties/Options/NTP Settings. Click Add. Enter the NTP Server name. Click OK. Click the General tab. Click Start automatically under Startup Policy. Click Start and click OK. Click OK to exit.</description>
+    </item>
+    
+    <item>
+      <title>Time waits for no man, or member server - The Importance of Time Synchronisation in Windows 2008 Domains</title>
+      <link>https://www.chrisneale.org/posts/2012-05-30-time-waits-for-no-man-or-member-server-the-importance-of-time-synchronisation/</link>
+      <pubDate>Wed, 30 May 2012 18:00:00 +0000</pubDate>
+      
+      <guid>https://www.chrisneale.org/posts/2012-05-30-time-waits-for-no-man-or-member-server-the-importance-of-time-synchronisation/</guid>
+      <description>I had built a Windows 2008 server from a custom SOE disc, all seemed well but it wouldn&amp;rsquo;t register in DNS. I&amp;rsquo;d specified the name servers correctly and the server I&amp;rsquo;d built the week before had no issues registering in the same domain. This was a relatively new domain however and the server was pinging all the same and joined the domain without issue. I continued&amp;hellip;but then spotted that the SOE post build tasks had failed on Activating Windows.</description>
+    </item>
+    
+  </channel>
+</rss>

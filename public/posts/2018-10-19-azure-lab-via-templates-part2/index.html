@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <title>Building an Azure lab environment via ARM templates - Part2 Adding a VM to your network // Chris Neales Blog</title>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.105.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="John Doe" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="https://www.chrisneale.org/css/main.min.0fb49e70a30412f97ddfc418e18fefef1d9fcdebe45f634dbbba768b00fe1eec.css" />
+
+    
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Building an Azure lab environment via ARM templates - Part2 Adding a VM to your network"/>
+<meta name="twitter:description" content="Aim This post will show you how to take your existing template and add a VM to it, slowly building up our lab environment.
+Pre-reqs You&rsquo;ll need:
+Read/do Part 1 (https://www.chrisneale.org/Azure-Lab-via-Templates-Part1/) The Story so far and next We had an ARM template that would deploy a single vNet with a single subnet with fixed names.
+Now we&rsquo;ll add a VM&hellip;..but first we need to add one more thing a NIC"/>
+
+    <meta property="og:title" content="Building an Azure lab environment via ARM templates - Part2 Adding a VM to your network" />
+<meta property="og:description" content="Aim This post will show you how to take your existing template and add a VM to it, slowly building up our lab environment.
+Pre-reqs You&rsquo;ll need:
+Read/do Part 1 (https://www.chrisneale.org/Azure-Lab-via-Templates-Part1/) The Story so far and next We had an ARM template that would deploy a single vNet with a single subnet with fixed names.
+Now we&rsquo;ll add a VM&hellip;..but first we need to add one more thing a NIC" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.chrisneale.org/posts/2018-10-19-azure-lab-via-templates-part2/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2018-10-19T10:00:00+00:00" />
+<meta property="article:modified_time" content="2018-10-19T10:00:00+00:00" />
+
+
+
+  </head>
+  <body>
+    <header class="app-header">
+      <a href="https://www.chrisneale.org/"><img class="app-header-avatar" src="/avatar.jpg" alt="John Doe" /></a>
+      <span class="app-header-title">Chris Neales Blog</span>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vehicula turpis sit amet elit pretium.</p>
+    </header>
+    <main class="app-container">
+      
+  <article class="post">
+    <header class="post-header">
+      <h1 class ="post-title">Building an Azure lab environment via ARM templates - Part2 Adding a VM to your network</h1>
+      <div class="post-meta">
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-calendar">
+  <title>calendar</title>
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line>
+</svg>
+          Oct 19, 2018
+        </div>
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-clock">
+  <title>clock</title>
+  <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
+</svg>
+          6 min read
+        </div>
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tag">
+  <title>tag</title>
+  <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line>
+</svg>
+              <a class="tag" href="https://www.chrisneale.org/tags/azure/">Azure</a>
+              <a class="tag" href="https://www.chrisneale.org/tags/template/">Template</a>
+              <a class="tag" href="https://www.chrisneale.org/tags/automation/">Automation</a>
+        </div>
+      </div>
+    </header>
+    <div class="post-content">
+      <!-- raw HTML omitted -->
+<h2 id="aim">Aim</h2>
+<p>This post will show you how to take your existing template and add a VM to it, slowly building up our lab environment.</p>
+<h2 id="pre-reqs">Pre-reqs</h2>
+<p>You&rsquo;ll need:</p>
+<ul>
+<li>Read/do Part 1 (<a href="https://www.chrisneale.org/Azure-Lab-via-Templates-Part1/">https://www.chrisneale.org/Azure-Lab-via-Templates-Part1/</a>)</li>
+</ul>
+<h2 id="the-story-so-far-and-next">The Story so far and next</h2>
+<p>We had an ARM template that would deploy a single vNet with a single subnet with fixed names.<br>
+Now we&rsquo;ll add a VM&hellip;..but first we need to add one more thing a NIC</p>
+<p>Here is the updated template with a NIC added.  There are two variables to create a pointer to the subnet reference and one resource, all values are static (not variables or parameters for now)</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-JSON" data-lang="JSON"><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;$schema&#34;</span>: <span style="color:#e6db74">&#34;https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;contentVersion&#34;</span>: <span style="color:#e6db74">&#34;1.0.0.0&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;parameters&#34;</span>: {},
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;variables&#34;</span>: {
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;DC01VnetID&#34;</span>: <span style="color:#e6db74">&#34;[resourceId(&#39;Microsoft.Network/virtualNetworks&#39;, &#39;mylab-vnet&#39;)]&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;DC01SubnetRef&#34;</span>: <span style="color:#e6db74">&#34;[concat(variables(&#39;DC01VnetID&#39;), &#39;/subnets/&#39;, variables(&#39;mylab-vnetSubnet1Name&#39;))]&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;MyLab-vNetPrefix&#34;</span>: <span style="color:#e6db74">&#34;10.0.0.0/16&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;MyLab-vNetSubnet1Name&#34;</span>: <span style="color:#e6db74">&#34;Subnet-1&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;MyLab-vNetSubnet1Prefix&#34;</span>: <span style="color:#e6db74">&#34;10.0.0.0/24&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;MyLab-vNetSubnet2Name&#34;</span>: <span style="color:#e6db74">&#34;Subnet-2&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;MyLab-vNetSubnet2Prefix&#34;</span>: <span style="color:#e6db74">&#34;10.0.1.0/24&#34;</span>
+</span></span><span style="display:flex;"><span>    },
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;resources&#34;</span>: [
+</span></span><span style="display:flex;"><span>        {
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;Microsoft.Network/networkInterfaces&#34;</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;DC01-NIC&#34;</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;apiVersion&#34;</span>: <span style="color:#e6db74">&#34;[providers(&#39;Microsoft.Network&#39;,&#39;networkInterfaces&#39;).apiVersions[0]]&#34;</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;location&#34;</span>: <span style="color:#e6db74">&#34;[resourceGroup().location]&#34;</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;tags&#34;</span>: {
+</span></span><span style="display:flex;"><span>                <span style="color:#f92672">&#34;displayName&#34;</span>: <span style="color:#e6db74">&#34;DC01-NIC&#34;</span>
+</span></span><span style="display:flex;"><span>            },
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;properties&#34;</span>: {
+</span></span><span style="display:flex;"><span>                <span style="color:#f92672">&#34;ipConfigurations&#34;</span>: [
+</span></span><span style="display:flex;"><span>                    {
+</span></span><span style="display:flex;"><span>                        <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;ipconfig1&#34;</span>,
+</span></span><span style="display:flex;"><span>                        <span style="color:#f92672">&#34;properties&#34;</span>: {
+</span></span><span style="display:flex;"><span>                            <span style="color:#f92672">&#34;privateIPAllocationMethod&#34;</span>: <span style="color:#e6db74">&#34;Dynamic&#34;</span>,
+</span></span><span style="display:flex;"><span>                            <span style="color:#f92672">&#34;subnet&#34;</span>: {
+</span></span><span style="display:flex;"><span>                                <span style="color:#f92672">&#34;id&#34;</span>: <span style="color:#e6db74">&#34;[variables(&#39;DC01SubnetRef&#39;)]&#34;</span>
+</span></span><span style="display:flex;"><span>                            }
+</span></span><span style="display:flex;"><span>                        }
+</span></span><span style="display:flex;"><span>                    }
+</span></span><span style="display:flex;"><span>                ]
+</span></span><span style="display:flex;"><span>            },
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;dependsOn&#34;</span>: [
+</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#34;[concat(&#39;Microsoft.Network/virtualNetworks/&#39;, &#39;mylab-vnet&#39;)]&#34;</span>
+</span></span><span style="display:flex;"><span>            ]
+</span></span><span style="display:flex;"><span>        },
+</span></span><span style="display:flex;"><span>        {
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;Microsoft.Network/virtualNetworks&#34;</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;MyLab-vNet&#34;</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;apiVersion&#34;</span>: <span style="color:#e6db74">&#34;2015-06-15&#34;</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;location&#34;</span>: <span style="color:#e6db74">&#34;[resourceGroup().location]&#34;</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;tags&#34;</span>: {
+</span></span><span style="display:flex;"><span>                <span style="color:#f92672">&#34;displayName&#34;</span>: <span style="color:#e6db74">&#34;MyLab-vNet&#34;</span>
+</span></span><span style="display:flex;"><span>            },
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;properties&#34;</span>: {
+</span></span><span style="display:flex;"><span>                <span style="color:#f92672">&#34;addressSpace&#34;</span>: {
+</span></span><span style="display:flex;"><span>                    <span style="color:#f92672">&#34;addressPrefixes&#34;</span>: [
+</span></span><span style="display:flex;"><span>                        <span style="color:#e6db74">&#34;[variables(&#39;MyLab-vNetPrefix&#39;)]&#34;</span>
+</span></span><span style="display:flex;"><span>                    ]
+</span></span><span style="display:flex;"><span>                },
+</span></span><span style="display:flex;"><span>                <span style="color:#f92672">&#34;subnets&#34;</span>: [
+</span></span><span style="display:flex;"><span>                    {
+</span></span><span style="display:flex;"><span>                        <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;[variables(&#39;MyLab-vNetSubnet1Name&#39;)]&#34;</span>,
+</span></span><span style="display:flex;"><span>                        <span style="color:#f92672">&#34;properties&#34;</span>: {
+</span></span><span style="display:flex;"><span>                            <span style="color:#f92672">&#34;addressPrefix&#34;</span>: <span style="color:#e6db74">&#34;[variables(&#39;MyLab-vNetSubnet1Prefix&#39;)]&#34;</span>
+</span></span><span style="display:flex;"><span>                        }
+</span></span><span style="display:flex;"><span>                    },
+</span></span><span style="display:flex;"><span>                    {
+</span></span><span style="display:flex;"><span>                        <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;[variables(&#39;MyLab-vNetSubnet2Name&#39;)]&#34;</span>,
+</span></span><span style="display:flex;"><span>                        <span style="color:#f92672">&#34;properties&#34;</span>: {
+</span></span><span style="display:flex;"><span>                            <span style="color:#f92672">&#34;addressPrefix&#34;</span>: <span style="color:#e6db74">&#34;[variables(&#39;MyLab-vNetSubnet2Prefix&#39;)]&#34;</span>
+</span></span><span style="display:flex;"><span>                        }
+</span></span><span style="display:flex;"><span>                    }
+</span></span><span style="display:flex;"><span>                ]
+</span></span><span style="display:flex;"><span>            },
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;dependsOn&#34;</span>: []
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    ]
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Not the line inside each resource <em>&ldquo;dependsOn&rdquo;</em><br>
+These allow you to specify dependencies. Here we want to attach our NIC to a vNet, so we specify that the NIC &ldquo;depends on&rsquo; the vNet being there.  So Azure waits for that resource to complete successfully before deploying the NIC.</p>
+<p>Rather than keep doing a new Template Deployment and click save we&rsquo;re going to add it to our &ldquo;Template Library&rdquo;</p>
+<ol>
+<li>So save the text in Notepad++ or similar and go to All Services/Templates <!-- raw HTML omitted --></li>
+<li>Click Add, Give it a name like &ldquo;myLab&rdquo; and a description</li>
+<li>Click OK, then on the template page, paste in your new template which is a vnet+nic
+<!-- raw HTML omitted --><!-- raw HTML omitted --></li>
+<li>Click OK. Click Add. Your template library should now look like this
+<!-- raw HTML omitted --><!-- raw HTML omitted --></li>
+<li>Click your template and you&rsquo;ll see you have the &ldquo;Deploy&rdquo; option now, SO CLICK IT!</li>
+<li>It asks you for Subsription and Resource group (and location but that is determined by the RG you select)
+<em><strong>IMPORTANT: Please select the Resource Group you already used for Part1 to deploy the vNet into</strong></em>*</li>
+<li>Tick I Agree and Click Purchase.
+When it completes you can look at the deployment report and you&rsquo;ll see it says it deployed a vnet and a NIC&hellip;that&rsquo;s not quite true, but it&rsquo;s really saying it found the vNet already there and correctly configured.
+***ARM IS DECLARATIVE, remember. So you asked for a vnet and NIC. It made sure that was what was there when it had finished.  If someone else has already done the work, ARM doesn&rsquo;t care. :-)</li>
+</ol>
+<h2 id="adding-the-vm-to-the-template">Adding the VM to the template</h2>
+<p>Now we have a vnet and a NIC, we can add the resource for the VM.
+<!-- raw HTML omitted --><!-- raw HTML omitted --><br>
+We&rsquo;re going to add two parameters to the parameters section, as I don&rsquo;t want to decide your admin username and password.
+Here&rsquo;s the updated template with 2 parameters, 3 resources and 7 variables</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-JSON" data-lang="JSON"><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;$schema&#34;</span>: <span style="color:#e6db74">&#34;https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;contentVersion&#34;</span>: <span style="color:#e6db74">&#34;1.0.0.0&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;parameters&#34;</span>: {
+</span></span><span style="display:flex;"><span>		<span style="color:#f92672">&#34;adminUsername&#34;</span>: {
+</span></span><span style="display:flex;"><span>		  <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;string&#34;</span>,
+</span></span><span style="display:flex;"><span>		  <span style="color:#f92672">&#34;metadata&#34;</span>: {
+</span></span><span style="display:flex;"><span>			<span style="color:#f92672">&#34;description&#34;</span>: <span style="color:#e6db74">&#34;Default Admin username&#34;</span>
+</span></span><span style="display:flex;"><span>		  }
+</span></span><span style="display:flex;"><span>		},
+</span></span><span style="display:flex;"><span>		<span style="color:#f92672">&#34;adminPassword&#34;</span>: {
+</span></span><span style="display:flex;"><span>		  <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;securestring&#34;</span>,
+</span></span><span style="display:flex;"><span>		  <span style="color:#f92672">&#34;metadata&#34;</span>: {
+</span></span><span style="display:flex;"><span>			<span style="color:#f92672">&#34;description&#34;</span>: <span style="color:#e6db74">&#34;Default Admin password&#34;</span>
+</span></span><span style="display:flex;"><span>		  }
+</span></span><span style="display:flex;"><span>		}
+</span></span><span style="display:flex;"><span>	},
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;resources&#34;</span>: [
+</span></span><span style="display:flex;"><span>        {
+</span></span><span style="display:flex;"><span>			<span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;DC01&#34;</span>,
+</span></span><span style="display:flex;"><span>			<span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;Microsoft.Compute/virtualMachines&#34;</span>,
+</span></span><span style="display:flex;"><span>			<span style="color:#f92672">&#34;apiVersion&#34;</span>: <span style="color:#e6db74">&#34;2017-03-30&#34;</span>,
+</span></span><span style="display:flex;"><span>			<span style="color:#f92672">&#34;location&#34;</span>: <span style="color:#e6db74">&#34;[resourceGroup().location]&#34;</span>,
+</span></span><span style="display:flex;"><span>			<span style="color:#f92672">&#34;dependsOn&#34;</span>: 
+</span></span><span style="display:flex;"><span>				[<span style="color:#e6db74">&#34;[concat(&#39;Microsoft.Network/networkInterfaces/&#39;, &#39;DC01-NIC&#39;)]&#34;</span>],
+</span></span><span style="display:flex;"><span>			<span style="color:#f92672">&#34;properties&#34;</span>: {
+</span></span><span style="display:flex;"><span>				<span style="color:#f92672">&#34;osProfile&#34;</span>: {
+</span></span><span style="display:flex;"><span>				  <span style="color:#f92672">&#34;computerName&#34;</span>: <span style="color:#e6db74">&#34;DC01&#34;</span>,
+</span></span><span style="display:flex;"><span>				  <span style="color:#f92672">&#34;adminUsername&#34;</span>: <span style="color:#e6db74">&#34;[parameters(&#39;adminUsername&#39;)]&#34;</span>,
+</span></span><span style="display:flex;"><span>				  <span style="color:#f92672">&#34;adminPassword&#34;</span>: <span style="color:#e6db74">&#34;[parameters(&#39;adminPassword&#39;)]&#34;</span>
+</span></span><span style="display:flex;"><span>				},
+</span></span><span style="display:flex;"><span>				<span style="color:#f92672">&#34;hardwareProfile&#34;</span>: {
+</span></span><span style="display:flex;"><span>				  <span style="color:#f92672">&#34;vmSize&#34;</span>: <span style="color:#e6db74">&#34;Standard_B1ms&#34;</span>
+</span></span><span style="display:flex;"><span>				},
+</span></span><span style="display:flex;"><span>				<span style="color:#f92672">&#34;storageProfile&#34;</span>: {
+</span></span><span style="display:flex;"><span>				  <span style="color:#f92672">&#34;imageReference&#34;</span>: {
+</span></span><span style="display:flex;"><span>					<span style="color:#f92672">&#34;publisher&#34;</span>: <span style="color:#e6db74">&#34;MicrosoftWindowsServer&#34;</span>,
+</span></span><span style="display:flex;"><span>					<span style="color:#f92672">&#34;offer&#34;</span>: <span style="color:#e6db74">&#34;WindowsServer&#34;</span>,
+</span></span><span style="display:flex;"><span>					<span style="color:#f92672">&#34;sku&#34;</span>: <span style="color:#e6db74">&#34;2016-Datacenter&#34;</span>,
+</span></span><span style="display:flex;"><span>					<span style="color:#f92672">&#34;version&#34;</span>: <span style="color:#e6db74">&#34;latest&#34;</span>
+</span></span><span style="display:flex;"><span>				  },
+</span></span><span style="display:flex;"><span>				  <span style="color:#f92672">&#34;osDisk&#34;</span>: {
+</span></span><span style="display:flex;"><span>					<span style="color:#f92672">&#34;createOption&#34;</span>: <span style="color:#e6db74">&#34;FromImage&#34;</span>
+</span></span><span style="display:flex;"><span>				  },
+</span></span><span style="display:flex;"><span>				  <span style="color:#f92672">&#34;dataDisks&#34;</span>: []
+</span></span><span style="display:flex;"><span>				},
+</span></span><span style="display:flex;"><span>				<span style="color:#f92672">&#34;networkProfile&#34;</span>: {
+</span></span><span style="display:flex;"><span>					<span style="color:#f92672">&#34;networkInterfaces&#34;</span>: [
+</span></span><span style="display:flex;"><span>						{<span style="color:#f92672">&#34;id&#34;</span>: <span style="color:#e6db74">&#34;[resourceId(&#39;Microsoft.Network/networkInterfaces&#39;,&#39;DC01-NIC&#39;)]&#34;</span>}
+</span></span><span style="display:flex;"><span>					]
+</span></span><span style="display:flex;"><span>				}
+</span></span><span style="display:flex;"><span>			}
+</span></span><span style="display:flex;"><span>        },
+</span></span><span style="display:flex;"><span>		{
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;DC01-NIC&#34;</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;Microsoft.Network/networkInterfaces&#34;</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;location&#34;</span>: <span style="color:#e6db74">&#34;[resourceGroup().location]&#34;</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;apiVersion&#34;</span>: <span style="color:#e6db74">&#34;[providers(&#39;Microsoft.Network&#39;,&#39;networkInterfaces&#39;).apiVersions[0]]&#34;</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;dependsOn&#34;</span>: [
+</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#34;[concat(&#39;Microsoft.Network/virtualNetworks/&#39;, &#39;mylab-vnet&#39;)]&#34;</span>
+</span></span><span style="display:flex;"><span>            ],
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;tags&#34;</span>: {
+</span></span><span style="display:flex;"><span>                <span style="color:#f92672">&#34;displayName&#34;</span>: <span style="color:#e6db74">&#34;DC01-NIC&#34;</span>
+</span></span><span style="display:flex;"><span>            },
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;properties&#34;</span>: {
+</span></span><span style="display:flex;"><span>                <span style="color:#f92672">&#34;ipConfigurations&#34;</span>: [
+</span></span><span style="display:flex;"><span>                    {
+</span></span><span style="display:flex;"><span>                        <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;ipconfig1&#34;</span>,
+</span></span><span style="display:flex;"><span>                        <span style="color:#f92672">&#34;properties&#34;</span>: {
+</span></span><span style="display:flex;"><span>                            <span style="color:#f92672">&#34;privateIPAllocationMethod&#34;</span>: <span style="color:#e6db74">&#34;Dynamic&#34;</span>,
+</span></span><span style="display:flex;"><span>                            <span style="color:#f92672">&#34;subnet&#34;</span>: {
+</span></span><span style="display:flex;"><span>                                <span style="color:#f92672">&#34;id&#34;</span>: <span style="color:#e6db74">&#34;[variables(&#39;DC01SubnetRef&#39;)]&#34;</span>
+</span></span><span style="display:flex;"><span>                            }
+</span></span><span style="display:flex;"><span>                        }
+</span></span><span style="display:flex;"><span>                    }
+</span></span><span style="display:flex;"><span>                ]
+</span></span><span style="display:flex;"><span>            }
+</span></span><span style="display:flex;"><span>        },
+</span></span><span style="display:flex;"><span>		{
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;MyLab-vNet&#34;</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;Microsoft.Network/virtualNetworks&#34;</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;location&#34;</span>: <span style="color:#e6db74">&#34;[resourceGroup().location]&#34;</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;apiVersion&#34;</span>: <span style="color:#e6db74">&#34;2015-06-15&#34;</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;dependsOn&#34;</span>: [],
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;tags&#34;</span>: {
+</span></span><span style="display:flex;"><span>                <span style="color:#f92672">&#34;displayName&#34;</span>: <span style="color:#e6db74">&#34;MyLab-vNet&#34;</span>
+</span></span><span style="display:flex;"><span>            },
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;properties&#34;</span>: {
+</span></span><span style="display:flex;"><span>                <span style="color:#f92672">&#34;addressSpace&#34;</span>: {
+</span></span><span style="display:flex;"><span>                    <span style="color:#f92672">&#34;addressPrefixes&#34;</span>: [
+</span></span><span style="display:flex;"><span>                        <span style="color:#e6db74">&#34;[variables(&#39;MyLab-vNetPrefix&#39;)]&#34;</span>
+</span></span><span style="display:flex;"><span>                    ]
+</span></span><span style="display:flex;"><span>                },
+</span></span><span style="display:flex;"><span>                <span style="color:#f92672">&#34;subnets&#34;</span>: [
+</span></span><span style="display:flex;"><span>                    {
+</span></span><span style="display:flex;"><span>                        <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;[variables(&#39;MyLab-vNetSubnet1Name&#39;)]&#34;</span>,
+</span></span><span style="display:flex;"><span>                        <span style="color:#f92672">&#34;properties&#34;</span>: {
+</span></span><span style="display:flex;"><span>                            <span style="color:#f92672">&#34;addressPrefix&#34;</span>: <span style="color:#e6db74">&#34;[variables(&#39;MyLab-vNetSubnet1Prefix&#39;)]&#34;</span>
+</span></span><span style="display:flex;"><span>                        }
+</span></span><span style="display:flex;"><span>                    },
+</span></span><span style="display:flex;"><span>                    {
+</span></span><span style="display:flex;"><span>                        <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;[variables(&#39;MyLab-vNetSubnet2Name&#39;)]&#34;</span>,
+</span></span><span style="display:flex;"><span>                        <span style="color:#f92672">&#34;properties&#34;</span>: {
+</span></span><span style="display:flex;"><span>                            <span style="color:#f92672">&#34;addressPrefix&#34;</span>: <span style="color:#e6db74">&#34;[variables(&#39;MyLab-vNetSubnet2Prefix&#39;)]&#34;</span>
+</span></span><span style="display:flex;"><span>                        }
+</span></span><span style="display:flex;"><span>                    }
+</span></span><span style="display:flex;"><span>                ]
+</span></span><span style="display:flex;"><span>            }
+</span></span><span style="display:flex;"><span>        }		
+</span></span><span style="display:flex;"><span>    ],
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;variables&#34;</span>: {
+</span></span><span style="display:flex;"><span>		<span style="color:#f92672">&#34;DC01VnetID&#34;</span>: <span style="color:#e6db74">&#34;[resourceId(&#39;Microsoft.Network/virtualNetworks&#39;, &#39;mylab-vnet&#39;)]&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;DC01SubnetRef&#34;</span>: <span style="color:#e6db74">&#34;[concat(variables(&#39;DC01VnetID&#39;), &#39;/subnets/&#39;, variables(&#39;mylab-vnetSubnet1Name&#39;))]&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;MyLab-vNetPrefix&#34;</span>: <span style="color:#e6db74">&#34;10.0.0.0/16&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;MyLab-vNetSubnet1Name&#34;</span>: <span style="color:#e6db74">&#34;Subnet-1&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;MyLab-vNetSubnet1Prefix&#34;</span>: <span style="color:#e6db74">&#34;10.0.0.0/24&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;MyLab-vNetSubnet2Name&#34;</span>: <span style="color:#e6db74">&#34;Subnet-2&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;MyLab-vNetSubnet2Prefix&#34;</span>: <span style="color:#e6db74">&#34;10.0.1.0/24&#34;</span>
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>So around 35 lines to define the VM.  It <em>dependsOn</em> the NIC, so it waits for that before it gets deployed, it uses the parameters you give it for username and password and points to the NIC for it&rsquo;s network profile.
+Everything else is hard coded.  Depending on your template that might be good or maybe you want everything named with a prefix or suffix you have, you can do that with parameters and variables which we&rsquo;ll see in another part.</p>
+<ol>
+<li>Go to your dashboard or All Services, if you don&rsquo;t have it pinned, and choose Templates</li>
+<li>Click on your template and click edit</li>
+<li>Click on &ldquo;ARM Template&rdquo; and paste in our new template
+<!-- raw HTML omitted --><!-- raw HTML omitted --></li>
+<li>Click Save then click Deploy</li>
+<li>Pick your existing resource group and specify a username and password, tick the agree box and tick Purchase
+About 5-10 minutes later you&rsquo;ll have a VM with a NIC on a vnet.
+<!-- raw HTML omitted --><!-- raw HTML omitted --><br>
+Now you can delete your Resource Group whenever you want and redeploy in 5-10 minutes just picking a RG and entering username and password.<br>
+If you deploy it to the same resource group again.  It only takes about 34 seconds, because all those resources already exist!
+Pick a new RG and you&rsquo;re back to 10 minutes.
+Ahh but you could have 3 Resource Groups, PROD-RG, QA-RG, TEST-RG and deploy the same Lab into each RG and you know it&rsquo;s identical.</li>
+</ol>
+<h2 id="powershell-time">Powershell Time</h2>
+<ol>
+<li>Login to your azure account using <em>Connect-AzureRMAccount</em></li>
+<li>Create 3 new Resource Groupsusing <em>New-AzureRMResourceGroup Prod-Lab-RG</em><br>
+Repeat for QA and Dev</li>
+<li>Now deploy your lab 3 times.  Save your template as a JSON file on your PC, then change to that folder in powershell, then run</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Powershell" data-lang="Powershell"><span style="display:flex;"><span>New-AzureRmResourceGroupDeployment -Name ProdLabDeployment -ResourceGroupName Prod-Lab-RG -TemplateFile .\labtemplate.json -adminUsername MyAdmin
+</span></span></code></pre></div><p>You will be prompted to enter the password, there are ways to pass that in, but it doesn&rsquo;t let you type it in clear text on the command line.<br>
+<!-- raw HTML omitted --><!-- raw HTML omitted -->
+4. Repeat for Dev and QA
+5. Now check the Portal, go to All resource and filter on just those three RGs.  Here&rsquo;s a screenshot from mine mid-way through the QA deployment, grouped by ResourceGroup.
+<!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+
+    </div>
+    <div class="post-footer">
+      
+    </div>
+  </article>
+
+    </main>
+  </body>
+</html>

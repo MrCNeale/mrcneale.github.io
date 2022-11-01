@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Virtual lab on Chris Neales Blog</title>
+    <link>https://www.chrisneale.org/tags/virtual-lab/</link>
+    <description>Recent content in Virtual lab on Chris Neales Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 26 Apr 2011 18:00:00 +0000</lastBuildDate><atom:link href="https://www.chrisneale.org/tags/virtual-lab/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ESXi Whitebox Configuration</title>
+      <link>https://www.chrisneale.org/posts/2011-04-26-esxi-whitebox-configuration/</link>
+      <pubDate>Tue, 26 Apr 2011 18:00:00 +0000</pubDate>
+      
+      <guid>https://www.chrisneale.org/posts/2011-04-26-esxi-whitebox-configuration/</guid>
+      <description>After a few evenings of fumbling, finally success!
+For those who are interested the config is.
+GA-P35C-DS3R (Rev 2.0) Motherboard Intel E6550 Core2Duo 2.33GHz 4 GB OCZ DDR2 PC2-8500 REAPER HPC EDITION Gigabyte 9600GT Passively Cooled LG BH08LS20 Blu-Ray RW Drive
+That is simply ESXi installed. No storage configured yet (still pontificating there) and no VMs&amp;hellip;more posts to fllow, but I do like the colour scheme :-)</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>VCIX on Chris Neales Blog</title>
+    <link>https://www.chrisneale.org/tags/vcix/</link>
+    <description>Recent content in VCIX on Chris Neales Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 21 Nov 2016 22:00:00 +0000</lastBuildDate><atom:link href="https://www.chrisneale.org/tags/vcix/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>VCIX-NV Exam Experience</title>
+      <link>https://www.chrisneale.org/posts/2016-11-21-vcix-nv-exam-experience/</link>
+      <pubDate>Mon, 21 Nov 2016 22:00:00 +0000</pubDate>
+      
+      <guid>https://www.chrisneale.org/posts/2016-11-21-vcix-nv-exam-experience/</guid>
+      <description>This is a post in two parts, first the exam experience, second a few pondering on VMware Education&amp;rsquo;s current trajectory.
+The Day Itself Here in the UK there are only 3, I believe, VCAP accredited test centres. I hopped on a train across to Leeds, that ended up being delayed and I only had time for a coffee and sandiwch before having to get started. Moral here is give yourself plenty of time to get to your chosen test centre and if possible/affordable, go the night before.</description>
+    </item>
+    
+  </channel>
+</rss>

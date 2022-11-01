@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Troubleshooting on Chris Neales Blog</title>
+    <link>https://www.chrisneale.org/tags/troubleshooting/</link>
+    <description>Recent content in Troubleshooting on Chris Neales Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 05 Sep 2022 09:00:00 +0000</lastBuildDate><atom:link href="https://www.chrisneale.org/tags/troubleshooting/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to Troubleshoot Azure Self-Hosted Devops Agent issues</title>
+      <link>https://www.chrisneale.org/posts/2022-09-05-devopsagenttroubleshooting/</link>
+      <pubDate>Mon, 05 Sep 2022 09:00:00 +0000</pubDate>
+      
+      <guid>https://www.chrisneale.org/posts/2022-09-05-devopsagenttroubleshooting/</guid>
+      <description>Why Use Self-Hosted Agents for Devops jobs? We recently had issues with some Devops tasks queuing. This was happening only with the tasks in the job that we run on our self-hosted agents.
+Why run our own agents? It&amp;rsquo;s a reasonable question. Microsoft provide agents (VMs) pre-configured and ready to run your tasks for you, so why mess about setting up your own?
+There is usually a problem or configuration that cannot be solved using the Microsoft Pool of agents as they are selected at random and the only known quantity about them is that they will be selected from a pool that is in the same region as your DevOps Organisation.</description>
+    </item>
+    
+    <item>
+      <title>Build a Docker container with a standard deployment environment</title>
+      <link>https://www.chrisneale.org/posts/2019-06-26-powershellazmodulesandgitindocker/</link>
+      <pubDate>Wed, 26 Jun 2019 22:00:00 +0000</pubDate>
+      
+      <guid>https://www.chrisneale.org/posts/2019-06-26-powershellazmodulesandgitindocker/</guid>
+      <description>Practical user for Docker/Containers in infra as code (IaC) - a standard deployment environment &amp;ldquo;Infrastructure as Code, Automate all the things, Containers are the future, DevOPs to the max!&amp;rdquo; has been a chorus of lots of people in tech for a while and as a non-app dev I never really saw applications for containers to help what I do.
+What do you do? Good question. Well it involves a lot of ARM template deployments and deploying blueprints and standard environments to run tests against.</description>
+    </item>
+    
+    <item>
+      <title>Troubleshooting Azure VM Extension Installation Failures</title>
+      <link>https://www.chrisneale.org/posts/2019-06-12-troubleshootingazurevmextensionfailues/</link>
+      <pubDate>Wed, 12 Jun 2019 22:00:00 +0000</pubDate>
+      
+      <guid>https://www.chrisneale.org/posts/2019-06-12-troubleshootingazurevmextensionfailues/</guid>
+      <description>What can you do to find out more about why a VM extension is failing or not working quite right? Azure VMs are great and VM extensions are even better. Either a Vendor, or you, can create some code to do a thing to a VM. Usually install software or agents and configure it. Most common for the average user will be things like the Log Analytics Agent Extension and the Custom Script Extension (where you can run your own Powershell or Bash post install).</description>
+    </item>
+    
+  </channel>
+</rss>

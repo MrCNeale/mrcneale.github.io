@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Agent on Chris Neales Blog</title>
+    <link>https://www.chrisneale.org/tags/agent/</link>
+    <description>Recent content in Agent on Chris Neales Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 05 Sep 2022 09:00:00 +0000</lastBuildDate><atom:link href="https://www.chrisneale.org/tags/agent/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to Troubleshoot Azure Self-Hosted Devops Agent issues</title>
+      <link>https://www.chrisneale.org/posts/2022-09-05-devopsagenttroubleshooting/</link>
+      <pubDate>Mon, 05 Sep 2022 09:00:00 +0000</pubDate>
+      
+      <guid>https://www.chrisneale.org/posts/2022-09-05-devopsagenttroubleshooting/</guid>
+      <description>Why Use Self-Hosted Agents for Devops jobs? We recently had issues with some Devops tasks queuing. This was happening only with the tasks in the job that we run on our self-hosted agents.
+Why run our own agents? It&amp;rsquo;s a reasonable question. Microsoft provide agents (VMs) pre-configured and ready to run your tasks for you, so why mess about setting up your own?
+There is usually a problem or configuration that cannot be solved using the Microsoft Pool of agents as they are selected at random and the only known quantity about them is that they will be selected from a pool that is in the same region as your DevOps Organisation.</description>
+    </item>
+    
+  </channel>
+</rss>

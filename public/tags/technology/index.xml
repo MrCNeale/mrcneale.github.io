@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Technology on Chris Neales Blog</title>
+    <link>https://www.chrisneale.org/tags/technology/</link>
+    <description>Recent content in Technology on Chris Neales Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 17 Aug 2018 22:00:00 +0000</lastBuildDate><atom:link href="https://www.chrisneale.org/tags/technology/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Book Review - The Second Machine Age</title>
+      <link>https://www.chrisneale.org/posts/2018-08-17-bookreview-2ndmachineage/</link>
+      <pubDate>Fri, 17 Aug 2018 22:00:00 +0000</pubDate>
+      
+      <guid>https://www.chrisneale.org/posts/2018-08-17-bookreview-2ndmachineage/</guid>
+      <description>The book is written by 2 MIT research scientists&amp;hellip;hence nearly 100 pages of references, but those are kept for the end for anyone who wants to check their homework and you can skip the graphs if that’s not your thing.
+They start by first showing how until we developed tools and principally the industrial revolution there was very little progress in humans development or population growth for 8000 years!</description>
+    </item>
+    
+  </channel>
+</rss>

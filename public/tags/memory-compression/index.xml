@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>memory compression on Chris Neales Blog</title>
+    <link>https://www.chrisneale.org/tags/memory-compression/</link>
+    <description>Recent content in memory compression on Chris Neales Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 30 May 2014 20:00:00 +0000</lastBuildDate><atom:link href="https://www.chrisneale.org/tags/memory-compression/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>VCP 5 - Objective 1.2 - Host/Configuration Tab (in essence!)</title>
+      <link>https://www.chrisneale.org/posts/2014-05-30-vcp-5-objective-1-2-hostconfiguration-tab-in-essence/</link>
+      <pubDate>Fri, 30 May 2014 20:00:00 +0000</pubDate>
+      
+      <guid>https://www.chrisneale.org/posts/2014-05-30-vcp-5-objective-1-2-hostconfiguration-tab-in-essence/</guid>
+      <description>So here I&amp;rsquo;m going to describe what many possibly have done before, but it&amp;rsquo;s needed for the exam&amp;hellip;..so here goes.
+Configure NTP on an ESXi host. Connect to the ESX/ESXi host using the vSphere Client. Click the Configuration tab. Click Time Configuration/Properties/Options/NTP Settings. Click Add. Enter the NTP Server name. Click OK. Click the General tab. Click Start automatically under Startup Policy. Click Start and click OK. Click OK to exit.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Docker on Chris Neales Blog</title>
+    <link>https://www.chrisneale.org/categories/docker/</link>
+    <description>Recent content in Docker on Chris Neales Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 08 Oct 2015 00:00:00 +0000</lastBuildDate><atom:link href="https://www.chrisneale.org/categories/docker/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>VMworld Europe Schedule and New things to do this time</title>
+      <link>https://www.chrisneale.org/posts/2015-10-08-vmworld-europe-schedule-and-todos/</link>
+      <pubDate>Thu, 08 Oct 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.chrisneale.org/posts/2015-10-08-vmworld-europe-schedule-and-todos/</guid>
+      <description>I&amp;rsquo;ve filled up my schedule, I&amp;rsquo;ve Favourited sessions that were full so I can check the standby queues out and here&amp;rsquo;s a few other things I want to tick off this time round at VMworld
+I might have some tapas and a cerveza too. But just the one!</description>
+    </item>
+    
+  </channel>
+</rss>

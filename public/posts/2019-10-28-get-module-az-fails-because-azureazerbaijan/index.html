@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <title>Get-Module AZ fails because Azure=Azerbaijan // Chris Neales Blog</title>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.105.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="John Doe" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="https://www.chrisneale.org/css/main.min.0fb49e70a30412f97ddfc418e18fefef1d9fcdebe45f634dbbba768b00fe1eec.css" />
+
+    
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Get-Module AZ fails because Azure=Azerbaijan"/>
+<meta name="twitter:description" content="Including pre-req checks in your code is good practice&hellip;.so you add it in.
+In our Powershell scripts which require Azure Powershell cmdlets we have moved, as should anyone keeping abreast of releases, to Powershell Core.
+But our checks to see if the Az Module is installed were giving mixed results.
+Even though the commands all worked, Get-AzVM etc. the module check for &ldquo;Az&rdquo; returned nothing, blank, nada.
+But if you check for a sub module, e."/>
+
+    <meta property="og:title" content="Get-Module AZ fails because Azure=Azerbaijan" />
+<meta property="og:description" content="Including pre-req checks in your code is good practice&hellip;.so you add it in.
+In our Powershell scripts which require Azure Powershell cmdlets we have moved, as should anyone keeping abreast of releases, to Powershell Core.
+But our checks to see if the Az Module is installed were giving mixed results.
+Even though the commands all worked, Get-AzVM etc. the module check for &ldquo;Az&rdquo; returned nothing, blank, nada.
+But if you check for a sub module, e." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.chrisneale.org/posts/2019-10-28-get-module-az-fails-because-azureazerbaijan/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2019-10-28T22:00:00+00:00" />
+<meta property="article:modified_time" content="2019-10-28T22:00:00+00:00" />
+
+
+
+  </head>
+  <body>
+    <header class="app-header">
+      <a href="https://www.chrisneale.org/"><img class="app-header-avatar" src="/avatar.jpg" alt="John Doe" /></a>
+      <span class="app-header-title">Chris Neales Blog</span>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vehicula turpis sit amet elit pretium.</p>
+    </header>
+    <main class="app-container">
+      
+  <article class="post">
+    <header class="post-header">
+      <h1 class ="post-title">Get-Module AZ fails because Azure=Azerbaijan</h1>
+      <div class="post-meta">
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-calendar">
+  <title>calendar</title>
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line>
+</svg>
+          Oct 28, 2019
+        </div>
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-clock">
+  <title>clock</title>
+  <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
+</svg>
+          2 min read
+        </div>
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tag">
+  <title>tag</title>
+  <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line>
+</svg>
+              <a class="tag" href="https://www.chrisneale.org/tags/powershell/">PowerShell</a>
+              <a class="tag" href="https://www.chrisneale.org/tags/security/">Security</a>
+              <a class="tag" href="https://www.chrisneale.org/tags/scripting/">Scripting</a>
+              <a class="tag" href="https://www.chrisneale.org/tags/azure/">Azure</a>
+        </div>
+      </div>
+    </header>
+    <div class="post-content">
+      <!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<p>Including pre-req checks in your code is good practice&hellip;.so you add it in.<br>
+In our Powershell scripts which require Azure Powershell cmdlets we have moved, as should anyone keeping abreast of releases, to Powershell Core.<br>
+But our checks to see if the Az Module is installed were giving mixed results.</p>
+<p>Even though the commands all worked, <em>Get-AzVM</em> etc. the module check for &ldquo;Az&rdquo; returned nothing, blank, nada.<br>
+But if you check for a sub module, e.g. Az.Accounts, it works&hellip;<em>strange</em></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Powershell" data-lang="Powershell"><span style="display:flex;"><span>PS C:\&gt; $PSVersionTable
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Name                           Value
+</span></span><span style="display:flex;"><span>----                           -----
+</span></span><span style="display:flex;"><span>PSVersion                      5.1.15063.1805
+</span></span><span style="display:flex;"><span>PSEdition                      Desktop
+</span></span><span style="display:flex;"><span>PSCompatibleVersions           {1.0, 2.0, 3.0, 4.0...}
+</span></span><span style="display:flex;"><span>BuildVersion                   10.0.15063.1805
+</span></span><span style="display:flex;"><span>CLRVersion                     4.0.30319.42000
+</span></span><span style="display:flex;"><span>PS C:\&gt; Get-Module -ListAvailable -Name az
+</span></span><span style="display:flex;"><span>PS C:\&gt; Get-Module -ListAvailable -Name az.accounts
+</span></span><span style="display:flex;"><span>    Directory<span style="color:#960050;background-color:#1e0010">:</span> C:\Program Files\WindowsPowerShell\Modules
+</span></span><span style="display:flex;"><span>ModuleType Version    Name                                ExportedCommands
+</span></span><span style="display:flex;"><span>---------- -------    ----                                ----------------
+</span></span><span style="display:flex;"><span>Script     1.6.3      Az.Accounts                         {Disable-AzDataCollection,
+</span></span><span style="display:flex;"><span>PS C:\&gt;
+</span></span></code></pre></div><p>(I know the above is Windows .Net Powershell, but I didn&rsquo;t have an old Powershell Core 6.1.x installation)
+As you can see it fails.<br>
+This will be observered on Windows Powershell and Powershell Core &lt; 6.2</p>
+<p>It seems that there was a bug where Powershell ignores any directory in the Powershell Modules path which matches a &ldquo;Culture&rdquo;. Think language packs here. e.g. en/us/fr/de
+Those of us less travelled or from that region will not have known that az=Azerbaijan so that is why the command fails.</p>
+<p>After much searching and lots of linked bug reports the following link has the &ldquo;Fixed&rdquo; pull request<br>
+<a href="https://github.com/PowerShell/PowerShell/pull/8777">https://github.com/PowerShell/PowerShell/pull/8777</a><br>
+This PR gives you a reason to move from Windows Powershell, because they currently don&rsquo;t forsee the fix making it into Powershell 5.1 for Windows and there is no plan for a Powershell 5.2 release.<br>
+If your version of Powershell Core is &lt; 6.2 then you should update as soon as is feasible</p>
+<blockquote>
+<p>@ronhowe The fix is only for PowerShell Core. You&rsquo;ll get it in PowerShell Core 6.2 RC in hours and in release PowerShell Core 6.2 in weeks.
+Windows PowerShell 5.2 is not expected. Although MSFT may port this fix to 5.1.</p>
+</blockquote>
+
+    </div>
+    <div class="post-footer">
+      
+    </div>
+  </article>
+
+    </main>
+  </body>
+</html>

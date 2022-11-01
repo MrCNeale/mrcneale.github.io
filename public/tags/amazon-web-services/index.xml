@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Amazon Web Services on Chris Neales Blog</title>
+    <link>https://www.chrisneale.org/tags/amazon-web-services/</link>
+    <description>Recent content in Amazon Web Services on Chris Neales Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 10 May 2014 18:00:00 +0000</lastBuildDate><atom:link href="https://www.chrisneale.org/tags/amazon-web-services/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>VCP5 - Me and my virtual history</title>
+      <link>https://www.chrisneale.org/posts/2014-05-10-vcp5-me-and-my-virtual-history/</link>
+      <pubDate>Sat, 10 May 2014 18:00:00 +0000</pubDate>
+      
+      <guid>https://www.chrisneale.org/posts/2014-05-10-vcp5-me-and-my-virtual-history/</guid>
+      <description>I&amp;rsquo;m 37, work at a global IT services company with big customers. When I started in 2005 my first project was helping deploy 10s of ESX hosts. Yes &amp;ldquo;ESX&amp;rdquo; v2.5 &amp;ldquo;Virtual Infrastructure&amp;rdquo; hosts and Virtual Center 1.something or other. It&amp;rsquo;s 9 years ago now but we had multiple farms of 7 hosts (I think) which had shared LUNs, and all ran training courses. Each training course was 6 VMs. Only 1 was unique as a citrix presentation server v4 front-end.</description>
+    </item>
+    
+  </channel>
+</rss>

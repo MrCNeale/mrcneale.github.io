@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>windows10 on Chris Neales Blog</title>
+    <link>https://www.chrisneale.org/tags/windows10/</link>
+    <description>Recent content in windows10 on Chris Neales Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 06 Jul 2015 00:00:00 +0000</lastBuildDate><atom:link href="https://www.chrisneale.org/tags/windows10/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Upgrading your HomeLab to Windows 10 &#43; VMware Workstation ??</title>
+      <link>https://www.chrisneale.org/posts/2015-07-06-upgrading-your-homelab-to-windows-10-vmware-workstation/</link>
+      <pubDate>Mon, 06 Jul 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.chrisneale.org/posts/2015-07-06-upgrading-your-homelab-to-windows-10-vmware-workstation/</guid>
+      <description>I run my home lab on a PC running Windows 8.1 and VMware Workstation 10. The PC has an i7 with HT, 32GB RAM and an SSD.
+I had to upgrade from Windows 7 as the Home Premium Edition only supported 16GB of RAM, which was irritating. I knew Windows 10 was coming but it&amp;rsquo;s End of July release date hadn&amp;rsquo;t been announced. So when it popped up offering me my &amp;ldquo;free upgrade&amp;rdquo; I accepted and am now dutifully waiting a couple of weeks.</description>
+    </item>
+    
+  </channel>
+</rss>

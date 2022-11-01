@@ -14,7 +14,7 @@ tags:
 title: How to Troubleshoot Azure Self-Hosted Devops Agent issues
 ---
 
-![](/public/ado.jpg)
+![](/images/ado.jpg)
 
 # Why Use Self-Hosted Agents for Devops jobs? 
 We recently had issues with some Devops tasks queuing. This was happening only with the tasks in the job that we run on our self-hosted agents.  
@@ -30,7 +30,7 @@ It is likely that one or more (depending on your setup) is showing as offline.
   
 # Why is my agent showing offline?
   
-![](/public/agentpool2.png)
+![](/images/agentpool2.png)
   
 It can be a number of reasons.  To query the status of the agent you need to log on to the VM itself and query the service.  
 We run our agent on Ubuntu, so after SSH-ing in you need to change directory to the home folder for the agent user, e.g.
@@ -55,11 +55,11 @@ sudo ./svs.sh start
 
 You can then query the status again and you should get a service running with no errors in the log.
 
-![](/public/agentstatus.png)
+![](/images/agentstatus.png)
 
 # Fixed and/or upgrading agents in the portal
 
-![image](/public/agentpool1.jpg) 
+![image](/images/agentpool1.jpg) 
 
 Once your agent is fixed you will see it showing as "Online" and the version will be the latest.  
 You should now be able to run tasks/jobs utilising your Self-Hosted Agent again.  

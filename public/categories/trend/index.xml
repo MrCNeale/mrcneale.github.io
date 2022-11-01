@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Trend on Chris Neales Blog</title>
+    <link>https://www.chrisneale.org/categories/trend/</link>
+    <description>Recent content in Trend on Chris Neales Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 12 Jun 2014 00:00:00 +0000</lastBuildDate><atom:link href="https://www.chrisneale.org/categories/trend/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Allowing automated installs of newer VMtools than the host version (Caveat for Trend Deep Security)</title>
+      <link>https://www.chrisneale.org/posts/2014-06-12-allowing-automated-installs-of-newer-vmtools-than-the-host-version-caveat-for-trend-deep-security/</link>
+      <pubDate>Thu, 12 Jun 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.chrisneale.org/posts/2014-06-12-allowing-automated-installs-of-newer-vmtools-than-the-host-version-caveat-for-trend-deep-security/</guid>
+      <description>During a recent patching cycle VMtools across a set of VMs were updated to the latest version. This was to patch security vulnerabilities in the versions which were running to ensure the environment was as secure as possible for a PenTest which would go towards IL3 Accreditation.
+Shavlik was good enough to oblige here and went out and patched lots of VMs with new VMtools automatically to the latest version.</description>
+    </item>
+    
+  </channel>
+</rss>

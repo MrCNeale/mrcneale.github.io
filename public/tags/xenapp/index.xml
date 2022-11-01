@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>XenApp on Chris Neales Blog</title>
+    <link>https://www.chrisneale.org/tags/xenapp/</link>
+    <description>Recent content in XenApp on Chris Neales Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 22 Sep 2014 18:00:00 +0000</lastBuildDate><atom:link href="https://www.chrisneale.org/tags/xenapp/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>vSphere VM Hotplug functionality confuses AD GPO and locks out non system drives</title>
+      <link>https://www.chrisneale.org/posts/2014-09-22-vsphere-vm-hotplug-functionality-confuses-ad-gpo-and-locks-out-non-system-drives/</link>
+      <pubDate>Mon, 22 Sep 2014 18:00:00 +0000</pubDate>
+      
+      <guid>https://www.chrisneale.org/posts/2014-09-22-vsphere-vm-hotplug-functionality-confuses-ad-gpo-and-locks-out-non-system-drives/</guid>
+      <description>I was asked to look at an issue on a customer account where when a server VM, used as a XenApp Dynamic Desktop server is moved from Computers OU to the desired destination OU and gpupdate run then suddenly the D and E drives were inaccessible. They could be seen in &amp;ldquo;My Computer&amp;rdquo; and also in &amp;ldquo;Disk Management&amp;rdquo; but only listed as NTFS and no used/free space in My Computer, despite me having admin rights.</description>
+    </item>
+    
+  </channel>
+</rss>

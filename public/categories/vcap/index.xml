@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>VCAP on Chris Neales Blog</title>
+    <link>https://www.chrisneale.org/categories/vcap/</link>
+    <description>Recent content in VCAP on Chris Neales Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 22 Jan 2015 00:00:00 +0000</lastBuildDate><atom:link href="https://www.chrisneale.org/categories/vcap/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>VCAP-DCA510 Failing to pass doesn&#39;t mean failing to learn</title>
+      <link>https://www.chrisneale.org/posts/2015-01-22-vcap-dca510-failing-to-pass-doesnt-mean-failing-to-learn/</link>
+      <pubDate>Thu, 22 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.chrisneale.org/posts/2015-01-22-vcap-dca510-failing-to-pass-doesnt-mean-failing-to-learn/</guid>
+      <description>Last Thursday I got the early train to Leeds stationed myself in a coffee shop and proceeded to stuff coffee and pastries into my mouth and last minute vSphere knowledge into my brain.
+I had obtained a voucher to book the exam last year. However I&amp;rsquo;d been seconded to a &amp;ldquo;Business Transformation&amp;rdquo; project. Whilst this was quite interesting it did cause my technical skills to atrophy. To cut a long story short I rescheduled the exam a couple of times.</description>
+    </item>
+    
+  </channel>
+</rss>

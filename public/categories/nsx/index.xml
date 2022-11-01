@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>nsx on Chris Neales Blog</title>
+    <link>https://www.chrisneale.org/categories/nsx/</link>
+    <description>Recent content in nsx on Chris Neales Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 08 Oct 2015 00:00:00 +0000</lastBuildDate><atom:link href="https://www.chrisneale.org/categories/nsx/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>VMworld Europe Schedule and New things to do this time</title>
+      <link>https://www.chrisneale.org/posts/2015-10-08-vmworld-europe-schedule-and-todos/</link>
+      <pubDate>Thu, 08 Oct 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.chrisneale.org/posts/2015-10-08-vmworld-europe-schedule-and-todos/</guid>
+      <description>I&amp;rsquo;ve filled up my schedule, I&amp;rsquo;ve Favourited sessions that were full so I can check the standby queues out and here&amp;rsquo;s a few other things I want to tick off this time round at VMworld
+I might have some tapas and a cerveza too. But just the one!</description>
+    </item>
+    
+    <item>
+      <title>Training Resource Review - Pluralsight &#43; Jason Nash&#39;s NSX Courses</title>
+      <link>https://www.chrisneale.org/posts/2015-04-08-training-resource-review-pluralsight-jason-nashs-nsx-courses/</link>
+      <pubDate>Wed, 08 Apr 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.chrisneale.org/posts/2015-04-08-training-resource-review-pluralsight-jason-nashs-nsx-courses/</guid>
+      <description>In a recent change of tack to my learning plan I&amp;rsquo;ve moved from revising VCAP-DCA to VCP-NV. This has been driven by a need for work to be familiar with NSX and Multi-Hypervisor Virtualised Networking too.
+I did a couple of the NSX Hands On Labs last October at VMworld but other than a few terms, and the fact some bits looked a lot like vShield from the vCloud Suite most of it had leaked out of my brain.</description>
+    </item>
+    
+    <item>
+      <title>VMware News Roundup - Announcement-ageddon!!!</title>
+      <link>https://www.chrisneale.org/posts/2015-03-13-vmware-news-roundup-announcement-ageddon/</link>
+      <pubDate>Fri, 13 Mar 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.chrisneale.org/posts/2015-03-13-vmware-news-roundup-announcement-ageddon/</guid>
+      <description>There was armageddon, then snowmageddon and now announcementageddon.
+Twitter is on fire with frantic retweeting and updates on what people are excited about on the VMware front. And there&amp;rsquo;s plenty to be excited about right now.
+The biggest unsurprising but best bit is vSphere 6.0 goes GA. Now everyone can try long distance vmotion, VVols, 4vcpu Fault Tolerance, Instant Clone and more. Register for a trial and download below https://my.vmware.com/group/vmware/evalcenter?p=vsphere6#src=vmw_so_vex_cneal_850</description>
+    </item>
+    
+  </channel>
+</rss>

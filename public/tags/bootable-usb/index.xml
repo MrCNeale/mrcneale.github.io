@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Bootable USB on Chris Neales Blog</title>
+    <link>https://www.chrisneale.org/tags/bootable-usb/</link>
+    <description>Recent content in Bootable USB on Chris Neales Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 21 Apr 2011 18:00:00 +0000</lastBuildDate><atom:link href="https://www.chrisneale.org/tags/bootable-usb/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>FIX-No DEFAULT or UI configuration directive found!</title>
+      <link>https://www.chrisneale.org/posts/2011-04-21-fix-no-default-or-ui-configuration-directive-found/</link>
+      <pubDate>Thu, 21 Apr 2011 18:00:00 +0000</pubDate>
+      
+      <guid>https://www.chrisneale.org/posts/2011-04-21-fix-no-default-or-ui-configuration-directive-found/</guid>
+      <description>If you make a Bootable Linux USB and receive the following error
+No DEFAULT or UI configuration directive found! boot:
+Then simply go back and format your USB as FAT not FAT32, then recopy/re-install your Distro onto the USB stick. Problem Solved.</description>
+    </item>
+    
+  </channel>
+</rss>

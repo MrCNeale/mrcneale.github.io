@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Certification on Chris Neales Blog</title>
+    <link>https://www.chrisneale.org/categories/certification/</link>
+    <description>Recent content in Certification on Chris Neales Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 16 Aug 2015 00:00:00 +0000</lastBuildDate><atom:link href="https://www.chrisneale.org/categories/certification/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>VCP-NV=EZ</title>
+      <link>https://www.chrisneale.org/posts/2015-08-16-vcp-nvez/</link>
+      <pubDate>Sun, 16 Aug 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.chrisneale.org/posts/2015-08-16-vcp-nvez/</guid>
+      <description>It&amp;rsquo;s been 2 weeks now since I sat and passed the VCP-NV. Straight after the exam I went on holiday and on coming back I got straight back into work.
+My background is working with VMware since Esx 2.x in 2005. In a more structured and career focussed way since 2011 when I did a great project to deploy 4 vBlocks with Linked vCenters. Since then I&amp;rsquo;ve worked on various virtualisation deployments, upgrades, support incidents (the joys of being on-call) and even a brief foray into setting up a Hyper-V environment for one customer!</description>
+    </item>
+    
+    <item>
+      <title>VMware News Roundup - Announcement-ageddon!!!</title>
+      <link>https://www.chrisneale.org/posts/2015-03-13-vmware-news-roundup-announcement-ageddon/</link>
+      <pubDate>Fri, 13 Mar 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.chrisneale.org/posts/2015-03-13-vmware-news-roundup-announcement-ageddon/</guid>
+      <description>There was armageddon, then snowmageddon and now announcementageddon.
+Twitter is on fire with frantic retweeting and updates on what people are excited about on the VMware front. And there&amp;rsquo;s plenty to be excited about right now.
+The biggest unsurprising but best bit is vSphere 6.0 goes GA. Now everyone can try long distance vmotion, VVols, 4vcpu Fault Tolerance, Instant Clone and more. Register for a trial and download below https://my.vmware.com/group/vmware/evalcenter?p=vsphere6#src=vmw_so_vex_cneal_850</description>
+    </item>
+    
+  </channel>
+</rss>

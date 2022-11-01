@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cost Saving on Chris Neales Blog</title>
+    <link>https://www.chrisneale.org/tags/cost-saving/</link>
+    <description>Recent content in Cost Saving on Chris Neales Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 21 Oct 2018 10:00:00 +0000</lastBuildDate><atom:link href="https://www.chrisneale.org/tags/cost-saving/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Building an Azure lab environment via ARM templates - Part3 Saving Money with Auto Shutdown</title>
+      <link>https://www.chrisneale.org/posts/2018-10-21-azure-lab-via-templates-part3/</link>
+      <pubDate>Sun, 21 Oct 2018 10:00:00 +0000</pubDate>
+      
+      <guid>https://www.chrisneale.org/posts/2018-10-21-azure-lab-via-templates-part3/</guid>
+      <description>Aim This post will show you how to take your existing template and add a special resource to it which is a &amp;ldquo;Schedules&amp;rdquo; resource which shuts down your VM at a specified time to save you money.
+Pre-reqs You&amp;rsquo;ll need:
+Read/do Part 1 (https://www.chrisneale.org/Azure-Lab-via-Templates-Part1/) Read/do Part 2 (https://www.chrisneale.org/Azure-Lab-via-Templates-Part2/) Be a really quick catcher upper The Story so far and next So you have an ARM template in your library. It deployed a vNet a NIC and a VM (with a managed disk).</description>
+    </item>
+    
+  </channel>
+</rss>

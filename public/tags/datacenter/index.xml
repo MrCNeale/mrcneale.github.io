@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Datacenter on Chris Neales Blog</title>
+    <link>https://www.chrisneale.org/tags/datacenter/</link>
+    <description>Recent content in Datacenter on Chris Neales Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 15 Oct 2014 18:00:00 +0000</lastBuildDate><atom:link href="https://www.chrisneale.org/tags/datacenter/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Networking - North-South, East-West. Don&#39;t be embarrassed to ask</title>
+      <link>https://www.chrisneale.org/posts/2014-10-15-network-north-south-east-west-dont-be-embarrassed-to-ask/</link>
+      <pubDate>Wed, 15 Oct 2014 18:00:00 +0000</pubDate>
+      
+      <guid>https://www.chrisneale.org/posts/2014-10-15-network-north-south-east-west-dont-be-embarrassed-to-ask/</guid>
+      <description>Networking traffic described as points of the compass.
+It&amp;rsquo;s day 3 of vmworld for me and NSX is big. The keynotes feature it heavily, it&amp;rsquo;s great new technology and the queues for standby to the breakout sessions where NSX is in the title are like queues for a new iPhone release.
+So it took me this long to stop and say, wait! What is this north south east west stuff? Everyone refers to it to talk about traffic in data centres but no one has defined it.</description>
+    </item>
+    
+  </channel>
+</rss>

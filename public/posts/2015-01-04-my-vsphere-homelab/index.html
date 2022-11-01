@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <title>My vSphere HomeLab // Chris Neales Blog</title>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.105.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="John Doe" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="https://www.chrisneale.org/css/main.min.0fb49e70a30412f97ddfc418e18fefef1d9fcdebe45f634dbbba768b00fe1eec.css" />
+
+    
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="My vSphere HomeLab"/>
+<meta name="twitter:description" content="Everyone&rsquo;s got one, and like petrolheads showing off their v8 or GTI here&rsquo;s my vSphere homelab.
+Originally it was just an HP Microserver accessed via a pc running virtualised esxi hosts.
+But I needed to upgrade my main PC and I still had a VMWorkstation 10 license from my VCP5 in June to use up.
+So I went for a Core i7 4770s. It&rsquo;s quad core with HT so 8 threads for VMs to consume."/>
+
+    <meta property="og:title" content="My vSphere HomeLab" />
+<meta property="og:description" content="Everyone&rsquo;s got one, and like petrolheads showing off their v8 or GTI here&rsquo;s my vSphere homelab.
+Originally it was just an HP Microserver accessed via a pc running virtualised esxi hosts.
+But I needed to upgrade my main PC and I still had a VMWorkstation 10 license from my VCP5 in June to use up.
+So I went for a Core i7 4770s. It&rsquo;s quad core with HT so 8 threads for VMs to consume." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.chrisneale.org/posts/2015-01-04-my-vsphere-homelab/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2015-01-04T01:00:00+00:00" />
+<meta property="article:modified_time" content="2015-01-04T01:00:00+00:00" />
+
+
+
+  </head>
+  <body>
+    <header class="app-header">
+      <a href="https://www.chrisneale.org/"><img class="app-header-avatar" src="/avatar.jpg" alt="John Doe" /></a>
+      <span class="app-header-title">Chris Neales Blog</span>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vehicula turpis sit amet elit pretium.</p>
+    </header>
+    <main class="app-container">
+      
+  <article class="post">
+    <header class="post-header">
+      <h1 class ="post-title">My vSphere HomeLab</h1>
+      <div class="post-meta">
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-calendar">
+  <title>calendar</title>
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line>
+</svg>
+          Jan 4, 2015
+        </div>
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-clock">
+  <title>clock</title>
+  <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
+</svg>
+          4 min read
+        </div>
+      </div>
+    </header>
+    <div class="post-content">
+      <p>Everyone&rsquo;s got one, and like petrolheads showing off their v8 or GTI here&rsquo;s my vSphere homelab.</p>
+<p>Originally it was just an HP Microserver accessed via a pc running virtualised esxi hosts.</p>
+<p>But I needed to upgrade my main PC and I still had a VMWorkstation 10 license from my VCP5 in June to use up.</p>
+<p>So I went for a Core i7 4770s.  It&rsquo;s quad core with HT so 8 threads for VMs to consume.  Currently only 16gb but it was only built in December and now Christmas is out of the way the first thing after January&rsquo;s payday will be another 16Gb to take it to 32Gb.  I have a 256Gb Samsung Pro SSD in and run Windows 7 Home Premium +VMWorkstation 10.</p>
+<p>I already had the SSD/PSU/Blu-Ray Drive so the upgrade for case/Mobo/CPU/Memory cost me around £500 which is a bargain considering I haven&rsquo;t upgraded my PC for around 5 years and had been running an E6550 with 4Gb Memory.  Future Proofing doesn&rsquo;t exist but I think I&rsquo;ll get another 5 years at least out of this (once I add the next 16Gb) so £100/year for a Micro-ATX sized vSphere Lab+PC is good value in my book!</p>
+<p>I will probably at some point recommission the HP N36L Microserver which has a puny CPU but has 16Gb too so I could do real, proper vmotions not virtual vmotions over virtually nested vswitches inside VMWorkstation (serious Inception style confusion).  However it doesn&rsquo;t support Passthrough/Direct I/O so I&rsquo;m not rushing on that one :-)</p>
+<p>To help understand iSCSI and NFS storage I use my Synology DS212j NAS with 2x1Tb Western Digital HDDs in, running mirrored (well it&rsquo;s Synology Hybrid RAID, whatever that is :-) but with just two drives it behaves like RAID 1 and eats up 50% of your capacity).  I use the NAS for storing all my other personal stuff so it work quite well as a Lab NAS as well as a home NAS without one impacting on the other.  I&rsquo;d really recommend it for Lab and home/media/backup/dlna use.  They even support VAAI which makes them a great choice for a vSphere lab.</p>
+<p>Here it is as a Google Drawing (I don&rsquo;t have a visio license!) alongside a photo of the kit.</p>
+<p><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<p>I&rsquo;ve been using it for a week or so now in anger as a lab to learn the VCAP-DCA510 objectives on.  I know I need to build/add a server for VUM (don&rsquo;t really want or need to install it on the DC) and I need to create some more client VMs on the nested ESXi hosts, but for now it&rsquo;s running fine and with NAT&rsquo;d networking as I haven&rsquo;t had chance to &ldquo;Design&rdquo; a network for the vSphere layer and isolate is and manage it properly (I&rsquo;ll do that for the DCD :-)</p>
+<p>My VCAP-DCA exam is on the 15th Jan.  I got the voucher for VCAP-DCA510 in September but got seconded to a very very very very non-technical piece of work so my hands-on skills started to atrophy quickly.  Like many of us I postponed it as I knew the assignment was temporary.  It finished just before Christmas and when I came to reschedule I got a shock because I couldn&rsquo;t.  Obviously, now, that is because it is being retired at the end of Jan.  So I am cramming in as much practice and focus as I can leading up to that and am taking some study leave the 3 days leading up to the exam.  I am fortunate that I only have to drive one hour to the test centre.  I have seen tales of people having to fly across the US or drive/fly around Europe.  However relatively speaking it is three to four times further than I normally travel to sit VMware/MS exams.  I would like to see VMware expand the locations in which you can sit the exam by working with testing partners to get their sites up to whatever spec is required.</p>
+<p><!-- raw HTML omitted --><!-- raw HTML omitted -->Administrator Tools<!-- raw HTML omitted --> <!-- raw HTML omitted -->and <!-- raw HTML omitted --><!-- raw HTML omitted -->Network Administration<!-- raw HTML omitted --> <!-- raw HTML omitted -->Done.
+On to my next Chapter/Objective of the <!-- raw HTML omitted -->Official Cert Guide<!-- raw HTML omitted -->!</p>
+<p><!-- raw HTML omitted --><!-- raw HTML omitted -->Storage Concepts<!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<p> </p>
+
+    </div>
+    <div class="post-footer">
+      
+    </div>
+  </article>
+
+    </main>
+  </body>
+</html>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Certification on Chris Neales Blog</title>
+    <link>https://www.chrisneale.org/tags/certification/</link>
+    <description>Recent content in Certification on Chris Neales Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 21 Nov 2016 22:00:00 +0000</lastBuildDate><atom:link href="https://www.chrisneale.org/tags/certification/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>VCIX-NV Exam Experience</title>
+      <link>https://www.chrisneale.org/posts/2016-11-21-vcix-nv-exam-experience/</link>
+      <pubDate>Mon, 21 Nov 2016 22:00:00 +0000</pubDate>
+      
+      <guid>https://www.chrisneale.org/posts/2016-11-21-vcix-nv-exam-experience/</guid>
+      <description>This is a post in two parts, first the exam experience, second a few pondering on VMware Education&amp;rsquo;s current trajectory.
+The Day Itself Here in the UK there are only 3, I believe, VCAP accredited test centres. I hopped on a train across to Leeds, that ended up being delayed and I only had time for a coffee and sandiwch before having to get started. Moral here is give yourself plenty of time to get to your chosen test centre and if possible/affordable, go the night before.</description>
+    </item>
+    
+    <item>
+      <title>Getting Back on the Horse! (Destination VCAP5-DCA)</title>
+      <link>https://www.chrisneale.org/posts/2014-08-14-getting-back-on-the-horse-destination-vcap5-dca/</link>
+      <pubDate>Thu, 14 Aug 2014 18:00:00 +0000</pubDate>
+      
+      <guid>https://www.chrisneale.org/posts/2014-08-14-getting-back-on-the-horse-destination-vcap5-dca/</guid>
+      <description>After passing my VCP, and subsequently falling back into the bad habit of not studying! I&amp;rsquo;ve managed to get the
+The point is&amp;hellip;&amp;hellip;..IT&amp;rsquo;S BACK ON! I&amp;rsquo;ll be studying again and blurting out blogposts about the activity.
+As always, step 1 is READ THE BLUEPRINT!
+http://mylearn.vmware.com/mgrReg/plan.cfm?plan=47316&amp;amp;amp;ui=www_cert&amp;amp;amp;src=vmw_so_vex_cneal_850</description>
+    </item>
+    
+    <item>
+      <title>VTSP - VMWare Certification and Accreditation...not mutually exclusive!</title>
+      <link>https://www.chrisneale.org/posts/2011-08-15-vtsp-vmware-certification-and-accreditation-not-mutually-exclusive/</link>
+      <pubDate>Mon, 15 Aug 2011 18:00:00 +0000</pubDate>
+      
+      <guid>https://www.chrisneale.org/posts/2011-08-15-vtsp-vmware-certification-and-accreditation-not-mutually-exclusive/</guid>
+      <description>Morning all,
+I sat my VCP4 a couple of weeks ago and managed to pass. It&amp;rsquo;s a tough exam and requires you to know about all aspects of VMWare&amp;rsquo;s offerings (but all detailed in the exam blueprint pdf!)
+I&amp;rsquo;m not going to give you tips here as Scott Vessey&amp;rsquo;s blog invented that wheel and keeps it well maintained http://vmwaretraining.blogspot.com/ However through my company I did find out something interesting.
+As we are a VMWare partner (and many of you who are working toward VCP are likely to be too, check with your manager or VMWare account manager) then you may have access to the VMWare Partner University.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>VMware on Chris Neales Blog</title>
+    <link>https://www.chrisneale.org/tags/vmware/</link>
+    <description>Recent content in VMware on Chris Neales Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 21 Nov 2016 22:00:00 +0000</lastBuildDate><atom:link href="https://www.chrisneale.org/tags/vmware/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>VCIX-NV Exam Experience</title>
+      <link>https://www.chrisneale.org/posts/2016-11-21-vcix-nv-exam-experience/</link>
+      <pubDate>Mon, 21 Nov 2016 22:00:00 +0000</pubDate>
+      
+      <guid>https://www.chrisneale.org/posts/2016-11-21-vcix-nv-exam-experience/</guid>
+      <description>This is a post in two parts, first the exam experience, second a few pondering on VMware Education&amp;rsquo;s current trajectory.
+The Day Itself Here in the UK there are only 3, I believe, VCAP accredited test centres. I hopped on a train across to Leeds, that ended up being delayed and I only had time for a coffee and sandiwch before having to get started. Moral here is give yourself plenty of time to get to your chosen test centre and if possible/affordable, go the night before.</description>
+    </item>
+    
+    <item>
+      <title>PowerCLI running in a Docker Container on Photon OS in under 10 minutes</title>
+      <link>https://www.chrisneale.org/posts/2016-11-07-docker-powerclicore-sub10mins/</link>
+      <pubDate>Mon, 07 Nov 2016 22:00:00 +0000</pubDate>
+      
+      <guid>https://www.chrisneale.org/posts/2016-11-07-docker-powerclicore-sub10mins/</guid>
+      <description>I needed a utility VM to run a PowerCLI script as a scheduled task.
+I set out to do this using Windows but stopped as VMware&amp;rsquo;s Geniuses had just released the PowerCLIcore Fling. This instantly made me think, smaller footprint, quicker to deploy, zero OS license cost&amp;hellip;&amp;hellip;No Brainer really
+To recreate this all you need is something to host your Photon VM. Standalone ESXi host or VMWorkstation.
+Oh and a VCSA/ESXi to connect to (v5.</description>
+    </item>
+    
+    <item>
+      <title>Newly created vsphere.local SSO user gets username/password error</title>
+      <link>https://www.chrisneale.org/posts/2016-05-22-newuserfail/</link>
+      <pubDate>Sun, 22 May 2016 22:00:00 +0000</pubDate>
+      
+      <guid>https://www.chrisneale.org/posts/2016-05-22-newuserfail/</guid>
+      <description>I was recently creating new users in vsphere.local in a lab environment. When I came to test logging in I got &amp;ldquo;invalid username/password&amp;rdquo; from the web-client.
+Hmm odd. So I went back in and checked the username was spelt correctly and reset the password typing slowly.
+Back out. Tried login again&amp;hellip;.same error. Ok maybe I&amp;rsquo;m being really fat fingered. Nope I typed the password into a notepad and it was correct.</description>
+    </item>
+    
+    <item>
+      <title>Reasons to upgrade NSX 6.0/6.1 to 6.2</title>
+      <link>https://www.chrisneale.org/posts/2016-04-18-reasonstoupgradensx6.0-part1/</link>
+      <pubDate>Mon, 18 Apr 2016 22:00:00 +0000</pubDate>
+      
+      <guid>https://www.chrisneale.org/posts/2016-04-18-reasonstoupgradensx6.0-part1/</guid>
+      <description>I&amp;rsquo;d like to thank my colleague Robbie Hancock https://twitter.com/blobbieh for teasing out the troubleshooting/identification of problem steps.
+If you have VMs that
+Stop responding to network requests Cannot ping a VM from another VM or ESG Do not have entries in their ARP table Initiating a ping from the affected VM to ESG or another VM and traffic resumes (ARP table entry appears) After an amount if inactivity, the problem returns&amp;hellip;.</description>
+    </item>
+    
+    <item>
+      <title>vSphere vApps unaffected by Back to 28 Vulnerability (CVE-2015-8370)</title>
+      <link>https://www.chrisneale.org/posts/2015-12-20-grub-back-to-28-doesnt-affect-vmware/</link>
+      <pubDate>Sun, 20 Dec 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.chrisneale.org/posts/2015-12-20-grub-back-to-28-doesnt-affect-vmware/</guid>
+      <description>Recently Hector Marco and Ismael Ripoll discovered a vulnerability in common Linux bootloader GRUB.
+It affects GRUB2 specifically and was introduced into that version in 2009
+http://hmarco.org/bugs/CVE-2015-8370-Grub2-authentication-bypass.html
+https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-8370
+However it doesn&amp;rsquo;t affect the original GRUB.
+I was concerned about the Virtual Appliances we were running in one of our environments.
+VCSA - vCenter Server Appliance 5.5 Update 2e | 16 APR 2015| Build 2646489 vRealize Log Insight 3.0 GA Build 3021606 VROPS 6.</description>
+    </item>
+    
+    <item>
+      <title>ESXi and AD Part 2 Joining a Domain without Domain Admin Privileges</title>
+      <link>https://www.chrisneale.org/posts/2015-12-13-esxi-and-ad-part-2-joining-a-domain-without-domain-admin-privileges/</link>
+      <pubDate>Sun, 13 Dec 2015 18:00:00 +0000</pubDate>
+      
+      <guid>https://www.chrisneale.org/posts/2015-12-13-esxi-and-ad-part-2-joining-a-domain-without-domain-admin-privileges/</guid>
+      <description>Problem You need to join an ESXi host to AD but you do not have Domain Admins. Your AD team ask what rights ESXi requires and you can&amp;rsquo;t tell them VMware Support give you a stock &amp;ldquo;You must have Domain Admins&amp;rdquo; reply to a support call. Solution Delegate the rights as per the following Microsoft KB Article https://support.microsoft.com/en-us/kb/932455 &amp;hellip;yes I know it&amp;rsquo;s for 2003 but AD hasn&amp;rsquo;t changed that much since then&amp;hellip;shhh don&amp;rsquo;t tell!</description>
+    </item>
+    
+    <item>
+      <title>VMworld - Finally at the Frontier!</title>
+      <link>https://www.chrisneale.org/posts/2014-10-12-vmworld-finally-at-the-frontier/</link>
+      <pubDate>Sun, 12 Oct 2014 18:00:00 +0000</pubDate>
+      
+      <guid>https://www.chrisneale.org/posts/2014-10-12-vmworld-finally-at-the-frontier/</guid>
+      <description>I am here. I&amp;rsquo;m in Barcelona. Tomorrow I will be attending the partner day activities and following that such amazing things as the vExpert party!
+I lie here in my Chintz Pink Hotel (Picture attached at the end) marvelling that this has actually come off.
+I have spent 2-3 weeks sorting this out. I won&amp;rsquo;t go into details but suffice to say the red tape I&amp;rsquo;ve had to negotiate has involved things that, in peace-time, no person should have to endure.</description>
+    </item>
+    
+    <item>
+      <title>vExpert - Why go for it?</title>
+      <link>https://www.chrisneale.org/posts/2014-10-07-vexpert-why-bother/</link>
+      <pubDate>Tue, 07 Oct 2014 18:00:00 +0000</pubDate>
+      
+      <guid>https://www.chrisneale.org/posts/2014-10-07-vexpert-why-bother/</guid>
+      <description>I was driving home Friday night when my phone bleeped to tell me a colleague had DM&amp;rsquo;d me on Twitter. I made a mental note to check when I got home.
+After a couple of hours spent building MetalBeard out of Lego I remembered and read it.
+&amp;ldquo;Congratulations vExpert&amp;rdquo; it said. I checked the VMware blog and found this http://blogs.vmware.com/vmtn/2014/10/vexpert-2014-q3-announcement.html#src=vmw_so_vex_cneal_850
+I was very pleased that my efforts evangelising around virtualisation and in particular VMware had been recognised.</description>
+    </item>
+    
+    <item>
+      <title>The evils of snapshots!</title>
+      <link>https://www.chrisneale.org/posts/2011-07-21-the-evils-of-snapshots/</link>
+      <pubDate>Thu, 21 Jul 2011 18:00:00 +0000</pubDate>
+      
+      <guid>https://www.chrisneale.org/posts/2011-07-21-the-evils-of-snapshots/</guid>
+      <description>Been away from tech-blogging for a while now for a number of reasons, not least studying for vcp4.
+On the way something came up at work which needed another blog post about it, despite many others doing the same!
+Deleting snapshots, big ones especially, times out at 95% on VI3 VCenter 2 leaving you all panicked and squeaky bum time.
+The simple summary is that coalescing a 200gb snap could take up to 6hrs :-( so be patient.</description>
+    </item>
+    
+    <item>
+      <title>Supply and Demand : The Crazy Price of NICs</title>
+      <link>https://www.chrisneale.org/posts/2011-04-21-supply-and-demand-the-crazy-price-of-nics/</link>
+      <pubDate>Thu, 21 Apr 2011 18:00:00 +0000</pubDate>
+      
+      <guid>https://www.chrisneale.org/posts/2011-04-21-supply-and-demand-the-crazy-price-of-nics/</guid>
+      <description>Ok, so I want to have my own ESXi host at home. Initially it may sound like a tall order but there are lots of good community sites out there describing how to do it and what works and what doesn&amp;rsquo;t.
+www.vm-help.com has a very good HWCL on it compiled from user experience. So after trying and failing to install ESXi 4.1 I found on vm-help that my motherboard&amp;rsquo;s on-board NIC isn&amp;rsquo;t compatible as there are no drivers on the installation CD for it.</description>
+    </item>
+    
+  </channel>
+</rss>

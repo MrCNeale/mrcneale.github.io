@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <title>Azure Instance Metadata Service Usage Examples // Chris Neales Blog</title>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.105.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="John Doe" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="https://www.chrisneale.org/css/main.min.0fb49e70a30412f97ddfc418e18fefef1d9fcdebe45f634dbbba768b00fe1eec.css" />
+
+    
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Azure Instance Metadata Service Usage Examples"/>
+<meta name="twitter:description" content="What does Azure have that VMware never had? AKA What is the Azure Instance Metadata Service? There&rsquo;s probably a ton of answers here. But the one I was angling for is &ldquo;Which vCenter is my VM running on?&rdquo;
+Who&rsquo;d be crazy enough to lose a VM? Well you&rsquo;d be surprised in enterprise estates that have been running for 10 years and Sue who managed the VM farm just retired and moved to Cypus so you can&rsquo;t get hold of her to ask&hellip; Anyway, what I&rsquo;m going to talk about it more useful than just finding out where your VM is if you (or your script/code) only has access inside the VM."/>
+
+    <meta property="og:title" content="Azure Instance Metadata Service Usage Examples" />
+<meta property="og:description" content="What does Azure have that VMware never had? AKA What is the Azure Instance Metadata Service? There&rsquo;s probably a ton of answers here. But the one I was angling for is &ldquo;Which vCenter is my VM running on?&rdquo;
+Who&rsquo;d be crazy enough to lose a VM? Well you&rsquo;d be surprised in enterprise estates that have been running for 10 years and Sue who managed the VM farm just retired and moved to Cypus so you can&rsquo;t get hold of her to ask&hellip; Anyway, what I&rsquo;m going to talk about it more useful than just finding out where your VM is if you (or your script/code) only has access inside the VM." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.chrisneale.org/posts/2019-05-10-azure-instance-metadata-service-101/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2019-05-10T22:00:00+00:00" />
+<meta property="article:modified_time" content="2019-05-10T22:00:00+00:00" />
+
+
+
+  </head>
+  <body>
+    <header class="app-header">
+      <a href="https://www.chrisneale.org/"><img class="app-header-avatar" src="/avatar.jpg" alt="John Doe" /></a>
+      <span class="app-header-title">Chris Neales Blog</span>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vehicula turpis sit amet elit pretium.</p>
+    </header>
+    <main class="app-container">
+      
+  <article class="post">
+    <header class="post-header">
+      <h1 class ="post-title">Azure Instance Metadata Service Usage Examples</h1>
+      <div class="post-meta">
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-calendar">
+  <title>calendar</title>
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line>
+</svg>
+          May 10, 2019
+        </div>
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-clock">
+  <title>clock</title>
+  <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
+</svg>
+          3 min read
+        </div>
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tag">
+  <title>tag</title>
+  <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line>
+</svg>
+              <a class="tag" href="https://www.chrisneale.org/tags/powershell/">PowerShell</a>
+              <a class="tag" href="https://www.chrisneale.org/tags/security/">Security</a>
+              <a class="tag" href="https://www.chrisneale.org/tags/scripting/">Scripting</a>
+              <a class="tag" href="https://www.chrisneale.org/tags/azure/">Azure</a>
+              <a class="tag" href="https://www.chrisneale.org/tags/metadata/">Metadata</a>
+        </div>
+      </div>
+    </header>
+    <div class="post-content">
+      <!-- raw HTML omitted -->
+<h1 id="what-does-azure-have-that-vmware-never-had-aka-what-is-the-azure-instance-metadata-service">What does Azure have that VMware never had? AKA What is the Azure Instance Metadata Service?</h1>
+<p>There&rsquo;s probably a ton of answers here.  But the one I was angling for is &ldquo;Which vCenter is my VM running on?&rdquo;<br>
+Who&rsquo;d be crazy enough to lose a VM?  Well you&rsquo;d be surprised in enterprise estates that have been running for 10 years and Sue who managed the VM farm just retired and moved to Cypus so you can&rsquo;t get hold of her to ask&hellip;
+Anyway, what I&rsquo;m going to talk about it more useful than just finding out where your VM is if you (or your script/code) only has access inside the VM.</p>
+<p>So by design normally it&rsquo;s good to obfuscate (I love that word) details of the hypervisor above and not let the VM know it&rsquo;s anything but a physical server.
+So far so 1999.
+But what if we need more info to decide whether or not to install some software or configuration on an Azure VM.  What sub is it in? What RG or region? What tags does it have?
+Well you could run Azure powershell commands out to azure but that would be a really circular Pop Will Eat Itself route and get messy quickly.</p>
+<h2 id="get-to-the-point-the-azure-instance-metadata-service-to-the-rescue">Get to the point! The Azure Instance Metadata Service to the rescue</h2>
+<p>If you want the Long Read, here&rsquo;s the docs
+(<a href="https://docs.microsoft.com/en-us/azure/virtual-machines/windows/instance-metadata-service">https://docs.microsoft.com/en-us/azure/virtual-machines/windows/instance-metadata-service</a>)
+But the short version is there is a rest api you can query from powershell or CMD on a windows server or curl on a linux Azure VM to get data about the VM that is from the Azure Subscription level.
+How to do it?</p>
+<ol>
+<li>Create a VM linux or Windows</li>
+<li>Log on to it via your preferred method.  RDP, SSH or Serial Access Console</li>
+<li>Run the following command <code>Invoke-RestMethod -Headers @{&quot;Metadata&quot;=&quot;true&quot;} -URI http://169.254.169.254/metadata/instance?api-version=2018-10-01 -Method get | ConvertTo-Json</code>  for windows
+or <code>curl -H Metadata:true &quot;http://169.254.169.254/metadata/instance?api-version=2017-08-01&quot;</code> for Linux</li>
+</ol>
+<p>This should return something like this:</p>
+<pre tabindex="0"><code>PS C:\Users\blogadmin&gt; Invoke-RestMethod -Headers @{&#34;Metadata&#34;=&#34;true&#34;} -URI http://169.254.169.254/metadata/instance?api-version=2018-10-01 -Method get | ConvertTo-Json
+{
+    &#34;compute&#34;:  {
+                    &#34;azEnvironment&#34;:  &#34;AzurePublicCloud&#34;,
+                    &#34;location&#34;:  &#34;eastus&#34;,
+                    &#34;name&#34;:  &#34;WinVM1&#34;,
+                    &#34;offer&#34;:  &#34;WindowsServer&#34;,
+                    &#34;osType&#34;:  &#34;Windows&#34;,
+                    &#34;placementGroupId&#34;:  &#34;&#34;,
+                    &#34;plan&#34;:  {
+                                 &#34;name&#34;:  &#34;&#34;,
+                                 &#34;product&#34;:  &#34;&#34;,
+                                 &#34;publisher&#34;:  &#34;&#34;
+                             },
+                    &#34;platformFaultDomain&#34;:  &#34;0&#34;,
+                    &#34;platformUpdateDomain&#34;:  &#34;0&#34;,
+                    &#34;provider&#34;:  &#34;Microsoft.Compute&#34;,
+                    &#34;publicKeys&#34;:  [
+
+                                   ],
+                    &#34;publisher&#34;:  &#34;MicrosoftWindowsServer&#34;,
+                    &#34;resourceGroupName&#34;:  &#34;Blog-Metadata&#34;,
+                    &#34;sku&#34;:  &#34;2019-Datacenter&#34;,
+                    &#34;subscriptionId&#34;:  &#34;fe2c8ad9-fde6-41ee-8673-5d3cfd54d9f1&#34;,
+                    &#34;tags&#34;:  &#34;&#34;,
+                    &#34;version&#34;:  &#34;2019.0.20190410&#34;,
+                    &#34;vmId&#34;:  &#34;eb3efc1e-f0d9-419c-82b1-d31ac6d543ff&#34;,
+                    &#34;vmScaleSetName&#34;:  &#34;&#34;,
+                    &#34;vmSize&#34;:  &#34;Standard_DS1_v2&#34;,
+                    &#34;zone&#34;:  &#34;&#34;
+                },
+    &#34;network&#34;:  {
+                    &#34;interface&#34;:  [
+                                      &#34;@{ipv4=; ipv6=; macAddress=000D3A1FE6BF}&#34;
+                                  ]
+                }
+</code></pre><h2 id="good-copypaste-but-what-about-detail">Good Copy/Paste, but what about detail?</h2>
+<p>Ok so to get the public IP run this command:
+<code>(Invoke-RestMethod -Headers @{&quot;Metadata&quot;=&quot;true&quot;} -URI http://169.254.169.254/metadata/instance?api-version=2018-10-01 -Method get).network.interface.ipv4.ipaddress.publicipaddress 137.117.84.156</code></p>
+<p>Or something more useful like the tags so you can tell if it&rsquo;s a prod/qa/test or web/db/DC etc.</p>
+<pre tabindex="0"><code>PS C:\Users\blogadmin&gt; (Invoke-RestMethod -Headers @{&#34;Metadata&#34;=&#34;true&#34;} -URI http://169.254.169.254/metadata/instance?api-version=2018-10-01 -Method get).compute.tags
+Owner:Chris N
+</code></pre><!-- raw HTML omitted -->
+
+    </div>
+    <div class="post-footer">
+      
+    </div>
+  </article>
+
+    </main>
+  </body>
+</html>

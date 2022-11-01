@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>blog on Chris Neales Blog</title>
+    <link>https://www.chrisneale.org/tags/blog/</link>
+    <description>Recent content in blog on Chris Neales Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 21 Jul 2015 23:00:00 +0000</lastBuildDate><atom:link href="https://www.chrisneale.org/tags/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>New Domain, Github Hosted, Jekyll built!</title>
+      <link>https://www.chrisneale.org/posts/2015-07-21-new-domain-github-hosted-jekyll-built/</link>
+      <pubDate>Tue, 21 Jul 2015 23:00:00 +0000</pubDate>
+      
+      <guid>https://www.chrisneale.org/posts/2015-07-21-new-domain-github-hosted-jekyll-built/</guid>
+      <description>This it my new site/blog which is hosted on Github Pages and created with Jekyll. It&amp;rsquo;s a steep learning curve as I&amp;rsquo;ve not used either before and involved a lot of faffing installing ruby, ruby devkit, python, editing system paths, running jekyll commands, running git commands and finally got here!</description>
+    </item>
+    
+  </channel>
+</rss>

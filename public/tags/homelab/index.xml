@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Homelab on Chris Neales Blog</title>
+    <link>https://www.chrisneale.org/tags/homelab/</link>
+    <description>Recent content in Homelab on Chris Neales Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 06 Jul 2015 00:00:00 +0000</lastBuildDate><atom:link href="https://www.chrisneale.org/tags/homelab/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Upgrading your HomeLab to Windows 10 &#43; VMware Workstation ??</title>
+      <link>https://www.chrisneale.org/posts/2015-07-06-upgrading-your-homelab-to-windows-10-vmware-workstation/</link>
+      <pubDate>Mon, 06 Jul 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.chrisneale.org/posts/2015-07-06-upgrading-your-homelab-to-windows-10-vmware-workstation/</guid>
+      <description>I run my home lab on a PC running Windows 8.1 and VMware Workstation 10. The PC has an i7 with HT, 32GB RAM and an SSD.
+I had to upgrade from Windows 7 as the Home Premium Edition only supported 16GB of RAM, which was irritating. I knew Windows 10 was coming but it&amp;rsquo;s End of July release date hadn&amp;rsquo;t been announced. So when it popped up offering me my &amp;ldquo;free upgrade&amp;rdquo; I accepted and am now dutifully waiting a couple of weeks.</description>
+    </item>
+    
+    <item>
+      <title>Best VCAP Study Aid is another person&#39;s time &amp; help</title>
+      <link>https://www.chrisneale.org/posts/2015-01-02-best-vcap-study-aid-is-another-persons-time-effort/</link>
+      <pubDate>Fri, 02 Jan 2015 18:00:00 +0000</pubDate>
+      
+      <guid>https://www.chrisneale.org/posts/2015-01-02-best-vcap-study-aid-is-another-persons-time-effort/</guid>
+      <description>Like many I&amp;rsquo;m currently cramming for my VCAP-DCA.
+The reason behind the cramming is that it&amp;rsquo;s on the 15th Jan and it&amp;rsquo;s DCA510 which has been retired so I couldn&amp;rsquo;t push it back despite not getting the voucher long ago or starting studying long ago enough.
+That&amp;rsquo;s my excuses out of the way early.
+So I could write my own blog posts breaking down the blueprint. Well that is useful to me, being able to explain something to a level where someone else can understand it is a good demonstration of your knowledge of something usually&amp;hellip;.</description>
+    </item>
+    
+  </channel>
+</rss>

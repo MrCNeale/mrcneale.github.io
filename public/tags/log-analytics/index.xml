@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Log Analytics on Chris Neales Blog</title>
+    <link>https://www.chrisneale.org/tags/log-analytics/</link>
+    <description>Recent content in Log Analytics on Chris Neales Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 13 Dec 2018 10:00:00 +0000</lastBuildDate><atom:link href="https://www.chrisneale.org/tags/log-analytics/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>OMS Agent Syslogs Not Collecting</title>
+      <link>https://www.chrisneale.org/posts/2018-12-13-omsagentsyslognomore/</link>
+      <pubDate>Thu, 13 Dec 2018 10:00:00 +0000</pubDate>
+      
+      <guid>https://www.chrisneale.org/posts/2018-12-13-omsagentsyslognomore/</guid>
+      <description>We use Log Analytics to collect logs so that we can query the pooled logs to generate alerts. A common scenario. We had an ARM template that had worked for a long time, but when we had an issue, the first thing Microsoft said was &amp;ldquo;Why are you using such an old version?&amp;rdquo; Ok, we&amp;rsquo;d missed the agent updates on this particular template for Linux, it&amp;rsquo;s always best to be up to date.</description>
+    </item>
+    
+  </channel>
+</rss>

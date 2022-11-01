@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Automation on Chris Neales Blog</title>
+    <link>https://www.chrisneale.org/tags/automation/</link>
+    <description>Recent content in Automation on Chris Neales Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 13 Dec 2018 10:00:00 +0000</lastBuildDate><atom:link href="https://www.chrisneale.org/tags/automation/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>OMS Agent Syslogs Not Collecting</title>
+      <link>https://www.chrisneale.org/posts/2018-12-13-omsagentsyslognomore/</link>
+      <pubDate>Thu, 13 Dec 2018 10:00:00 +0000</pubDate>
+      
+      <guid>https://www.chrisneale.org/posts/2018-12-13-omsagentsyslognomore/</guid>
+      <description>We use Log Analytics to collect logs so that we can query the pooled logs to generate alerts. A common scenario. We had an ARM template that had worked for a long time, but when we had an issue, the first thing Microsoft said was &amp;ldquo;Why are you using such an old version?&amp;rdquo; Ok, we&amp;rsquo;d missed the agent updates on this particular template for Linux, it&amp;rsquo;s always best to be up to date.</description>
+    </item>
+    
+    <item>
+      <title>Building an Azure lab environment via ARM templates - Part3 Saving Money with Auto Shutdown</title>
+      <link>https://www.chrisneale.org/posts/2018-10-21-azure-lab-via-templates-part3/</link>
+      <pubDate>Sun, 21 Oct 2018 10:00:00 +0000</pubDate>
+      
+      <guid>https://www.chrisneale.org/posts/2018-10-21-azure-lab-via-templates-part3/</guid>
+      <description>Aim This post will show you how to take your existing template and add a special resource to it which is a &amp;ldquo;Schedules&amp;rdquo; resource which shuts down your VM at a specified time to save you money.
+Pre-reqs You&amp;rsquo;ll need:
+Read/do Part 1 (https://www.chrisneale.org/Azure-Lab-via-Templates-Part1/) Read/do Part 2 (https://www.chrisneale.org/Azure-Lab-via-Templates-Part2/) Be a really quick catcher upper The Story so far and next So you have an ARM template in your library. It deployed a vNet a NIC and a VM (with a managed disk).</description>
+    </item>
+    
+    <item>
+      <title>Building an Azure lab environment via ARM templates - Part2 Adding a VM to your network</title>
+      <link>https://www.chrisneale.org/posts/2018-10-19-azure-lab-via-templates-part2/</link>
+      <pubDate>Fri, 19 Oct 2018 10:00:00 +0000</pubDate>
+      
+      <guid>https://www.chrisneale.org/posts/2018-10-19-azure-lab-via-templates-part2/</guid>
+      <description>Aim This post will show you how to take your existing template and add a VM to it, slowly building up our lab environment.
+Pre-reqs You&amp;rsquo;ll need:
+Read/do Part 1 (https://www.chrisneale.org/Azure-Lab-via-Templates-Part1/) The Story so far and next We had an ARM template that would deploy a single vNet with a single subnet with fixed names.
+Now we&amp;rsquo;ll add a VM&amp;hellip;..but first we need to add one more thing a NIC</description>
+    </item>
+    
+    <item>
+      <title>Building an Azure lab environment via ARM templates - Part1 ARM Templates 101</title>
+      <link>https://www.chrisneale.org/posts/2018-10-17-azure-lab-via-templates-part1/</link>
+      <pubDate>Wed, 17 Oct 2018 10:00:00 +0000</pubDate>
+      
+      <guid>https://www.chrisneale.org/posts/2018-10-17-azure-lab-via-templates-part1/</guid>
+      <description>Aim This post will show you how the format of ARM templates and how to deploy the simplest one without parameters or variables via the Portal, Powershell, AZ CLI.
+Pre-reqs You&amp;rsquo;ll need:
+An Azure account The latest Azure Powershell. Install instructions can be found here (https://docs.microsoft.com/en-us/powershell/azure/install-azurerm-ps?view=azurermps-6.10.0) Your preferred Code Editor, I mostly use Notepad++ ARM Template Format As you&amp;rsquo;ll see shortly the format of an ARM template is relatively simple.</description>
+    </item>
+    
+    <item>
+      <title>Book Review - The Second Machine Age</title>
+      <link>https://www.chrisneale.org/posts/2018-08-17-bookreview-2ndmachineage/</link>
+      <pubDate>Fri, 17 Aug 2018 22:00:00 +0000</pubDate>
+      
+      <guid>https://www.chrisneale.org/posts/2018-08-17-bookreview-2ndmachineage/</guid>
+      <description>The book is written by 2 MIT research scientists&amp;hellip;hence nearly 100 pages of references, but those are kept for the end for anyone who wants to check their homework and you can skip the graphs if that’s not your thing.
+They start by first showing how until we developed tools and principally the industrial revolution there was very little progress in humans development or population growth for 8000 years!</description>
+    </item>
+    
+  </channel>
+</rss>
