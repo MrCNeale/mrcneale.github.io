@@ -51,7 +51,7 @@ A quick reinstall of windows and install of VMWorkstation and I had a great lab 
   <title>clock</title>
   <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
 </svg>
-          2 min read
+          3 min read
         </div>
       </div>
     </header>
@@ -62,10 +62,19 @@ A quick reinstall of windows and install of VMWorkstation and I had a great lab 
 <p>No errors (time to put the side cover back on now!)&hellip;.But WAIT&hellip;.Windows is only showing 16Gb of memory.  However CPU-z dutifully informed me there were 4 banks occcupied and 32gb there.</p>
 <p>DOH!!!! I suddenly realised, but had never really considered.  That I was running Win7 Home Premium.  It had sufficed for the last 5 years and like most others I had been in no rush to jump to Windows 8.</p>
 <p>A quick visit to MS confirmed my suspicions.</p>
-<p><!-- raw HTML omitted --><a href="https://msdn.microsoft.com/en-gb/library/windows/desktop/aa366778(v=vs.85).aspx#physical_memory_limits_windows_7">https://msdn.microsoft.com/en-gb/library/windows/desktop/aa366778(v=vs.85).aspx#physical_memory_limits_windows_7</a><!-- raw HTML omitted --></p>
+<p><a href="https://msdn.microsoft.com/en-gb/library/windows/desktop/aa366778(v=vs.85).aspx#physical_memory_limits_windows_7"><a href="https://msdn.microsoft.com/en-gb/library/windows/desktop/aa366778(v=vs.85).aspx#physical_memory_limits_windows_7">https://msdn.microsoft.com/en-gb/library/windows/desktop/aa366778(v=vs.85).aspx#physical_memory_limits_windows_7</a></a></p>
 <p>I&rsquo;ll confess to doing a quick google to see if there was something as cheeky as a reg hack around this &ldquo;oversight&rdquo; it quickly became apparent there wasn&rsquo;t (Kernel hacking isn&rsquo;t something I really fancy).</p>
 <p>So what were my options.</p>
-<!-- raw HTML omitted -->
+<ol>
+	<li>Well the obvious one is Windows 7 Pro.  That is £129 now.  Not a fortune but a lot when you consider I bought all the hardware recently.</li>
+	<li>Perhaps a spare MSDN license via work?  Well this wouldn't technically be in the spirit of the license as I do use my PC for other stuff, not just testing</li>
+	<li>A surprising option was upgrade to Windows 8.1 (Standard/Core/Basic) as when MS released 8 they also increased the memory Limit to 128gb!
+This option comes with a £99 price tag.  Hmm slightly easier to swallow but I don't really need any of the other features</li>
+	<li>The final option is a very precarious one.  Windows 10 Tech Preview.
+What!? I hear you cry.  Well as you will all have read this is coming free to Windows 7&amp;8 users soonish anyway (some sites say June, others say months after) so I may be jumping the gun a little bit but it would give me 32Gb in windows.....However.......My licensed version of VMworkstation is 10 which MAY but most likely not run on Windows 10.  So I would need an upgrade to Workstation11.
+Cost? £109</li>
+</ol>
+I may test W10 TP on my HP Micrososerver and test if vmworkstation 10 runs on that...but it is frustrating that just to get around a single byte of code in the Win 7 Kernel which says 0x10 not 0x20 is going to set me back another £99 and an OS I'm not itching to jump to.....but ho hum such is progress!
 <p> </p>
 <p>I&rsquo;ll update you on which route I decide</p>
 

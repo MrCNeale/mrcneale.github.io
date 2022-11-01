@@ -24,7 +24,7 @@ There is usually a problem or configuration that cannot be solved using the Micr
       <pubDate>Mon, 11 Oct 2021 09:00:00 +0000</pubDate>
       
       <guid>https://www.chrisneale.org/posts/2021-10-11-wificonnectednointernetfix/</guid>
-      <description>The one that I didn&amp;rsquo;t see on any searches was &amp;ldquo;Set your Date &amp;amp; Time&amp;rdquo; correctly. I was resetting a phone to sell on ebay. It hadn&amp;rsquo;t been powered on for a while, and the clock was out by 3 years. As it had no SIM card in, it couldn&amp;rsquo;t get the time automatically from the Mobile Network provider. As soon as the time was set correctly then I could access web pages.</description>
+      <description>&#34;Wi-Fi has no internet access&#34; If you&#39;re connecting your Android phone to a network and find that everything else connects to that network fine except your phone and you get the above error, this could be the fix. You&#39;ve already tried * Rebooting * Resetting Network Settings * Factory Reset (really?) * Connecting to another WiFi network * Other stuff that XDA forums, Tom&#39;s Hardware etc. recommend The one that I didn&amp;rsquo;t see on any searches was &amp;ldquo;Set your Date &amp;amp; Time&amp;rdquo; correctly.</description>
     </item>
     
     <item>
@@ -33,10 +33,9 @@ There is usually a problem or configuration that cannot be solved using the Micr
       <pubDate>Fri, 14 May 2021 22:00:00 +0000</pubDate>
       
       <guid>https://www.chrisneale.org/posts/2021-05-14-powershell-to-retreive-alerts-which-use-a-specific-action-group/</guid>
-      <description>Two simple queries help here:
+      <description>&#34;Is this Action Group used by any alerts?&#34; If you want to find out if an Action Group is used by any alerts (metric or Log) how do you do it? Two simple queries help here:
 To check if any Metric alerts point to your Action Group, run
-Get-AzMetricAlertRuleV2 | ?{$_.actions.ActionGroupId -like &amp;#39;YourActionGroupName&amp;#39;} To check if any Log Alerts (Known as Scheduled Query alerts since classic was retired) run
-Get-AzScheduledQueryRule | ?{$_.action.aznsaction.actiongroup -like &amp;#39;&amp;#39;YourActionGroupName&amp;#39;} Now you know if the Action Group is being used, and can be safely removed.</description>
+Get-AzMetricAlertRuleV2 | ?{$_.actions.ActionGroupId -like &amp;#39;YourActionGroupName&amp;#39;} To check if any Log Alerts (Known as Scheduled Query alerts since classic was retired) run</description>
     </item>
     
     <item>
@@ -45,9 +44,7 @@ Get-AzScheduledQueryRule | ?{$_.action.aznsaction.actiongroup -like &amp;#39;&am
       <pubDate>Mon, 27 Apr 2020 22:00:00 +0000</pubDate>
       
       <guid>https://www.chrisneale.org/posts/2020-04-27-powershell-to-retreive-azure-vm-memory-size/</guid>
-      <description>Now you have the two parts of the puzzle, you just need to knit them together. First get a list of all your VMs (you could filter if you wanted)
-$vms=get-azvm Now get a list of VM t-shirt sizes (I use eastus as it&amp;rsquo;s usually the most complete list of sizes)
-$vmsizelist = Get-AzVMSize -Location eastus Now we loop through each vm, get it&amp;rsquo;s hardware profile. Read the VMSize property, then go find that row in the t-shirt size table, and find how much memory that t-shirt size has.</description>
+      <description>&#34;How much memory do my VMs have?&#34; It seems like an obvious thing to ask. It seems reasonable to me....However without additional tooling, such as inventory or configuration management software, you can&#39;t easily get a list of Azure VMs and their memory sizes that you can manipulate. If you just run &#34;get-azvm&#34; then it returns a property of the vm which is a &#34;HardwareProfile&#34;. This just has a sub property of the VM t-shirt size.</description>
     </item>
     
     <item>
@@ -56,9 +53,7 @@ $vmsizelist = Get-AzVMSize -Location eastus Now we loop through each vm, get it&
       <pubDate>Tue, 11 Feb 2020 22:00:00 +0000</pubDate>
       
       <guid>https://www.chrisneale.org/posts/2020-02-11-az500examexperience/</guid>
-      <description>I spent a few nights watching some pre-recorded study sessions delivered by a colleague Dan Oliver which were great and covered all the material in the exam areas, in varying degrees of depth as they were 1-2hrs sessions.
-It was watching these that reenforced my understanding that this was possibly the broadest area of Azure. It&amp;rsquo;s obvious that security affects all things.
-With the popularity of DevOPs and now DevSecOPs, we should all know that &amp;ldquo;Security should be baked in from the start&amp;rdquo;.</description>
+      <description>The Broadest Blueprint yet - In Depth I sat the AZ-500 exam last week. I had set aside some time for study, arranged an exam voucher through work, booked it. All set. I spent a few nights watching some pre-recorded study sessions delivered by a colleague Dan Oliver which were great and covered all the material in the exam areas, in varying degrees of depth as they were 1-2hrs sessions.</description>
     </item>
     
     <item>
@@ -67,11 +62,10 @@ With the popularity of DevOPs and now DevSecOPs, we should all know that &amp;ld
       <pubDate>Mon, 28 Oct 2019 22:00:00 +0000</pubDate>
       
       <guid>https://www.chrisneale.org/posts/2019-10-28-get-module-az-fails-because-azureazerbaijan/</guid>
-      <description>Including pre-req checks in your code is good practice&amp;hellip;.so you add it in.
+      <description>When is a Culture a Module? Including pre-req checks in your code is good practice&amp;hellip;.so you add it in.
 In our Powershell scripts which require Azure Powershell cmdlets we have moved, as should anyone keeping abreast of releases, to Powershell Core.
 But our checks to see if the Az Module is installed were giving mixed results.
-Even though the commands all worked, Get-AzVM etc. the module check for &amp;ldquo;Az&amp;rdquo; returned nothing, blank, nada.
-But if you check for a sub module, e.</description>
+Even though the commands all worked, Get-AzVM etc. the module check for &amp;ldquo;Az&amp;rdquo; returned nothing, blank, nada.</description>
     </item>
     
     <item>
@@ -80,8 +74,7 @@ But if you check for a sub module, e.</description>
       <pubDate>Mon, 12 Aug 2019 22:00:00 +0000</pubDate>
       
       <guid>https://www.chrisneale.org/posts/2019-08-12-az-103-exam-experience-and-study-advice/</guid>
-      <description>This exam felt very familiar. The questions were not vastly changed from 70-533 which I sat last year, and the format was the same as AZ-302 in that the exam is divided into sections:
-Traditional Multiple choice Scenario based multiple choice, where the same scenario will be offered for many questions and different solutions proposed. You have to answer if the proposed solution will meet the requirements Labs. Where you actually log in to an Azure Portal and do things.</description>
+      <description>NOW WITH LABS! - An Updated Exam and Exam Format I sat the AZ-103 exam at the end of July, blog post is a little late due to some family stuff, but back on it now. I missed the deadline to do the transition exam, but that wasn&#39;t a big problem as they had replaced the previous requirement of two exams to get Azure Administrator (AZ-100 + AZ-101) down to just one in AZ-103 This exam felt very familiar.</description>
     </item>
     
     <item>
@@ -119,9 +112,7 @@ Who&amp;rsquo;d be crazy enough to lose a VM? Well you&amp;rsquo;d be surprised 
       <pubDate>Thu, 28 Mar 2019 22:00:00 +0000</pubDate>
       
       <guid>https://www.chrisneale.org/posts/2019-03-28-az-302-exam-experience-and-study-advice/</guid>
-      <description>It&amp;rsquo;s also due to retire at the end of June, so if you&amp;rsquo;re reading this now&amp;hellip;GET STUDYING! :-)
-As usual the IaaS sections and IAM/AD/Security areas, which I have most background in were quite simple to absorb. Where I had to pay much more attention is around the PaaS/Serverless application space. So Web Apps, Functions, Batch, Event Grids etc.
-This may be different for you, but where I am currently we&amp;rsquo;re still helping a lot of customers move from on-prem into cloud, so they haven&amp;rsquo;t expanded or transformed to start using PaaS services heavily.</description>
+      <description>NOW WITH LABS! - An Updated Exam and Exam Format I sat the AZ-302 exam on Tuesday. It has been updated since the Beta considerably. Many who took the beta felt that it wasn&#39;t Architect focussed but more developer focussed. Now whilst in this new brave cloud world you have to be part Admin/Pre-Sales/Architect and Developer, writing C# or node.js code in an Architect Exam didn&#39;t seem fair to me either.</description>
     </item>
     
     <item>
@@ -173,8 +164,7 @@ An Azure account The latest Azure Powershell. Install instructions can be found 
       <pubDate>Fri, 17 Aug 2018 22:00:00 +0000</pubDate>
       
       <guid>https://www.chrisneale.org/posts/2018-08-17-bookreview-2ndmachineage/</guid>
-      <description>The book is written by 2 MIT research scientists&amp;hellip;hence nearly 100 pages of references, but those are kept for the end for anyone who wants to check their homework and you can skip the graphs if that’s not your thing.
-They start by first showing how until we developed tools and principally the industrial revolution there was very little progress in humans development or population growth for 8000 years!</description>
+      <description>This book was recommended by a friend and the premise of an investigation into how work, progress and prosperity have changed and are changing still was something that interested me....as I’m not independently wealthy or a lottery winner...so I’ll be working for the next 30 years or so! The book is written by 2 MIT research scientists&amp;hellip;hence nearly 100 pages of references, but those are kept for the end for anyone who wants to check their homework and you can skip the graphs if that’s not your thing.</description>
     </item>
     
     <item>
@@ -183,10 +173,7 @@ They start by first showing how until we developed tools and principally the ind
       <pubDate>Mon, 30 Jul 2018 22:00:00 +0000</pubDate>
       
       <guid>https://www.chrisneale.org/posts/2018-07-30-githubpageshttpsandjekyll/</guid>
-      <description>This was great, my website worked at https://www.chrisneale.org but wait, all the formatting and layout looked like HTML v1.0 and hideous!
-I noticed in Chrome that it was complaining that it was only displaying the secure content&amp;hellip;.not the insecure&amp;hellip;.&amp;ldquo;What insecure content??&amp;rdquo;
-A quick trip into the developer console in Chrome by hitting F12 showed the culprit. The CSS was building from information somewhere with an explicit http in.
-I found that it was the _config.</description>
+      <description>Don&#39;t forget to update the CSS! I had been meaning to set up my blog page to use SSL/HTTPS for a while. Today I did it. It&#39;s amazingly simple since Github Pages has teamed up with LetsEncrypt. So I just had to tick one box. Go to your Github pages Repo, in my case https://github.com/MrCNeale/mrcneale.github.io, and select the settings tab, or go to your repo /settings, https://github.com/MrCNeale/mrcneale.github.io/settings Once there simply scroll down to the Github Pages section and tick the box labelled &#34;</description>
     </item>
     
     <item>
@@ -195,7 +182,7 @@ I found that it was the _config.</description>
       <pubDate>Mon, 16 Jul 2018 22:00:00 +0000</pubDate>
       
       <guid>https://www.chrisneale.org/posts/2018-07-16-azurelbasinternetgateway/</guid>
-      <description>As you may know even if your default Azure VM does not have a Public IP assigned to it, it can still access the internet for things like windows updates etc. However when it does so the Public IP it appears to have come from is ephemeral and changes. Similarly each VM will have different IPs. For a reason known to the SAP team, they needed all VMs to appear to be coming from the same IP.</description>
+      <description>An Odd Request This implementation started from a SAP team who said they wanted to replicate, in Azure, the AWS Internet Gateway functionality. In particular the option for all outbound traffic from VMs to route via a single outbound IP. As you may know even if your default Azure VM does not have a Public IP assigned to it, it can still access the internet for things like windows updates etc.</description>
     </item>
     
     <item>
@@ -204,8 +191,7 @@ I found that it was the _config.</description>
       <pubDate>Tue, 06 Mar 2018 22:00:00 +0000</pubDate>
       
       <guid>https://www.chrisneale.org/posts/2018-03-06-exam-experience-70-533/</guid>
-      <description>It also had a number of other concepts which have been migrated over that time into Azure Resource Manager as a deployment method.
-Initially that had me concerned as I came to Azure 12 months ago fresh onto ARM. It was new at first but I didn&amp;rsquo;t have any ASM baggage. I saw the exam still had lots of ASM content when I looked into it last summer. But there have been TWO updates to the exam since then.</description>
+      <description>An Updated Exam and Exam Format I sat the 70-533 exam last Wednesday. It was the version after the Jan 2018 updates. That last bit is critical. Cloud moves fast and Microsoft published the exam 4 years ago. It was originally based around ASM, the white and blue GUI and a different set of PowerShell commands. It also had a number of other concepts which have been migrated over that time into Azure Resource Manager as a deployment method.</description>
     </item>
     
     <item>
@@ -214,9 +200,7 @@ Initially that had me concerned as I came to Azure 12 months ago fresh onto ARM.
       <pubDate>Tue, 17 Oct 2017 22:00:00 +0000</pubDate>
       
       <guid>https://www.chrisneale.org/posts/2017-10-17-gotcha-with-azure-p2s-vpn-certificates/</guid>
-      <description>So the simple solution is that:
-When importing a VPN Client Cert and you are presented with the option to &amp;ldquo;Enable strong private key protection&amp;rdquo;, untick it. If you&amp;rsquo;re on a newer OS, you won&amp;rsquo;t get this prompt (tested on Server 2016). Now this is in the troubleshooting guide, but it should be in the instructions, rather than something you have to search for after the fact. https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-troubleshoot-vpn-point-to-site-connection-problems
-So RTFM, and also any related KBs&amp;hellip;.</description>
+      <description>After waiting 30 minutes for my P2S VPN gateway to deploy in Azure I was obviously eager to get VPN-ing, who wouldn&#39;t be! I ran through the instructions to generate a self-signed Root Cert and a client cert from Microsoft on this page [https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-certificates-point-to-site](https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-certificates-point-to-site) \*(Put a pin here, we&#39;ll come back to this) I&#39;d imported the certs to my test client VM and the Client VPN setup exe ran ok and created a connection in &#34;</description>
     </item>
     
     <item>
@@ -225,7 +209,8 @@ So RTFM, and also any related KBs&amp;hellip;.</description>
       <pubDate>Tue, 14 Mar 2017 22:00:00 +0000</pubDate>
       
       <guid>https://www.chrisneale.org/posts/2017-03-14-keepassinpowershell-part2/</guid>
-      <description>Last time round we did 3 things</description>
+      <description>Last time round we did 3 things
+Loaded the Keepass DLL/EXEs in so we could call their routines Created an Empty KeePass DB construnct to read an existing DB in to Read in an existing KeePass DB into the pointer created in Step #2 These are common tasks we will need to do multiple times....so??? Yep functions. If you want to see the detail flip back to Part-1 Expand this for details of Function Code Blocks Function Load-KPBinaries { Param ($PathToKeePassFolder) # Check if Keepass DLLs are already loaded If (!</description>
     </item>
     
     <item>
@@ -244,8 +229,8 @@ It&amp;rsquo;s something no-one should have to see, but sometimes, for brevity i
       <pubDate>Mon, 21 Nov 2016 22:00:00 +0000</pubDate>
       
       <guid>https://www.chrisneale.org/posts/2016-11-21-vcix-nv-exam-experience/</guid>
-      <description>This is a post in two parts, first the exam experience, second a few pondering on VMware Education&amp;rsquo;s current trajectory.
-The Day Itself Here in the UK there are only 3, I believe, VCAP accredited test centres. I hopped on a train across to Leeds, that ended up being delayed and I only had time for a coffee and sandiwch before having to get started. Moral here is give yourself plenty of time to get to your chosen test centre and if possible/affordable, go the night before.</description>
+      <description>Last month I sat and passed the VCIX-NV exam. Driven, like a lot of others, by the impending retirement of the exam that keeps getting extended...more on that later. This is a post in two parts, first the exam experience, second a few pondering on VMware Education&amp;rsquo;s current trajectory.
+The Day Itself Here in the UK there are only 3, I believe, VCAP accredited test centres. I hopped on a train across to Leeds, that ended up being delayed and I only had time for a coffee and sandiwch before having to get started.</description>
     </item>
     
     <item>
@@ -289,7 +274,7 @@ Back out. Tried login again&amp;hellip;.same error. Ok maybe I&amp;rsquo;m being
       
       <guid>https://www.chrisneale.org/posts/2016-04-18-reasonstoupgradensx6.0-part1/</guid>
       <description>I&amp;rsquo;d like to thank my colleague Robbie Hancock https://twitter.com/blobbieh for teasing out the troubleshooting/identification of problem steps.
-If you have VMs that
+**Symptom** : If you have VMs that
 Stop responding to network requests Cannot ping a VM from another VM or ESG Do not have entries in their ARP table Initiating a ping from the affected VM to ESG or another VM and traffic resumes (ARP table entry appears) After an amount if inactivity, the problem returns&amp;hellip;.</description>
     </item>
     
@@ -336,7 +321,7 @@ Port 135 - RPC</description>
       
       <guid>https://www.chrisneale.org/posts/2015-10-08-vmworld-europe-schedule-and-todos/</guid>
       <description>I&amp;rsquo;ve filled up my schedule, I&amp;rsquo;ve Favourited sessions that were full so I can check the standby queues out and here&amp;rsquo;s a few other things I want to tick off this time round at VMworld
-I might have some tapas and a cerveza too. But just the one!</description>
+Surf the hall more. Last year I waited until the Thursday but had some great talks with folks at Simplivity, Pernixdata and others...don&#39;t know why I was so shy but this time I&#39;m going to be asking lots of questions.</description>
     </item>
     
     <item>
@@ -350,8 +335,7 @@ Like most of you reading this I get bugged by vCenter presuming this is my first
 Everytime you go to a new Datacentre/Cluster/Folder/VM* (Delete as appropriate) it gives me the Getting Started pages.
 So today I found the off switches:
 For C# Client
-For the Web Client
-Job done. You are now L33t @ vCenter</description>
+Select Edit &gt; Client Settings Select the General tab Deselect the Show Getting Started Tabs check box and click OK For the Web Client</description>
     </item>
     
     <item>
@@ -562,9 +546,7 @@ I was very pleased that my efforts evangelising around virtualisation and in par
       
       <guid>https://www.chrisneale.org/posts/2014-08-14-getting-back-on-the-horse-destination-vcap5-dca/</guid>
       <description>After passing my VCP, and subsequently falling back into the bad habit of not studying! I&amp;rsquo;ve managed to get the
-The point is&amp;hellip;&amp;hellip;..IT&amp;rsquo;S BACK ON! I&amp;rsquo;ll be studying again and blurting out blogposts about the activity.
-As always, step 1 is READ THE BLUEPRINT!
-http://mylearn.vmware.com/mgrReg/plan.cfm?plan=47316&amp;amp;amp;ui=www_cert&amp;amp;amp;src=vmw_so_vex_cneal_850</description>
+VMware authorisation Pearson Vue confirmation and now A voucher (for the $$$ bit) from my lovely employer :-) Well ok the last bit has been all rubber stamped and approved but it&#39;s somewhere in our suppliers system to churn a handle to actual give me a code....anyway that&#39;s an aside, as soon as it comes through I&#39;ll be booking the exam on pearson giving myself 3months/12weeks to prep.</description>
     </item>
     
     <item>
@@ -585,7 +567,10 @@ We are running the above UCS servers in 2 vBlocks. The first is a vBlock 100 the
       <pubDate>Fri, 25 Jul 2014 18:00:00 +0000</pubDate>
       
       <guid>https://www.chrisneale.org/posts/2014-07-25-esxivcenter-hardening-inventory-service-issue/</guid>
-      <description> </description>
+      <description>We had a Pen Test done recently on a couple of vBlocks that we need some security accreditation against. (See how I&#39;m being vague there for security reasons ;-)
+One of the items that came up was a weak cipher on port 10109 of the vCenter server.
+Zut Alors! That sounds serious, well it might be.
+Not seeing a way to update the service which was opening this port (vCenter Inventory Service) I did what we would all do, which was search for the KB article.</description>
     </item>
     
     <item>
@@ -811,7 +796,7 @@ If you are lucky enough to have Windows 7 Pro/Enterprise/Ultimate. Then you can 
       <pubDate>Wed, 30 May 2012 18:00:00 +0000</pubDate>
       
       <guid>https://www.chrisneale.org/posts/2012-05-30-time-waits-for-no-man-or-member-server-the-importance-of-time-synchronisation/</guid>
-      <description>I had built a Windows 2008 server from a custom SOE disc, all seemed well but it wouldn&amp;rsquo;t register in DNS. I&amp;rsquo;d specified the name servers correctly and the server I&amp;rsquo;d built the week before had no issues registering in the same domain. This was a relatively new domain however and the server was pinging all the same and joined the domain without issue. I continued&amp;hellip;but then spotted that the SOE post build tasks had failed on Activating Windows.</description>
+      <description>Perhaps I should put it down to it being a Friday, like the inverse of a Monday instead of lots of things breaking, things just didn&#39;t seem to be working. I had built a Windows 2008 server from a custom SOE disc, all seemed well but it wouldn&amp;rsquo;t register in DNS. I&amp;rsquo;d specified the name servers correctly and the server I&amp;rsquo;d built the week before had no issues registering in the same domain.</description>
     </item>
     
     <item>
@@ -898,7 +883,7 @@ Windows=Linux Do you have a legal OS? Even if your PC came with XP on it from th
       <pubDate>Mon, 11 Apr 2011 18:00:00 +0000</pubDate>
       
       <guid>https://www.chrisneale.org/posts/2011-04-11-comparison-of-free-online-sync-providers/</guid>
-      <description>I personally go with Dropbox as I find the client to be small and pretty unobtrusive. But I&amp;rsquo;ve not used the others intensively. I&amp;rsquo;ll leave you to have a try and there is 21GB or more to play with!</description>
+      <description>Spideroak Ubuntu One Dropbox SkyDrive Synced Storage iDriveSync LiveKive (AVG) Free Storage 2GB 2Gb 2Gb/8GB** 5GB 5GB 5GB Additional Storage Costs 100GB/$100 20GB/$29.99 50GB/$99 100GB/$199 Unlim/$59.88 25GB/$49.99 Unlim/$79.99 PC Client Yes Yes(Beta) Yes Yes Yes Yes Linux Client Yes Yes Yes No No No Mac Client Yes No Yes Yes Yes Yes Android Client Yes Yes* Yes No No Yes iPhone Client Yes Yes* Yes No No Yes &amp;nbsp; I personally go with Dropbox as I find the client to be small and pretty unobtrusive.</description>
     </item>
     
   </channel>

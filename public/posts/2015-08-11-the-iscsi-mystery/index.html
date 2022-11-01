@@ -62,17 +62,22 @@ The VM had 2 NICs." />
 Here&rsquo;s where I went down some rabbit holes and fixed some issues.</p>
 <p>The routing table showed that the default gateway had a lower Metric than the NIC that was on the same subnet.  I thought this was the issue initially so I set about trying to get the Metric for the iSCSI connected NIC lower.</p>
 <p>I learned some things about how Windows 2012 Automatically works out metrics for NICs.</p>
-<!-- raw HTML omitted -->
-<p>It was then that I spotted something I had taken for granted&hellip;.the virtual NIC types were differet.  Somehow this VM had been configured wrong by whoever added the iSCSI NIC and they had selected e1000 !!!<!-- raw HTML omitted -->
+<LI>The line speed that a NIC has negotiated contributes to the Metric score faster=lower (change your PCs NIC from 1gb to 100Mbps and the metric jumps from 20 to 306 </LI>
+More detail can be found here <A HREF=https://support.microsoft.com/en-us/kb/299540>https://support.microsoft.com/en-us/kb/299540</A>
+<p>It was then that I spotted something I had taken for granted&hellip;.the virtual NIC types were differet.  Somehow this VM had been configured wrong by whoever added the iSCSI NIC and they had selected e1000 !!!<BR>
 Changing the NIC type to VMXNet3 meant the line rate jumped up to 10Gbps from 1Gbps and now the Metric for the iSCSI nic was the same as the Production default gateway&hellip;but not lower.</p>
 <p>I tried manually editing the Production NIC&rsquo;s default gateway metric to add 300 to it to make it higher.<br>
-This did make the routing table look right from a metrics perspective&hellip;.but still the traffic went over the Production NIC.  Thankfully after bouncing the issue off a few colleagues one did come back with a config guide for Microsoft iSCSI Initiator on 2012.  <!-- raw HTML omitted -->
+This did make the routing table look right from a metrics perspective&hellip;.but still the traffic went over the Production NIC.  Thankfully after bouncing the issue off a few colleagues one did come back with a config guide for Microsoft iSCSI Initiator on 2012.  <BR>
 Now I hadn&rsquo;t configured the initiator either, we have a storage team who did that.  They had just left some settings default, and it appears that iSCSI ignores your IPv4 Routing Table in Windows.  So all my fidgetting above was in vain (although it did highlight the build issue with e1000 vs VMXNet3).</p>
 <p>Microsoft&rsquo;s guide does state
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ruby" data-lang="ruby"><span style="display:flex;"><span><span style="color:#66d9ef">If</span> you want to dedicate iSCSI traffic to a specific set of the <span style="color:#66d9ef">NICs</span>, you can specify that <span style="color:#66d9ef">in</span> the <span style="color:#960050;background-color:#1e0010">“</span><span style="color:#66d9ef">Connect</span> using<span style="color:#960050;background-color:#1e0010">”</span><span style="color:#f92672">.</span> <span style="color:#66d9ef">By</span> default, any <span style="color:#66d9ef">IPs</span> can be used <span style="color:#66d9ef">for</span> iSCSI connection<span style="color:#f92672">.</span></span></span></code></pre></div></p>
-<!-- raw HTML omitted -->
+<LI>Here is where you set it 
+<IMG SRC=http://blogs.technet.com/cfs-file.ashx/__key/communityserver-blogs-components-weblogfiles/00-00-00-47-85-metablogapi/7484.image_5F00_20EE0961.png></LI>
+<LI>Here is the link to Microsoft's guide <A HREF=http://blogs.technet.com/b/filecab/archive/2012/05/21/introduction-of-iscsi-target-in-windows-server-2012.aspx> http://blogs.technet.com/b/filecab/archive/2012/05/21/introduction-of-iscsi-target-in-windows-server-2012.aspx</A></LI>
 <p>In Summary</p>
-<!-- raw HTML omitted -->
+<LI> Death to e1000s always go VMXNet3 FTW!<BR>
+<Sub>(Ideally include this in a template/blueprint or at a minimum highlight it in your build documentation)</Sub></LI>
+<LI> iSCSI is ignorant to traditional routing tables in Windows and should be pinned to a specific NIC as required</LI>
 <p>I hope that saves you the morning I had!</p>
 
     </div>

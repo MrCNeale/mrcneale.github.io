@@ -59,14 +59,44 @@ Shavlik was good enough to oblige here and went out and patched lots of VMs with
       <p>During a recent patching cycle VMtools across a set of VMs were updated to the latest version.  This was to patch security vulnerabilities in the versions which were running to ensure the environment was as secure as possible for a PenTest which would go towards IL3 Accreditation.</p>
 <p>Shavlik was good enough to oblige here and went out and patched lots of VMs with new VMtools automatically to the latest version.</p>
 <p>Then an issue occurred with Trend Deep Security.</p>
-<p>Normally when doing a VMtools install for a VM managed by trend the following should be considered as per the <!-- raw HTML omitted -->Trend Deep Security Best Practices PDF <!-- raw HTML omitted --></p>
+<p>Normally when doing a VMtools install for a VM managed by trend the following should be considered as per the <a href="http://files.trendmicro.com/documentation/guides/deep_security/DS%209.0%20Best%20Practice%20Guide.pdf">Trend Deep Security Best Practices PDF </a></p>
 <p>=============================</p>
 <p>VMware includes the VMware vShield Endpoint Driver in VMware Tools 5.x, but the installation program</p>
 <p>does not install it on Guest VMs by default. To install it on guest VM, review the installation options in the</p>
-<!-- raw HTML omitted -->
+<table dir="LTR" border="1" width="534" cellspacing="0" cellpadding="7">
+<tbody>
+<tr>
+<td colspan="3" valign="TOP" height="7"><span style="font-size:small;">table below: </span><span style="font-family:Interstate-Light, Interstate-Light;font-size:small;"><span style="font-family:Interstate-Light, Interstate-Light;font-size:small;">Available VMware Tools Installation Options </span></span></td>
+</tr>
+<tr>
+<td valign="TOP" width="33%" height="7"><span style="font-family:Interstate-Light, Interstate-Light;font-size:small;"><span style="font-family:Interstate-Light, Interstate-Light;font-size:small;">Installation Option </span></span></td>
+<td valign="TOP" width="33%" height="7"><span style="font-family:Interstate-Light, Interstate-Light;font-size:small;"><span style="font-family:Interstate-Light, Interstate-Light;font-size:small;">vShield Endpoint </span></span></td>
+<td valign="TOP" width="33%" height="7"><span style="font-family:Interstate-Light, Interstate-Light;font-size:small;"><span style="font-family:Interstate-Light, Interstate-Light;font-size:small;">Action </span></span></td>
+</tr>
+<tr>
+<td valign="TOP" width="33%" height="14"><span style="font-size:small;">Typical </span></td>
+<td valign="TOP" width="33%" height="14"><span style="font-size:small;">vShield Endpoint does </span><span style="font-family:Interstate-Light, Interstate-Light;font-size:small;"><span style="font-family:Interstate-Light, Interstate-Light;font-size:small;">NOT </span></span><span style="font-size:small;">install </span></td>
+<td valign="TOP" width="33%" height="14"><span style="font-family:Interstate-Light, Interstate-Light;font-size:small;"><span style="font-family:Interstate-Light, Interstate-Light;font-size:small;">DO NOT </span></span><span style="font-size:small;">select this option </span></td>
+</tr>
+<tr>
+<td valign="TOP" width="33%" height="14"><span style="font-size:small;">Complete </span></td>
+<td valign="TOP" width="33%" height="14"><span style="font-size:small;">vShield Endpoint </span><span style="font-family:Interstate-Light, Interstate-Light;font-size:small;"><span style="font-family:Interstate-Light, Interstate-Light;font-size:small;">installs </span></span></td>
+<td valign="TOP" width="33%" height="14"><span style="font-size:small;">Select if you want all features </span></td>
+</tr>
+<tr>
+<td valign="TOP" width="33%" height="23"><span style="font-size:small;">Custom </span></td>
+<td valign="TOP" width="33%" height="23"><span style="font-size:small;">You must </span><span style="font-family:Interstate-Light, Interstate-Light;font-size:small;"><span style="font-family:Interstate-Light, Interstate-Light;font-size:small;">explicitly </span></span><span style="font-size:small;">install vShield Endpoint </span></td>
+<td valign="TOP" width="33%" height="23"><span style="font-size:small;">Expand VMware Device Drivers &gt; VMCI Driver </span></td>
+</tr>
+<tr>
+<td colspan="3" valign="TOP" height="14"><span style="font-size:small;">Select vShield Drivers and choose </span><span style="font-family:Interstate-Light, Interstate-Light;font-size:small;"><span style="font-family:Interstate-Light, Interstate-Light;font-size:small;">This feature will be installed on local drive. </span></span></td>
+</tr>
+</tbody>
+</table>
+=========================
 <p>Shavlik didn&rsquo;t consider that I wanted a Custom/Complete install and so VMCI was missing.</p>
 <p>Ok, that would be fine but now we have VMs with newer VMtools than the ISO which is stored on the ESXi Host. So we can&rsquo;t just re-run the install/upgrade via vSphere</p>
-<p>That&rsquo;s where <!-- raw HTML omitted -->Andreas Peetz <!-- raw HTML omitted -->over at <a href="http://www.v-front.de">http://www.v-front.de</a> comes in with his blog post about how to effectively do 2 things</p>
+<p>That&rsquo;s where <span style="color:#336699;">Andreas Peetz </span>over at <a href="http://www.v-front.de">http://www.v-front.de</a> comes in with his blog post about how to effectively do 2 things</p>
 <ol>
 <li>
 <p>Place the newer VMtools iso onto a shared datstore</p>
@@ -76,7 +106,7 @@ Shavlik was good enough to oblige here and went out and patched lots of VMs with
 </li>
 </ol>
 <p>Now you can do automated installs/upgrades via the gui (powercli cannot pass through the custom parameters)</p>
-<p>Here is Andreas&rsquo; Blog Post <!-- raw HTML omitted --><a href="http://www.v-front.de/2013/01/how-to-use-latest-vmware-tools-with.html">http://www.v-front.de/2013/01/how-to-use-latest-vmware-tools-with.html</a><!-- raw HTML omitted --></p>
+<p>Here is Andreas&rsquo; Blog Post <a href="http://www.v-front.de/2013/01/how-to-use-latest-vmware-tools-with.html"><a href="http://www.v-front.de/2013/01/how-to-use-latest-vmware-tools-with.html">http://www.v-front.de/2013/01/how-to-use-latest-vmware-tools-with.html</a></a></p>
 <p> </p>
 
     </div>

@@ -67,7 +67,7 @@ Who&rsquo;d be crazy enough to lose a VM? Well you&rsquo;d be surprised in enter
       </div>
     </header>
     <div class="post-content">
-      <!-- raw HTML omitted -->
+      <img src="/images/metadata.png">   
 <h1 id="what-does-azure-have-that-vmware-never-had-aka-what-is-the-azure-instance-metadata-service">What does Azure have that VMware never had? AKA What is the Azure Instance Metadata Service?</h1>
 <p>There&rsquo;s probably a ton of answers here.  But the one I was angling for is &ldquo;Which vCenter is my VM running on?&rdquo;<br>
 Who&rsquo;d be crazy enough to lose a VM?  Well you&rsquo;d be surprised in enterprise estates that have been running for 10 years and Sue who managed the VM farm just retired and moved to Cypus so you can&rsquo;t get hold of her to ask&hellip;
@@ -130,7 +130,7 @@ or <code>curl -H Metadata:true &quot;http://169.254.169.254/metadata/instance?ap
 <p>Or something more useful like the tags so you can tell if it&rsquo;s a prod/qa/test or web/db/DC etc.</p>
 <pre tabindex="0"><code>PS C:\Users\blogadmin&gt; (Invoke-RestMethod -Headers @{&#34;Metadata&#34;=&#34;true&#34;} -URI http://169.254.169.254/metadata/instance?api-version=2018-10-01 -Method get).compute.tags
 Owner:Chris N
-</code></pre><!-- raw HTML omitted -->
+</code></pre><img src="/images/vmtags.png">
 
     </div>
     <div class="post-footer">

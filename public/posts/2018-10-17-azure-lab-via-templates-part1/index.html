@@ -67,7 +67,7 @@ An Azure account The latest Azure Powershell. Install instructions can be found 
       </div>
     </header>
     <div class="post-content">
-      <!-- raw HTML omitted -->
+      <img style="float: top;" src="https://msdnshared.blob.core.windows.net/media/2017/05/2017-05-06-Azure-IaC-How-to-get-started-with-ARM-Template.jpg">
 <h2 id="aim">Aim</h2>
 <p>This post will show you how the format of ARM templates and how to deploy the simplest one without parameters or variables via the Portal, Powershell, AZ CLI.</p>
 <h2 id="pre-reqs">Pre-reqs</h2>
@@ -99,11 +99,11 @@ Here&rsquo;s a completely empty ARM template</p>
 </ol>
 <h2 id="steps-to-create-your-first-template-via-the-portal">Steps to create your first template via the portal</h2>
 <ol>
-<li>Log in to Azure and click &ldquo;Create a Resource&rdquo; <!-- raw HTML omitted --><!-- raw HTML omitted --></li>
-<li>Type &ldquo;template&rdquo; in the search box and select &ldquo;Template Deployment&rdquo; and click &ldquo;Create&rdquo; <!-- raw HTML omitted --><!-- raw HTML omitted --></li>
-<li>Select &ldquo;Build your own template in the editor&rdquo; <!-- raw HTML omitted --><!-- raw HTML omitted --></li>
-<li>Now you&rsquo;ll see you have a blank templates (and no variables,functions or outputs section&hellip;which is fine) <!-- raw HTML omitted --><!-- raw HTML omitted --></li>
-<li>Select &ldquo;Add Resource&rdquo; and choose &ldquo;Virtual Network&rdquo; from the drop down and enter a name for your vNet and click OK <!-- raw HTML omitted --><!-- raw HTML omitted --></li>
+<li>Log in to Azure and click &ldquo;Create a Resource&rdquo; <BR><img style="float: bottom;" src="/public/labpost1.png"></li>
+<li>Type &ldquo;template&rdquo; in the search box and select &ldquo;Template Deployment&rdquo; and click &ldquo;Create&rdquo; <BR><img style="float: bottom;" src="/public/labpost2.png"></li>
+<li>Select &ldquo;Build your own template in the editor&rdquo; <BR><img style="float: bottom;" src="/public/labpost3.png"></li>
+<li>Now you&rsquo;ll see you have a blank templates (and no variables,functions or outputs section&hellip;which is fine) <BR><img style="float: bottom;" src="/public/labpost4.png"></li>
+<li>Select &ldquo;Add Resource&rdquo; and choose &ldquo;Virtual Network&rdquo; from the drop down and enter a name for your vNet and click OK <BR><img style="float: bottom;" src="/public/labpost5.png"></li>
 </ol>
 <p>Now woosh, there you have it, your first template to deploy a vNet. You can see on the left 1 resource and 5 variables&hellip;..but wait, you didn&rsquo;t define any variables? No Azure did as it&rsquo;s best practice and makes it easy to edit later and change or even parameterise.
 Your template should look identical to this.</p>
@@ -193,10 +193,10 @@ Your Template code should now look neater and easy enough to read.</p>
 </span></span></code></pre></div><p>Ok, now click the &ldquo;Download&rdquo; above your template code (we&rsquo;re saving it for later to deploy again).<br>
 Click &ldquo;Save&rdquo; and you&rsquo;ll be taken to the &ldquo;Purchase&rdquo; page.  Don&rsquo;t panic&hellip;.vnets are free!<br>
 Select a subscription and a resource group (or create a new one) and a location to deploy the vnet, tick the &ldquo;I agree&rdquo; box and click purchase.
-You can see that it&rsquo;s been submitted if you click the alarm bell near the top left.<!-- raw HTML omitted --><!-- raw HTML omitted --><br>
+You can see that it&rsquo;s been submitted if you click the alarm bell near the top left.<BR><img style="float: bottom;" src="/public/labpost6.png"><br>
 Click on the deployment in progress to see more details.
 Once it&rsquo;s complete, click on your vnet name to go and see your resource.
-<!-- raw HTML omitted --><!-- raw HTML omitted --><br>
+<BR><img style="float: bottom;" src="/public/labpost7.jpg"><br>
 Amazing!  Not really but it&rsquo;s the first Lego brick in your 3000 piece Death Star.</p>
 <h2 id="now-for-powershell">Now for Powershell</h2>
 <ol>
@@ -209,7 +209,7 @@ Amazing!  Not really but it&rsquo;s the first Lego brick in your 3000 piece Deat
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Powershell" data-lang="Powershell"><span style="display:flex;"><span>New-AzureRmResourceGroupDeployment -Name LabVnet -ResourceGroupName LabFromTempalte101 -TemplateFile .\Downloads\template.json
 </span></span></code></pre></div><p>It completes and you now have 2 vNets&hellip;&hellip;.oh wait, NO you just have the one, the same one you set up before.<br>
 ARM IS DECLARATIVE.  You just told it to &ldquo;make sure I have a vnet called this with these properties&rdquo;.  It went and checked, and you have. So it just ended, changing nothing, it didn&rsquo;t recreate our first vnet, it just left it alone.
-<!-- raw HTML omitted --><!-- raw HTML omitted --><br>
+<BR><img style="float: bottom;" src="/public/labpost-powershell.jpg"><br>
 Go edit the template.json file and edit the resources section and change the name, e.g. something like this</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-JSON" data-lang="JSON"><span style="display:flex;"><span><span style="color:#e6db74">&#34;parameters&#34;</span><span style="color:#960050;background-color:#1e0010">:</span> {}<span style="color:#960050;background-color:#1e0010">,</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;resources&#34;</span><span style="color:#960050;background-color:#1e0010">:</span> [
@@ -218,7 +218,7 @@ Go edit the template.json file and edit the resources section and change the nam
 </span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;Microsoft.Network/virtualNetworks&#34;</span>,
 </span></span></code></pre></div><p>Save it and re-run the above powershell command.
 Once that completes, you can now see you have 2 vNets in the same Resource group.
-<!-- raw HTML omitted --><!-- raw HTML omitted --><br>
+<BR><img style="float: bottom;" src="/public/labpost9.png"><br>
 Fiddly, but in the next lesson we&rsquo;ll deal with parameters.</p>
 <h2 id="summary">Summary</h2>
 <ul>

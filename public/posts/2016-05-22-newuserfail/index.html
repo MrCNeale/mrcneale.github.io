@@ -76,8 +76,8 @@ Back out. Tried login again&hellip;.same error. Ok maybe I&rsquo;m being really 
 C:\PogramData/VMware/vCenterServer/logs/sso/vmware-sts-idmd.log</p>
 <p>I saw this and was confused</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ruby" data-lang="ruby"><span style="display:flex;"><span><span style="color:#66d9ef">Failed</span> to authenticate principal <span style="color:#f92672">[</span>username@SSO_Domain<span style="color:#f92672">].</span> <span style="color:#66d9ef">User</span> password expired<span style="color:#f92672">.</span></span></span></code></pre></div>
-<p>How can a newly created user have an expired password.  I checked the password expiry length setting and it was to this.<!-- raw HTML omitted -->
-<img src="/images/pawd1.png" alt="password expiry setting" title="Password Expiry Setting"><!-- raw HTML omitted -->
+<p>How can a newly created user have an expired password.  I checked the password expiry length setting and it was to this.<BR>
+<img src="/images/pawd1.png" alt="password expiry setting" title="Password Expiry Setting"><BR>
 Plenty I thought.  Then I found this KB.</p>
 <p><a href="https://kb.vmware.com/selfservice/microsites/search.do?language=en_US&amp;cmd=displayKC&amp;externalId=2125495&amp;src=vmw_so_vex_cneal_850">https://kb.vmware.com/selfservice/microsites/search.do?language=en_US&amp;cmd=displayKC&amp;externalId=2125495&amp;src=vmw_so_vex_cneal_850</a></p>
 <p>So if the <strong>maximum lifetime password expiration value</strong> is larger than the permitted maximum it fails to create users correctly.</p>

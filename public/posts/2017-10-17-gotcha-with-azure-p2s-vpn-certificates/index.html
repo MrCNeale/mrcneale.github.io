@@ -13,14 +13,10 @@
     
     <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Gotcha when importing client certificates for Azure P2S VPN"/>
-<meta name="twitter:description" content="So the simple solution is that:
-When importing a VPN Client Cert and you are presented with the option to &ldquo;Enable strong private key protection&rdquo;, untick it. If you&rsquo;re on a newer OS, you won&rsquo;t get this prompt (tested on Server 2016). Now this is in the troubleshooting guide, but it should be in the instructions, rather than something you have to search for after the fact. https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-troubleshoot-vpn-point-to-site-connection-problems
-So RTFM, and also any related KBs&hellip;."/>
+<meta name="twitter:description" content="After waiting 30 minutes for my P2S VPN gateway to deploy in Azure I was obviously eager to get VPN-ing, who wouldn&#39;t be! I ran through the instructions to generate a self-signed Root Cert and a client cert from Microsoft on this page [https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-certificates-point-to-site](https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-certificates-point-to-site) \*(Put a pin here, we&#39;ll come back to this) I&#39;d imported the certs to my test client VM and the Client VPN setup exe ran ok and created a connection in &#34;"/>
 
     <meta property="og:title" content="Gotcha when importing client certificates for Azure P2S VPN" />
-<meta property="og:description" content="So the simple solution is that:
-When importing a VPN Client Cert and you are presented with the option to &ldquo;Enable strong private key protection&rdquo;, untick it. If you&rsquo;re on a newer OS, you won&rsquo;t get this prompt (tested on Server 2016). Now this is in the troubleshooting guide, but it should be in the instructions, rather than something you have to search for after the fact. https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-troubleshoot-vpn-point-to-site-connection-problems
-So RTFM, and also any related KBs&hellip;." />
+<meta property="og:description" content="After waiting 30 minutes for my P2S VPN gateway to deploy in Azure I was obviously eager to get VPN-ing, who wouldn&#39;t be! I ran through the instructions to generate a self-signed Root Cert and a client cert from Microsoft on this page [https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-certificates-point-to-site](https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-certificates-point-to-site) \*(Put a pin here, we&#39;ll come back to this) I&#39;d imported the certs to my test client VM and the Client VPN setup exe ran ok and created a connection in &#34;" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.chrisneale.org/posts/2017-10-17-gotcha-with-azure-p2s-vpn-certificates/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2017-10-17T22:00:00+00:00" />
@@ -53,7 +49,7 @@ So RTFM, and also any related KBs&hellip;." />
   <title>clock</title>
   <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
 </svg>
-          1 min read
+          2 min read
         </div>
         <div>
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tag">
@@ -69,7 +65,18 @@ So RTFM, and also any related KBs&hellip;." />
       </div>
     </header>
     <div class="post-content">
-      <!-- raw HTML omitted -->
+      <img style="float: right;" src="http://www.chrisneale.org/public/azurevpn.png">
+After waiting 30 minutes for my P2S VPN gateway to deploy in Azure I was obviously eager to get VPN-ing, who wouldn't be!  
+I ran through the instructions to generate a self-signed Root Cert and a client cert from Microsoft on this page [https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-certificates-point-to-site](https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-certificates-point-to-site)  
+\*(Put a pin here, we'll come back to this)  
+I'd imported the certs to my test client VM and the Client VPN setup exe ran ok and created a connection in "Network Connections".  I tried to connect and received an error    
+<BR><BR>
+**A certificate could not be found that can be used with this Extensible Authentication Protocol. (Error 798)**  
+<BR><BR>
+<img style="float: left;" src="http://www.chrisneale.org/public/certerrror.png">
+I foolishly didn't Google first and I checked the comments section at the bottom of the instructions.  The Microsoft engineer referred to how they moved from MakeCert.exe to the new Powershell <p style="color:blue">New-SelfSignedCertificate</p> cmdlet.  However, it became clear during testing and reading that the nice bod from Microsoft was using all the new things and not testing backward compatibility.  
+That's fine but they didn't initiall stipulate that this would only work for Windows 10/2016 clients.  
+A bit more digging and it turns out that the default import options for a cert **BEFORE** Windows 10/2016 enable "Strong Private Key Protection". That sounds like a good thing, but it actually means the OS prompts whenever the certificate (and it's private keys) are accessed.  Which breaks the VPN client connection package.  
 <p>So the simple solution is that:<br>
 When importing a VPN Client Cert and you are presented with the option to <em>&ldquo;Enable strong private key protection&rdquo;</em>, untick it.  If you&rsquo;re on a newer OS, you won&rsquo;t get this prompt (tested on Server 2016).  Now this is in the troubleshooting guide, but it should be in the instructions, rather than something you have to search for after the fact.
 <a href="https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-troubleshoot-vpn-point-to-site-connection-problems">https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-troubleshoot-vpn-point-to-site-connection-problems</a></p>

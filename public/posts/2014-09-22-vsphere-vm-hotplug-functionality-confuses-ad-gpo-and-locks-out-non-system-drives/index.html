@@ -71,24 +71,24 @@
 <p> </p>
 <p>I reviewed the policies, there weren&rsquo;t a vast number, but none appeared to have anything about locking down local fixed drives.</p>
 <p>The key word there is FIXED.  There was a setting in one GPO under the section</p>
-<p><!-- raw HTML omitted -->Administrative Templates/<!-- raw HTML omitted --><!-- raw HTML omitted -->System/<!-- raw HTML omitted --><!-- raw HTML omitted -->Removable Storage Access<!-- raw HTML omitted --></p>
+<p><strong>Administrative Templates/</strong><strong>System/</strong><strong>Removable Storage Access</strong></p>
 <p>For</p>
-<p><!-- raw HTML omitted --><!-- raw HTML omitted -->All Removable Storage classes: Deny all access<!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<p><strong><strong>All Removable Storage classes: Deny all access</strong></strong></p>
 <p>Which was to lock down USB drives etc.</p>
 <p> </p>
 <p>But these were fixed drives&hellip;&hellip;&hellip;&hellip;&hellip;..or were they?</p>
 <p>Well this is where VMware is clever and Windows isn&rsquo;t quite caught up, or you might argue VMware is TOO clever.</p>
 <p>The SCSI controller provided by VMware is detected as hotplug.  You can confirm this by going to the system tray and clicking the eject/remove drive icon</p>
-<p><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<p><a href="https://chrisneale.files.wordpress.com/2014/09/sg.png"><img class="alignnone size-full wp-image-193" src="http://chrisneale.files.wordpress.com/2014/09/sg.png" alt="sg" width="234" height="62" /></a></p>
 <p>Fortunately as it booted from it C isn&rsquo;t able to be ejected, but the other drives were therefore seen as removable storage and locked down.</p>
 <p> </p>
 <p>Two solutions presented here.  One is change the GPO.  This is a VM on a host in a secure data center.  No-one&rsquo;s plugging a USB into that host and mapping it to the VM via vCenter or Directpath any time soon.</p>
 <p> </p>
 <p>However there is a VMware workaround.  You can disabled the hotplug functionality of the scsi controller driver.  Thereby &ldquo;un-confusing&rdquo; Windows.</p>
 <p>Simply edit the VM configuration under the settings options/general/configuration parameters and add the setting</p>
-<p><!-- raw HTML omitted -->devices.hotplug and<!-- raw HTML omitted --> set the value to <!-- raw HTML omitted -->false<!-- raw HTML omitted --></p>
+<p><span style="font-family:'Open Sans', sans-serif;line-height:19.5px;">devices.hotplug and</span> set the value to <strong>false</strong></p>
 <p>as described here.</p>
-<p><!-- raw HTML omitted -->VMware KB: Disabling the HotAdd/HotPlug capability in ESXi 5.x and ESXi/ESX 4.x virtual machines<!-- raw HTML omitted --></p>
+<p><a title="http://kb.vmware.com/selfservice/microsites/search.do?language=en_US&amp;cmd=displayKC&amp;externalId=1012225&amp;ui=www_cert&amp;src=vmw_so_vex_cneal_850" href="http://kb.vmware.com/selfservice/microsites/search.do?language=en_US&amp;cmd=displayKC&amp;externalId=1012225&amp;ui=www_cert&amp;src=vmw_so_vex_cneal_850">VMware KB: Disabling the HotAdd/HotPlug capability in ESXi 5.x and ESXi/ESX 4.x virtual machines</a></p>
 <p> </p>
 <p>And a reboot later and Windows now knows these aren&rsquo;t removable drives and all is well with the world</p>
 <p> </p>

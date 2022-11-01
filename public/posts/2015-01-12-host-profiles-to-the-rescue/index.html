@@ -64,10 +64,17 @@ VMworkstation Virtual Network ruled out.</p>
 <p>So it was something specific to both hosts.  Now foolishly I&rsquo;ve been doing lots of lab exercises and not got my esxi hosts set to have non-persistent disks.  So somewhere in the last week or so I have changed the networking and not recorded/documented the random PowerCLI/esxcli/vma command which has stopped them talking.</p>
 <p>Then I had an epiphany.  I don&rsquo;t need to know what&rsquo;s different.  I&rsquo;ll just use vSphere/vCenter to set them the same!</p>
 <p>Simple Solution</p>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<p>(Note that there is an error but this can be ignored as storage was still visible/accessible on both hosts and is caused because the Host Profile captures storage settings which are unique.  Read here &gt;<!-- raw HTML omitted --> http://virtualcloudzz.blogspot.co.uk/2013/06/host-profiles-compliance-error-in.html <!-- raw HTML omitted --> )</p>
-<!-- raw HTML omitted -->
+<ol>
+	<li>Create host profile of HostA</li>
+	<li>Apply host profile to HostB</li>
+</ol>
+And voila.  Ping was working!
+<img class="alignnone size-large wp-image-236" src="https://chrisneale.files.wordpress.com/2015/01/hostprofile.png?w=800" alt="hostprofile" width="800" height="315" />
+<p>(Note that there is an error but this can be ignored as storage was still visible/accessible on both hosts and is caused because the Host Profile captures storage settings which are unique.  Read here &gt;<a href="http://virtualcloudzz.blogspot.co.uk/2013/06/host-profiles-compliance-error-in.html"> http://virtualcloudzz.blogspot.co.uk/2013/06/host-profiles-compliance-error-in.html </a> )</p>
+<h3>The other message here is:</h3>
+<h3>If you're using a lab environment set your disks non persistent.</h3>
+<h3> If you're in Production....don't make a change without documenting it and creating a new host profile with similar level of detail/description to explain what changes have been made.</h3>
+<h3></h3>
 
     </div>
     <div class="post-footer">

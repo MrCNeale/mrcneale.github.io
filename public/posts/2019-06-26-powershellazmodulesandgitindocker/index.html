@@ -67,7 +67,7 @@ What do you do? Good question. Well it involves a lot of ARM template deployment
       </div>
     </header>
     <div class="post-content">
-      <!-- raw HTML omitted -->
+      <img src="/images/azdocker.png">   
 <h1 id="practical-user-for-dockercontainers-in-infra-as-code-iac---a-standard-deployment-environment">Practical user for Docker/Containers in infra as code (IaC) - a standard deployment environment</h1>
 <p>&ldquo;Infrastructure as Code, Automate all the things, Containers are the future, DevOPs to the max!&rdquo; has been a chorus of lots of people in tech for a while and as a non-app dev I never really saw applications for containers to help what I do.<br>
 What do you do? Good question. Well it involves a lot of ARM template deployments and deploying blueprints and standard environments to run tests against.</p>
@@ -91,7 +91,7 @@ pwsh
 install-module az -force
 exit  
 exit  
-</code></pre><p><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><br>
+</code></pre><p><img src="/images/installs1.png"><img src="/images/installs2.png"><img src="/images/installs3.png"><br>
 What you have now is a CentOS containers, with Powershell and AZ Modules and Git Installed fresh.<br>
 4 Now find the container (it&rsquo;s still running even though you exited bash) and it&rsquo;s amusing two word underscore separated name by running:</p>
 <pre tabindex="0"><code>docker ps -a
@@ -107,12 +107,12 @@ The push refers to repository [docker.io/pobx/centos_az_ps_git_blog]
 d69483a6face: Mounted from pobx/centos_ps_az_git
 v1: digest: sha256:2801d29dd86a7eb2c8fceb72442b42f4473d2ea80965e256c9aabfb9ed31a1d9 size: 742
 </code></pre><p>And you can see it in docker hub, which means anyone can pull it down.
-<!-- raw HTML omitted --><br>
+<img src="/images/dockerhub.png"><br>
 7 Done. Now it&rsquo;s in docker hub.  Go to another pc and run</p>
 <pre tabindex="0"><code>docker pull myRepo/centos_az_ps_git:v1
 docker run -it myRepo/centos_az_ps_git:v1 pwsh
 </code></pre><p>Et voila<br>
-<!-- raw HTML omitted --><br>
+<img src="/images/connected.png"><br>
 Yes I get this is powershell inside powershell, but you could run it from a linux vm with no powershell core, or mac or windows without git commands or a windows machine with old AzureRM modules or no Azure modules.<br>
 If you tested your templates and/or scripts run from this container, it will work when run on the other person&rsquo;s machine from this container too.</p>
 

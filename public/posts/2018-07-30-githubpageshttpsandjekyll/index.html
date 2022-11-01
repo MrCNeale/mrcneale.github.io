@@ -13,16 +13,10 @@
     
     <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Fixing Layout issues after forcing HTTPS on GitHub Pages for a Jekyll based site"/>
-<meta name="twitter:description" content="This was great, my website worked at https://www.chrisneale.org but wait, all the formatting and layout looked like HTML v1.0 and hideous!
-I noticed in Chrome that it was complaining that it was only displaying the secure content&hellip;.not the insecure&hellip;.&ldquo;What insecure content??&rdquo;
-A quick trip into the developer console in Chrome by hitting F12 showed the culprit. The CSS was building from information somewhere with an explicit http in.
-I found that it was the _config."/>
+<meta name="twitter:description" content="Don&#39;t forget to update the CSS! I had been meaning to set up my blog page to use SSL/HTTPS for a while. Today I did it. It&#39;s amazingly simple since Github Pages has teamed up with LetsEncrypt. So I just had to tick one box. Go to your Github pages Repo, in my case https://github.com/MrCNeale/mrcneale.github.io, and select the settings tab, or go to your repo /settings, https://github.com/MrCNeale/mrcneale.github.io/settings Once there simply scroll down to the Github Pages section and tick the box labelled &#34;"/>
 
     <meta property="og:title" content="Fixing Layout issues after forcing HTTPS on GitHub Pages for a Jekyll based site" />
-<meta property="og:description" content="This was great, my website worked at https://www.chrisneale.org but wait, all the formatting and layout looked like HTML v1.0 and hideous!
-I noticed in Chrome that it was complaining that it was only displaying the secure content&hellip;.not the insecure&hellip;.&ldquo;What insecure content??&rdquo;
-A quick trip into the developer console in Chrome by hitting F12 showed the culprit. The CSS was building from information somewhere with an explicit http in.
-I found that it was the _config." />
+<meta property="og:description" content="Don&#39;t forget to update the CSS! I had been meaning to set up my blog page to use SSL/HTTPS for a while. Today I did it. It&#39;s amazingly simple since Github Pages has teamed up with LetsEncrypt. So I just had to tick one box. Go to your Github pages Repo, in my case https://github.com/MrCNeale/mrcneale.github.io, and select the settings tab, or go to your repo /settings, https://github.com/MrCNeale/mrcneale.github.io/settings Once there simply scroll down to the Github Pages section and tick the box labelled &#34;" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.chrisneale.org/posts/2018-07-30-githubpageshttpsandjekyll/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2018-07-30T22:00:00+00:00" />
@@ -72,16 +66,24 @@ I found that it was the _config." />
       </div>
     </header>
     <div class="post-content">
-      <!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+      <img style="float: top;" src="https://jekyllrb.com/img/logo-2x.png">
+<H2>Don't forget to update the CSS!</H2>
+I had been meaning to set up my blog page to use SSL/HTTPS for a while. Today I did it.  
+It's amazingly simple since Github Pages has teamed up with LetsEncrypt. So I just had to tick one box.  
+Go to your Github pages Repo, in my case https://github.com/MrCNeale/mrcneale.github.io, and select the settings tab, or go to your repo /settings, 
+https://github.com/MrCNeale/mrcneale.github.io/settings  
+Once there simply scroll down to the Github Pages section and tick the box labelled "Enforce HTTPS".  
+<img style="float: bottom;" src="/public/forcehttps.png">  
+Within 2-3 minutes Github will get a certificate for you (in my case for my custom domain name chrisneale.org!) and apply it.  
+<img style="float: bottom;" src="/public/ghp-cert.png">  
 <p>This was great, my website worked at <a href="https://www.chrisneale.org">https://www.chrisneale.org</a> but wait, all the formatting and layout looked like HTML v1.0 and hideous!<br>
-<!-- raw HTML omitted --></p>
+<img style="float: bottom;" src="/public/badlayout.png"></p>
 <p>I noticed in Chrome that it was complaining that it was only displaying the secure content&hellip;.not the insecure&hellip;.&ldquo;What insecure content??&rdquo;<br>
-<!-- raw HTML omitted --></p>
+<img style="float: bottom;" src="/public/insecure.png"></p>
 <p>A quick trip into the developer console in Chrome by hitting F12 showed the culprit.  The CSS was building from information somewhere with an explicit http in.<br>
-<!-- raw HTML omitted --><br>
+<img style="float: bottom;" src="/public/chromeconsole.png"><br>
 I found that it was the _config.yml file which needed the &ldquo;Site Wide Configuration&rdquo; section URL value updating to be <a href="https://www.chrisneale.org">https://www.chrisneale.org</a><br>
-<!-- raw HTML omitted --><br>
+<img style="float: bottom;" src="/public/configyml.png"><br>
 After editing that, 2 more minutes for Github Pages to recompile, and back to looking lovely!</p>
 
     </div>

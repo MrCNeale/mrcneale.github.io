@@ -51,7 +51,7 @@ It&rsquo;s something no-one should have to see, but sometimes, for brevity it ha
   <title>clock</title>
   <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
 </svg>
-          2 min read
+          3 min read
         </div>
         <div>
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tag">
@@ -77,7 +77,32 @@ Now let&rsquo;s Load the .net binaries in<br>
 Now they are loaded let&rsquo;s test we can create a new KeePass object (an object not a kp database on disk.  The object is just a construct/pointer to an in-memory KP Database object), so try<br>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ruby" data-lang="ruby"><span style="display:flex;"><span>$MyKPDatabase <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span><span style="color:#f92672">-</span>object <span style="color:#66d9ef">KeePassLib</span><span style="color:#f92672">.</span>PwDatabase  
 </span></span><span style="display:flex;"><span>$MyKPDatabase  </span></span></code></pre></div></p>
-<!-- raw HTML omitted -->
+<img src="/images/kpass1.png" align="right">  
+Ok, so as you can see you've got a DB there ready to be populated, but not with passwords, we're going to use it to read in an existing database.  But first we need to create a few variables before we try and open it.  We have an empty KP variable to store it in, next we need the location on disk and the existing Master KP Database password.  
+Our file is in the same folder c:\temp it's called test.kdbx so c:\temp\test.kdbx and FOR THE PURPOSES OF THIS BLOG ONLY I've set the password to Password123 and I will be showing it in the script, for clarity #ironic  
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ruby" data-lang="ruby"><span style="display:flex;"><span><span style="color:#75715e">#Create Password Object</span>
+</span></span><span style="display:flex;"><span>$MyMasterPassword <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Password123&#34;</span>
+</span></span><span style="display:flex;"><span>$MyKPKey <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span><span style="color:#f92672">-</span>object <span style="color:#66d9ef">KeePassLib</span><span style="color:#f92672">.</span>Keys<span style="color:#f92672">.</span>CompositeKey
+</span></span><span style="display:flex;"><span>$MyKPKey<span style="color:#f92672">.</span>AddUserKey((<span style="color:#66d9ef">New</span><span style="color:#f92672">-</span><span style="color:#66d9ef">Object</span> <span style="color:#66d9ef">KeePassLib</span><span style="color:#f92672">.</span>Keys<span style="color:#f92672">.</span>KcpPassword($MyMasterPassword)));
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#Create pointer to file on disk object</span>
+</span></span><span style="display:flex;"><span>$IOConnectionInfo <span style="color:#f92672">=</span> <span style="color:#66d9ef">New</span><span style="color:#f92672">-</span><span style="color:#66d9ef">Object</span> <span style="color:#66d9ef">KeePassLib</span><span style="color:#f92672">.</span>Serialization<span style="color:#f92672">.</span>IOConnectionInfo
+</span></span><span style="display:flex;"><span>$IOCOnnectionInfo<span style="color:#f92672">.</span>Path <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;c:</span><span style="color:#ae81ff">\t</span><span style="color:#e6db74">emp</span><span style="color:#ae81ff">\t</span><span style="color:#e6db74">est.kdbx&#34;</span>
+</span></span><span style="display:flex;"><span>$KPNStatusLogger <span style="color:#f92672">=</span> <span style="color:#66d9ef">New</span><span style="color:#f92672">-</span><span style="color:#66d9ef">Object</span> <span style="color:#66d9ef">KeePassLib</span><span style="color:#f92672">.</span>Interfaces<span style="color:#f92672">.</span>NullStatusLogger
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#open up the Database, using the Open function of the MyKPDatabase object we created earlier</span>
+</span></span><span style="display:flex;"><span>$MyKPDatabase<span style="color:#f92672">.</span>Open($IOCOnnectionInfo,$MyKPKey,$KPNStatusLogger)</span></span></code></pre></div>
+All done but nothing!!!  Patience.  Now we read in all the objects in the DB to a variable, and loop round the elements in the array variable calling the ReadSafe method to read the 
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ruby" data-lang="ruby"><span style="display:flex;"><span>$KPObjects <span style="color:#f92672">=</span> $MyKPDatabase<span style="color:#f92672">.</span>RootGroup<span style="color:#f92672">.</span>GetObjects($true, $true)
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#Now loop round and list them all to the command window</span>
+</span></span><span style="display:flex;"><span>foreach($KPObject <span style="color:#66d9ef">in</span> $KPObjects)
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  write<span style="color:#f92672">-</span>host $KPObject<span style="color:#f92672">.</span>Strings<span style="color:#f92672">.</span>ReadSafe(<span style="color:#e6db74">&#34;Title&#34;</span>) $KPObject<span style="color:#f92672">.</span>Strings<span style="color:#f92672">.</span>ReadSafe(<span style="color:#e6db74">&#34;UserName&#34;</span>)  $KPObject<span style="color:#f92672">.</span>Strings<span style="color:#f92672">.</span>ReadSafe(<span style="color:#e6db74">&#34;Password&#34;</span>)
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
+And you should get the list
+<img src="/images/kpass2.png"><BR>
+which should match your db<BR>
+<img src="/images/kpass3.png"><BR>
+<BR>
+Here endeth the lesson for today.  In Part 2 - we'll look at reading in a specific username/password based on title, and maybe writing back to the kdbx file!  
 
     </div>
     <div class="post-footer">

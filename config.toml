@@ -2,3 +2,6 @@ baseURL = 'https://www.chrisneale.org/'
 languageCode = 'en-us'
 title = 'Chris Neales Blog'
 theme = "m10c"
+
+[markup.goldmark.renderer]
+unsafe= true

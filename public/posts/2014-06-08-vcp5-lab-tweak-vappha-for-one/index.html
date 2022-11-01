@@ -68,9 +68,9 @@ So how to get them to autostart. Well it&rsquo;s a simple option and to my mind
     <div class="post-content">
       <p>I&rsquo;ve been using my little HP Microserver and it&rsquo;s a beauty.  However I do have to keep powering it on and then connecting with vi client to the host then powering on the VC Appliance, then the virtual ESXi hosts, you know the drill&hellip;&hellip;&hellip;.</p>
 <p>So how to get them to autostart.  Well it&rsquo;s a simple option and to my mind it looks like a mix of a vApp and HA :-)</p>
-<p>You get to put a VM into one of three categories <!-- raw HTML omitted -->Manual Startup/Any Order/Automatic Startup<!-- raw HTML omitted -->.</p>
+<p>You get to put a VM into one of three categories <strong>Manual Startup/Any Order/Automatic Startup</strong>.</p>
 <p>So I moved my VCSA to the top and set a 30 second delay followed by my first ESXi host, then the second.  I&rsquo;ve shortened the power down delay as it&rsquo;s a lab and I don&rsquo;t really care if they power off a bit dirty :-P</p>
-<p><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<p><a href="https://chrisneale.files.wordpress.com/2014/06/apo.png"><img class="alignnone wp-image-161 size-medium" src="http://chrisneale.files.wordpress.com/2014/06/apo.png?w=300" alt="Auto Power On vSphere VM with host" width="300" height="168" /></a></p>
 <p>Looking again it&rsquo;s bit more like a vApp Startup Priority Order than HA.  Oh well, 1 more bit of automation!</p>
 <p> </p>
 

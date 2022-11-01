@@ -13,9 +13,7 @@
       <pubDate>Tue, 17 Oct 2017 22:00:00 +0000</pubDate>
       
       <guid>https://www.chrisneale.org/posts/2017-10-17-gotcha-with-azure-p2s-vpn-certificates/</guid>
-      <description>So the simple solution is that:
-When importing a VPN Client Cert and you are presented with the option to &amp;ldquo;Enable strong private key protection&amp;rdquo;, untick it. If you&amp;rsquo;re on a newer OS, you won&amp;rsquo;t get this prompt (tested on Server 2016). Now this is in the troubleshooting guide, but it should be in the instructions, rather than something you have to search for after the fact. https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-troubleshoot-vpn-point-to-site-connection-problems
-So RTFM, and also any related KBs&amp;hellip;.</description>
+      <description>After waiting 30 minutes for my P2S VPN gateway to deploy in Azure I was obviously eager to get VPN-ing, who wouldn&#39;t be! I ran through the instructions to generate a self-signed Root Cert and a client cert from Microsoft on this page [https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-certificates-point-to-site](https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-certificates-point-to-site) \*(Put a pin here, we&#39;ll come back to this) I&#39;d imported the certs to my test client VM and the Client VPN setup exe ran ok and created a connection in &#34;</description>
     </item>
     
   </channel>

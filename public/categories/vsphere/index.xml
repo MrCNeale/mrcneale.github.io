@@ -18,8 +18,7 @@ Like most of you reading this I get bugged by vCenter presuming this is my first
 Everytime you go to a new Datacentre/Cluster/Folder/VM* (Delete as appropriate) it gives me the Getting Started pages.
 So today I found the off switches:
 For C# Client
-For the Web Client
-Job done. You are now L33t @ vCenter</description>
+Select Edit &gt; Client Settings Select the General tab Deselect the Show Getting Started Tabs check box and click OK For the Web Client</description>
     </item>
     
     <item>

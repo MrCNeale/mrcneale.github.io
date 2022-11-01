@@ -13,10 +13,9 @@
       <pubDate>Fri, 14 May 2021 22:00:00 +0000</pubDate>
       
       <guid>https://www.chrisneale.org/posts/2021-05-14-powershell-to-retreive-alerts-which-use-a-specific-action-group/</guid>
-      <description>Two simple queries help here:
+      <description>&#34;Is this Action Group used by any alerts?&#34; If you want to find out if an Action Group is used by any alerts (metric or Log) how do you do it? Two simple queries help here:
 To check if any Metric alerts point to your Action Group, run
-Get-AzMetricAlertRuleV2 | ?{$_.actions.ActionGroupId -like &amp;#39;YourActionGroupName&amp;#39;} To check if any Log Alerts (Known as Scheduled Query alerts since classic was retired) run
-Get-AzScheduledQueryRule | ?{$_.action.aznsaction.actiongroup -like &amp;#39;&amp;#39;YourActionGroupName&amp;#39;} Now you know if the Action Group is being used, and can be safely removed.</description>
+Get-AzMetricAlertRuleV2 | ?{$_.actions.ActionGroupId -like &amp;#39;YourActionGroupName&amp;#39;} To check if any Log Alerts (Known as Scheduled Query alerts since classic was retired) run</description>
     </item>
     
   </channel>

@@ -14,12 +14,12 @@
     <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Reasons to upgrade NSX 6.0/6.1 to 6.2"/>
 <meta name="twitter:description" content="I&rsquo;d like to thank my colleague Robbie Hancock https://twitter.com/blobbieh for teasing out the troubleshooting/identification of problem steps.
-If you have VMs that
+**Symptom** : If you have VMs that
 Stop responding to network requests Cannot ping a VM from another VM or ESG Do not have entries in their ARP table Initiating a ping from the affected VM to ESG or another VM and traffic resumes (ARP table entry appears) After an amount if inactivity, the problem returns&hellip;."/>
 
     <meta property="og:title" content="Reasons to upgrade NSX 6.0/6.1 to 6.2" />
 <meta property="og:description" content="I&rsquo;d like to thank my colleague Robbie Hancock https://twitter.com/blobbieh for teasing out the troubleshooting/identification of problem steps.
-If you have VMs that
+**Symptom** : If you have VMs that
 Stop responding to network requests Cannot ping a VM from another VM or ESG Do not have entries in their ARP table Initiating a ping from the affected VM to ESG or another VM and traffic resumes (ARP table entry appears) After an amount if inactivity, the problem returns&hellip;." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.chrisneale.org/posts/2016-04-18-reasonstoupgradensx6.0-part1/" /><meta property="article:section" content="posts" />
@@ -71,7 +71,8 @@ Stop responding to network requests Cannot ping a VM from another VM or ESG Do n
     </header>
     <div class="post-content">
       <p>I&rsquo;d like to thank my colleague Robbie Hancock <a href="https://twitter.com/blobbieh">https://twitter.com/blobbieh</a> for teasing out the troubleshooting/identification of problem steps.</p>
-<!-- raw HTML omitted -->
+<P></P>
+**Symptom** :
 <p>If you have VMs that</p>
 <ol>
 <li>Stop responding to network requests</li>
@@ -91,12 +92,13 @@ Log on to an NSX controller and identify which one is the master for the affecte
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ruby" data-lang="ruby"><span style="display:flex;"><span>show control<span style="color:#f92672">-</span>cluster logical<span style="color:#f92672">-</span>switches joined<span style="color:#f92672">-</span>vnis <span style="color:#ae81ff">192</span><span style="color:#f92672">.</span><span style="color:#ae81ff">168</span><span style="color:#f92672">.</span><span style="color:#ae81ff">0</span><span style="color:#f92672">.</span><span style="color:#ae81ff">10</span></span></span></code></pre></div>
 If you get &ldquo;error: not found&rdquo; on a host with a lot of VMs on it, that&rsquo;s not right!  You should get a get a long list of VNIs</p>
 <p>So now we have a pointer to the cause.  Test migration of the affected VM onto another host and see if the problem persists if this instantly resolves the problem then you have the issue.</p>
-<!-- raw HTML omitted -->
+<P></P>
+**The Fix**
 <p>Putty onto the ESXi Host and restarts the user world agent (netcpa):</p>
 <p>Re check to see if the ESXi host has joined the VNIs:
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ruby" data-lang="ruby"><span style="display:flex;"><span>show control<span style="color:#f92672">-</span>cluster logical<span style="color:#f92672">-</span>switches joined<span style="color:#f92672">-</span>vnis <span style="color:#ae81ff">192</span><span style="color:#f92672">.</span><span style="color:#ae81ff">168</span><span style="color:#f92672">.</span><span style="color:#ae81ff">0</span><span style="color:#f92672">.</span><span style="color:#ae81ff">10</span></span></span></code></pre></div></p>
 <p>This is a known issue with NSX 6.1.x  click here to see the
-<!-- raw HTML omitted -->KB<!-- raw HTML omitted --></p>
+<A href="http://kb.vmware.com/selfservice/microsites/search.do?language=en_US&cmd=displayKC&externalId=2137005&src=vmw_so_vex_cneal_850">KB</A></p>
 
     </div>
     <div class="post-footer">

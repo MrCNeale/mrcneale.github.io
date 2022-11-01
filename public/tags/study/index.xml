@@ -13,9 +13,7 @@
       <pubDate>Tue, 11 Feb 2020 22:00:00 +0000</pubDate>
       
       <guid>https://www.chrisneale.org/posts/2020-02-11-az500examexperience/</guid>
-      <description>I spent a few nights watching some pre-recorded study sessions delivered by a colleague Dan Oliver which were great and covered all the material in the exam areas, in varying degrees of depth as they were 1-2hrs sessions.
-It was watching these that reenforced my understanding that this was possibly the broadest area of Azure. It&amp;rsquo;s obvious that security affects all things.
-With the popularity of DevOPs and now DevSecOPs, we should all know that &amp;ldquo;Security should be baked in from the start&amp;rdquo;.</description>
+      <description>The Broadest Blueprint yet - In Depth I sat the AZ-500 exam last week. I had set aside some time for study, arranged an exam voucher through work, booked it. All set. I spent a few nights watching some pre-recorded study sessions delivered by a colleague Dan Oliver which were great and covered all the material in the exam areas, in varying degrees of depth as they were 1-2hrs sessions.</description>
     </item>
     
     <item>
@@ -24,8 +22,7 @@ With the popularity of DevOPs and now DevSecOPs, we should all know that &amp;ld
       <pubDate>Mon, 12 Aug 2019 22:00:00 +0000</pubDate>
       
       <guid>https://www.chrisneale.org/posts/2019-08-12-az-103-exam-experience-and-study-advice/</guid>
-      <description>This exam felt very familiar. The questions were not vastly changed from 70-533 which I sat last year, and the format was the same as AZ-302 in that the exam is divided into sections:
-Traditional Multiple choice Scenario based multiple choice, where the same scenario will be offered for many questions and different solutions proposed. You have to answer if the proposed solution will meet the requirements Labs. Where you actually log in to an Azure Portal and do things.</description>
+      <description>NOW WITH LABS! - An Updated Exam and Exam Format I sat the AZ-103 exam at the end of July, blog post is a little late due to some family stuff, but back on it now. I missed the deadline to do the transition exam, but that wasn&#39;t a big problem as they had replaced the previous requirement of two exams to get Azure Administrator (AZ-100 + AZ-101) down to just one in AZ-103 This exam felt very familiar.</description>
     </item>
     
     <item>
@@ -34,9 +31,7 @@ Traditional Multiple choice Scenario based multiple choice, where the same scena
       <pubDate>Thu, 28 Mar 2019 22:00:00 +0000</pubDate>
       
       <guid>https://www.chrisneale.org/posts/2019-03-28-az-302-exam-experience-and-study-advice/</guid>
-      <description>It&amp;rsquo;s also due to retire at the end of June, so if you&amp;rsquo;re reading this now&amp;hellip;GET STUDYING! :-)
-As usual the IaaS sections and IAM/AD/Security areas, which I have most background in were quite simple to absorb. Where I had to pay much more attention is around the PaaS/Serverless application space. So Web Apps, Functions, Batch, Event Grids etc.
-This may be different for you, but where I am currently we&amp;rsquo;re still helping a lot of customers move from on-prem into cloud, so they haven&amp;rsquo;t expanded or transformed to start using PaaS services heavily.</description>
+      <description>NOW WITH LABS! - An Updated Exam and Exam Format I sat the AZ-302 exam on Tuesday. It has been updated since the Beta considerably. Many who took the beta felt that it wasn&#39;t Architect focussed but more developer focussed. Now whilst in this new brave cloud world you have to be part Admin/Pre-Sales/Architect and Developer, writing C# or node.js code in an Architect Exam didn&#39;t seem fair to me either.</description>
     </item>
     
     <item>
@@ -45,8 +40,7 @@ This may be different for you, but where I am currently we&amp;rsquo;re still he
       <pubDate>Tue, 06 Mar 2018 22:00:00 +0000</pubDate>
       
       <guid>https://www.chrisneale.org/posts/2018-03-06-exam-experience-70-533/</guid>
-      <description>It also had a number of other concepts which have been migrated over that time into Azure Resource Manager as a deployment method.
-Initially that had me concerned as I came to Azure 12 months ago fresh onto ARM. It was new at first but I didn&amp;rsquo;t have any ASM baggage. I saw the exam still had lots of ASM content when I looked into it last summer. But there have been TWO updates to the exam since then.</description>
+      <description>An Updated Exam and Exam Format I sat the 70-533 exam last Wednesday. It was the version after the Jan 2018 updates. That last bit is critical. Cloud moves fast and Microsoft published the exam 4 years ago. It was originally based around ASM, the white and blue GUI and a different set of PowerShell commands. It also had a number of other concepts which have been migrated over that time into Azure Resource Manager as a deployment method.</description>
     </item>
     
     <item>
@@ -55,8 +49,8 @@ Initially that had me concerned as I came to Azure 12 months ago fresh onto ARM.
       <pubDate>Mon, 21 Nov 2016 22:00:00 +0000</pubDate>
       
       <guid>https://www.chrisneale.org/posts/2016-11-21-vcix-nv-exam-experience/</guid>
-      <description>This is a post in two parts, first the exam experience, second a few pondering on VMware Education&amp;rsquo;s current trajectory.
-The Day Itself Here in the UK there are only 3, I believe, VCAP accredited test centres. I hopped on a train across to Leeds, that ended up being delayed and I only had time for a coffee and sandiwch before having to get started. Moral here is give yourself plenty of time to get to your chosen test centre and if possible/affordable, go the night before.</description>
+      <description>Last month I sat and passed the VCIX-NV exam. Driven, like a lot of others, by the impending retirement of the exam that keeps getting extended...more on that later. This is a post in two parts, first the exam experience, second a few pondering on VMware Education&amp;rsquo;s current trajectory.
+The Day Itself Here in the UK there are only 3, I believe, VCAP accredited test centres. I hopped on a train across to Leeds, that ended up being delayed and I only had time for a coffee and sandiwch before having to get started.</description>
     </item>
     
     <item>
@@ -88,9 +82,7 @@ So I could write my own blog posts breaking down the blueprint. Well that is use
       
       <guid>https://www.chrisneale.org/posts/2014-08-14-getting-back-on-the-horse-destination-vcap5-dca/</guid>
       <description>After passing my VCP, and subsequently falling back into the bad habit of not studying! I&amp;rsquo;ve managed to get the
-The point is&amp;hellip;&amp;hellip;..IT&amp;rsquo;S BACK ON! I&amp;rsquo;ll be studying again and blurting out blogposts about the activity.
-As always, step 1 is READ THE BLUEPRINT!
-http://mylearn.vmware.com/mgrReg/plan.cfm?plan=47316&amp;amp;amp;ui=www_cert&amp;amp;amp;src=vmw_so_vex_cneal_850</description>
+VMware authorisation Pearson Vue confirmation and now A voucher (for the $$$ bit) from my lovely employer :-) Well ok the last bit has been all rubber stamped and approved but it&#39;s somewhere in our suppliers system to churn a handle to actual give me a code....anyway that&#39;s an aside, as soon as it comes through I&#39;ll be booking the exam on pearson giving myself 3months/12weeks to prep.</description>
     </item>
     
     <item>

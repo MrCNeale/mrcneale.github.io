@@ -67,14 +67,18 @@ It was only when I found Marco Broeken&rsquo;s blog &ldquo;vSphere5 Auto-Deploy 
     <div class="post-content">
       <p>So when last we spoke I had left Linux updating.</p>
 <p>It was when I came to resume last night that I couldn&rsquo;t track down the original article I had been following.</p>
-<p>It was only when I found<!-- raw HTML omitted --> Marco Broeken&rsquo;s blog <!-- raw HTML omitted -->&ldquo;vSphere5 Auto-Deploy in 20 Steps&rdquo;.  This started straight away with the, now, blindingly obvious statement that the VCVA is a Linux box, therefore my Ubuntu box was a waste of space.</p>
-<p>Simply configure and start the Tftp Daemon and the DHCP daemon services on the VCVA server and then you&rsquo;re ready to move on to downloading the Image Bundle zip from VMware and importing that via the powerCLI <!-- raw HTML omitted -->Add-ESXSoftwareDepot. <!-- raw HTML omitted -->I did have some issues with a corrupted install of powercli 5.5 and 5.1 on the same PC that still isn&rsquo;t resolved even after combing the registry and file system.  Luckily I had my laptop to run the PowerCLI steps from.</p>
+<p>It was only when I found<a href="http://www.vclouds.nl/vsphere-5-auto-deploy-in-20-steps/"> Marco Broeken&rsquo;s blog </a>&ldquo;vSphere5 Auto-Deploy in 20 Steps&rdquo;.  This started straight away with the, now, blindingly obvious statement that the VCVA is a Linux box, therefore my Ubuntu box was a waste of space.</p>
+<p>Simply configure and start the Tftp Daemon and the DHCP daemon services on the VCVA server and then you&rsquo;re ready to move on to downloading the Image Bundle zip from VMware and importing that via the powerCLI <strong>Add-ESXSoftwareDepot. </strong>I did have some issues with a corrupted install of powercli 5.5 and 5.1 on the same PC that still isn&rsquo;t resolved even after combing the registry and file system.  Luckily I had my laptop to run the PowerCLI steps from.</p>
 <p>Minor edits to Marco&rsquo;s post are to</p>
-<!-- raw HTML omitted -->
-<p><!-- raw HTML omitted -->Drill down to the vCenter Server system. Click the Manage tab, select Settings, and click Auto Deploy.<!-- raw HTML omitted --></p>
+<ul>
+	<li>Just list the filename not the full /tftpboot folder.  Then my (virtual) ESXi Host started to gpxe boot ok.  However it did pick up a different IP for the tftp step.</li>
+	<li>Disable any other DHCP servers you may have on your lab network.  In my case my Sky Hub was sneaking in there and giving the gpxe boot an ip address and therefore my host wasn't getting my tramp.</li>
+</ul>
+Also contrary to my previous post I did find where in the web-client the AutoDeploy settings are:
+<p><strong>Drill down to the vCenter Server system. Click the Manage tab, select Settings, and click Auto Deploy.</strong></p>
 <p>Here are some pictures of the amazing process of esxi loading itself onto a VM, running on an ESXi host!</p>
 <p>It was the final message about persistent storage that taught me the most about Auto-Deploy, which will follow in the next post!</p>
-<p><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --> <!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --> <!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<p><a href="http://chrisneale.files.wordpress.com/2014/05/autodeploy-working.png"><img class="aligncenter size-large wp-image-139" src="http://chrisneale.files.wordpress.com/2014/05/autodeploy-working.png?w=750" alt="autodeploy-working" width="750" height="421" /></a> <a href="http://chrisneale.files.wordpress.com/2014/05/autodep2.png"><img class="aligncenter size-large wp-image-138" src="http://chrisneale.files.wordpress.com/2014/05/autodep2.png?w=750" alt="autodep2" width="750" height="405" /></a> <a href="http://chrisneale.files.wordpress.com/2014/05/autodep3.png"><img class="alignnone size-large wp-image-137" src="http://chrisneale.files.wordpress.com/2014/05/autodep3.png?w=750" alt="autodep3" width="750" height="405" /></a></p>
 
     </div>
     <div class="post-footer">

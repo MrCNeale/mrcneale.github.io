@@ -67,7 +67,7 @@ Read/do Part 1 (https://www.chrisneale.org/Azure-Lab-via-Templates-Part1/) Read/
       </div>
     </header>
     <div class="post-content">
-      <!-- raw HTML omitted -->
+      <img style="float: top;" src="https://msdnshared.blob.core.windows.net/media/2017/05/2017-05-06-Azure-IaC-How-to-get-started-with-ARM-Template.jpg">
 <h2 id="aim">Aim</h2>
 <p>This post will show you how to take your existing template and add a special resource to it which is a &ldquo;Schedules&rdquo; resource which shuts down your VM at a specified time to save you money.</p>
 <h2 id="pre-reqs">Pre-reqs</h2>
@@ -263,11 +263,11 @@ So we should have a template that looks like this</p>
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p>Now save and deploy.
 Once it&rsquo;s done you should see it&rsquo;s deployed 4 resources.
-<!-- raw HTML omitted --><!-- raw HTML omitted -->
+<BR><img style="float: bottom;" src="/public/deployment.png">
 But&hellip;.the list in the resource group only shows three!
-<!-- raw HTML omitted --><!-- raw HTML omitted -->
+<BR><img style="float: bottom;" src="/public/resourcelist.png">
 That&rsquo;s because the shutdown only shows up as a blade on the vm.<br>
-<!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<BR><img style="float: bottom;" src="/public/scheduleview.png"></p>
 <p>So there we have it, another quick addition, but an important money saving one.</p>
 
     </div>

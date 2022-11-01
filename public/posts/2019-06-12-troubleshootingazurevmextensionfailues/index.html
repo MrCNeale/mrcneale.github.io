@@ -65,7 +65,7 @@
       </div>
     </header>
     <div class="post-content">
-      <!-- raw HTML omitted -->
+      <img src="/images/vm.png">   
 <h1 id="what-can-you-do-to-find-out-more-about-why-a-vm-extension-is-failing-or-not-working-quite-right">What can you do to find out more about why a VM extension is failing or not working quite right?</h1>
 <p>Azure VMs are great and VM extensions are even better.  Either a Vendor, or you, can create some code to do a thing to a VM.  Usually install software or agents and configure it.
 Most common for the average user will be things like the Log Analytics Agent Extension and the Custom Script Extension (where you can run your own Powershell or Bash post install).
@@ -73,7 +73,7 @@ Oh&hellip;and the AD Domain Join extension for Windows VMs.</p>
 <p>So I&rsquo;m going to work on the presumption you&rsquo;ve copied a quickstart template</p>
 <p><a href="https://github.com/Azure/azure-quickstart-templates/tree/master/201-vm-domain-join-existing">https://github.com/Azure/azure-quickstart-templates/tree/master/201-vm-domain-join-existing</a> or written your own template or manually added an Extension via Portal&gt;VM&gt;Extensions&gt;Add say for the Symantec Cloud AV extension.</p>
 <p>You run the install or deploy the template, but you get a failure.  I&rsquo;m willing to bet the deployment message is cryptic and not very useful, especially for Domain Join.<br>
-<!-- raw HTML omitted -->   <!-- raw HTML omitted --><br>
+<img src="/images/faileddep.png">   <img src="/images/failedop.png"><br>
 So you can log in to the VM and start looking in the event log for clues, but that&rsquo;s more effort than I can be bothered with trawling for.</p>
 <p>What&rsquo;s the alternative?<br>
 Well every extension installed downloads to a particular folder.<br>
@@ -84,12 +84,12 @@ e.g. C:\WindowsAzure\Logs\Plugins\Microsoft.Compute.JsonADDomainExtension\1.3.2<
 So the first 2 easy steps are</p>
 <ol>
 <li>Confirm the contents of the install folder look good (if this is a custom script, you&rsquo;ll know best, if it&rsquo;s 3rd party, it may not be clear)<br>
-<!-- raw HTML omitted --></li>
+<img src="/images/installfolder.png"></li>
 <li>Next look at the logs sub-folder named after your extension and review the logs for more detail.<br>
 What we can see is that it fails and throws error 1355<br>
 Which good old eventid.net tells us is a connection failure (coz bob.com doesn&rsquo;t exist or is resolvable on my vnet)<br>
 <a href="http://www.eventid.net/errorsdisplay.asp?error_code=1355">http://www.eventid.net/errorsdisplay.asp?error_code=1355</a><br>
-<!-- raw HTML omitted -->(/images/installog.png) <br>
+<img src="/images/installlog.png" width="1365" height="498">(/images/installog.png) <br>
 There you have it. How to drill down inside a VM to find issues with installs of Microsoft, 3rd Party or your own CustomScript Extensions.</li>
 </ol>
 <p>NOTE: For linux the folders are<br>

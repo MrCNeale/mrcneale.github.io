@@ -25,7 +25,7 @@ Back out. Tried login again&amp;hellip;.same error. Ok maybe I&amp;rsquo;m being
       
       <guid>https://www.chrisneale.org/posts/2016-04-18-reasonstoupgradensx6.0-part1/</guid>
       <description>I&amp;rsquo;d like to thank my colleague Robbie Hancock https://twitter.com/blobbieh for teasing out the troubleshooting/identification of problem steps.
-If you have VMs that
+**Symptom** : If you have VMs that
 Stop responding to network requests Cannot ping a VM from another VM or ESG Do not have entries in their ARP table Initiating a ping from the affected VM to ESG or another VM and traffic resumes (ARP table entry appears) After an amount if inactivity, the problem returns&amp;hellip;.</description>
     </item>
     

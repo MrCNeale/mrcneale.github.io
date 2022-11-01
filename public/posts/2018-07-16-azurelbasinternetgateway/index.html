@@ -13,10 +13,10 @@
     
     <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Using the Azure Load Balancer in reverse to funnel all outgoing traffic via a single IP"/>
-<meta name="twitter:description" content="As you may know even if your default Azure VM does not have a Public IP assigned to it, it can still access the internet for things like windows updates etc. However when it does so the Public IP it appears to have come from is ephemeral and changes. Similarly each VM will have different IPs. For a reason known to the SAP team, they needed all VMs to appear to be coming from the same IP."/>
+<meta name="twitter:description" content="An Odd Request This implementation started from a SAP team who said they wanted to replicate, in Azure, the AWS Internet Gateway functionality. In particular the option for all outbound traffic from VMs to route via a single outbound IP. As you may know even if your default Azure VM does not have a Public IP assigned to it, it can still access the internet for things like windows updates etc."/>
 
     <meta property="og:title" content="Using the Azure Load Balancer in reverse to funnel all outgoing traffic via a single IP" />
-<meta property="og:description" content="As you may know even if your default Azure VM does not have a Public IP assigned to it, it can still access the internet for things like windows updates etc. However when it does so the Public IP it appears to have come from is ephemeral and changes. Similarly each VM will have different IPs. For a reason known to the SAP team, they needed all VMs to appear to be coming from the same IP." />
+<meta property="og:description" content="An Odd Request This implementation started from a SAP team who said they wanted to replicate, in Azure, the AWS Internet Gateway functionality. In particular the option for all outbound traffic from VMs to route via a single outbound IP. As you may know even if your default Azure VM does not have a Public IP assigned to it, it can still access the internet for things like windows updates etc." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.chrisneale.org/posts/2018-07-16-azurelbasinternetgateway/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2018-07-16T22:00:00+00:00" />
@@ -66,22 +66,29 @@
       </div>
     </header>
     <div class="post-content">
-      <!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+      <img style="float: top;" src="https://azure.microsoft.com/svghandler/load-balancer/?width=600&height=315">
+<H2> An Odd Request</H2>
+This implementation started from a SAP team who said they wanted to replicate, in Azure, the AWS Internet Gateway functionality. In particular the option for all outbound traffic from VMs to route via a single outbound IP.  
 <p>As you may know even if your default Azure VM does not have a Public IP assigned to it, it can still access the internet for things like windows updates etc. However when it does so the Public IP it appears to have come from is ephemeral and changes.  Similarly each VM will have different IPs. For a reason known to the SAP team, they needed all VMs to appear to be coming from the same IP.</p>
 <p>Obvious options are NVAs but they are quite big, cumbersome things to deploy and configure quickly and easily. They would also required ongoing changes, such as updating rules/IPs if a new VM is added.</p>
 <p>That&rsquo;s when we found that the Azure Load Balancer can be used to &ldquo;Balance&rdquo; outgoing connections also.
 <a href="https://docs.microsoft.com/en-us/azure/load-balancer/load-balancer-outbound-connections#lb">The Microsoft Docs detail this behaviour here</a><br>
 By creating an LB with a public IP, then creating a dummy health probe to a non existent service, then connecting that, via a rule to a BackEnd Pool containing your VMs, any traffic that goes to the internet from those VMs will exit via the Public IP of the LB.</p>
-<!-- raw HTML omitted -->
+<H2>Implementation Steps</H2>
+1. Create a Public IP (Or create one during load balancer creation)
+2. Create a Load Balancer and associate with the Public IP from step 1 <img src="/images/LB1and2.png" align="bottom">
+3. Create a Health Probe, select a non used port on the VMs, say 65534 <img src="/images/LB3.png" align="bottom">
+4. Create an Availability Set <img src="/images/LB4.png" align="bottom">
+5. Create a BackEndPool with the availability set as the member <img src="/images/LB5.png" align="bottom">
+6. Create a LB Rule selecting your Public IP, Health Prob and BackEnd Pool you just created <img src="/images/LB6.png" align="bottom">
 <p>Here&rsquo;s the LB IP<br>
-<!-- raw HTML omitted --><br>
+<img src="/images/LB-IP.png" align="bottom"><br>
 Here&rsquo;s the VM nic config, showing only a private IP<br>
-<!-- raw HTML omitted --><br>
+<img src="/images/vmnicconf.png" align="bottom"><br>
 Then we find out what the internet thinks our IP is with this command:<br>
-<!-- raw HTML omitted --><br>
+<img src="/images/ps-command.png" align="bottom"><br>
 And we see it matches the LB<br>
-<!-- raw HTML omitted --></p>
+<img src="/images/wmip.png" align="bottom"></p>
 <p>Now any VMs deployed to the Availability Set will automatically have their outbound traffic via the Public IP<br>
 If you already have VMs, or require more granular control over the IPs/Networks/VMs that are included, then at step #2 deploy a STANDARD SKU Load Balancer and do not deploy the availability set in step #4, as this allows more control over BackEnd Pool selection of members, but needs manual updating of the members.</p>
 

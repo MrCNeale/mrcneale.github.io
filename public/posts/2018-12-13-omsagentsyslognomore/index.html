@@ -64,7 +64,7 @@
       </div>
     </header>
     <div class="post-content">
-      <!-- raw HTML omitted -->
+      <img style="float: top;" src="https://msdnshared.blob.core.windows.net/media/2016/11/OMS-Log-Analytics-e1479220299227.png">
 <p>We use Log Analytics to collect logs so that we can query the pooled logs to generate alerts.  A common scenario.
 We had an ARM template that had worked for a long time, but when we had an issue, the first thing Microsoft said was &ldquo;Why are you using such an old version?&rdquo;
 Ok, we&rsquo;d missed the agent updates on this particular template for Linux, it&rsquo;s always best to be up to date.  So two things happened.</p>
@@ -91,10 +91,10 @@ Except we hadn&rsquo;t checked the release notes to see what had changed.<br>
 When our automated testing ran, an alert that previously worked no longer fired when the condition it was supposed to detect occured.
 This was odd. After looking at the alert, it was based on the contents of Syslog.  Looking at  the Log Anlaytics Workspace Logs area, we could see that no Syslog logs were being collected. Even more strange. But wait 1 VM was populating Syslog in OMS/LA.  How was it doing that?</p>
 <p>Have you guessed yet?<br>
-Here&rsquo;s a screenshot of our Workspace/Advanced Settings/Data/Syslog configuration to help. <!-- raw HTML omitted -->
+Here&rsquo;s a screenshot of our Workspace/Advanced Settings/Data/Syslog configuration to help. <img src="/images/emptylawsyslog.jpg">
 Spot the deliberate mistake? Yep, syslog wasn&rsquo;t set to be collected.<br>
 Hang on a minute though, we hadn&rsquo;t changed our workspace config. I double checked the code to deploy our workspaces.  It never enabled syslog collection.  So how did this <em>EVER</em> work?<br>
-<!-- raw HTML omitted --><br>
+<img style="float:top;" src="/public/confused.gif"><br>
 Simple&hellip;it was a &ldquo;bug&rdquo;.<br>
 Checkout the release notes for a prior release of OMS agent:<br>
 <a href="https://github.com/Microsoft/OMS-Agent-for-Linux/releases/tag/OMSAgent_GA_v1.4.3-174">https://github.com/Microsoft/OMS-Agent-for-Linux/releases/tag/OMSAgent_GA_v1.4.3-174</a><br>
@@ -102,7 +102,7 @@ Bugfix = Disable Syslog data collection by default<br>
 So until v1.4.3 all Linux agents pushed syslog, whether you asked for it or not!</p>
 <p>A simple update to the workspace code to make sure Syslog collection was enabled with correct facilities and all working.</p>
 <p>Lesson for today.  Always Read The Flippin Release Notes (RTFRN)
-<!-- raw HTML omitted --></p>
+<img src="/images/rtfm.png"></p>
 
     </div>
     <div class="post-footer">

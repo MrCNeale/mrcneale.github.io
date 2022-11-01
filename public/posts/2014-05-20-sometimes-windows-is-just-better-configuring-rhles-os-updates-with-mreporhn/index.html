@@ -80,12 +80,12 @@ In UMDS you specify the credentials during setup/installation (you can also easi
 <p>In UMDS you specify the credentials during setup/installation (you can also easily edit xml after install if you forget)</p>
 <p>Then it came the redhat server.  I ran their &ldquo;text-gui&rdquo; to register on the redhat network&hellip;&ldquo;ooh it&rsquo;s asking me for proxy details, good&rdquo;.  That bit worked fine.  Then came the mrepo command to start dragging down all the latest updates.</p>
 <p>BOOM failure.  &ldquo;Proxy authentication required&rdquo;.  Hmm ok so I checked mrepo.conf and could only see the updated mrepo.conf
-<!-- raw HTML omitted -->http_proxy <!-- raw HTML omitted -->and <!-- raw HTML omitted -->https_proxy<!-- raw HTML omitted --> variables were declared.  Searching around various sources said there were variables listed as proxyUser, proxyUsername, proxyPassword all of which I tried but to no avail.</p>
-<p>After much head banging I went all 90s ftp and tried declaring the <!-- raw HTML omitted -->http_proxy<!-- raw HTML omitted --> variable in the following format</p>
-<p><!-- raw HTML omitted --><!-- raw HTML omitted -->http://username:password@proxyip:proxyport/<!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<strong>http_proxy </strong>and <strong>https_proxy</strong> variables were declared.  Searching around various sources said there were variables listed as proxyUser, proxyUsername, proxyPassword all of which I tried but to no avail.</p>
+<p>After much head banging I went all 90s ftp and tried declaring the <strong>http_proxy</strong> variable in the following format</p>
+<p><em><strong>http://username:password@proxyip:proxyport/</strong></em></p>
 <p>and success was attained.  This is crazy and not being able to set a system wide proxy in RHLES or at least to have a proper, supported method of downloading updates through an authenticated proxy is just poor.</p>
 <p>This one time.</p>
-<!-- raw HTML omitted -->
+<h2><strong>Windows Wins!</strong></h2>
 
     </div>
     <div class="post-footer">
