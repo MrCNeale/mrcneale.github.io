@@ -6,27 +6,27 @@ Configure NTP on an ESXi host. Connect to the ESX/ESXi host using the vSphere Cl
 <a class=tag href=https://www.chrisneale.org/tags/ntp/>ntp</a>
 <a class=tag href=https://www.chrisneale.org/tags/vcp/>VCP</a></div></div></header><div class=post-content><p>So here I&rsquo;m going to describe what many possibly have done before, but it&rsquo;s needed for the exam&mldr;..so here goes.</p><ol><li><p>Configure NTP on an ESXi host.
 Connect to the ESX/ESXi host using the vSphere Client.
-Click the Configuration tab.
-Click Time Configuration/Properties/Options/NTP Settings.
-Click Add. Enter the NTP Server name. Click OK.
-Click the General tab. Click Start automatically under Startup Policy.
-Click Start and click OK. Click OK to exit.</p></li><li><p>Enable/Disable/Configure Hyperthreading
+Click the <strong>Configuration</strong> tab.
+Click <strong>Time Configuration</strong>/<strong>Properties/</strong><strong>Options/</strong><strong>NTP Settings</strong>.
+Click <strong>Add</strong>. Enter the NTP Server name. Click <strong>OK</strong>.
+Click the <strong>General</strong> tab. Click <strong>Start automatically</strong> under Startup Policy.
+Click <strong>Start</strong> and click <strong>OK</strong>. Click <strong>OK</strong> to exit.</p></li><li><p>Enable/Disable/Configure Hyperthreading
 Connect to a host in vSphere Client
-Click the Configuration tab.
-Select Processors/Properties.
+Click the <strong>Configuration</strong> tab.
+Select <strong>Processors</strong>/<strong>Properties</strong>.
 In the dialog box, you can view hyperthreading status and turn hyperthreading off or on (default).</p></li><li><p>Enable/Disable/Configure Memory Compression Cache
 Connect to a host in vSphere Client
-Click the Configuration tab.
-Click Software/Advanced Settings
-Select Mem from the options on the left.
+Click the <strong>Configuration</strong> tab.
+Click <strong>Software/Advanced Settings
+</strong>Select Mem from the options on the left.
 On the right Mem.MemZipEnable can be set to 1 to enable or 0 to disable
 Mem.MemZipMaxPct sets the maximum target size as a % of VM size.  Default 10%, Range 5-100</p></li><li><p>License an ESXi Host
 Connect to a host in vSphere Client
-Click the Configuration tab.  (Anyone seeing a pattern here??)
+Click the <strong>Configuration</strong> tab.  (Anyone seeing a pattern here??)
 Click Software/Licensed Features
 Click Edit
 In there you can assign an existing license key or enter a new one.
 Alternatively you can license from a vSphere Level via
-Home/Administration/Licensing
-Click Manage vSphere Licenses
-From here you can add license keys (with labels for your identification then assign or remove them)</p></li></ol><p>The End.</p></div><div class=post-footer></div></article></main></body></html>
+<strong>Home/Administration/Licensing
+</strong>Click<strong> Manage vSphere Licenses
+</strong>From here you can<strong> add license keys (with labels for your identification then assign or remove them)</strong></p></li></ol><p>The End.</p></div><div class=post-footer></div></article></main></body></html>
