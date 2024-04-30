@@ -14,7 +14,7 @@ tags:
   - Time saving
 ---
 
-![](/public/copilot.jpg)
+<img src="/public/copilot.jpg" alt="copilot" width="100" height="100"/>
 
 # They came, they coded, they left...and now the fix has fallen in your lap!
 Recently I had a bug come in about a section of code that was written some time ago for a small custom project.  The excerpt isn't private IP (to be honest I would advise against using it!  Code getting adopted by other teams and then being made the domain of others to maintain is not uncommon).  
