@@ -5,7 +5,7 @@ excerpt: Adding YAML validation to VSCode using the Redhat extension
 comments: true
 date: 2024-05-02T09:00:00+00:00
 image:
-  feature: vscode.jpg
+  feature: vscode.jpeg
 tags:
   - vsCode
   - extensions
