@@ -60,7 +60,7 @@ So going back to the code itself, surely we can make the code read more like the
 Straight away it seems odd that there is so much repetition.  There are values and functions, such as the time-zone conversion and existing values for schedule week day or month etc.  Those also have in-line replacements repeated over and over.
 I asked Co-Pilot again to "Simplify the code and replace repeated statements with suitably named variables".
 This quickly got us to this
-```
+```Powershell
 $dayOfWeekMatch = $setTimeZone.DayOfWeek -match $vmScheduledWeekDay.Replace(',','|')
 $dayOfMonthMatch = $setTimeZone.Day -match $vmScheduledDayOfMonth.Replace(',','|')
 $monthMatch = $setTimeZone.Month -match $vmScheduledMonth.Replace(',','|')
@@ -79,7 +79,7 @@ if (($vmScheduleArray[4] -eq 'untilNextDay' -or $dayOfWeekMatch) `
 This would be great, but...being AI/computer it just did what I asked.  Hopefully most of you are thinking "let's just replace that finally duplication with a more descriptive variable...say "InsideShutdownWindow".
 So the final revision that we first re-tested, then started to debug and fix was this:
 
-```
+```Powershell
 $dayOfWeekMatch = $setTimeZone.DayOfWeek -match $vmScheduledWeekDay.Replace(',','|')
 $dayOfMonthMatch = $setTimeZone.Day -match $vmScheduledDayOfMonth.Replace(',','|')
 $monthMatch = $setTimeZone.Month -match $vmScheduledMonth.Replace(',','|')
