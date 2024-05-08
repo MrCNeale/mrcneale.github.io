@@ -22,7 +22,7 @@ It was part of some prioprietary code to start and stop VMs.  Sounds simple, rig
 
 Here's the code sample that we had to work with...
 
-```
+```Powershell
 if (($vmScheduleArray[4] -eq 'untilNextDay' -or ((Convert-TimeZone $setTimeZone "-Format ddd") -match $vmScheduledWeekDay.Replace(',', '|'))) `
         -and ((((((Convert-TimeZone $setTimeZone DayOfWeek) -match $vmScheduledWeekDay.Replace(',', '|') -or ((Convert-TimeZone $setTimeZone "-Format ddd") -match $vmScheduledWeekDay.Replace(',', '|'))) -and ((Convert-TimeZone $setTimeZone "-Format dd") -match $vmScheduledDayOfMonth.Replace(',', '|'))) `
                     -and ((($vmScheduleArray[0] -eq "allDay" <#-or $vmScheduleArray[4] -match '\d\w' #>) -and [int](Convert-TimeZone $setTimeZone).TimeOfDay.TotalMinutes -in $vmShutdownStart..$vmDowntimeEnd))) `
