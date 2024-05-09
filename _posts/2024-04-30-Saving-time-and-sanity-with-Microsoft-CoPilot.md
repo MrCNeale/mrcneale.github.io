@@ -79,7 +79,7 @@ if (($vmScheduleArray[4] -eq 'untilNextDay' -or $dayOfWeekMatch) `
 This would be great, but...being AI/computer it just did what I asked.  Hopefully most of you are thinking "let's just replace that finally duplication with a more descriptive variable...say "InsideShutdownWindow".
 So the final revision that we first re-tested, then started to debug and fix was this:
 
-```owershell
+```powershell
 $dayOfWeekMatch = $setTimeZone.DayOfWeek -match $vmScheduledWeekDay.Replace(',','|')
 $dayOfMonthMatch = $setTimeZone.Day -match $vmScheduledDayOfMonth.Replace(',','|')
 $monthMatch = $setTimeZone.Month -match $vmScheduledMonth.Replace(',','|')
