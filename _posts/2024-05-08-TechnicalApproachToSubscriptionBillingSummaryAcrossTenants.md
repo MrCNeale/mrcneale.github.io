@@ -57,9 +57,6 @@ $error.Clear()
 $subsinscope = get-azsubscription
 $subcosts = @()
 
-#Retrieve previousBillingPeriod
-$previousBillingPeriod = Get-AzBillingPeriod -MaxCount 2 -ErrorAction Stop| Sort-Object Name | Select-Object -First 1
-
 #Loop over subs attempting to retrieve cost for last billing period and report progress and any errors
 foreach ($sub in $subsinscope) {
     Write-Host "Processing Subscription " $sub.Name -NoNewLine
@@ -70,6 +67,8 @@ foreach ($sub in $subsinscope) {
         write-host "error setting context to subscription " $sub.name
     }
     try {
+        #Retrieve previousBillingPeriod
+        $previousBillingPeriod = Get-AzBillingPeriod -MaxCount 2 -ErrorAction Stop| Sort-Object Name | Select-Object -First 1
         $cost = ((Get-AzConsumptionUsageDetail -BillingPeriodName $previousBillingPeriod.Name -ErrorAction Stop | Measure-Object -Property PretaxCost -Sum).Sum)
     }
     catch {
