@@ -10,7 +10,7 @@ tags:
   - Powershell
   - Azure
 ---
-<img src="https://docs.microsoft.com/en-gb/azure/virtual-machines/linux/media/index/logo_powershell.svg" height="20%" width="20%">
+<img src="/public/PowerShell_Core_6.0_icon.png" height="20%" width="20%">
 
 # Why You Should Force Named Parameters in PowerShell Scripts
 
