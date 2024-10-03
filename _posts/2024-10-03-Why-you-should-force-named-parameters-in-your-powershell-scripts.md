@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Why you should force named parameters in your powershell scripts
-excerpt: don't give mistakes a place to happen
+excerpt: Don't give mistakes a place to happen
 comments: true
-date: 2024-10-03T22:00:00+00:00
+date: 2024-10-02T22:00:00+00:00
 image:
   feature: https://docs.microsoft.com/en-gb/azure/virtual-machines/linux/media/index/logo_powershell.svg
 tags: 
