@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Why you should force named parameters in your powershell scripts
+title: Why you should force named parameters in your powershell scripts to avoid errors and incorrect values being passed by accident
 excerpt: Don't give mistakes a place to happen
 comments: true
 date: 2024-10-02T22:00:00+00:00
