@@ -3,9 +3,9 @@ layout: post
 title: CloudCloak - Microsoft Published Browser Extension to hide sensitive information realtime during browsing.  Ideal for Blogging/Vlogging without doxxing yourself!
 excerpt: Blur certain fields on a webpage automatically
 comments: true
-date: 2024-10-02T22:00:00+00:00
+date: 2024-10-06T22:00:00+00:00
 image:
-  [PowerShell_Core_6.0_icon.png](https://github.com/microsoft/cloudcloak/raw/main/images/icon-128.png)
+  https://github.com/microsoft/cloudcloak/raw/main/images/icon-128.png
 tags: 
   - Powershell
   - Azure
