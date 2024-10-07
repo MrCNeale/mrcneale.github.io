@@ -26,4 +26,5 @@ This means you can open up your Azure subscription, Entra ID, even client keys a
 <BR>
 For more details and where to download go here:
 
-[Cloud Cloak Github])(https://github.com/microsoft/cloudcloak?tab=readme-ov-file)
+<A HREF="https://github.com/microsoft/cloudcloak?tab=readme-ov-file"> CloudCloak Github </A>
+
