@@ -22,7 +22,7 @@ Easy to download, install and enable, it allows you to filter/blur out a number 
 <BR>
 This means you can open up your Azure subscription, Entra ID, even client keys and secrets, as well as URLs and they all get blanked out as shown below.
 <BR>
-<img src="/public/ccgrab.png">
+<img src="/public/ccgrab2.png">
 <BR>
 For more details and where to download go here:
 
